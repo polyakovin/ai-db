@@ -10,13 +10,14 @@
 
 Авторы также ведут платформу [aifoundations.io](https://aifoundations.io) с платными курсами и сообществом.
 
-## Ключевые видео
+## Карта видео
 
-| Видео | Ссылка |
-|---|---|
-| **FULL Claude Tutorial** (1ч 52мин) — всё: от регистрации до Claude Code + деплой | https://youtu.be/rRrBbyv3ChM |
-| **FULL Claude Projects Guide** — Projects, Instructions, Files, Cowork Projects | https://youtu.be/fOnKo_Hole8 |
-| **FULL Claude Cowork Tutorial** — Cowork, Dispatch, Computer Use, Skills | (есть на канале) |
+| Название | Ссылка | Длительность | Описание |
+|---|---|---|---|
+| **FULL Claude Tutorial For Beginners** | https://youtu.be/rRrBbyv3ChM | 1ч 52мин | Полный обзор Claude: от регистрации до Claude Code, деплой, агенты, Skills |
+| **FULL Claude Projects Guide For Beginners** | https://youtu.be/fOnKo_Hole8 | 22 мин | Projects: Instructions, Custom Instructions, Files, Cowork Projects |
+| **FULL Claude Cowork Tutorial For Beginners** | https://youtu.be/JdQ_FHgP5ms | 40 мин | Cowork: Dispatch, Computer Use, Skills, совместная работа |
+| **Claude Tutorials (playlist)** | https://www.youtube.com/playlist?list=PLtPgUfajvh_YNdUozVRM15RLYAMG5x_h6 | — | Плейлист всех уроков по Claude (Web, Cowork, Codex, Projects) |
 
 ## Типичный контент
 
