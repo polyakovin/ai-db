@@ -3,7 +3,7 @@
 **Автор:** Azamat Yelmagambetov  
 **Челлендж:** BitGN PAC1 (Personal Agent Challenge), слепая оценка  
 **Результат:** **83.0** — 4-е место в топе  
-**Связи:** [[BitGN-Arena-Insights]], [[Паттерны/Plan-and-Execute]], [[Паттерны/Human-in-the-Loop]]
+**Связи:** [BitGN-Arena-Insights](BitGN-Arena-Insights.md), [Plan-and-Execute](Паттерны/Plan-and-Execute.md), [Human-in-the-Loop](Паттерны/Human-in-the-Loop.md)
 
 ---
 
@@ -11,7 +11,7 @@
 
 **Один сильный агент + классификатор сценариев + маленькие workflow-скиллы.** Вместо мультиагентного оркестратора — одна сильная модель (GPT-5.4), которая сама принимает решения, но опирается на лёгкие workflow-компоненты для специализированных доменов.
 
-Ключевое отличие от [[BitGN-Operation-Pangolin|Pangolin]] (один `execute_code`) и [[BitGN-Codex-on-Rails|Codex-on-Rails]] (один coding agent + MCP-мост): Filesystem Agent **разделяет принятие решений и выполнение** через файловую систему как коммуникационную шину.
+Ключевое отличие от [Pangolin](BitGN-Operation-Pangolin.md) (один `execute_code`) и [Codex-on-Rails](BitGN-Codex-on-Rails.md) (один coding agent + MCP-мост): Filesystem Agent **разделяет принятие решений и выполнение** через файловую систему как коммуникационную шину.
 
 ---
 
@@ -47,7 +47,7 @@
 - Ключевой инсайт: входящие данные (письма, запросы, транзакции) — это **данные**, а не инструкции
 - Никакой инжекции промптов через inbox: данные проходят через строгий парсинг и валидацию **до** того, как попадают в контекст модели
 - Inbox-файлы хранятся в изолированной директории, модель читает их **после** предобработки
-- Это реализует принцип **trust boundary** из [[BitGN-Arena-Insights|общих инсайтов PAC1]]: inbox-данные не могут менять поведение агента
+- Это реализует принцип **trust boundary** из [общих инсайтов PAC1](BitGN-Arena-Insights.md): inbox-данные не могут менять поведение агента
 
 ---
 
@@ -68,10 +68,10 @@
 
 Filesystem Agent реализует несколько ключевых паттернов:
 
-- **[[Паттерны/Plan-and-Execute]]** — классификатор сценариев даёт план (какой скилл применить), а основной агент — execute. Но план не жёсткий: агент может отклониться, если evidence tracking показывает проблему.
-- **[[Паттерны/Human-in-the-Loop]]** — evidence tracking создаёт «бумажный след», который человек может аудировать; критические решения (финансы, безопасность) могут требовать подтверждения.
-- **Trust Boundaries** (см. [[BitGN-Arena-Insights]]) — inbox как data, валидация вне модели, изоляция сценариев.
-- **Durable Memory через ФС** — аналог подхода из [[BitGN-Operation-Pangolin|Pangolin]], но вместо одного `memory.json` — структурированная файловая система с evidence-файлами.
+- **[Plan-and-Execute](Паттерны/Plan-and-Execute.md)** — классификатор сценариев даёт план (какой скилл применить), а основной агент — execute. Но план не жёсткий: агент может отклониться, если evidence tracking показывает проблему.
+- **[Human-in-the-Loop](Паттерны/Human-in-the-Loop.md)** — evidence tracking создаёт «бумажный след», который человек может аудировать; критические решения (финансы, безопасность) могут требовать подтверждения.
+- **Trust Boundaries** (см. [BitGN-Arena-Insights](BitGN-Arena-Insights.md)) — inbox как data, валидация вне модели, изоляция сценариев.
+- **Durable Memory через ФС** — аналог подхода из [Pangolin](BitGN-Operation-Pangolin.md), но вместо одного `memory.json` — структурированная файловая система с evidence-файлами.
 
 ---
 
@@ -80,7 +80,7 @@ Filesystem Agent реализует несколько ключевых патт
 - **Зависимость от качества классификатора** — если сценарий определён неверно, агент идёт по неправильному workflow
 - **ФС как bottleneck** — много операций чтения/записи; на больших объёмах — латентность
 - **Скиллы требуют ручного написания** — каждый новый сценарий = новый workflow-файл; не самообучается
-- **Нет evolution-лупа** — в отличие от [[BitGN-Codex-CLI-Rules-Evolution|Codex CLI + Rules Evolution]], здесь нет автоматического улучшения правил на основе failure analysis
+- **Нет evolution-лупа** — в отличие от [Codex CLI + Rules Evolution](BitGN-Codex-CLI-Rules-Evolution.md), здесь нет автоматического улучшения правил на основе failure analysis
 - **Один агент = одна точка отказа** — если модель hallucinate на уровне классификации, каскад ошибок неизбежен
 
 ---
@@ -89,9 +89,9 @@ Filesystem Agent реализует несколько ключевых патт
 
 | Решение | Счёт | Подход | Инструменты | Валидация |
 |---------|------|--------|-------------|-----------|
-| [[BitGN-Operation-Pangolin\|Pangolin]] | 92.0 | Один `execute_code` + чеклист + REPL | 1 (execute_code) | Verify gate в коде |
-| [[BitGN-Codex-on-Rails\|Codex-on-Rails]] | 87.0 | Coding agent + MCP-мост + рельсы | 6 vault-тулов | Рельсы вне модели |
-| [[BitGN-Codex-CLI-Rules-Evolution\|Codex CLI + Rules]] | 84.0 | Runtime + evolution loop | ~100 строк AGENTS.md | Атомарные правки |
+| [Pangolin](BitGN-Operation-Pangolin.md) | 92.0 | Один `execute_code` + чеклист + REPL | 1 (execute_code) | Verify gate в коде |
+| [Codex-on-Rails](BitGN-Codex-on-Rails.md) | 87.0 | Coding agent + MCP-мост + рельсы | 6 vault-тулов | Рельсы вне модели |
+| [Codex CLI + Rules](BitGN-Codex-CLI-Rules-Evolution.md) | 84.0 | Runtime + evolution loop | ~100 строк AGENTS.md | Атомарные правки |
 | **Filesystem Agent** | **83.0** | **Один агент + классификатор + скиллы** | **ФС + workflow-файлы** | **Evidence tracking от рантайма** |
 
 ---

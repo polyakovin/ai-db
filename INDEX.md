@@ -19,88 +19,88 @@
 
 ## Карта разделов
 
-### 🧠 [[Архитектура агентов/Архитектура-агентов|Архитектура агентов]]
+### 🧠 [Архитектура агентов](Архитектура агентов/Архитектура-агентов.md)
 
 Архитектурные стили и подходы: от цепочки вызовов до многоагентных систем.
 
-- [[Архитектура агентов/ReAct-агент|ReAct-агент]] — Reasoning + Acting, базовый цикл
-- [[Архитектура агентов/Plan-and-Execute|Plan-and-Execute]] — планирование до исполнения
-- [[Архитектура агентов/Multi-Agent-Orchestration|Multi-Agent Orchestration]] — оркестрация нескольких агентов
-- [[Архитектура агентов/Tool-Use-паттерны|Tool-Use паттерны]] — вызов инструментов и API
-- [[Архитектура агентов/RAG-и-агенты|RAG и агенты]] — retrieval-augmented generation в агентном контуре
-- [[Архитектура агентов/MCP-протокол|MCP-протокол]] — Model Context Protocol
+- [ReAct-агент](Архитектура агентов/ReAct-агент.md) — Reasoning + Acting, базовый цикл
+- [Plan-and-Execute](Архитектура агентов/Plan-and-Execute.md) — планирование до исполнения
+- [Multi-Agent Orchestration](Архитектура агентов/Multi-Agent-Orchestration.md) — оркестрация нескольких агентов
+- [Tool-Use паттерны](Архитектура агентов/Tool-Use-паттерны.md) — вызов инструментов и API
+- [RAG и агенты](Архитектура агентов/RAG-и-агенты.md) — retrieval-augmented generation в агентном контуре
+- [MCP-протокол](Архитектура агентов/MCP-протокол.md) — Model Context Protocol
 
-### 🛠 [[Инструментарий/Инструментарий|Инструментарий]]
+### 🛠 [Инструментарий](Инструментарий/Инструментарий.md)
 
 Библиотеки, фреймворки и платформы для построения агентов.
 
-- [[Инструментарий/LangChain|LangChain]] — цепочки, агенты, инструменты
-- [[Инструментарий/LangGraph|LangGraph]] — графовые агентные системы
-- [[Инструментарий/CrewAI|CrewAI]] — многоагентная оркестрация
-- [[Инструментарий/AutoGen|AutoGen]] — Microsoft-фреймворк для агентов
-- [[Инструментарий/OpenAI-Agents-SDK|OpenAI Agents SDK]] — нативный SDK OpenAI
-- [[Инструментарий/Anthropic-Tool-Use|Anthropic Tool Use]] — нативный tool-use от Anthropic
-- [[Инструментарий/DSPy|DSPy]] — программирование языковых моделей
-- [[Инструментарий/Hermes-Agent|Hermes Agent]] — фреймворк Nous Research
+- [LangChain](Инструментарий/LangChain.md) — цепочки, агенты, инструменты
+- [LangGraph](Инструментарий/LangGraph.md) — графовые агентные системы
+- [CrewAI](Инструментарий/CrewAI.md) — многоагентная оркестрация
+- [AutoGen](Инструментарий/AutoGen.md) — Microsoft-фреймворк для агентов
+- [OpenAI Agents SDK](Инструментарий/OpenAI-Agents-SDK.md) — нативный SDK OpenAI
+- [Anthropic Tool Use](Инструментарий/Anthropic-Tool-Use.md) — нативный tool-use от Anthropic
+- [DSPy](Инструментарий/DSPy.md) — программирование языковых моделей
+- [Hermes Agent](Инструментарий/Hermes-Agent.md) — фреймворк Nous Research
 
-### 📋 [[Кейсы практики/Кейсы-практики|Кейсы практики]]
+### 📋 [Кейсы практики](Кейсы практики/Кейсы-практики.md)
 
 Реальные сценарии внедрения, результаты, выводы.
 
-- [[Кейсы практики/Кейс-поддержка-клиентов|Поддержка клиентов]] — агент в саппорте
-- [[Кейсы практики/Кейс-код-ревью|Код-ревью]] — автоматизация ревью
-- [[Кейсы практики/Кейс-дата-пайплайны|Дата-пайплайны]] — агенты в ETL
-- [[Кейсы практики/Кейс-документирование|Документирование]] — генерация и актуализация документации
-- [[Кейсы практики/Кейс-онбординг|Онбординг]] — агент-ассистент для новых сотрудников
+- [Поддержка клиентов](Кейсы практики/Кейс-поддержка-клиентов.md) — агент в саппорте
+- [Код-ревью](Кейсы практики/Кейс-код-ревью.md) — автоматизация ревью
+- [Дата-пайплайны](Кейсы практики/Кейс-дата-пайплайны.md) — агенты в ETL
+- [Документирование](Кейсы практики/Кейс-документирование.md) — генерация и актуализация документации
+- [Онбординг](Кейсы практики/Кейс-онбординг.md) — агент-ассистент для новых сотрудников
 
-### 🎯 [[Паттерны/Паттерны|Паттерны]]
+### 🎯 [Паттерны](Паттерны/Паттерны.md)
 
 Проверенные шаблоны проектирования агентных систем.
 
-- [[Паттерны/Guardrails|Guardrails]] — ограждения и валидация вывода
-- [[Паттерны/Human-in-the-Loop|Human-in-the-Loop]] — человек в цикле принятия решений
-- [[Паттерны/Memory-паттерны|Memory-паттерны]] — управление памятью агента
-- [[Паттерны/Error-Recovery|Error Recovery]] — восстановление после ошибок
-- [[Паттерны/Evaluations|Evaluations]] — оценка качества агентов
-- [[Паттерны/Streaming-и-интерфейсы|Streaming и интерфейсы]] — потоковый вывод и UX
-- [[Паттерны/Контроль-расходов|Контроль расходов]] — управление стоимостью вызовов LLM
+- [Guardrails](Паттерны/Guardrails.md) — ограждения и валидация вывода
+- [Human-in-the-Loop](Паттерны/Human-in-the-Loop.md) — человек в цикле принятия решений
+- [Memory-паттерны](Паттерны/Memory-паттерны.md) — управление памятью агента
+- [Error Recovery](Паттерны/Error-Recovery.md) — восстановление после ошибок
+- [Evaluations](Паттерны/Evaluations.md) — оценка качества агентов
+- [Streaming и интерфейсы](Паттерны/Streaming-и-интерфейсы.md) — потоковый вывод и UX
+- [Контроль расходов](Паттерны/Контроль-расходов.md) — управление стоимостью вызовов LLM
 
 ### 📝 Статьи и переводы
 
 Переводы и конспекты ключевых статей об AI-агентах.
 
-- [[Статьи-переводы/Обзор|Обзор раздела]]
-- [[Статьи-переводы/Harness-Engineering-OpenAI|Harness Engineering — OpenAI (2026)]] — построение продукта с 0 строк ручного кода через Codex
-- [[Статьи-переводы/BitGN-Arena-Insights|BitGN Arena — архитектурные инсайты PAC1]] — обзор, метрики и сравнение топ-5 решений
-  - [[Статьи-переводы/BitGN-Operation-Pangolin|Operation Pangolin]] (92.0) — execute_code + REPL + чеклист
-  - [[Статьи-переводы/BitGN-Codex-on-Rails|Codex-on-Rails]] (87.0) — MCP-мост + рельсы
-  - [[Статьи-переводы/BitGN-Codex-CLI-Rules-Evolution|Codex CLI + Rules Evolution]] (84.0) — runtime evolution
-  - [[Статьи-переводы/BitGN-Filesystem-Agent|Filesystem Agent]] (83.0) — workflow-скиллы
-  - [[Статьи-переводы/BitGN-Plan-REPL-Agent|Plan-REPL Agent]] (60.6) — лимиты prompt engineering
-- [[Статьи переводы/Anthropic-Building-effective-agents|Anthropic: Building Effective Agents]]
-- [[Статьи переводы/OpenAI-Agents-Practices|OpenAI: Agent Practices]]
-- [[Статьи переводы/Lilian-Weng-Agent-Systems|Lilian Weng: LLM-Powered Autonomous Agents]]
-- [[Статьи переводы/Chip-Huyen-Agents|Chip Huyen: Agents]]
+- [Обзор раздела](Статьи-переводы/Обзор.md)
+- [Harness Engineering — OpenAI (2026)](Статьи-переводы/Harness-Engineering-OpenAI.md) — построение продукта с 0 строк ручного кода через Codex
+- [BitGN Arena — архитектурные инсайты PAC1](Статьи-переводы/BitGN-Arena-Insights.md) — обзор, метрики и сравнение топ-5 решений
+  - [Operation Pangolin](Статьи-переводы/BitGN-Operation-Pangolin.md) (92.0) — execute_code + REPL + чеклист
+  - [Codex-on-Rails](Статьи-переводы/BitGN-Codex-on-Rails.md) (87.0) — MCP-мост + рельсы
+  - [Codex CLI + Rules Evolution](Статьи-переводы/BitGN-Codex-CLI-Rules-Evolution.md) (84.0) — runtime evolution
+  - [Filesystem Agent](Статьи-переводы/BitGN-Filesystem-Agent.md) (83.0) — workflow-скиллы
+  - [Plan-REPL Agent](Статьи-переводы/BitGN-Plan-REPL-Agent.md) (60.6) — лимиты prompt engineering
+- [Anthropic: Building Effective Agents](Статьи переводы/Anthropic-Building-effective-agents.md)
+- [OpenAI: Agent Practices](Статьи переводы/OpenAI-Agents-Practices.md)
+- [Lilian Weng: LLM-Powered Autonomous Agents](Статьи переводы/Lilian-Weng-Agent-Systems.md)
+- [Chip Huyen: Agents](Статьи переводы/Chip-Huyen-Agents.md)
 
-### ⚖️ [[Сравнение платформ/Сравнение-платформ|Сравнение платформ]]
+### ⚖️ [Сравнение платформ](Сравнение платформ/Сравнение-платформ.md)
 
 Сравнительный анализ фреймворков, платформ и моделей.
 
-- [[Сравнение платформ/LangChain-vs-LangGraph|LangChain vs LangGraph]]
-- [[Сравнение платформ/CrewAI-vs-AutoGen|CrewAI vs AutoGen]]
-- [[Сравнение платформ/OpenAI-vs-Anthropic-Agents|OpenAI Agents vs Anthropic Tool Use]]
-- [[Сравнение платформ/Модели-для-агентов|Модели для агентов]] — сравнение LLM для агентных задач
+- [LangChain vs LangGraph](Сравнение платформ/LangChain-vs-LangGraph.md)
+- [CrewAI vs AutoGen](Сравнение платформ/CrewAI-vs-AutoGen.md)
+- [OpenAI Agents vs Anthropic Tool Use](Сравнение платформ/OpenAI-vs-Anthropic-Agents.md)
+- [Модели для агентов](Сравнение платформ/Модели-для-агентов.md) — сравнение LLM для агентных задач
 
-### 📖 [[Recipes/Recipes|Recipes]]
+### 📖 [Recipes](Recipes/Recipes.md)
 
 Готовые рецепты — пошаговые руководства для типовых задач.
 
-- [[Recipes/Agent-with-Tools|Агент с инструментами]] — минимальный агент с вызовом функций
-- [[Recipes/RAG-Agent|RAG-агент]] — агент с поиском по документам
-- [[Recipes/Multi-Agent-Debate|Мультиагентные дебаты]] — несколько агентов обсуждают решение
-- [[Recipes/Agent-Code-Interpreter|Агент с интерпретатором кода]] — агент, исполняющий код
-- [[Recipes/Agent-Web-Search|Агент с веб-поиском]] — агент, использующий поиск в интернете
-- [[Recipes/Agent-SQL|Агент для SQL]] — агент, генерирующий и выполняющий SQL-запросы
+- [Агент с инструментами](Recipes/Agent-with-Tools.md) — минимальный агент с вызовом функций
+- [RAG-агент](Recipes/RAG-Agent.md) — агент с поиском по документам
+- [Мультиагентные дебаты](Recipes/Multi-Agent-Debate.md) — несколько агентов обсуждают решение
+- [Агент с интерпретатором кода](Recipes/Agent-Code-Interpreter.md) — агент, исполняющий код
+- [Агент с веб-поиском](Recipes/Agent-Web-Search.md) — агент, использующий поиск в интернете
+- [Агент для SQL](Recipes/Agent-SQL.md) — агент, генерирующий и выполняющий SQL-запросы
 
 ---
 
@@ -136,7 +136,7 @@
 ## Как работать с vault
 
 1. **Навигация** — открывайте файлы через Obsidian Graph View или Ctrl/Cmd+O
-2. **Связи** — используйте `[[wikilinks]]` для связывания заметок; все связи видны на графе
+2. **Связи** — используйте `[wikilinks](wikilinks.md)` для связывания заметок; все связи видны на графе
 3. **Шаблоны** — для новых заметок в разделах используйте шаблоны из папки `_templates` (будет добавлена)
 4. **Поиск** — Ctrl/Cmd+Shift+F для полнотекстового поиска по vault
 5. **Git** — коммитьте изменения осмысленно: `раздел: что сделано`
@@ -144,4 +144,4 @@
 ---
 
 > *Последнее обновление: 2026-06-21*  
-> *Владелец: [[INDEX]]*
+> *Владелец: [INDEX](INDEX.md)*
