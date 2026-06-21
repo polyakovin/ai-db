@@ -71,6 +71,12 @@
 
 - [[Статьи-переводы/Обзор|Обзор раздела]]
 - [[Статьи-переводы/Harness-Engineering-OpenAI|Harness Engineering — OpenAI (2026)]] — построение продукта с 0 строк ручного кода через Codex
+- [[Статьи-переводы/BitGN-Arena-Insights|BitGN Arena — архитектурные инсайты PAC1]] — обзор, метрики и сравнение топ-5 решений
+  - [[Статьи-переводы/BitGN-Operation-Pangolin|Operation Pangolin]] (92.0) — execute_code + REPL + чеклист
+  - [[Статьи-переводы/BitGN-Codex-on-Rails|Codex-on-Rails]] (87.0) — MCP-мост + рельсы
+  - [[Статьи-переводы/BitGN-Codex-CLI-Rules-Evolution|Codex CLI + Rules Evolution]] (84.0) — runtime evolution
+  - [[Статьи-переводы/BitGN-Filesystem-Agent|Filesystem Agent]] (83.0) — workflow-скиллы
+  - [[Статьи-переводы/BitGN-Plan-REPL-Agent|Plan-REPL Agent]] (60.6) — лимиты prompt engineering
 - [[Статьи переводы/Anthropic-Building-effective-agents|Anthropic: Building Effective Agents]]
 - [[Статьи переводы/OpenAI-Agents-Practices|OpenAI: Agent Practices]]
 - [[Статьи переводы/Lilian-Weng-Agent-Systems|Lilian Weng: LLM-Powered Autonomous Agents]]
