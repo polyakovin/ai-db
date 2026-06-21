@@ -3,7 +3,7 @@
 **Источник:** BitGN PAC1 (Personal Agent Challenge)
 **Автор:** Maksim Popkov (Sber)
 **Счёт:** 84.0 / 104 (Accuracy — PAC1)
-**Контекст:** Третье место в слепом зачёте PAC1, сразу за [[BitGN-Codex-on-Rails|Codex-on-Rails]] (87.0)
+**Контекст:** Третье место в слепом зачёте PAC1, сразу за [Codex-on-Rails](BitGN-Codex-on-Rails.md) (87.0)
 
 ## Ключевая идея
 
@@ -41,7 +41,7 @@
 - **Не монолитная инструкция**, а оглавление (table of contents) — отсылает к структурированной `docs/`.
 - Избегает главной ловушки: «всё важно → всё шум».
 - Каждый пункт `AGENTS.md` — одна чёткая директива, ссылающаяся на конкретный артефакт.
-- Созвучно с подходом [[Статьи-переводы/Harness-Engineering-OpenAI|Harness Engineering]]: `AGENTS.md` как указатель, не как склад.
+- Созвучно с подходом [Harness Engineering](Статьи-переводы/Harness-Engineering-OpenAI.md): `AGENTS.md` как указатель, не как склад.
 
 ### 3. Атомарные правки правил
 
@@ -59,7 +59,7 @@
 ### 5. Strict completion contract
 
 - Рантайм-агент обязан вернуть структурированный `TaskResult`, а не свободный текст.
-- Outcome codes, typed outputs — как в [[BitGN-Arena-Insights|общих паттернах топ-решений]].
+- Outcome codes, typed outputs — как в [общих паттернах топ-решений](BitGN-Arena-Insights.md).
 - Упрощает анализ провалов в evolution loop: машиночитаемый контракт вместо парсинга естественного языка.
 
 ### 6. Эволюция через failure analysis
@@ -81,12 +81,12 @@
 
 ## Связи
 
-- [[BitGN-Arena-Insights]] — общий контекст PAC1 и лидерборда; разделение runtime/evolution как общий паттерн топ-решений
-- [[Инструментарий/Codex CLI]] — основной инструмент runtime solver
-- [[Паттерны/Agent-to-agent-review]] — evolution loop как форма agent-to-agent review: один агент анализирует провалы другого и предлагает правки правил
-- [[Статьи-переводы/Harness-Engineering-OpenAI|Harness Engineering]] — та же философия: AGENTS.md как оглавление, артефакты в репозитории, doc-gardening
-- [[Паттерны/Evaluations]] — failure analysis как evaluative петля
-- [[Архитектура-агентов/Plan-and-Execute|Plan-and-Execute]] — execution plans как first-class артефакты
+- [BitGN-Arena-Insights](BitGN-Arena-Insights.md) — общий контекст PAC1 и лидерборда; разделение runtime/evolution как общий паттерн топ-решений
+- [Codex CLI](Инструментарий/Codex CLI.md) — основной инструмент runtime solver
+- [Agent-to-agent-review](Паттерны/Agent-to-agent-review.md) — evolution loop как форма agent-to-agent review: один агент анализирует провалы другого и предлагает правки правил
+- [Harness Engineering](Статьи-переводы/Harness-Engineering-OpenAI.md) — та же философия: AGENTS.md как оглавление, артефакты в репозитории, doc-gardening
+- [Evaluations](Паттерны/Evaluations.md) — failure analysis как evaluative петля
+- [Plan-and-Execute](Архитектура-агентов/Plan-and-Execute.md) — execution plans как first-class артефакты
 
 ## Выводы
 
