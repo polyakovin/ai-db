@@ -41,7 +41,7 @@
 - **Не монолитная инструкция**, а оглавление (table of contents) — отсылает к структурированной `docs/`.
 - Избегает главной ловушки: «всё важно → всё шум».
 - Каждый пункт `AGENTS.md` — одна чёткая директива, ссылающаяся на конкретный артефакт.
-- Созвучно с подходом [Harness Engineering](Статьи-переводы/Harness-Engineering-OpenAI.md): `AGENTS.md` как указатель, не как склад.
+- Созвучно с подходом Harness Engineering: `AGENTS.md` как указатель, не как склад.
 
 ### 3. Атомарные правки правил
 
@@ -82,11 +82,11 @@
 ## Связи
 
 - [BitGN-Arena-Insights](BitGN-Arena-Insights.md) — общий контекст PAC1 и лидерборда; разделение runtime/evolution как общий паттерн топ-решений
-- [Codex CLI](Инструментарий/Codex%20CLI.md) — основной инструмент runtime solver
-- [Agent-to-agent-review](Паттерны/Agent-to-agent-review.md) — evolution loop как форма agent-to-agent review: один агент анализирует провалы другого и предлагает правки правил
-- [Harness Engineering](Статьи-переводы/Harness-Engineering-OpenAI.md) — та же философия: AGENTS.md как оглавление, артефакты в репозитории, doc-gardening
-- [Evaluations](Паттерны/Evaluations.md) — failure analysis как evaluative петля
-- [Plan-and-Execute](Архитектура-агентов/Plan-and-Execute.md) — execution plans как first-class артефакты
+- Codex CLI — основной инструмент runtime solver
+- Agent-to-agent-review — evolution loop как форма agent-to-agent review: один агент анализирует провалы другого и предлагает правки правил
+- Harness Engineering — та же философия: AGENTS.md как оглавление, артефакты в репозитории, doc-gardening
+- Evaluations — failure analysis как evaluative петля
+- Plan-and-Execute — execution plans как first-class артефакты
 
 ## Выводы
 

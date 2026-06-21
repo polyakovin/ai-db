@@ -3,7 +3,7 @@
 **Автор:** Azamat Yelmagambetov  
 **Челлендж:** BitGN PAC1 (Personal Agent Challenge), слепая оценка  
 **Результат:** **83.0** — 4-е место в топе  
-**Связи:** [BitGN-Arena-Insights](BitGN-Arena-Insights.md), [Plan-and-Execute](Паттерны/Plan-and-Execute.md), [Human-in-the-Loop](Паттерны/Human-in-the-Loop.md)
+**Связи:** [BitGN-Arena-Insights](BitGN-Arena-Insights.md), Plan-and-Execute, Human-in-the-Loop
 
 ---
 
@@ -68,8 +68,8 @@
 
 Filesystem Agent реализует несколько ключевых паттернов:
 
-- **[Plan-and-Execute](Паттерны/Plan-and-Execute.md)** — классификатор сценариев даёт план (какой скилл применить), а основной агент — execute. Но план не жёсткий: агент может отклониться, если evidence tracking показывает проблему.
-- **[Human-in-the-Loop](Паттерны/Human-in-the-Loop.md)** — evidence tracking создаёт «бумажный след», который человек может аудировать; критические решения (финансы, безопасность) могут требовать подтверждения.
+- **Plan-and-Execute** — классификатор сценариев даёт план (какой скилл применить), а основной агент — execute. Но план не жёсткий: агент может отклониться, если evidence tracking показывает проблему.
+- **Human-in-the-Loop** — evidence tracking создаёт «бумажный след», который человек может аудировать; критические решения (финансы, безопасность) могут требовать подтверждения.
 - **Trust Boundaries** (см. [BitGN-Arena-Insights](BitGN-Arena-Insights.md)) — inbox как data, валидация вне модели, изоляция сценариев.
 - **Durable Memory через ФС** — аналог подхода из [Pangolin](BitGN-Operation-Pangolin.md), но вместо одного `memory.json` — структурированная файловая система с evidence-файлами.
 

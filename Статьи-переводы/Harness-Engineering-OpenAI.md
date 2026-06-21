@@ -79,11 +79,11 @@
 
 ## Связи с другими разделами
 
-- [Codex vs Hermes vs другие платформы](Сравнение-платформ/Обзор.md)
-- [Plan-and-Execute паттерн](Архитектура-агентов/Plan-and-Execute.md)
-- [CI/CD с агентами](Кейсы-практики/Кейс-CI-CD-агенты.md)
-- [Как структурировать AGENTS.md](Recipes/Обзор.md)
-- [Agent-to-agent ревью](Паттерны/Agent-to-agent-review.md)
+- Codex vs Hermes vs другие платформы
+- Plan-and-Execute паттерн
+- CI/CD с агентами
+- Как структурировать AGENTS.md
+- Agent-to-agent ревью
 
 ---
 

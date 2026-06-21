@@ -167,12 +167,12 @@ Rails — это **внешние по отношению к модели** ме
 ## Связи с другими заметками
 
 - [BitGN-Arena-Insights](BitGN-Arena-Insights.md) — общий обзор PAC1 и сравнение архитектур
-- [MCP-протокол](Архитектура-агентов/MCP-протокол.md) — Model Context Protocol как стандарт подключения инструментов
-- [Guardrails](Паттерны/Guardrails.md) — «рельсы» как эволюция guardrails: от промпта к рантайм-проверкам
-- [BitGN-Operation-Pangolin](Статьи-переводы/BitGN-Operation-Pangolin.md) — архитектура-победитель PAC1 (92.0): один инструмент, чеклист, REPL
-- [Harness Engineering](Статьи-переводы/Harness-Engineering-OpenAI.md) — философия «люди направляют, агенты исполняют»
-- [Error-Recovery](Паттерны/Error-Recovery.md) — восстановление после ошибок в контексте рельс
-- [Tool-Use-паттерны](Архитектура-агентов/Tool-Use-паттерны.md) — MCP как стандартизация tool-use
+- MCP-протокол — Model Context Protocol как стандарт подключения инструментов
+- Guardrails — «рельсы» как эволюция guardrails: от промпта к рантайм-проверкам
+- BitGN-Operation-Pangolin — архитектура-победитель PAC1 (92.0): один инструмент, чеклист, REPL
+- Harness Engineering — философия «люди направляют, агенты исполняют»
+- Error-Recovery — восстановление после ошибок в контексте рельс
+- Tool-Use-паттерны — MCP как стандартизация tool-use
 
 ---
 

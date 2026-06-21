@@ -3,7 +3,7 @@
 **Автор:** Illia Dzivinskyi (Grammarly)  
 **Челлендж:** BitGN PAC1 (Personal Agent Challenge), слепая оценка  
 **Результат:** **92.0** — первое место в Ultimate-зачёте  
-**Связи:** [BitGN-Arena-Insights](BitGN-Arena-Insights.md), [Plan-and-Execute](Архитектура-агентов/Plan-and-Execute.md), [Guardrails](Паттерны/Guardrails.md)
+**Связи:** [BitGN-Arena-Insights](BitGN-Arena-Insights.md), Plan-and-Execute, Guardrails
 
 ---
 
@@ -73,10 +73,10 @@
 ## Связи с другими паттернами
 
 - [BitGN Arena Insights](BitGN-Arena-Insights.md) — Pangolin как топ-решение PAC1, общий анализ архитектур
-- [Plan-and-Execute](Архитектура-агентов/Plan-and-Execute.md) — чеклист как план, REPL как execute; Pangolin — гибрид Plan+REPL
-- [Guardrails](Паттерны/Guardrails.md) — verify gate как жёсткий guardrail на выходе; trust boundaries через песочницу
-- [Error Recovery](Паттерны/Error-Recovery.md) — verify gate → retry loop; REPL как recovery-механизм
-- [Агент с интерпретатором кода](Recipes/Agent-Code-Interpreter.md) — Pangolin как предельный случай: **только** интерпретатор
+- Plan-and-Execute — чеклист как план, REPL как execute; Pangolin — гибрид Plan+REPL
+- Guardrails — verify gate как жёсткий guardrail на выходе; trust boundaries через песочницу
+- Error Recovery — verify gate → retry loop; REPL как recovery-механизм
+- Агент с интерпретатором кода — Pangolin как предельный случай: **только** интерпретатор
 
 ---
 
