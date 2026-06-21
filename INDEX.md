@@ -65,10 +65,12 @@
 - [[Паттерны/Streaming-и-интерфейсы|Streaming и интерфейсы]] — потоковый вывод и UX
 - [[Паттерны/Контроль-расходов|Контроль расходов]] — управление стоимостью вызовов LLM
 
-### 📝 [[Статьи переводы/Статьи-переводы|Статьи и переводы]]
+### 📝 Статьи и переводы
 
 Переводы и конспекты ключевых статей об AI-агентах.
 
+- [[Статьи-переводы/Обзор|Обзор раздела]]
+- [[Статьи-переводы/Harness-Engineering-OpenAI|Harness Engineering — OpenAI (2026)]] — построение продукта с 0 строк ручного кода через Codex
 - [[Статьи переводы/Anthropic-Building-effective-agents|Anthropic: Building Effective Agents]]
 - [[Статьи переводы/OpenAI-Agents-Practices|OpenAI: Agent Practices]]
 - [[Статьи переводы/Lilian-Weng-Agent-Systems|Lilian Weng: LLM-Powered Autonomous Agents]]
