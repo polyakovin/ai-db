@@ -1,0 +1,10 @@
+{
+  "livePreview": true,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "assets",
+  "useMarkdownLinks": true
+}

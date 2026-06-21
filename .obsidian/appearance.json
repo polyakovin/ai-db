@@ -1,0 +1,9 @@
+{
+  "theme": "obsidian",
+  "baseFontSize": 15,
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "JetBrains Mono",
+  "showViewHeader": true,
+  "nativeMenus": true
+}
