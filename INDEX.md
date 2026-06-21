@@ -19,16 +19,16 @@
 
 ## Карта разделов
 
-### 🧠 [Архитектура агентов](Архитектура агентов/Архитектура-агентов.md)
+### 🧠 [Архитектура агентов](Архитектура%20агентов/Архитектура-агентов.md)
 
 Архитектурные стили и подходы: от цепочки вызовов до многоагентных систем.
 
-- [ReAct-агент](Архитектура агентов/ReAct-агент.md) — Reasoning + Acting, базовый цикл
-- [Plan-and-Execute](Архитектура агентов/Plan-and-Execute.md) — планирование до исполнения
-- [Multi-Agent Orchestration](Архитектура агентов/Multi-Agent-Orchestration.md) — оркестрация нескольких агентов
-- [Tool-Use паттерны](Архитектура агентов/Tool-Use-паттерны.md) — вызов инструментов и API
-- [RAG и агенты](Архитектура агентов/RAG-и-агенты.md) — retrieval-augmented generation в агентном контуре
-- [MCP-протокол](Архитектура агентов/MCP-протокол.md) — Model Context Protocol
+- [ReAct-агент](Архитектура%20агентов/ReAct-агент.md) — Reasoning + Acting, базовый цикл
+- [Plan-and-Execute](Архитектура%20агентов/Plan-and-Execute.md) — планирование до исполнения
+- [Multi-Agent Orchestration](Архитектура%20агентов/Multi-Agent-Orchestration.md) — оркестрация нескольких агентов
+- [Tool-Use паттерны](Архитектура%20агентов/Tool-Use-паттерны.md) — вызов инструментов и API
+- [RAG и агенты](Архитектура%20агентов/RAG-и-агенты.md) — retrieval-augmented generation в агентном контуре
+- [MCP-протокол](Архитектура%20агентов/MCP-протокол.md) — Model Context Protocol
 
 ### 🛠 [Инструментарий](Инструментарий/Инструментарий.md)
 
@@ -43,15 +43,15 @@
 - [DSPy](Инструментарий/DSPy.md) — программирование языковых моделей
 - [Hermes Agent](Инструментарий/Hermes-Agent.md) — фреймворк Nous Research
 
-### 📋 [Кейсы практики](Кейсы практики/Кейсы-практики.md)
+### 📋 [Кейсы практики](Кейсы%20практики/Кейсы-практики.md)
 
 Реальные сценарии внедрения, результаты, выводы.
 
-- [Поддержка клиентов](Кейсы практики/Кейс-поддержка-клиентов.md) — агент в саппорте
-- [Код-ревью](Кейсы практики/Кейс-код-ревью.md) — автоматизация ревью
-- [Дата-пайплайны](Кейсы практики/Кейс-дата-пайплайны.md) — агенты в ETL
-- [Документирование](Кейсы практики/Кейс-документирование.md) — генерация и актуализация документации
-- [Онбординг](Кейсы практики/Кейс-онбординг.md) — агент-ассистент для новых сотрудников
+- [Поддержка клиентов](Кейсы%20практики/Кейс-поддержка-клиентов.md) — агент в саппорте
+- [Код-ревью](Кейсы%20практики/Кейс-код-ревью.md) — автоматизация ревью
+- [Дата-пайплайны](Кейсы%20практики/Кейс-дата-пайплайны.md) — агенты в ETL
+- [Документирование](Кейсы%20практики/Кейс-документирование.md) — генерация и актуализация документации
+- [Онбординг](Кейсы%20практики/Кейс-онбординг.md) — агент-ассистент для новых сотрудников
 
 ### 🎯 [Паттерны](Паттерны/Паттерны.md)
 
@@ -77,19 +77,19 @@
   - [Codex CLI + Rules Evolution](Статьи-переводы/BitGN-Codex-CLI-Rules-Evolution.md) (84.0) — runtime evolution
   - [Filesystem Agent](Статьи-переводы/BitGN-Filesystem-Agent.md) (83.0) — workflow-скиллы
   - [Plan-REPL Agent](Статьи-переводы/BitGN-Plan-REPL-Agent.md) (60.6) — лимиты prompt engineering
-- [Anthropic: Building Effective Agents](Статьи переводы/Anthropic-Building-effective-agents.md)
-- [OpenAI: Agent Practices](Статьи переводы/OpenAI-Agents-Practices.md)
-- [Lilian Weng: LLM-Powered Autonomous Agents](Статьи переводы/Lilian-Weng-Agent-Systems.md)
-- [Chip Huyen: Agents](Статьи переводы/Chip-Huyen-Agents.md)
+- [Anthropic: Building Effective Agents](Статьи-переводы/Anthropic-Building-effective-agents.md)
+- [OpenAI: Agent Practices](Статьи-переводы/OpenAI-Agents-Practices.md)
+- [Lilian Weng: LLM-Powered Autonomous Agents](Статьи-переводы/Lilian-Weng-Agent-Systems.md)
+- [Chip Huyen: Agents](Статьи-переводы/Chip-Huyen-Agents.md)
 
-### ⚖️ [Сравнение платформ](Сравнение платформ/Сравнение-платформ.md)
+### ⚖️ [Сравнение платформ](Сравнение-платформ/Сравнение-платформ.md)
 
 Сравнительный анализ фреймворков, платформ и моделей.
 
-- [LangChain vs LangGraph](Сравнение платформ/LangChain-vs-LangGraph.md)
-- [CrewAI vs AutoGen](Сравнение платформ/CrewAI-vs-AutoGen.md)
-- [OpenAI Agents vs Anthropic Tool Use](Сравнение платформ/OpenAI-vs-Anthropic-Agents.md)
-- [Модели для агентов](Сравнение платформ/Модели-для-агентов.md) — сравнение LLM для агентных задач
+- [LangChain vs LangGraph](Сравнение%20платформ/LangChain-vs-LangGraph.md)
+- [CrewAI vs AutoGen](Сравнение%20платформ/CrewAI-vs-AutoGen.md)
+- [OpenAI Agents vs Anthropic Tool Use](Сравнение%20платформ/OpenAI-vs-Anthropic-Agents.md)
+- [Модели для агентов](Сравнение%20платформ/Модели-для-агентов.md) — сравнение LLM для агентных задач
 
 ### 📖 [Recipes](Recipes/Recipes.md)
 
