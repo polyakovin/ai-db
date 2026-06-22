@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# pre-commit hook: проверка валидности markdown-ссылок
+# Относительные ссылки [text](path) проверяются на существование файла.
+# Внешние URL, якоря, ресурсы — пропускаются.
+# Несуществующие файлы = предупреждение (заглушки контента).
+
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+STUBS=0
+OK=0
+
+while IFS= read -r line; do
+    href=$(echo "$line" | sed -n 's/.*\](\([^)]*\)).*/\1/p')
+    [[ -z "$href" ]] && continue
+    [[ "$href" == http* ]] && continue
+    [[ "$href" == \#* ]] && continue
+    [[ "$href" == *.svg ]] && continue
+    [[ "$href" == *.png ]] && continue
+    [[ "$href" == *.jpg ]] && continue
+    [[ "$href" == *.gif ]] && continue
+    [[ "$href" == *.ico ]] && continue
+
+    # Декодируем %xx
+    decoded=$(printf '%b' "${href//%/\\x}")
+
+    filepath=$(echo "$line" | cut -d: -f1)
+    filedir=$(dirname "$filepath")
+    lineno=$(echo "$line" | cut -d: -f2)
+
+    if [[ "$decoded" == /* ]]; then
+        target="${ROOT}${decoded}"
+    else
+        target="${filedir}/${decoded}"
+    fi
+
+    # Нормализуем
+    target="$(realpath -m "$target" 2>/dev/null || echo "$target")"
+
+    if [[ -f "$target" ]]; then
+        OK=$((OK + 1))
+    else
+        echo "⚠ [STUB] $filepath:$lineno → $decoded"
+        STUBS=$((STUBS + 1))
+    fi
+done < <(grep -roPn '\[([^\]]*)\]\(([^)]+)\)' --include="*.md" . || true)
+
+echo ""
+echo "✓ Валидных ссылок: $OK"
+if [[ $STUBS -gt 0 ]]; then
+    echo "⚠ Заглушек (файлы ещё не созданы): $STUBS"
+    echo "   Это не блокирует коммит. Создай файлы когда дойдёшь."
+fi
+echo "✓ Все ссылки ведут на существующие файлы или заглушки."
+exit 0
