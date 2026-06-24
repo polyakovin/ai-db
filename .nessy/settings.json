@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(glab *)",
+      "Bash(git rebase *)",
+      "Bash(git ls-remote *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(git stash)",
+      "Bash(git *)"
+    ]
+  },
+  "$version": 4
+}
