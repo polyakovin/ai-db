@@ -1,0 +1,2 @@
+- [feedback_git_workflow.md](feedback_git_workflow.md) — MR создаётся автоматически, без вопросов
+- [feedback_project_memory.md](feedback_project_memory.md) — правила хранятся внутри проекта
