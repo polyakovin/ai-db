@@ -4,8 +4,8 @@
 
 ## Материалы
 
-- [Исследование фреймворков для AI-агентов](../tools/agent-frameworks-research.md) — сравнительная карта OpenAI, Anthropic, LangGraph, AutoGen, Semantic Kernel, CrewAI, LlamaIndex и low-code платформ
-- [Модельная карта для AI-агентов](../tools/agent-model-map.md) — критерии выбора моделей для reasoning, tools, code, multimodal и latency/cost
+- [Исследование фреймворков для AI-агентов](agent-frameworks-research.md) — сравнительная карта OpenAI, Anthropic, LangGraph, AutoGen, Semantic Kernel, CrewAI, LlamaIndex и low-code платформ
+- [Модельная карта для AI-агентов](agent-model-map.md) — критерии выбора моделей для reasoning, tools, code, multimodal и latency/cost
 - [Карта кейсов AI-агентов](../patterns/advanced/agent-use-cases.md) — выбор архитектуры и evals под use case
 
 ## Как устроен раздел

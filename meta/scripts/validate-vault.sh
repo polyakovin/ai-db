@@ -63,7 +63,7 @@ while IFS= read -r -d '' file; do
             FAILURES=$((FAILURES + 1))
         fi
     done
-done < <(find ./sources -maxdepth 1 -name '*.md' -type f -print0)
+done < <(find ./sources -name '*.md' -type f -print0)
 
 echo "Valid local markdown links: $OK_LINKS"
 

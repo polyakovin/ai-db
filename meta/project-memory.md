@@ -12,7 +12,7 @@
 - Одна мысль — один файл, без дублей. Ссылаться на canonical note.
 - Порядок разделов фиксирован: navigation → patterns → tools → sources → meta.
 - Внешние источники — с frontmatter (title, url, type, category, tags, added, status).
-- После изменений — запустить `meta/scripts/validate-vault.sh`.
+- После изменений — валидация vault (см. [AGENTS.md](../AGENTS.md) → Проверки).
 - После коммита — сразу `git push`.
 
 ## Принятые решения

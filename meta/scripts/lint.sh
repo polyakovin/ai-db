@@ -3,5 +3,6 @@
 set -euo pipefail
 
 echo "🔍 Lint checks (ai-db)..."
-bash scripts/validate-vault.sh
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+bash "$script_dir/validate-vault.sh"
 echo "✅ Lint passed"
