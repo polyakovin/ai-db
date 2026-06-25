@@ -60,7 +60,7 @@
 1. Изучить [исследование фреймворков](../tools/agent-frameworks-research.md).
 2. Свериться с [модельной картой для агентов](../tools/agent-model-map.md).
 3. Выбрать один из [воспроизводимых рецептов](../patterns/reproducible-agent-recipes.md).
-4. Посмотреть [карты кейсов](../cases/agent-use-cases.md).
+4. Посмотреть [карты кейсов](../patterns/agent-use-cases.md).
 
 Ожидаемый результат: можно выбрать модель, фреймворк, eval и deploy-подход под конкретный use case.
 

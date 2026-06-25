@@ -21,10 +21,8 @@
 |---|---|
 | [navigation](navigation/knowledge-map.md) | Карта vault, backlog, правила поиска |
 | [concepts](concepts/OVERVIEW.md) | Базовые понятия и архитектурные блоки |
-| [patterns](patterns/OVERVIEW.md) | Повторяемые решения, workflow, recipes, практические инструкции |
+| [patterns](patterns/OVERVIEW.md) | Повторяемые решения, workflow, recipes, case-карта, практические инструкции |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
-| [cases](cases/OVERVIEW.md) | Сценарии внедрения и разборы |
-| [comparisons](comparisons/OVERVIEW.md) | Матрицы выбора и сравнительные обзоры |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
 | [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
 
