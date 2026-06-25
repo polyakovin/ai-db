@@ -73,6 +73,6 @@ Approval screen должен показывать не только “да/не
 
 ## Связанные заметки
 
-- [Tool use, function calling и MCP](tool-use-and-mcp.md)
-- [Production operations](../patterns/production-operations.md)
-- [Data governance и compliance](../patterns/data-governance-compliance.md)
+- [Tool use, function calling и MCP](../fundamentals/tool-use-and-mcp.md)
+- [Production operations](../production-operations/production-operations.md)
+- [Data governance и compliance](../architecture-design/data-governance-compliance.md)

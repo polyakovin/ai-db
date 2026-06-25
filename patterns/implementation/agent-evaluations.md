@@ -83,6 +83,6 @@ metrics:
 
 ## Связанные заметки
 
-- [Observability и debugging](../tools/agent-observability-debugging.md)
-- [Production operations](production-operations.md)
-- [RAG для агентов](../patterns/rag-for-agents.md)
+- [Observability и debugging](../../tools/agent-observability-debugging.md)
+- [Production operations](../production-operations/production-operations.md)
+- [RAG для агентов](../architecture-design/rag-for-agents.md)

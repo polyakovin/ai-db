@@ -68,6 +68,6 @@ Retry не должен быть автоматическим для всего.
 
 ## Связанные заметки
 
-- [Безопасность агентных систем](agent-security.md)
-- [Agent Harness](agent-harness.md)
-- [Production operations](../patterns/production-operations.md)
+- [Безопасность агентных систем](../architecture-design/agent-security.md)
+- [Agent Harness](../architecture-design/agent-harness.md)
+- [Production operations](../production-operations/production-operations.md)

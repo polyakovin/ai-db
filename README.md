@@ -9,10 +9,10 @@
 
 - [Карта знаний](navigation/knowledge-map.md) — главный маршрут по vault.
 - [Learning path](navigation/learning-path.md) — порядок погружения от базовой таксономии до production.
-- [Таксономия AI-агентов](patterns/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
-- [Agent Harness](patterns/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
-- [Skills и правила для агентов](patterns/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
-- [Работа с код-агентами](patterns/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
+- [Таксономия AI-агентов](patterns/fundamentals/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
+- [Agent Harness](patterns/architecture-design/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
+- [Skills и правила для агентов](patterns/implementation/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
+- [Работа с код-агентами](patterns/implementation/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
 - [Исследование фреймворков](tools/agent-frameworks-research.md) — выбор OpenAI/Anthropic/LangGraph/AutoGen/CrewAI/LlamaIndex/low-code стека.
 
 ## Структура

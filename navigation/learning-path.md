@@ -6,9 +6,9 @@
 
 Цель: перестать смешивать чат-бота, workflow и автономного агента.
 
-1. Прочитать [таксономию агентов](../patterns/agent-taxonomy.md).
-2. Посмотреть [компоненты agent-системы](../patterns/agent-system-components.md).
-3. Понять роль [agent harness](../patterns/agent-harness.md).
+1. Прочитать [таксономию агентов](../patterns/fundamentals/agent-taxonomy.md).
+2. Посмотреть [компоненты agent-системы](../patterns/architecture-design/agent-system-components.md).
+3. Понять роль [agent harness](../patterns/architecture-design/agent-harness.md).
 
 Ожидаемый результат: можно объяснить, где заканчивается обычный assistant и где начинается agentic system.
 
@@ -16,9 +16,9 @@
 
 Цель: понять, как агент принимает решения и взаимодействует с внешним миром.
 
-1. Прочитать [execution loop агента](../patterns/agent-execution-loop.md).
-2. Прочитать [tool use, function calling и MCP](../patterns/tool-use-and-mcp.md).
-3. Прочитать [context engineering](../patterns/context-engineering.md).
+1. Прочитать [execution loop агента](../patterns/fundamentals/agent-execution-loop.md).
+2. Прочитать [tool use, function calling и MCP](../patterns/fundamentals/tool-use-and-mcp.md).
+3. Прочитать [context engineering](../patterns/fundamentals/context-engineering.md).
 
 Ожидаемый результат: можно нарисовать цикл `state -> plan -> action -> observation -> stop`, объяснить роль tools и назвать риски длинного контекста.
 
@@ -26,9 +26,9 @@
 
 Цель: научиться управлять поведением агента через проверяемые правила, а не надежду на “хорошую модель”.
 
-1. Прочитать [skills и правила для агентов](../patterns/agent-skills-and-rules.md).
-2. Изучить [антипаттерны агентных систем](../patterns/agent-antipatterns.md).
-3. Для coding-сценариев прочитать [работу с код-агентами](../patterns/working-with-coding-agents.md).
+1. Прочитать [skills и правила для агентов](../patterns/implementation/agent-skills-and-rules.md).
+2. Изучить [антипаттерны агентных систем](../patterns/advanced/agent-antipatterns.md).
+3. Для coding-сценариев прочитать [работу с код-агентами](../patterns/implementation/working-with-coding-agents.md).
 
 Ожидаемый результат: можно сформулировать задачу агенту как цель, ограничения, критерии успеха и проверку.
 
@@ -36,8 +36,8 @@
 
 Цель: не выпускать агента в среду, где он может делать дорогие или опасные вещи без контроля.
 
-1. Прочитать [безопасность агентных систем](../patterns/agent-security.md).
-2. Прочитать [evaluations для агентов](../patterns/agent-evaluations.md).
+1. Прочитать [безопасность агентных систем](../patterns/architecture-design/agent-security.md).
+2. Прочитать [evaluations для агентов](../patterns/implementation/agent-evaluations.md).
 3. Прочитать [observability и debugging](../tools/agent-observability-debugging.md).
 
 Ожидаемый результат: у каждого tool call есть граница доверия, у каждого workflow есть eval, у каждого инцидента есть trace.
@@ -46,10 +46,10 @@
 
 Цель: перейти от прототипа к системе, которую можно эксплуатировать.
 
-1. Прочитать [production operations](../patterns/production-operations.md).
-2. Прочитать [human-in-the-loop UX](../patterns/human-in-the-loop-ux.md).
-3. Прочитать [RAG для агентов](../patterns/rag-for-agents.md).
-4. Прочитать [multi-agent orchestration](../patterns/multi-agent-orchestration.md).
+1. Прочитать [production operations](../patterns/production-operations/production-operations.md).
+2. Прочитать [human-in-the-loop UX](../patterns/production-operations/human-in-the-loop-ux.md).
+3. Прочитать [RAG для агентов](../patterns/architecture-design/rag-for-agents.md).
+4. Прочитать [multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md).
 
 Ожидаемый результат: понятно, как агент деплоится, наблюдается, ограничивается, эскалирует решения человеку и восстанавливается после ошибок.
 
@@ -59,8 +59,8 @@
 
 1. Изучить [исследование фреймворков](../tools/agent-frameworks-research.md).
 2. Свериться с [модельной картой для агентов](../tools/agent-model-map.md).
-3. Выбрать один из [воспроизводимых рецептов](../patterns/reproducible-agent-recipes.md).
-4. Посмотреть [карты кейсов](../patterns/agent-use-cases.md).
+3. Выбрать один из [воспроизводимых рецептов](../patterns/advanced/reproducible-agent-recipes.md).
+4. Посмотреть [карты кейсов](../patterns/advanced/agent-use-cases.md).
 
 Ожидаемый результат: можно выбрать модель, фреймворк, eval и deploy-подход под конкретный use case.
 

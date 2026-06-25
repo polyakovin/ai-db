@@ -62,6 +62,6 @@ goal -> state -> plan -> action -> observation -> update state -> stop or contin
 
 ## Связанные заметки
 
-- [Agent Harness](agent-harness.md)
+- [Agent Harness](../architecture-design/agent-harness.md)
 - [Context engineering](context-engineering.md)
-- [Production operations](../patterns/production-operations.md)
+- [Production operations](../production-operations/production-operations.md)

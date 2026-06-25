@@ -77,11 +77,11 @@
 
 ## Источники
 
-- [Claude Code 101](../sources/claude-code-101.md)
-- [OpenAI Academy](../sources/openai-academy.md)
-- [AI Foundations](../sources/ai-foundations.md)
-- [Teacher's Tech](../sources/teachers-tech.md)
-- [Zinho Automates](../sources/zinho-automates.md)
-- [Superpowers](../sources/superpowers.md)
-- [ECC](../sources/ecc.md)
-- [Andrej Karpathy Skills](../sources/andrej-karpathy-skills.md)
+- [Claude Code 101](../../sources/claude-code-101.md)
+- [OpenAI Academy](../../sources/openai-academy.md)
+- [AI Foundations](../../sources/ai-foundations.md)
+- [Teacher's Tech](../../sources/teachers-tech.md)
+- [Zinho Automates](../../sources/zinho-automates.md)
+- [Superpowers](../../sources/superpowers.md)
+- [ECC](../../sources/ecc.md)
+- [Andrej Karpathy Skills](../../sources/andrej-karpathy-skills.md)

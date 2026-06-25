@@ -58,6 +58,6 @@ Approval screen должен включать:
 
 ## Связанные заметки
 
-- [Безопасность агентных систем](../patterns/agent-security.md)
+- [Безопасность агентных систем](../architecture-design/agent-security.md)
 - [Production operations](production-operations.md)
-- [Работа с код-агентами](working-with-coding-agents.md)
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md)

@@ -81,6 +81,6 @@ Long-running агент должен переживать:
 
 ## Связанные заметки
 
-- [Agent Harness](../patterns/agent-harness.md)
-- [Observability и debugging](../tools/agent-observability-debugging.md)
-- [Безопасность агентных систем](../patterns/agent-security.md)
+- [Agent Harness](../architecture-design/agent-harness.md)
+- [Observability и debugging](../../tools/agent-observability-debugging.md)
+- [Безопасность агентных систем](../architecture-design/agent-security.md)

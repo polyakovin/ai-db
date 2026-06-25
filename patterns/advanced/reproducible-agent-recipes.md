@@ -36,7 +36,7 @@
 - freshness;
 - latency p95.
 
-Связано: [RAG для агентов](../patterns/rag-for-agents.md).
+Связано: [RAG для агентов](../architecture-design/rag-for-agents.md).
 
 ## SQL agent
 
@@ -101,7 +101,7 @@
 - review of risky changes;
 - commit + push policy.
 
-Связано: [Работа с код-агентами](working-with-coding-agents.md).
+Связано: [Работа с код-агентами](../implementation/working-with-coding-agents.md).
 
 ## Support agent
 
@@ -147,6 +147,6 @@
 
 ## Связанные заметки
 
-- [Agent Harness](../patterns/agent-harness.md)
-- [Evaluations для агентов](agent-evaluations.md)
-- [Production operations](production-operations.md)
+- [Agent Harness](../architecture-design/agent-harness.md)
+- [Evaluations для агентов](../implementation/agent-evaluations.md)
+- [Production operations](../production-operations/production-operations.md)

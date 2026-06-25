@@ -19,21 +19,21 @@
 | Если нужно | Идите сюда |
 |---|---|
 | Понять, в каком порядке изучать тему | [Learning path](learning-path.md) |
-| Развести assistant, workflow, agent и multi-agent | [Таксономия AI-агентов](../patterns/agent-taxonomy.md) |
-| Понять, из чего состоит агентная система | [Компоненты agent-системы](../patterns/agent-system-components.md) |
-| Спроектировать harness вокруг агента | [Agent Harness](../patterns/agent-harness.md) |
-| Разобрать основной цикл агента | [Execution loop агента](../patterns/agent-execution-loop.md) |
-| Спроектировать контекст и память | [Context engineering](../patterns/context-engineering.md) |
-| Подключить tools или MCP | [Tool use, function calling и MCP](../patterns/tool-use-and-mcp.md) |
-| Проверить безопасность agentic-системы | [Безопасность агентных систем](../patterns/agent-security.md) |
-| Оформить правила или skill для агента | [Skills и правила для агентов](../patterns/agent-skills-and-rules.md) |
-| Организовать работу с код-агентом | [Работа с код-агентами](../patterns/working-with-coding-agents.md) |
-| Настроить evals и production gates | [Evaluations для AI-агентов](../patterns/agent-evaluations.md) |
+| Развести assistant, workflow, agent и multi-agent | [Таксономия AI-агентов](../patterns/fundamentals/agent-taxonomy.md) |
+| Понять, из чего состоит агентная система | [Компоненты agent-системы](../patterns/architecture-design/agent-system-components.md) |
+| Спроектировать harness вокруг агента | [Agent Harness](../patterns/architecture-design/agent-harness.md) |
+| Разобрать основной цикл агента | [Execution loop агента](../patterns/fundamentals/agent-execution-loop.md) |
+| Спроектировать контекст и память | [Context engineering](../patterns/fundamentals/context-engineering.md) |
+| Подключить tools или MCP | [Tool use, function calling и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
+| Проверить безопасность agentic-системы | [Безопасность агентных систем](../patterns/architecture-design/agent-security.md) |
+| Оформить правила или skill для агента | [Skills и правила для агентов](../patterns/implementation/agent-skills-and-rules.md) |
+| Организовать работу с код-агентом | [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| Настроить evals и production gates | [Evaluations для AI-агентов](../patterns/implementation/agent-evaluations.md) |
 | Выбрать agent framework | [Исследование фреймворков](../tools/agent-frameworks-research.md) |
 | Выбрать модель для агентного сценария | [Модельная карта для AI-агентов](../tools/agent-model-map.md) |
 | Выбрать embedding-модель | [Модели для эмбеддингов](../tools/embedding-models.md) |
-| Найти воспроизводимый рецепт | [Воспроизводимые рецепты AI-агентов](../patterns/reproducible-agent-recipes.md) |
-| Выбрать архитектуру и evals под use case | [Карта кейсов AI-агентов](../patterns/agent-use-cases.md) |
+| Найти воспроизводимый рецепт | [Воспроизводимые рецепты AI-агентов](../patterns/advanced/reproducible-agent-recipes.md) |
+| Выбрать архитектуру и evals под use case | [Карта кейсов AI-агентов](../patterns/advanced/agent-use-cases.md) |
 | Найти обработанные внешние источники | [Источники — Обзор](../sources/OVERVIEW.md) |
 | Посмотреть backlog | [Backlog](backlog.md) |
 

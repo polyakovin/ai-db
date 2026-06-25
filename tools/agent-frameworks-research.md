@@ -109,5 +109,5 @@ Primary sources:
 ## Связанные заметки
 
 - [Модельная карта для агентов](agent-model-map.md)
-- [Multi-agent orchestration](../patterns/multi-agent-orchestration.md)
-- [Production operations](../patterns/production-operations.md)
+- [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md)
+- [Production operations](../patterns/production-operations/production-operations.md)

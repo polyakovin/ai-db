@@ -62,6 +62,6 @@
 - **Audit log:** `meta/observability/audit-log.md`
 
 ## Связанные материалы
-- [Agent Harness — ai-db](patterns/agent-harness.md)
-- [Работа с код-агентами — ai-db](patterns/working-with-coding-agents.md)
-- [Skills и правила — ai-db](patterns/agent-skills-and-rules.md)
+- [Agent Harness — ai-db](patterns/architecture-design/agent-harness.md)
+- [Работа с код-агентами — ai-db](patterns/implementation/working-with-coding-agents.md)
+- [Skills и правила — ai-db](patterns/implementation/agent-skills-and-rules.md)

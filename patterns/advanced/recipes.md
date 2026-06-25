@@ -4,11 +4,11 @@
 
 ## Материалы
 
-- [Работа с код-агентами](working-with-coding-agents.md) — постановка задачи, minimal diff, verification loop, commit/push
-- [Evaluations для AI-агентов](agent-evaluations.md) — task suites, regression evals, graders и agent-specific metrics
-- [Production operations](production-operations.md) — deployment, budgets, rollback, kill switch и incident response
-- [Human-in-the-loop UX](human-in-the-loop-ux.md) — clarification, confirmation, approvals, handoff и trust design
-- [Data governance и compliance](data-governance-compliance.md) — PII, retention, memory governance, auditability
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — постановка задачи, minimal diff, verification loop, commit/push
+- [Evaluations для AI-агентов](../implementation/agent-evaluations.md) — task suites, regression evals, graders и agent-specific metrics
+- [Production operations](../production-operations/production-operations.md) — deployment, budgets, rollback, kill switch и incident response
+- [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — clarification, confirmation, approvals, handoff и trust design
+- [Data governance и compliance](../architecture-design/data-governance-compliance.md) — PII, retention, memory governance, auditability
 - [Воспроизводимые рецепты AI-агентов](reproducible-agent-recipes.md) — RAG, SQL, browser, coding, support и research agents
 
 ## Как устроен раздел

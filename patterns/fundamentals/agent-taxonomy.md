@@ -60,6 +60,6 @@
 
 ## Связанные заметки
 
-- [Agent Harness](agent-harness.md)
+- [Agent Harness](../architecture-design/agent-harness.md)
 - [Execution loop агента](agent-execution-loop.md)
-- [Антипаттерны агентных систем](../patterns/agent-antipatterns.md)
+- [Антипаттерны агентных систем](../advanced/agent-antipatterns.md)
