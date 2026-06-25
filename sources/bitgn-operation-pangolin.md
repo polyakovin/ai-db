@@ -1,5 +1,15 @@
-# Operation Pangolin — BitGN PAC1, 92.0/104 (Ultimate #1)
+---
+title: Operation Pangolin — BitGN PAC1 Ultimate #1
+url: 
+type: url
+category: sources
+tags: [bitgn, pac1, pangolin]
+added: 2026-06-25
+status: new
+---
 
+1|# Operation Pangolin — BitGN PAC1, 92.0/104 (Ultimate #1)
+2|
 **Автор:** Illia Dzivinskyi (Grammarly)  
 **Челлендж:** BitGN PAC1 (Personal Agent Challenge), слепая оценка  
 **Результат:** **92.0** — первое место в Ultimate-зачёте  

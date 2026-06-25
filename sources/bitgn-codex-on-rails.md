@@ -1,5 +1,15 @@
-# Codex-on-Rails — frontier coding agent с жёсткими рельсами
+---
+title: Codex-on-Rails — frontier coding agent с жёсткими рельсами
+url: https://bitgn.com/
+type: url
+category: sources
+tags: [bitgn, pac1, codex, rails]
+added: 2026-06-25
+status: new
+---
 
+1|# Codex-on-Rails — frontier coding agent с жёсткими рельсами
+2|
 **Источник:** BitGN PAC1 (Personal Agent Challenge)  
 **Автор:** Igor Inozemtsev (Nevis)  
 **Результат:** **87.0 / 104** — 1-е место по Accuracy (детерминированная точность)  

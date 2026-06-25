@@ -1,5 +1,15 @@
-# Plan-REPL Agent — plan-and-execute с REPL-циклом и лимиты промпт-инжиниринга
+---
+title: Plan-REPL Agent — plan-and-execute с REPL-циклом
+url: 
+type: url
+category: sources
+tags: [bitgn, pac1, repl]
+added: 2026-06-25
+status: new
+---
 
+1|# Plan-REPL Agent — plan-and-execute с REPL-циклом и лимиты промпт-инжиниринга
+2|
 **Источник:** BitGN PAC1 (Personal Agent Challenge)  
 **Автор:** Grigory-T  
 **Результат:** **60.6 / 104** — ниже топ-решений, но ценный архитектурный урок  

@@ -1,5 +1,15 @@
-# Harness Engineering: Leveraging Codex in an Agent-First World
+---
+title: Harness Engineering: Leveraging Codex in an Agent-First World
+url: 
+type: url
+category: sources
+tags: [openai, codex, harness]
+added: 2026-06-25
+status: new
+---
 
+1|# Harness Engineering: Leveraging Codex in an Agent-First World
+2|
 **Источник:** OpenAI Blog, 11 февраля 2026  
 **Автор:** Ryan Lopopolo  
 **Оригинал:** https://openai.com/index/harness-engineering/

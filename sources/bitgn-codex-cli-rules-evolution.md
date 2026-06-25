@@ -1,5 +1,15 @@
-# BitGN: Codex CLI + Rules Evolution
+---
+title: BitGN: Codex CLI + Rules Evolution
+url: https://bitgn.com/
+type: url
+category: sources
+tags: [bitgn, pac1, codex, rules]
+added: 2026-06-25
+status: new
+---
 
+1|# BitGN: Codex CLI + Rules Evolution
+2|
 **Источник:** BitGN PAC1 (Personal Agent Challenge)
 **Автор:** Maksim Popkov (Sber)
 **Счёт:** 84.0 / 104 (Accuracy — PAC1)

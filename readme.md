@@ -26,8 +26,7 @@
 | [practices](practices/recipes.md) | Workflow, recipes, практические инструкции |
 | [cases](cases/overview.md) | Сценарии внедрения и разборы |
 | [comparisons](comparisons/overview.md) | Матрицы выбора и сравнительные обзоры |
-| [articles](articles/overview.md) | Переводы, конспекты, аналитика статей |
-| [sources](sources/overview.md) | Внешние курсы, каналы, репозитории, provenance |
+| [sources](sources/overview.md) | Статьи, переводы, курсы, обработанные источники и provenance |
 | [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
 
 ## Правило именования

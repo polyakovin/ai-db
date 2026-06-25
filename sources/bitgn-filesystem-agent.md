@@ -1,5 +1,15 @@
-# BitGN Filesystem Agent — BitGN PAC1, 83.0/104
+---
+title: BitGN Filesystem Agent — BitGN PAC1
+url: 
+type: url
+category: sources
+tags: [bitgn, pac1, filesystem]
+added: 2026-06-25
+status: new
+---
 
+1|# BitGN Filesystem Agent — BitGN PAC1, 83.0/104
+2|
 **Автор:** Azamat Yelmagambetov  
 **Челлендж:** BitGN PAC1 (Personal Agent Challenge), слепая оценка  
 **Результат:** **83.0** — 4-е место в топе  

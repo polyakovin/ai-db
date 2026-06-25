@@ -1,5 +1,15 @@
-# BitGN Arena — архитектурные инсайты с PAC1
+---
+title: BitGN Arena — архитектурные инсайты с PAC1
+url: https://bitgn.com/insights/
+type: url
+category: sources
+tags: [bitgn, pac1, arena]
+added: 2026-06-25
+status: new
+---
 
+1|# BitGN Arena — архитектурные инсайты с PAC1
+2|
 **Источник:** https://bitgn.com/insights/  
 **Челлендж:** PAC1 (Personal Agent Challenge) — детерминированная оценка агентов  
 **Формат:** Публичные эксперименты, сотни агентов, слепая оценка (blind submission)
