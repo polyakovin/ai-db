@@ -5,38 +5,18 @@ description: База знаний по AI-агентам — Obsidian vault
 
 # ai-db — база знаний по AI-агентам
 
-Карта проекта, конвенции и workflow.
+**Точки входа:**
+- `README.md` — навигация по проекту
+- `AGENTS.md` — правила для агента
 
-## Структура
+**Типовые задачи:**
 
-| Раздел | Назначение |
-|--------|------------|
-| `patterns/` | Архитектурные блоки, learning path, recipes, case-карта |
-| `tools/` | Модели, SDK, фреймворки |
-| `sources/` | Внешние источники (tutorials, libraries, engineering patterns, research) |
-| `meta/` | Скрипты, шаблоны, проектные skills, rules |
+| Задача | Skill |
+|--------|-------|
+| Добавить источник | `add-source` из `meta/skills/` |
+| Добавить заметку | `add-note` из `meta/skills/` |
+| Провести исследование | `research` из `meta/skills/` |
+| Сделать ревью | `review` из `meta/skills/` |
+| Сгенерировать harness | `agent-harness-generator` из `meta/skills/` |
 
-## Начало работы
-
-1. Прочитай `README.md` — главная навигация.
-2. Прочитай `AGENTS.md` — правила для агента.
-3. Для добавления источника — загрузи skill `add-source` из `meta/skills/add-source.md`.
-
-## Рабочий цикл
-
-1. Валидация после изменений: `bash meta/scripts/validate-vault.sh`
-2. Коммит: `git add -A && git commit -m "..." && git push`
-
-## Правила
-
-- Файлы kebab-case, английские названия.
-- Обзорные страницы — `OVERVIEW.md` (без frontmatter).
-- Одна мысль — один файл, без дублей.
-- Ссылки только на существующие файлы.
-
-## Навигация по контенту
-
-- Learning path: `patterns/OVERVIEW.md` → раздел "Learning path"
-- Обзор patterns: `patterns/OVERVIEW.md`
-- Обзор tools: `tools/OVERVIEW.md`
-- Обзор sources: `sources/OVERVIEW.md`
+**Не дублировать:** правила именования, рабочий цикл, структуру — см. README и AGENTS.
