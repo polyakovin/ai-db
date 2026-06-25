@@ -6,7 +6,7 @@
 
 - `README.md` — короткий вход в проект и правила работы.
 - `navigation/` — карта, backlog, служебная навигация.
-- `concepts/` — базовые понятия и архитектурные строительные блоки.
+- `concepts/` — удалён, всё в patterns/.
 - `patterns/` — повторяемые решения, workflow, recipes, case-карта и how-to.
 - `tools/` — модели, SDK, фреймворки, платформы, runtime, сравнения.
 - `sources/` — статьи, переводы, курсы, обработанные источники и provenance.
@@ -19,13 +19,13 @@
 | Если нужно | Идите сюда |
 |---|---|
 | Понять, в каком порядке изучать тему | [Learning path](learning-path.md) |
-| Развести assistant, workflow, agent и multi-agent | [Таксономия AI-агентов](../concepts/agent-taxonomy.md) |
-| Понять, из чего состоит агентная система | [Компоненты agent-системы](../concepts/agent-system-components.md) |
-| Спроектировать harness вокруг агента | [Agent Harness](../concepts/agent-harness.md) |
-| Разобрать основной цикл агента | [Execution loop агента](../concepts/agent-execution-loop.md) |
-| Спроектировать контекст и память | [Context engineering](../concepts/context-engineering.md) |
-| Подключить tools или MCP | [Tool use, function calling и MCP](../concepts/tool-use-and-mcp.md) |
-| Проверить безопасность agentic-системы | [Безопасность агентных систем](../concepts/agent-security.md) |
+| Развести assistant, workflow, agent и multi-agent | [Таксономия AI-агентов](../patterns/agent-taxonomy.md) |
+| Понять, из чего состоит агентная система | [Компоненты agent-системы](../patterns/agent-system-components.md) |
+| Спроектировать harness вокруг агента | [Agent Harness](../patterns/agent-harness.md) |
+| Разобрать основной цикл агента | [Execution loop агента](../patterns/agent-execution-loop.md) |
+| Спроектировать контекст и память | [Context engineering](../patterns/context-engineering.md) |
+| Подключить tools или MCP | [Tool use, function calling и MCP](../patterns/tool-use-and-mcp.md) |
+| Проверить безопасность agentic-системы | [Безопасность агентных систем](../patterns/agent-security.md) |
 | Оформить правила или skill для агента | [Skills и правила для агентов](../patterns/agent-skills-and-rules.md) |
 | Организовать работу с код-агентом | [Работа с код-агентами](../patterns/working-with-coding-agents.md) |
 | Настроить evals и production gates | [Evaluations для AI-агентов](../patterns/agent-evaluations.md) |

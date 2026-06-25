@@ -75,6 +75,6 @@ Primary sources:
 
 ## Связанные заметки
 
-- [Безопасность агентных систем](../concepts/agent-security.md)
-- [RAG для агентов](../concepts/rag-for-agents.md)
+- [Безопасность агентных систем](../patterns/agent-security.md)
+- [RAG для агентов](../patterns/rag-for-agents.md)
 - [Production operations](production-operations.md)

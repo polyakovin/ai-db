@@ -10,8 +10,7 @@
 
 | Раздел | Назначение |
 |--------|------------|
-| `concepts/` | Базовые понятия и архитектурные блоки |
-| `patterns/` | Повторяемые проектные решения, workflow, recipes и how-to, case-карта |
+| `patterns/` | Архитектурные блоки, проектные решения, workflow, recipes, case-карта, how-to |
 | `tools/` | Инструменты, модели, SDK, платформы, сравнения |
 | `sources/` | Внешние источники и provenance |
 
@@ -63,6 +62,6 @@
 - **Audit log:** `meta/observability/audit-log.md`
 
 ## Связанные материалы
-- [Agent Harness — ai-db](concepts/agent-harness.md)
+- [Agent Harness — ai-db](patterns/agent-harness.md)
 - [Работа с код-агентами — ai-db](patterns/working-with-coding-agents.md)
 - [Skills и правила — ai-db](patterns/agent-skills-and-rules.md)

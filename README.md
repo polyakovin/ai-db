@@ -9,8 +9,8 @@
 
 - [Карта знаний](navigation/knowledge-map.md) — главный маршрут по vault.
 - [Learning path](navigation/learning-path.md) — порядок погружения от базовой таксономии до production.
-- [Таксономия AI-агентов](concepts/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
-- [Agent Harness](concepts/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
+- [Таксономия AI-агентов](patterns/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
+- [Agent Harness](patterns/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
 - [Skills и правила для агентов](patterns/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
 - [Работа с код-агентами](patterns/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
 - [Исследование фреймворков](tools/agent-frameworks-research.md) — выбор OpenAI/Anthropic/LangGraph/AutoGen/CrewAI/LlamaIndex/low-code стека.
@@ -20,8 +20,7 @@
 | Раздел | Роль |
 |---|---|
 | [navigation](navigation/knowledge-map.md) | Карта vault, backlog, правила поиска |
-| [concepts](concepts/OVERVIEW.md) | Базовые понятия и архитектурные блоки |
-| [patterns](patterns/OVERVIEW.md) | Повторяемые решения, workflow, recipes, case-карта, практические инструкции |
+| [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, case-карта, how-to |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
 | [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
@@ -37,10 +36,9 @@
 
 Одна мысль должна иметь один основной дом:
 
-- концепция живёт в `concepts/`;
-- паттерн — в `patterns/`;
+- архитектура, паттерн или решение — в `patterns/`;
 - инструмент или модель — в `tools/`;
-- инструкция к действию — в `practices/`;
+- инструкция к действию — в `patterns/`;
 - внешний источник — в `sources/`;
 - overview-файлы только навигируют и кратко объясняют, куда идти.
 

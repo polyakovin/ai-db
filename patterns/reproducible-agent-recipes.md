@@ -36,7 +36,7 @@
 - freshness;
 - latency p95.
 
-Связано: [RAG для агентов](../concepts/rag-for-agents.md).
+Связано: [RAG для агентов](../patterns/rag-for-agents.md).
 
 ## SQL agent
 
@@ -147,6 +147,6 @@
 
 ## Связанные заметки
 
-- [Agent Harness](../concepts/agent-harness.md)
+- [Agent Harness](../patterns/agent-harness.md)
 - [Evaluations для агентов](agent-evaluations.md)
 - [Production operations](production-operations.md)

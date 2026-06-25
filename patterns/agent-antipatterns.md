@@ -92,6 +92,6 @@
 
 ## Связанные заметки
 
-- [Таксономия AI-агентов](../concepts/agent-taxonomy.md)
-- [Multi-agent orchestration](../concepts/multi-agent-orchestration.md)
-- [Безопасность агентных систем](../concepts/agent-security.md)
+- [Таксономия AI-агентов](../patterns/agent-taxonomy.md)
+- [Multi-agent orchestration](../patterns/multi-agent-orchestration.md)
+- [Безопасность агентных систем](../patterns/agent-security.md)

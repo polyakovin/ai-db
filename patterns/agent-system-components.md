@@ -7,7 +7,7 @@
 ### Harness
 Оркестратор агента — управляет жизненным циклом, контекстом и выполнением задач.
 
-Подробнее: [Agent Harness](../concepts/agent-harness.md).
+Подробнее: [Agent Harness](../patterns/agent-harness.md).
 
 ### Ретроспективная обработка ошибок ИИ
 Механизм анализа и обработки ошибок, укрепляющий харнесс через обратную связь.
@@ -65,5 +65,5 @@
 ## Связанные заметки
 
 - [Работа с код-агентами](../patterns/working-with-coding-agents.md)
-- [Agent Harness](../concepts/agent-harness.md)
+- [Agent Harness](../patterns/agent-harness.md)
 - [Skills и правила для агентов](../patterns/agent-skills-and-rules.md)

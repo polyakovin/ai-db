@@ -121,11 +121,11 @@ type: skill
 - **Audit log:** `meta/observability/audit-log.md`
 
 ## Связанные материалы
-- [Agent Harness — ai-db](../../concepts/agent-harness.md)
+- [Agent Harness — ai-db](../../patterns/agent-harness.md)
 - [Работа с код-агентами — ai-db](../../patterns/working-with-coding-agents.md)
 - [Skills и правила — ai-db](../../patterns/agent-skills-and-rules.md)
-- [Безопасность агентных систем — ai-db](../../concepts/agent-security.md)
-- [Multi-agent orchestration — ai-db](../../concepts/multi-agent-orchestration.md)
+- [Безопасность агентных систем — ai-db](../../patterns/agent-security.md)
+- [Multi-agent orchestration — ai-db](../../patterns/multi-agent-orchestration.md)
 ```
 
 ### 4. Создать базовые правила (meta/rules/project-rules.md)
@@ -417,10 +417,10 @@ git config core.hooksPath .githooks
 - **Плейсхолдеры не заменены:** все `<...>` в AGENTS.md и project-memory.md должны быть заменены на конкретные значения для проекта.
 
 ## Связанные материалы
-- [ai-db: Agent Harness](../../concepts/agent-harness.md)
+- [ai-db: Agent Harness](../../patterns/agent-harness.md)
 - [ai-db: Skills и правила](../../patterns/agent-skills-and-rules.md)
 - [ai-db: Работа с код-агентами](../../patterns/working-with-coding-agents.md)
-- [ai-db: Execution loop](../../concepts/agent-execution-loop.md)
-- [ai-db: Context engineering](../../concepts/context-engineering.md)
-- [ai-db: Безопасность агентных систем](../../concepts/agent-security.md)
-- [ai-db: Multi-agent orchestration](../../concepts/multi-agent-orchestration.md)
+- [ai-db: Execution loop](../../patterns/agent-execution-loop.md)
+- [ai-db: Context engineering](../../patterns/context-engineering.md)
+- [ai-db: Безопасность агентных систем](../../patterns/agent-security.md)
+- [ai-db: Multi-agent orchestration](../../patterns/multi-agent-orchestration.md)
