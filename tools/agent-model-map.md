@@ -75,5 +75,5 @@ OpenAI docs для GPT-5.5 рекомендуют Responses API для reasoning
 ## Связанные заметки
 
 - [Модели для эмбеддингов](embedding-models.md)
-- [Evaluations для агентов](../practices/agent-evaluations.md)
+- [Evaluations для агентов](../patterns/agent-evaluations.md)
 - [Исследование фреймворков](agent-frameworks-research.md)

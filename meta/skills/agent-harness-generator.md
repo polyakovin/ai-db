@@ -122,7 +122,7 @@ type: skill
 
 ## Связанные материалы
 - [Agent Harness — ai-db](../../concepts/agent-harness.md)
-- [Работа с код-агентами — ai-db](../../practices/working-with-coding-agents.md)
+- [Работа с код-агентами — ai-db](../../patterns/working-with-coding-agents.md)
 - [Skills и правила — ai-db](../../patterns/agent-skills-and-rules.md)
 - [Безопасность агентных систем — ai-db](../../concepts/agent-security.md)
 - [Multi-agent orchestration — ai-db](../../concepts/multi-agent-orchestration.md)
@@ -419,7 +419,7 @@ git config core.hooksPath .githooks
 ## Связанные материалы
 - [ai-db: Agent Harness](../../concepts/agent-harness.md)
 - [ai-db: Skills и правила](../../patterns/agent-skills-and-rules.md)
-- [ai-db: Работа с код-агентами](../../practices/working-with-coding-agents.md)
+- [ai-db: Работа с код-агентами](../../patterns/working-with-coding-agents.md)
 - [ai-db: Execution loop](../../concepts/agent-execution-loop.md)
 - [ai-db: Context engineering](../../concepts/context-engineering.md)
 - [ai-db: Безопасность агентных систем](../../concepts/agent-security.md)

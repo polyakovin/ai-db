@@ -12,7 +12,7 @@
 - [Таксономия AI-агентов](concepts/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
 - [Agent Harness](concepts/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
 - [Skills и правила для агентов](patterns/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
-- [Работа с код-агентами](practices/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
+- [Работа с код-агентами](patterns/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
 - [Исследование фреймворков](tools/agent-frameworks-research.md) — выбор OpenAI/Anthropic/LangGraph/AutoGen/CrewAI/LlamaIndex/low-code стека.
 
 ## Структура
@@ -21,9 +21,8 @@
 |---|---|
 | [navigation](navigation/knowledge-map.md) | Карта vault, backlog, правила поиска |
 | [concepts](concepts/overview.md) | Базовые понятия и архитектурные блоки |
-| [patterns](patterns/overview.md) | Повторяемые проектные решения |
+| [patterns](patterns/overview.md) | Повторяемые решения, workflow, recipes, практические инструкции |
 | [tools](tools/overview.md) | Модели, SDK, платформы, runtime |
-| [practices](practices/recipes.md) | Workflow, recipes, практические инструкции |
 | [cases](cases/overview.md) | Сценарии внедрения и разборы |
 | [comparisons](comparisons/overview.md) | Матрицы выбора и сравнительные обзоры |
 | [sources](sources/overview.md) | Статьи, переводы, курсы, обработанные источники и provenance |

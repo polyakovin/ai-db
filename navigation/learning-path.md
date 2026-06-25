@@ -28,7 +28,7 @@
 
 1. Прочитать [skills и правила для агентов](../patterns/agent-skills-and-rules.md).
 2. Изучить [антипаттерны агентных систем](../patterns/agent-antipatterns.md).
-3. Для coding-сценариев прочитать [работу с код-агентами](../practices/working-with-coding-agents.md).
+3. Для coding-сценариев прочитать [работу с код-агентами](../patterns/working-with-coding-agents.md).
 
 Ожидаемый результат: можно сформулировать задачу агенту как цель, ограничения, критерии успеха и проверку.
 
@@ -37,7 +37,7 @@
 Цель: не выпускать агента в среду, где он может делать дорогие или опасные вещи без контроля.
 
 1. Прочитать [безопасность агентных систем](../concepts/agent-security.md).
-2. Прочитать [evaluations для агентов](../practices/agent-evaluations.md).
+2. Прочитать [evaluations для агентов](../patterns/agent-evaluations.md).
 3. Прочитать [observability и debugging](../tools/agent-observability-debugging.md).
 
 Ожидаемый результат: у каждого tool call есть граница доверия, у каждого workflow есть eval, у каждого инцидента есть trace.
@@ -46,8 +46,8 @@
 
 Цель: перейти от прототипа к системе, которую можно эксплуатировать.
 
-1. Прочитать [production operations](../practices/production-operations.md).
-2. Прочитать [human-in-the-loop UX](../practices/human-in-the-loop-ux.md).
+1. Прочитать [production operations](../patterns/production-operations.md).
+2. Прочитать [human-in-the-loop UX](../patterns/human-in-the-loop-ux.md).
 3. Прочитать [RAG для агентов](../concepts/rag-for-agents.md).
 4. Прочитать [multi-agent orchestration](../concepts/multi-agent-orchestration.md).
 
@@ -59,7 +59,7 @@
 
 1. Изучить [исследование фреймворков](../tools/agent-frameworks-research.md).
 2. Свериться с [модельной картой для агентов](../tools/agent-model-map.md).
-3. Выбрать один из [воспроизводимых рецептов](../practices/reproducible-agent-recipes.md).
+3. Выбрать один из [воспроизводимых рецептов](../patterns/reproducible-agent-recipes.md).
 4. Посмотреть [карты кейсов](../cases/agent-use-cases.md).
 
 Ожидаемый результат: можно выбрать модель, фреймворк, eval и deploy-подход под конкретный use case.

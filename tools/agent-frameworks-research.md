@@ -110,4 +110,4 @@ Primary sources:
 
 - [Модельная карта для агентов](agent-model-map.md)
 - [Multi-agent orchestration](../concepts/multi-agent-orchestration.md)
-- [Production operations](../practices/production-operations.md)
+- [Production operations](../patterns/production-operations.md)

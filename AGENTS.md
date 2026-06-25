@@ -11,9 +11,8 @@
 | Раздел | Назначение |
 |--------|------------|
 | `concepts/` | Базовые понятия и архитектурные блоки |
-| `patterns/` | Повторяемые проектные решения |
+| `patterns/` | Повторяемые проектные решения, workflow, recipes и how-to |
 | `tools/` | Инструменты, модели, SDK, платформы |
-| `practices/` | Workflows, recipes и how-to |
 | `cases/` | Практические сценарии |
 | `sources/` | Внешние источники и provenance |
 
@@ -66,5 +65,5 @@
 
 ## Связанные материалы
 - [Agent Harness — ai-db](concepts/agent-harness.md)
-- [Работа с код-агентами — ai-db](practices/working-with-coding-agents.md)
+- [Работа с код-агентами — ai-db](patterns/working-with-coding-agents.md)
 - [Skills и правила — ai-db](patterns/agent-skills-and-rules.md)

@@ -70,4 +70,4 @@ Retry не должен быть автоматическим для всего.
 
 - [Безопасность агентных систем](agent-security.md)
 - [Agent Harness](agent-harness.md)
-- [Production operations](../practices/production-operations.md)
+- [Production operations](../patterns/production-operations.md)

@@ -7,9 +7,8 @@
 - `README.md` — короткий вход в проект и правила работы.
 - `navigation/` — карта, backlog, служебная навигация.
 - `concepts/` — базовые понятия и архитектурные строительные блоки.
-- `patterns/` — повторяемые решения и правила проектирования.
+- `patterns/` — повторяемые решения, workflow, recipes и how-to.
 - `tools/` — модели, SDK, фреймворки, платформы, runtime.
-- `practices/` — прикладные workflow, recipes и how-to.
 - `cases/` — практические сценарии внедрения и разборы.
 - `comparisons/` — матрицы выбора и сравнительные обзоры.
 - `sources/` — статьи, переводы, курсы и обработанные источники.
@@ -31,12 +30,12 @@
 | Подключить tools или MCP | [Tool use, function calling и MCP](../concepts/tool-use-and-mcp.md) |
 | Проверить безопасность agentic-системы | [Безопасность агентных систем](../concepts/agent-security.md) |
 | Оформить правила или skill для агента | [Skills и правила для агентов](../patterns/agent-skills-and-rules.md) |
-| Организовать работу с код-агентом | [Работа с код-агентами](../practices/working-with-coding-agents.md) |
-| Настроить evals и production gates | [Evaluations для AI-агентов](../practices/agent-evaluations.md) |
+| Организовать работу с код-агентом | [Работа с код-агентами](../patterns/working-with-coding-agents.md) |
+| Настроить evals и production gates | [Evaluations для AI-агентов](../patterns/agent-evaluations.md) |
 | Выбрать agent framework | [Исследование фреймворков](../tools/agent-frameworks-research.md) |
 | Выбрать модель для агентного сценария | [Модельная карта для AI-агентов](../tools/agent-model-map.md) |
 | Выбрать embedding-модель | [Модели для эмбеддингов](../tools/embedding-models.md) |
-| Найти воспроизводимый рецепт | [Воспроизводимые рецепты AI-агентов](../practices/reproducible-agent-recipes.md) |
+| Найти воспроизводимый рецепт | [Воспроизводимые рецепты AI-агентов](../patterns/reproducible-agent-recipes.md) |
 | Найти обработанные внешние источники | [Источники — Обзор](../sources/overview.md) |
 | Посмотреть backlog | [Backlog](backlog.md) |
 

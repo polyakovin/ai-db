@@ -10,7 +10,7 @@
 - Файлы называть на английском в kebab-case: `agent-harness.md`, `working-with-coding-agents.md`.
 - Обзорные страницы — `overview.md`.
 - Одна мысль — один файл, без дублей. Ссылаться на canonical note.
-- Порядок разделов фиксирован: navigation → concepts → patterns → tools → practices → cases → comparisons → articles → sources → meta.
+- Порядок разделов фиксирован: navigation → concepts → patterns → tools → cases → comparisons → sources → meta.
 - Внешние источники — с frontmatter (title, url, type, category, tags, added, status).
 - После изменений — запустить `scripts/validate-vault.sh`.
 - После коммита — сразу `git push`.

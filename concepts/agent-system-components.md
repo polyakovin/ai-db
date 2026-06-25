@@ -64,6 +64,6 @@
 
 ## Связанные заметки
 
-- [Работа с код-агентами](../practices/working-with-coding-agents.md)
+- [Работа с код-агентами](../patterns/working-with-coding-agents.md)
 - [Agent Harness](../concepts/agent-harness.md)
 - [Skills и правила для агентов](../patterns/agent-skills-and-rules.md)
