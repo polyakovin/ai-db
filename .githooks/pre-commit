@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Pre-commit hook для ai-db: валидация vault перед коммитом
+set -euo pipefail
+
+echo "🔍 Pre-commit checks (ai-db)..."
+
+# 1. Валидация vault
+if [ -f scripts/validate-vault.sh ]; then
+  bash scripts/validate-vault.sh || {
+    echo "❌ Vault validation failed — fix links before committing"
+    echo "ℹ️  Tip: update broken links or add missing target files"
+    exit 1
+  }
+fi
+
+echo "✅ All checks passed"
