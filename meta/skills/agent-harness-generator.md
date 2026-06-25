@@ -316,7 +316,7 @@ check:
 
 ### 11. Сгенерировать базовые skills
 
-Для каждого skill в `.hermes/skills/` создай минимальный каркас.
+Для каждого skill в `meta/skills/` создай минимальный каркас.
 
 **tdd.md:**
 ```markdown
@@ -402,7 +402,7 @@ git config core.hooksPath .githooks
 - [ ] Если нужен CI — заполнен (CI-файл выбранного типа).
 - [ ] Если `subagents: Да` — созданы `.hermes/subagents/subagent-rules.md`.
 - [ ] Все ссылки в AGENTS.md ведут на существующие файлы.
-- [ ] `.hermes/skills/` не пустой (минимум 3 файла с содержимым).
+- [ ] `meta/skills/` не пустой (минимум 3 файла с содержимым).
 - [ ] `README.md` обновлён (упоминание harness и AGENTS.md).
 
 ## Частые ошибки

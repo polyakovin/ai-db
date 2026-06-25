@@ -47,7 +47,7 @@
 - web_search, web_extract — для исследования и добавления источников
 - vision_analyze — для скриншотов и изображений
 - MCP — vkusvill (опционально)
-- skill_view — загружать skills из `.hermes/skills/` и `meta/skills/`
+- skill_view — загружать skills из `meta/skills/`
 
 ## Проверки
 | Тип | Команда |
