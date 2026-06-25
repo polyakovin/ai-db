@@ -40,13 +40,6 @@
 - Если не уверен — запиши вопрос в `meta/decisions.md`.
 - Destructive actions (удаление файлов, git reset) требуют подтверждения.
 
-## Инструменты
-- shell, filesystem, git
-- web_search, web_extract — для исследования и добавления источников
-- vision_analyze — для скриншотов и изображений
-- MCP — vkusvill (опционально)
-- skill_view — загружать skills из `meta/skills/`
-
 ## Проверки
 | Тип | Команда |
 |-----|---------|
