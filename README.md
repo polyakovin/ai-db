@@ -7,8 +7,7 @@
 
 ## С чего начать
 
-- [Карта знаний](navigation/knowledge-map.md) — главный маршрут по vault.
-- [Learning path](navigation/learning-path.md) — порядок погружения от базовой таксономии до production.
+- [Learning path](navigation/learning-path.md) — главный маршрут по vault.
 - [Таксономия AI-агентов](patterns/fundamentals/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
 - [Agent Harness](patterns/architecture-design/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
 - [Skills и правила для агентов](patterns/implementation/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
@@ -19,7 +18,7 @@
 
 | Раздел | Роль |
 |---|---|
-| [navigation](navigation/knowledge-map.md) | Карта vault, learning path, правила поиска |
+| [navigation](navigation/learning-path.md) | Learning path, правила поиска |
 | [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, case-карта, how-to |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
@@ -30,7 +29,7 @@
 - Пользовательские папки и Markdown-файлы называем строго на английском в `kebab-case`: `agent-harness.md`, `working-with-coding-agents.md`.
 - Для обзорных страниц используем единое имя `OVERVIEW.md`.
 - Служебные dot-файлы и файлы инструментов могут сохранять стандартные имена экосистемы: `.gitignore`, `.gitlab-ci.yml`, `.githooks/pre-commit`.
-- Порядок разделов задаётся этой таблицей и [картой знаний](navigation/knowledge-map.md), а не числовыми префиксами в названиях папок.
+- Порядок разделов задаётся этой таблицей, а не числовыми префиксами в названиях папок.
 
 ## Правило против дублей
 
