@@ -7,7 +7,7 @@
 
 ## С чего начать
 
-- [Learning path](navigation/learning-path.md) — главный маршрут по vault.
+- [Patterns OVERVIEW](patterns/OVERVIEW.md) — оглавление раздела с learning path.
 - [Таксономия AI-агентов](patterns/fundamentals/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
 - [Agent Harness](patterns/architecture-design/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
 - [Skills и правила для агентов](patterns/implementation/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
@@ -18,8 +18,7 @@
 
 | Раздел | Роль |
 |---|---|
-| [navigation](navigation/learning-path.md) | Learning path, правила поиска |
-| [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, case-карта, how-to |
+| [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, learning path, case-карта, how-to |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
 | [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
