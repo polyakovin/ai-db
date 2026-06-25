@@ -110,7 +110,7 @@ type: skill
 |-----|---------|
 | Линтер | `scripts/lint.sh` |
 | Тесты | `scripts/test.sh` |
-| Валидация | `scripts/validate.sh` |
+| Валидация | `meta/scripts/validate.sh` |
 
 ## Память проекта
 - **System rules:** `meta/rules/project-rules.md`
@@ -233,8 +233,8 @@ elif [ -f Makefile ]; then
 fi
 
 # 3. Валидация
-if [ -f scripts/validate.sh ]; then
-  bash scripts/validate.sh || { echo "❌ Validation failed"; exit 1; }
+if [ -f meta/scripts/validate.sh ]; then
+  bash meta/scripts/validate.sh || { echo "❌ Validation failed"; exit 1; }
 fi
 
 echo "✅ All checks passed"
@@ -273,7 +273,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: scripts/lint.sh
       - run: scripts/test.sh
-      - run: scripts/validate.sh
+      - run: meta/scripts/validate.sh
 ```
 
 **GitLab CI** — `.gitlab-ci.yml`:
@@ -287,7 +287,7 @@ check:
   script:
     - bash scripts/lint.sh
     - bash scripts/test.sh
-    - bash scripts/validate.sh
+    - bash meta/scripts/validate.sh
 ```
 
 ### 10. Создать правила subagents (если нужны)
@@ -398,7 +398,7 @@ git config core.hooksPath .githooks
 - [ ] `git config core.hooksPath .githooks` выполнен.
 - [ ] `plan/` содержит начальный план.
 - [ ] `scripts/` содержит lint.sh, test.sh, validate.sh (хотя бы заглушки).
-- [ ] `scripts/validate.sh` запускается и возвращает 0 (smoke test).
+- [ ] `meta/scripts/validate.sh` запускается и возвращает 0 (smoke test).
 - [ ] Если нужен CI — заполнен (CI-файл выбранного типа).
 - [ ] Если `subagents: Да` — созданы `meta/subagents/subagent-rules.md`.
 - [ ] Все ссылки в AGENTS.md ведут на существующие файлы.

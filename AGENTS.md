@@ -19,7 +19,7 @@
 - Обзорные страницы — `OVERVIEW.md`.
 - Одна мысль — один файл, без дублей.
 - Ссылки только на существующие файлы.
-- После изменений: `bash scripts/validate-vault.sh`.
+- После изменений: `bash meta/scripts/validate-vault.sh`.
 - Перед коммитом: установлен `.githooks/pre-commit`.
 
 ## Как агент работает
@@ -50,8 +50,8 @@
 ## Проверки
 | Тип | Команда |
 |-----|---------|
-| Валидация vault | `bash scripts/validate-vault.sh` |
-| Markdown-ссылки | `bash scripts/validate-vault.sh` |
+| Валидация vault | `bash meta/scripts/validate-vault.sh` |
+| Markdown-ссылки | `bash meta/scripts/validate-vault.sh` |
 
 ## Память проекта
 - **System rules:** `meta/rules/project-rules.md`

@@ -51,7 +51,7 @@
 5. Запустить проверку:
 
 ```bash
-bash scripts/validate-vault.sh
+bash meta/scripts/validate-vault.sh
 ```
 
 ## Проверки
@@ -59,7 +59,7 @@ bash scripts/validate-vault.sh
 В проекте есть единый валидатор:
 
 ```bash
-bash scripts/validate-vault.sh
+bash meta/scripts/validate-vault.sh
 ```
 
 Он проверяет:

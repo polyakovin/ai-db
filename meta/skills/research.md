@@ -10,7 +10,7 @@
 4. Создай заметку в `sources/` по шаблону `meta/templates/source.md`.
 5. Если источник существенный — создай концепцию/паттерн в соответствующем разделе.
 6. Добавь ссылки из overview-страниц.
-7. Запусти `bash scripts/validate-vault.sh`.
+7. Запусти `bash meta/scripts/validate-vault.sh`.
 
 ## Проверка
 - Источник добавлен в `sources/` с полным frontmatter.

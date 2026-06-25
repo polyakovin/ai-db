@@ -9,7 +9,7 @@
 3. Для source — заполни frontmatter (title, url, type, category, tags, added, status).
 4. Добавь ссылку в `overview.md` раздела.
 5. Создай ссылки на связанные заметки.
-6. Запусти `bash scripts/validate-vault.sh`.
+6. Запусти `bash meta/scripts/validate-vault.sh`.
 
 ## Проверка
 - Файл создан в правильном разделе.
