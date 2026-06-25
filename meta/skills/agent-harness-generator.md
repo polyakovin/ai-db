@@ -36,7 +36,7 @@ type: skill
 
 ```
 <project>/
-├── .hermes/                    # Harness: правила и память агента
+├── meta/                    # Harness: правила и память агента
 │   ├── rules/                  # agent system rules (проектные правила)
 │   │   └── project-rules.md    #    — стабильные правила поведения
 │   ├── memory/                 # память проекта
@@ -103,7 +103,7 @@ type: skill
 ## Инструменты
 - <список инструментов, e.g.: shell, filesystem, git, browser>
 - <если MCP — перечислить серверы>
-- <если subagents — правила из `.hermes/subagents/subagent-rules.md`>
+- <если subagents — правила из `meta/subagents/subagent-rules.md`>
 
 ## Проверки
 | Тип | Команда |
@@ -113,12 +113,12 @@ type: skill
 | Валидация | `scripts/validate.sh` |
 
 ## Память проекта
-- **System rules:** `.hermes/rules/project-rules.md`
-- **Project memory:** `.hermes/memory/project-memory.md`
+- **System rules:** `meta/rules/project-rules.md`
+- **Project memory:** `meta/memory/project-memory.md`
 - **Work plan:** `plan/current.md`
 - **Decisions:** `plan/decisions.md`
-- **Security policy:** `.hermes/sandbox/security-policy.md`
-- **Audit log:** `.hermes/observability/audit-log.md`
+- **Security policy:** `meta/sandbox/security-policy.md`
+- **Audit log:** `meta/observability/audit-log.md`
 
 ## Связанные материалы
 - [Agent Harness — ai-db](../../concepts/agent-harness.md)
@@ -128,7 +128,7 @@ type: skill
 - [Multi-agent orchestration — ai-db](../../concepts/multi-agent-orchestration.md)
 ```
 
-### 4. Создать базовые правила (.hermes/rules/project-rules.md)
+### 4. Создать базовые правила (meta/rules/project-rules.md)
 
 На основе разделов концепций ai-db: Agent Harness, Skills и правила, Execution loop, Context engineering.
 
@@ -161,10 +161,10 @@ type: skill
 - Все destructive actions — с подтверждением.
 - Секреты — вне контекста (env vars, vault).
 - Результаты tool calls — структурированно, source+date.
-- Каждый tool call логируется в `.hermes/observability/audit-log.md`.
+- Каждый tool call логируется в `meta/observability/audit-log.md`.
 ```
 
-### 5. Создать project-memory.md (.hermes/memory/project-memory.md)
+### 5. Создать project-memory.md (meta/memory/project-memory.md)
 
 ```markdown
 # Project Memory — <project-name>
@@ -188,7 +188,7 @@ type: skill
 - <preference 1>
 ```
 
-### 6. Создать security-policy (.hermes/sandbox/security-policy.md)
+### 6. Создать security-policy (meta/sandbox/security-policy.md)
 
 ```markdown
 # Security Policy
@@ -208,7 +208,7 @@ type: skill
 
 ## Audit
 - Каждый tool call логируется: timestamp, tool, arguments (redacted), результат, cost.
-- Лог ведётся в `.hermes/observability/audit-log.md`.
+- Лог ведётся в `meta/observability/audit-log.md`.
 ```
 
 ### 7. Создать pre-commit hook (.githooks/pre-commit)
@@ -292,7 +292,7 @@ check:
 
 ### 10. Создать правила subagents (если нужны)
 
-Если в профиле `subagents: Да`, создай `.hermes/subagents/subagent-rules.md`:
+Если в профиле `subagents: Да`, создай `meta/subagents/subagent-rules.md`:
 
 ```markdown
 # Subagent Rules
@@ -391,16 +391,16 @@ git config core.hooksPath .githooks
 После генерации:
 - [ ] Вся структура создана (директории и файлы).
 - [ ] `AGENTS.md` заполнен под проект — все `<...>` заменены.
-- [ ] `.hermes/rules/project-rules.md` заполнен.
-- [ ] `.hermes/memory/project-memory.md` не пустой (есть имя проекта и дата).
-- [ ] `.hermes/sandbox/security-policy.md` создан.
+- [ ] `meta/rules/project-rules.md` заполнен.
+- [ ] `meta/memory/project-memory.md` не пустой (есть имя проекта и дата).
+- [ ] `meta/sandbox/security-policy.md` создан.
 - [ ] `.githooks/pre-commit` создан и executable (`chmod +x .githooks/pre-commit`).
 - [ ] `git config core.hooksPath .githooks` выполнен.
 - [ ] `plan/` содержит начальный план.
 - [ ] `scripts/` содержит lint.sh, test.sh, validate.sh (хотя бы заглушки).
 - [ ] `scripts/validate.sh` запускается и возвращает 0 (smoke test).
 - [ ] Если нужен CI — заполнен (CI-файл выбранного типа).
-- [ ] Если `subagents: Да` — созданы `.hermes/subagents/subagent-rules.md`.
+- [ ] Если `subagents: Да` — созданы `meta/subagents/subagent-rules.md`.
 - [ ] Все ссылки в AGENTS.md ведут на существующие файлы.
 - [ ] `meta/skills/` не пустой (минимум 3 файла с содержимым).
 - [ ] `README.md` обновлён (упоминание harness и AGENTS.md).

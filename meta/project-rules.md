@@ -26,7 +26,7 @@
 - Все destructive actions — с подтверждением.
 - Секреты — вне контекста (env vars, vault).
 - Результаты tool calls — структурированно, source+date.
-- Каждый tool call логируется в `.hermes/observability/audit-log.md`.
+- Каждый tool call логируется в `meta/observability/audit-log.md`.
 
 ## Специфика ai-db
 - Это Obsidian vault + Git-репозиторий. Каждая заметка — один файл.

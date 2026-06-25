@@ -56,12 +56,12 @@
 | Markdown-ссылки | `bash scripts/validate-vault.sh` |
 
 ## Память проекта
-- **System rules:** `.hermes/rules/project-rules.md`
-- **Project memory:** `.hermes/memory/project-memory.md`
+- **System rules:** `meta/rules/project-rules.md`
+- **Project memory:** `meta/memory/project-memory.md`
 - **Work plan:** `plan/current.md`
 - **Decisions:** `plan/decisions.md`
-- **Security policy:** `.hermes/sandbox/security-policy.md`
-- **Audit log:** `.hermes/observability/audit-log.md`
+- **Security policy:** `meta/sandbox/security-policy.md`
+- **Audit log:** `meta/observability/audit-log.md`
 
 ## Связанные материалы
 - [Agent Harness — ai-db](concepts/agent-harness.md)

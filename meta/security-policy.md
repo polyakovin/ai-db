@@ -15,4 +15,4 @@
 
 ## Audit
 - Каждый tool call логируется: timestamp, tool, результат.
-- Лог ведётся в `.hermes/observability/audit-log.md`.
+- Лог ведётся в `meta/observability/audit-log.md`.
