@@ -85,7 +85,7 @@ Skill стоит переписать или удалить, если он:
 
 ## Источники
 
-- [Superpowers](../../sources/superpowers.md)
-- [ECC](../../sources/ecc.md)
-- [Andrej Karpathy Skills](../../sources/andrej-karpathy-skills.md)
+- [Superpowers](../../sources/libraries-tools/superpowers.md)
+- [ECC](../../sources/libraries-tools/ecc.md)
+- [Andrej Karpathy Skills](../../sources/research-production/andrej-karpathy-skills.md)
 - [Паттерны работы с AI-агентами](../architecture-design/agent-system-components.md)

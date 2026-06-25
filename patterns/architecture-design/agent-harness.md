@@ -92,8 +92,8 @@ Subagents полезны, когда:
 
 ## Источники
 
-- [LangChain Deep Agents](../../sources/langchain-deep-agents.md)
-- [Superpowers](../../sources/superpowers.md)
-- [ECC](../../sources/ecc.md)
-- [BitGN Arena — архитектурные инсайты](../../sources/bitgn-arena-insights.md)
-- [Harness Engineering — OpenAI](../../sources/harness-engineering-openai.md)
+- [LangChain Deep Agents](../../sources/libraries-tools/langchain-deep-agents.md)
+- [Superpowers](../../sources/libraries-tools/superpowers.md)
+- [ECC](../../sources/libraries-tools/ecc.md)
+- [BitGN Arena — архитектурные инсайты](../../sources/engineering-patterns/bitgn-arena-insights.md)
+- [Harness Engineering — OpenAI](../../sources/research-production/harness-engineering-openai.md)
