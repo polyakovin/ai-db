@@ -5,7 +5,7 @@
 ## Принцип структуры
 
 - `README.md` — короткий вход в проект и правила работы.
-- `navigation/` — карта, backlog, служебная навигация.
+- `navigation/` — карта, learning path, служебная навигация.
 - `concepts/` — удалён, всё в patterns/.
 - `patterns/` — повторяемые решения, workflow, recipes, case-карта и how-to.
 - `tools/` — модели, SDK, фреймворки, платформы, runtime, сравнения.
@@ -35,7 +35,7 @@
 | Найти воспроизводимый рецепт | [Воспроизводимые рецепты AI-агентов](../patterns/advanced/reproducible-agent-recipes.md) |
 | Выбрать архитектуру и evals под use case | [Карта кейсов AI-агентов](../patterns/advanced/agent-use-cases.md) |
 | Найти обработанные внешние источники | [Источники — Обзор](../sources/OVERVIEW.md) |
-| Посмотреть backlog | [Backlog](backlog.md) |
+|| Оценить картину целиком | [Learning path](learning-path.md) |
 
 ## Правило против дублей
 

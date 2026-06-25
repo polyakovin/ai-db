@@ -19,7 +19,7 @@
 
 | Раздел | Роль |
 |---|---|
-| [navigation](navigation/knowledge-map.md) | Карта vault, backlog, правила поиска |
+| [navigation](navigation/knowledge-map.md) | Карта vault, learning path, правила поиска |
 | [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, case-карта, how-to |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
