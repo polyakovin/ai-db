@@ -49,7 +49,7 @@ while IFS= read -r -d '' file; do
 done < <(find . -path ./.git -prune -o -name '*.md' -type f -print0)
 
 while IFS= read -r -d '' file; do
-    [[ "$(basename "$file")" == "overview.md" ]] && continue
+    [[ "$(basename "$file")" == "overview.md" || "$(basename "$file")" == "OVERVIEW.md" ]] && continue
 
     if [[ "$(sed -n '1p' "$file")" != "---" ]]; then
         echo "Missing frontmatter: $file"

@@ -89,7 +89,7 @@ MTEB полезен как sanity check, но production RAG нужно пров
 
 ## Связанные темы
 
-- [Инструменты — Обзор](overview.md)
+- [Инструменты — Обзор](OVERVIEW.md)
 - Векторные базы данных
 - RAG и агенты
 - Evaluations

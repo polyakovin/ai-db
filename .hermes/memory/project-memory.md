@@ -8,7 +8,7 @@
 
 ## Конвенции
 - Файлы называть на английском в kebab-case: `agent-harness.md`, `working-with-coding-agents.md`.
-- Обзорные страницы — `overview.md`.
+- Обзорные страницы — `OVERVIEW.md`.
 - Одна мысль — один файл, без дублей. Ссылаться на canonical note.
 - Порядок разделов фиксирован: navigation → concepts → patterns → tools → cases → comparisons → sources → meta.
 - Внешние источники — с frontmatter (title, url, type, category, tags, added, status).

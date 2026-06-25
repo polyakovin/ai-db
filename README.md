@@ -20,18 +20,18 @@
 | Раздел | Роль |
 |---|---|
 | [navigation](navigation/knowledge-map.md) | Карта vault, backlog, правила поиска |
-| [concepts](concepts/overview.md) | Базовые понятия и архитектурные блоки |
-| [patterns](patterns/overview.md) | Повторяемые решения, workflow, recipes, практические инструкции |
-| [tools](tools/overview.md) | Модели, SDK, платформы, runtime |
-| [cases](cases/overview.md) | Сценарии внедрения и разборы |
-| [comparisons](comparisons/overview.md) | Матрицы выбора и сравнительные обзоры |
-| [sources](sources/overview.md) | Статьи, переводы, курсы, обработанные источники и provenance |
+| [concepts](concepts/OVERVIEW.md) | Базовые понятия и архитектурные блоки |
+| [patterns](patterns/OVERVIEW.md) | Повторяемые решения, workflow, recipes, практические инструкции |
+| [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
+| [cases](cases/OVERVIEW.md) | Сценарии внедрения и разборы |
+| [comparisons](comparisons/OVERVIEW.md) | Матрицы выбора и сравнительные обзоры |
+| [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
 | [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
 
 ## Правило именования
 
 - Пользовательские папки и Markdown-файлы называем строго на английском в `kebab-case`: `agent-harness.md`, `working-with-coding-agents.md`.
-- Для обзорных страниц используем единое имя `overview.md`.
+- Для обзорных страниц используем единое имя `OVERVIEW.md`.
 - Служебные dot-файлы и файлы инструментов могут сохранять стандартные имена экосистемы: `.gitignore`, `.gitlab-ci.yml`, `.githooks/pre-commit`.
 - Порядок разделов задаётся этой таблицей и [картой знаний](navigation/knowledge-map.md), а не числовыми префиксами в названиях папок.
 
@@ -52,7 +52,7 @@
 
 1. Определить тип материала: концепция, паттерн, инструмент, практика, кейс, сравнение, статья или источник.
 2. Создать заметку в соответствующем разделе.
-3. Добавить ссылку в `overview.md` этого раздела.
+3. Добавить ссылку в `OVERVIEW.md` этого раздела.
 4. Если материал пришёл из внешнего источника, добавить карточку в `sources/` по шаблону [source.md](meta/templates/source.md).
 5. Запустить проверку:
 

@@ -9,7 +9,7 @@
 - [ ] Шаг 3: Зафиксировать текущее состояние → `git status`, `git commit`
 
 ## Открытые вопросы
-- Какие external sources ещё не добавлены? — `sources/overview.md`
+- Какие external sources ещё не добавлены? — `sources/OVERVIEW.md`
 
 ## Evidence
 Ссылки на файлы в `plan/evidence/`
