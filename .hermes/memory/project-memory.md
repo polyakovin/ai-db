@@ -13,6 +13,7 @@
 - Порядок разделов фиксирован: navigation → concepts → patterns → tools → practices → cases → comparisons → articles → sources → meta.
 - Внешние источники — с frontmatter (title, url, type, category, tags, added, status).
 - После изменений — запустить `scripts/validate-vault.sh`.
+- После коммита — сразу `git push`.
 
 ## Принятые решения
 | Дата | Решение | Причина | Альтернативы |
