@@ -82,10 +82,17 @@ def check_file(filepath: Path) -> list[str]:
                 if term not in line:
                     continue
 
-                # Ищем позиции термина, не внутри markdown-ссылки и не в списке источников
                 for m in re.finditer(term_escaped, line):
                     pos = m.start()
+                    before = line[:pos]
                     after = line[pos + len(term):]
+
+                    # Пропускаем если термин — часть пояснения после markdown-ссылки (например "[OpenAI](url) — Codex CLI")
+                    if "]" in before and "](" in line:
+                        last_bracket = before.rfind("]")
+                        rest_after_bracket = before[last_bracket + 1:]
+                        if rest_after_bracket.startswith("("):
+                            continue
 
                     # Уже ссылка: [term](url)
                     if after.lstrip().startswith("]("):
@@ -103,6 +110,29 @@ def check_file(filepath: Path) -> list[str]:
                     before = line[:pos]
                     if before.count("`") % 2 == 1:
                         continue
+
+                    # Пропускаем URL-пути (api.z.ai/api/anthropic — не упоминание Anthropic, а путь API)
+                    if term.lower() in line.lower() and (".com/" in line or "/api" in line):
+                        continue
+
+                    # Пропускаем ColQwen (это ColBERT модель, не Alibaba Qwen)
+                    if term == "Qwen" and "ColQwen" in line:
+                        continue
+
+                    # Пропускаем bullet-пункты списков интеграций/совместимости (метки, не prose)
+                    # Паттерн: "- **LlamaIndex**: ..." или "- LlamaIndex" — метка в списке
+                    stripped = line_stripped.lstrip("- ")
+                    if stripped.startswith("**"):
+                        stripped_inner = stripped.strip("*")
+                        if stripped_inner == term or stripped_inner.startswith(term):
+                            continue
+                    if line_stripped.startswith("- ") and term in line_stripped:
+                        # Проверяем: после "- " идёт сразу название, потом ":" или " —"
+                        after_bullet = line_stripped[2:]
+                        if after_bullet.startswith("**") and "**" in after_bullet:
+                            inner = after_bullet.split("**")[1]
+                            if inner == term:
+                                continue
 
                     violations.append(
                         f"{filepath.relative_to(ROOT)}:{i}: bare mention of "

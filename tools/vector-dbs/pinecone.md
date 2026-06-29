@@ -43,7 +43,7 @@ Pinecone — fully managed, serverless векторная база данных 
 
 - **Закрытая** — проприетарный SaaS, нет self-hosted версии
 - **Pinecone SDK** — open source (клиентские библиотеки: Python, Node.js, Java, Go)
-- **Интеграции** — открытые коннекторы для LangChain, LlamaIndex и других фреймворков
+- **Интеграции** — открытые коннекторы для LangChain, [LlamaIndex](../frameworks/llamaindex.md) и других фреймворков
 
 ## Цены (2026)
 
