@@ -10,7 +10,7 @@ status: new
 
 # Semantic Kernel
 
-Semantic Kernel (SK) — легковесный open-source development kit от Microsoft для построения AI-агентов и интеграции моделей в C#, Python и Java. Выступает как enterprise middleware: предоставляет plugin-архитектуру, telemetry, filters и глубокую интеграцию с Microsoft-стеком (Azure, .NET, OpenAI). С апреля 2026 года объединён с AutoGen в **Microsoft Agent Framework (MAF)**, но сохраняет идентичность как enterprise integration layer.
+Semantic Kernel (SK) — легковесный open-source development kit от Microsoft для построения AI-агентов и интеграции моделей в C#, Python и Java. Выступает как enterprise middleware: предоставляет plugin-архитектуру, telemetry, filters и глубокую интеграцию с Microsoft-стеком (Azure, .NET, [OpenAI](../platforms/openai.md)). С апреля 2026 года объединён с [AutoGen](autogen.md) в **Microsoft Agent Framework (MAF)**, но сохраняет идентичность как enterprise integration layer.
 
 ## Ключевые возможности
 
@@ -18,7 +18,7 @@ Semantic Kernel (SK) — легковесный open-source development kit от
 - **Multi-language** — C# (first-class), Python, Java.
 - **Orchestration** — управление AI workflows: plan generation, function calling, agent orchestration.
 - **Enterprise middleware** — filters, telemetry, Azure integration, authentication policies.
-- **Memory** — векторная память (Azure Cognitive Search, Qdrant, Pinecone, Redis).
+- **Memory** — векторная память (Azure Cognitive Search, Qdrant, [Pinecone](../vector-dbs/pinecone.md), Redis).
 - **Agent Framework** — RC (март 2025), часть MAF с апреля 2026.
 
 ## Архитектура
@@ -26,7 +26,7 @@ Semantic Kernel (SK) — легковесный open-source development kit от
 ```
 Semantic Kernel
 ├── Kernel (оркестратор)
-├── AI Services (OpenAI, Azure OpenAI, HuggingFace, etc.)
+├── AI Services ([OpenAI](../platforms/openai.md), Azure OpenAI, HuggingFace, etc.)
 ├── Plugins (native functions, REST APIs, Azure services)
 ├── Memory (vector stores, retrieval)
 ├── Filters (pre/post обработка)
@@ -36,9 +36,9 @@ Semantic Kernel
 
 ## MAF-интеграция (апрель 2026)
 
-После объединения с AutoGen:
+После объединения с [AutoGen](autogen.md):
 - SK стал enterprise integration layer в MAF
-- AutoGen — event-driven orchestration layer
+- [AutoGen](autogen.md) — event-driven orchestration layer
 - Единая платформа с LTS, stable APIs для .NET и Python
 
 ## Когда применять
@@ -108,7 +108,7 @@ Semantic Kernel
 - Сложнее для быстрого прототипа, чем [CrewAI](../frameworks/crewai.md)
 - Заточен под Microsoft-стек
 - Меньше community tutorials и примеров
-- Слияние с AutoGen — период нестабильности API
+- Слияние с [AutoGen](autogen.md) — период нестабильности API
 
 ## Связи
 

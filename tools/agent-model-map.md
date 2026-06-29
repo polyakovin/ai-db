@@ -19,24 +19,24 @@
 
 | Семейство | Когда рассматривать |
 |---|---|
-| OpenAI GPT-5.5 / GPT-5 series | tool-heavy, reasoning, structured outputs, Responses API, hosted tools |
-| Anthropic Claude Fable/Opus/Sonnet/Haiku | long-horizon agentic work, coding, large context, strong writing/analysis |
-| Google Gemini | multimodal input, Google ecosystem, long context, tools/computer use |
+[OpenAI](platforms/openai.md) GPT-5.5 / GPT-5 series | tool-heavy, reasoning, structured outputs, [Responses API](platforms/openai.md), hosted tools
+| [Anthropic](platforms/anthropic.md) [Claude Opus](platforms/anthropic.md)/Sonnet/Haiku | long-horizon agentic work, coding, large context, strong writing/analysis
+| [Gemini](gemini.md) | multimodal input, Google ecosystem, long context, tools/computer use
 | Mistral | European provider, latency/cost-sensitive apps, open/enterprise options |
 | Open/self-hosted models | data control, cost predictability, offline/private deployments |
 
 ## Default decision tree
 
-1. Если нужен provider-hosted agent stack и tools: начать с OpenAI GPT-5.5 через Responses API.
-2. Если главный сценарий — coding/repo work: сравнить Claude Opus/Sonnet, OpenAI GPT-5.5 и coding-specific eval.
-3. Если нужны multimodal документы/изображения/аудио: проверить Gemini и OpenAI multimodal модели на собственных данных.
+1. Если нужен provider-hosted agent stack и tools: начать с [OpenAI](platforms/openai.md) GPT-5.5 через [Responses API](platforms/openai.md).
+2. Если главный сценарий — coding/repo work: сравнить [Claude Opus](platforms/anthropic.md)/Sonnet, [OpenAI](platforms/openai.md) GPT-5.5 и coding-specific eval.
+3. Если нужны multimodal документы/изображения/аудио: проверить [Gemini](gemini.md) и [OpenAI](platforms/openai.md) multimodal модели на собственных данных.
 4. Если важны privacy/data residency/cost: добавить self-hosted baseline.
 5. Если latency важнее reasoning: брать smaller/fast model и проверять escalation к сильной модели.
 6. Для production не выбирать модель без task-specific eval.
 
 ## Reasoning effort
 
-[OpenAI](platforms/openai.md) docs для GPT-5.5 рекомендуют Responses API для reasoning/tool-calling/multi-turn use cases и настройку `reasoning.effort`. Balanced стартовая точка — medium, но для latency-sensitive задач стоит проверять low, а high/xhigh оставлять для сложных асинхронных агентных задач.
+[OpenAI](platforms/openai.md) docs для GPT-5.5 рекомендуют [Responses API](platforms/openai.md) для reasoning/tool-calling/multi-turn use cases и настройку `reasoning.effort`. Balanced стартовая точка — medium, но для latency-sensitive задач стоит проверять low, а high/xhigh оставлять для сложных асинхронных агентных задач.
 
 Практическое правило: reasoning effort — это не ручка “сделай лучше”, а budget. Его меняют только после evals.
 

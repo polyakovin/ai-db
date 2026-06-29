@@ -58,7 +58,7 @@ StateGraph
 - Простая цепочка вызовов LLM — достаточно LangChain Expression Language (LCEL)
 - Short-lived запросы без состояния — избыточно
 - Быстрый прототип — [Dify](dify.md)/Flowise/LangFlow быстрее для MVP
-- [OpenAI](../platforms/openai.md)-first managed stack — Agents SDK проще
+- [OpenAI](../platforms/openai.md)-first managed stack — [Agents SDK](../platforms/openai.md) проще
 
 ## Open Source статус
 
@@ -118,7 +118,7 @@ StateGraph
 - Избыточен для простых сценариев
 - Зависимость от LangChain-экосистемы
 - LangGraph Cloud — дополнительная стоимость
-- Меньше «магии из коробки» по сравнению с CrewAI
+- Меньше «магии из коробки» по сравнению с [CrewAI](crewai.md)
 
 ## Связи
 

@@ -10,16 +10,16 @@ status: new
 
 # DeepSeek
 
-DeepSeek — китайская AI-компания, разработчик open-weight моделей семейства DeepSeek V. Известна сверхнизкими ценами API и открытыми весами моделей с frontier-производительностью. Флагманские модели: DeepSeek V4 Pro и V4 Flash (апрель 2026). Предоставляет OpenAI-совместимый API и модель для самостоятельного хостинга.
+DeepSeek — китайская AI-компания, разработчик open-weight моделей семейства DeepSeek V. Известна сверхнизкими ценами API и открытыми весами моделей с frontier-производительностью. Флагманские модели: DeepSeek V4 Pro и V4 Flash (апрель 2026). Предоставляет [OpenAI](openai.md)-совместимый API и модель для самостоятельного хостинга.
 
 ## Ключевые возможности
 
 - **DeepSeek V4 Pro** — флагманская модель: 1.6T параметров (MoE, 49B активных), 1M контекст, 384K output. Reasoning mode (Chain-of-Thought) для сложных задач.
 - **DeepSeek V4 Flash** — экономичная модель: 1M контекст, $0.14/MTok input, $0.28/MTok output — одна из самых дешёвых frontier-моделей.
-- **OpenAI-совместимый API** — `api.deepseek.com`, drop-in замена OpenAI.
+- **[OpenAI](openai.md)-совместимый API** — `api.deepseek.com`, drop-in замена [OpenAI](openai.md).
 - **Open weights** — модели доступны для скачивания и self-hosting.
 - **Context caching** — поддержка KV-cache для повторяющихся контекстов (снижение стоимости).
-- **Agent integrations** — поддержка Claude Code, OpenCode и других coding agents.
+- **Agent integrations** — поддержка [Claude Code](anthropic.md), OpenCode и других coding agents.
 
 ## Модели (июнь 2026)
 
@@ -102,14 +102,14 @@ DeepSeek — китайская AI-компания, разработчик open
 ### Сильные стороны:
 - Рекордно низкие цены API (V4 Flash: $0.14/$0.28 за 1M токенов)
 - Open-weight модели для self-hosting
-- OpenAI-совместимый API — drop-in замена
+- [OpenAI](openai.md)-совместимый API — drop-in замена
 - Сильные результаты на coding бенчмарках
 - 1M контекстное окно
 
 ### Слабые стороны:
 - Китайская компания — регуляторные риски (запреты в некоторых юрисдикциях, цензура)
 - V4 Pro не открыта (API-only)
-- Сообщество меньше, чем у OpenAI/Anthropic
+- Сообщество меньше, чем у [OpenAI](openai.md)/[Anthropic](anthropic.md)
 - Проблемы с доступностью API при пиковых нагрузках
 - Требования к регистрации (номер телефона) для бесплатного tier
 

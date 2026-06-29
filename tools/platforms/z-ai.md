@@ -17,11 +17,11 @@ status: verified
 - **Video Generation** — CogVideoX-3 (0.20$/видео через API), «Ying» (текст-в-видео, 6-сек клипы за ~30 сек, запущен июль 2024)
 - **Image Generation** — CogView-4 ($0.01/изображение), GLM-Image ($0.015/изображение)
 - **Audio** — GLM-ASR-2512 (распознавание речи, $0.03/MTok ≈ $0.0024/мин)
-- **AutoGLM** — AI-агент для управления смартфоном через голосовые команды и интерпретацию экрана (тапы, свайпы, ввод текста)
+- **Назначение:** AI-агент для управления смартфоном через голосовые команды и интерпретацию экрана (тапы, свайпы, ввод текста) — аналог [Computer Use](anthropic.md) от [Anthropic](anthropic.md)
 - **AutoGLM Rumination (沉思)** — агент для deep research: поиск, планирование путешествий, написание отчётов
-- **Coding Plan** — подписка с эндпоинтом, оптимизированным для кодинга; совместимость с Claude Code, OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev и др. (20+ инструментов)
+- **Coding Plan** — подписка с эндпоинтом, оптимизированным для кодинга; совместимость с [Claude Code](anthropic.md), OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev и др. (20+ инструментов)
 - **Z Code** — GUI-IDE с multi-agent коллаборацией, SSH, мобильным запуском задач
-- **Anthropic-совместимый endpoint** — `api.z.ai/api/anthropic` — drop-in замена Claude в Claude Code
+- **[Anthropic](anthropic.md)-совместимый endpoint** — `api.z.ai/api/anthropic` — drop-in замена Claude в [Claude Code](anthropic.md)
 - **Open Source** — модели открыты под лицензией MIT с июля 2025 (без региональных ограничений)
 
 ## Хронология релизов моделей
@@ -78,11 +78,11 @@ status: verified
 | MCP-Atlas Public | 76.8 | 77.8 | 75.3 | 73.6 |
 | Tool-Decathlon | 48.2 | 59.9 | 55.6 | 52.8 |
 
-> **Intelligence Index v4.1 (Artificial Analysis):** GLM-5.2 = **51** — лучшая open-weight модель; опережает MiniMax-M3 (44), DeepSeek V4 Pro (44), Kimi K2.6 (43).
+> **Intelligence Index v4.1 (Artificial Analysis):** GLM-5.2 = **51** — лучшая open-weight модель; опережает MiniMax-M3 (44), [DeepSeek](deepseek.md) V4 Pro (44), Kimi K2.6 (43).
 
 ## Сравнение с конкурентами (Июнь 2026)
 
-| Характеристика | GLM-5.2 | DeepSeek V4 Pro | Qwen3.6-35B-A3B |
+| Характеристика | GLM-5.2 | [DeepSeek](deepseek.md) V4 Pro | [Qwen](qwen.md)3.6-35B-A3B |
 |---------------|---------|-----------------|-----------------|
 | Параметры (всего) | 753B (MoE) | 1.6T (MoE) | 35B (MoE) |
 | Активных параметров | 40B | 49B | **3B** |
@@ -95,8 +95,8 @@ status: verified
 
 **Выводы:**
 - **GLM-5.2:** лучшие показатели на SWE-bench Pro и Terminal-Bench среди open-weight; MIT; широкая экосистема интеграций
-- **DeepSeek V4 Pro:** самая низкая цена API; лучший на SWE-bench Verified (80.6%); 384K output
-- **Qwen3.6-35B-A3B:** феноменальная эффективность (3B активных = 73.4 SWE-bench Verified); запуск на одной GPU
+- **[DeepSeek](deepseek.md) V4 Pro:** самая низкая цена API; лучший на SWE-bench Verified (80.6%); 384K output
+- **[Qwen](qwen.md)3.6-35B-A3B:** феноменальная эффективность (3B активных = 73.4 SWE-bench Verified); запуск на одной GPU
 
 ## AutoGLM — AI-агент для смартфонов
 
@@ -174,15 +174,15 @@ status: verified
 
 - **API Base (PAAS):** `https://api.z.ai/api/paas/v4/`
 - **Coding Plan API Base:** `https://api.z.ai/api/coding/paas/v4/`
-- **Anthropic-совместимый endpoint:** `https://api.z.ai/api/anthropic` (drop-in замена Claude)
-- Совместимость с 20+ AI-coding инструментами: Claude Code, OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev, Crush, Factory, Droid, OpenCode, Trae и др.
+- **Anthropic-совместимый endpoint:** `https://api.z.ai/api/anthropic` (drop-in замена [Claude](anthropic.md))
+- Совместимость с 20+ AI-coding инструментами: [Claude Code](anthropic.md), OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev, Crush, Factory, Droid, OpenCode, Trae и др.
 - Модели API: `glm-5.2`, `glm-5.1`, `glm-5`, `glm-5-turbo`, `glm-4.7`, `glm-4.6`, `glm-4.5`, `glm-4.5-air`, `glm-5v-turbo`, `glm-4.6v`, `glm-4.5v`
 - MCP-серверы (включены в Coding Plan): Vision Analysis, Web Search, Web Reader, Zread
 - Поддерживаемое железо для self-host: NVIDIA (H20/H100), Huawei Ascend, Moore Threads, Cambricon, Kunlun Chip, MetaX, Enflame, Hygon
 
 ## Позиционирование и стратегия
 
-- **Open Source first:** флагманские модели открываются в день релиза (MIT), без региональных ограничений. Стратегия: open source → принятие в US (через Fireworks, Groq, self-host) → рост API-выручки (по модели DeepSeek).
+- **Open Source first:** флагманские модели открываются в день релиза (MIT), без региональных ограничений. Стратегия: open source → принятие в US (через Fireworks, Groq, self-host) → рост API-выручки (по модели [DeepSeek](deepseek.md)).
 - **Рынки:** Китай (BigModel.cn), международный (z.ai). Крупнейшая база пользователей — Индия; наибольшая выручка — США (50% overseas revenue). Инференс-серверы в Сингапуре; тренировка — в Китае.
 - **Инвесторы:** Alibaba, Tencent, Meituan, Ant Group, Xiaomi, HongShan, Prosperity7 (Саудовская Аравия). Оценка ~$3B (май 2024).
 - **Сотрудники:** 800+ (2024); core research team: 100–200 чел.
@@ -190,22 +190,22 @@ status: verified
 
 ## Use Cases
 
-- **Coding Agent (Claude Code-совместимость):** автономная разработка, отладка, рефакторинг, long-horizon задачи (600+ итераций VectorDB оптимизации, 8-часовое построение Linux desktop)
+- **Coding Agent ([Claude Code](anthropic.md)-совместимость):** автономная разработка, отладка, рефакторинг, long-horizon задачи (600+ итераций VectorDB оптимизации, 8-часовое построение Linux desktop)
 - **Agentic Engineering:** multi-step tool use, function calling, MCP-интеграции
 - **Office Automation:** генерация .docx, .pdf, .xlsx из текстовых описаний (PRD, финансовые отчёты, планы уроков)
 - **Mobile Agent (AutoGLM):** заказ еды, покупка билетов, навигация — голосом
 - **Deep Research (AutoGLM Rumination):** поиск, анализ, написание отчётов
 - **Video Generation (CogVideoX-3/Ying):** создание видео из текста/изображений
-- **Перевод (CN↔EN):** near-parity с Gemini 2.5 Pro; специализация на китайских интернет-мемах, эмодзи, аббревиатурах
+- **Перевод (CN↔EN):** near-parity с [Gemini](../gemini.md) 2.5 Pro; специализация на китайских интернет-мемах, эмодзи, аббревиатурах
 - **Mixed-language codebases:** преимущество в командах с китайско-английским кодом
 
 ## Отзывы и критика
 
-- **Сильные стороны:** лучшая open-weight модель по бенчмаркам (Июнь 2026); MIT-лицензия без ограничений; Anthropic-совместимый API для бесшовной замены Claude; конкурентоспособная цена ($1.40/$4.40 за 1M токенов vs $5/$25 у Opus); широкий набор моделей (текст, vision, видео, аудио, агенты).
+- **Сильные стороны:** лучшая open-weight модель по бенчмаркам (Июнь 2026); MIT-лицензия без ограничений; [Anthropic](anthropic.md)-совместимый API для бесшовной замены [Claude](anthropic.md); конкурентоспособная цена ($1.40/$4.40 за 1M токенов vs $5/$25 у Opus); широкий набор моделей (текст, vision, видео, аудио, агенты).
 - **Слабые стороны:** высокие требования к самостоятельному хостингу (1.51 TB в BF16); throttling при пиковых нагрузках; отсутствие нативной IDE-интеграции (только через third-party); региональные риски (китайская компания под санкциями США); эффективный контекст ~60–100K (по собственному признанию в ChinaTalk), несмотря на заявленный 1M.
 - **Simon Willison (Июнь 2026):** «GLM-5.2 is probably the most powerful text-only open weights LLM».
 - **Vibe Coding Blog:** «The flat-rate Coding Plan tiers remain Zhipu's strongest value proposition».
-- **Разработчики (Reddit r/LocalLLaMA):** GLM-4.6 показал сильные результаты в тестах на кодинг против DeepSeek V3.2-Exp и Qwen3.
+- **Разработчики (Reddit r/LocalLLaMA):** GLM-4.6 показал сильные результаты в тестах на кодинг против [DeepSeek](deepseek.md) V3.2-Exp и [Qwen](qwen.md)3.
 
 ## Верификация
 

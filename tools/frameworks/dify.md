@@ -46,7 +46,7 @@ Dify — open-source low-code платформа для разработки LLM
 
 - Сложные production агенты — limited low-code abstraction
 - Тонкий контроль над состоянием — [LangGraph](../frameworks/langgraph.md)
-- Coding-first workflow — [Claude Code](../platforms/anthropic.md)/Codex CLI
+- Coding-first workflow — [Claude Code](../platforms/anthropic.md)/[Codex CLI](../platforms/openai.md)
 - Нужна полная гибкость кода — пишите на Python + LangChain
 
 ## Open Source статус

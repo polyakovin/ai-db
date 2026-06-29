@@ -4,13 +4,13 @@
 
 ## Что выбирать по умолчанию
 
-- **OpenAI `text-embedding-3-small`** — базовый выбор для недорогого production RAG, если стек уже на OpenAI.
-- **OpenAI `text-embedding-3-large`** — когда нужна максимальная точность в OpenAI-стеке и можно платить за больший вектор.
+[OpenAI](platforms/openai.md) `text-embedding-3-small` — базовый выбор для недорогого production RAG, если стек уже на [OpenAI](platforms/openai.md).
+- **[OpenAI](platforms/openai.md) `text-embedding-3-large`
 - **Voyage `voyage-4` / `voyage-4-large`** — сильный выбор для retrieval-first систем, длинного контекста, мультиязычного поиска и доменных вариантов.
 - **Google `gemini-embedding-2`** — когда нужны мультимодальные эмбеддинги: текст, изображения, видео, аудио, PDF в одном пространстве.
 - **Cohere `embed-v4.0`** — хороший managed-вариант для смешанных text/image/PDF сценариев и enterprise-стека Cohere.
 - **BAAI `bge-m3`** — open-source вариант для self-hosted RAG, гибридного dense/sparse/multi-vector retrieval и языков, включая русский.
-- **Jina `jina-embeddings-v4`** — open/source-friendly вариант для длинного контекста, мультиязычности и мультимодального поиска.
+- **[Jina](rerankers.md) `jina-embeddings-v4`** — open/source-friendly вариант для длинного контекста, мультиязычности и мультимодального поиска.
 
 ## Сравнение моделей
 
@@ -24,7 +24,7 @@
 | Cohere `embed-v4.0` | API | 256/512/1024/1536 default | 128000 токенов | text/image/PDF, разные similarity metrics | enterprise RAG, документы с визуальной структурой |
 | BAAI `bge-m3` | open weights | 1024 | 8192 токена | dense + sparse + multi-vector, 100+ языков | self-hosted, гибридный поиск, контроль данных |
 | `multilingual-e5-large-instruct` | open weights | 1024 | 512 токенов | сильный multilingual baseline, instruction queries | локальный мультиязычный retrieval с короткими чанками |
-| Jina `jina-embeddings-v4` | API / models | зависит от режима | 32000 токенов | text+image, long context, 89 языков | мультимодальный поиск и длинные документы |
+| [Jina](rerankers.md) `jina-embeddings-v4` | API / models | зависит от режима | 32000 токенов | text+image, long context, 89 языков | мультимодальный поиск и длинные документы |
 
 ## Практические правила выбора
 

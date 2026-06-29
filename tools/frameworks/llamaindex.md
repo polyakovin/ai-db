@@ -87,7 +87,7 @@ LlamaIndex — фреймворк для построения контекстн
 
 ### Слабые стороны:
 - Слабее в non-RAG сценариях (orchestration без данных)
-- Оркестрация требует дополнительного уровня (Workflows моложе LangGraph)
+- Оркестрация требует дополнительного уровня (Workflows моложе [LangGraph](langgraph.md))
 - Меньше adoption в enterprise .NET
 - LlamaCloud — дополнительная стоимость для managed парсинга
 

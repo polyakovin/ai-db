@@ -10,7 +10,7 @@ status: new
 
 # AutoGen / Microsoft Agent Framework (MAF)
 
-AutoGen — open-source фреймворк от Microsoft Research для создания conversational и event-driven multi-agent систем. Исторически разделялся на AgentChat (high-level) и Core (low-level). В апреле 2026 года AutoGen и Semantic Kernel объединились в **Microsoft Agent Framework (MAF)** — единую production-ready платформу для .NET и Python с stable API и долгосрочной поддержкой.
+AutoGen — open-source фреймворк от Microsoft Research для создания conversational и event-driven multi-agent систем. Исторически разделялся на AgentChat (high-level) и Core (low-level). В апреле 2026 года AutoGen и [Semantic Kernel](semantic-kernel.md) объединились в **Microsoft Agent Framework (MAF)** — единую production-ready платформу для .NET и Python с stable API и долгосрочной поддержкой.
 
 ## Ключевые возможности
 
@@ -19,11 +19,11 @@ AutoGen — open-source фреймворк от Microsoft Research для соз
 - **Extensions** — расширения для observability, Studio (UI для визуализации и отладки).
 - **Event-driven архитектура** — агенты общаются через события (messages, tool calls, state changes).
 - **Multi-agent collaboration** — поддержка conversational patterns: round-robin, manager-worker, group chat.
-- **Convergence с Semantic Kernel** (апрель 2026) → единый MAF: stable APIs, LTS, production-ready.
+- **Convergence с [Semantic Kernel](semantic-kernel.md)** (апрель 2026) → единый MAF: stable APIs, LTS, production-ready.
 
 ## MAF 1.0 (апрель 2026)
 
-После слияния AutoGen и Semantic Kernel в Microsoft Agent Framework:
+После слияния AutoGen и [Semantic Kernel](semantic-kernel.md) в Microsoft Agent Framework:
 
 | Характеристика | MAF 1.0 |
 |---------------|---------|
@@ -54,7 +54,7 @@ AutoGen — open-source фреймворк от Microsoft Research для соз
 ## Open Source статус
 
 - **AutoGen** — MIT license (GitHub: `microsoft/autogen`)
-- **Semantic Kernel** — MIT license (GitHub: `microsoft/semantic-kernel`)
+- **[Semantic Kernel](semantic-kernel.md)** — MIT license (GitHub: `microsoft/semantic-kernel`)
 - **MAF** — MIT license, единый репозиторий после слияния
 - **AutoGen Studio** — open source UI для визуализации и отладки
 
@@ -91,14 +91,14 @@ AutoGen — open-source фреймворк от Microsoft Research для соз
 
 ### Сильные стороны:
 - Единственный production-фреймворк с first-class поддержкой .NET и Python
-- Слияние AutoGen и Semantic Kernel — единая платформа, stable API
+- Слияние AutoGen и [Semantic Kernel](semantic-kernel.md) — единая платформа, stable API
 - Event-driven архитектура хороша для асинхронных сценариев
 - Глубокая интеграция с Microsoft-стеком (Azure, plugins, telemetry)
 - AutoGen Studio для визуализации
 
 ### Слабые стороны:
 - Слияние двух проектов может означать breaking changes и сложности миграции
-- Меньше adoption, чем у LangGraph/CrewAI
+- Меньше adoption, чем у [LangGraph](langgraph.md)/[CrewAI](crewai.md)
 - Event-driven модель сложнее для простых сценариев
 - Заточен под Microsoft-экосистему (меньше ценности вне неё)
 - Меньше community content и tutorials

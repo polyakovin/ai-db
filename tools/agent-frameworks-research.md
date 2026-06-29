@@ -30,7 +30,7 @@
 
 ## OpenAI
 
-[OpenAI](platforms/openai.md) стоит брать, если нужен managed stack с Responses API, tools, structured outputs, tracing, evals и Agents SDK. Хорош для production-команд, которым важны provider-hosted capabilities и единая экосистема.
+[OpenAI](platforms/openai.md) стоит брать, если нужен managed stack с [Responses API](platforms/openai.md), tools, structured outputs, tracing, evals и [Agents SDK](platforms/openai.md). Хорош для production-команд, которым важны provider-hosted capabilities и единая экосистема.
 
 Primary sources:
 
@@ -98,13 +98,13 @@ Primary sources:
 
 ## Рекомендации по выбору
 
-- Нужен production OpenAI-first агент: OpenAI Responses API + Agents SDK.
-- Нужен stateful graph с human interrupts: LangGraph.
-- Нужен knowledge/RAG agent: LlamaIndex или LangGraph + RAG слой.
-- Нужна .NET/enterprise интеграция: Semantic Kernel.
-- Нужны role-based multi-agent prototypes: CrewAI или AutoGen.
-- Нужно быстро показать идею non-engineering команде: Dify/Flowise/LangFlow.
-- Нужен coding workflow по repo: Claude Code или Codex-like agent.
+- Нужен production OpenAI-first агент: [OpenAI](platforms/openai.md) [Responses API](platforms/openai.md) + [Agents SDK](platforms/openai.md).
+- Нужен stateful graph с human interrupts: [LangGraph](frameworks/langgraph.md).
+- Нужен knowledge/RAG agent: [LlamaIndex](frameworks/llamaindex.md) или [LangGraph](frameworks/langgraph.md) + RAG слой.
+- Нужна .NET/enterprise интеграция: [Semantic Kernel](frameworks/semantic-kernel.md).
+- Нужны role-based multi-agent prototypes: [CrewAI](frameworks/crewai.md) или [AutoGen](frameworks/autogen.md).
+- Нужно быстро показать идею non-engineering команде: [Dify](frameworks/dify.md)/Flowise/LangFlow.
+- Нужен coding workflow по repo: [Claude Code](platforms/anthropic.md) или Codex-like agent.
 
 ## Связанные заметки
 

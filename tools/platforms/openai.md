@@ -17,7 +17,7 @@ OpenAI — ведущая американская AI-компания, созд
 - **Responses API** — основной API для агентов: заменяет Chat Completions и Assistants API. Поддерживает reasoning, tool calling, structured outputs, web search, file search, computer use, streaming, background mode.
 - **Agents SDK** — Python/Node.js SDK для построения агентов: orchestration, handoffs, guardrails, tracing, evals, sandbox agents, MCP-серверы.
 - **Codex CLI** — open-source терминальный coding agent: работает с репозиториями, multi-agent workflows, skills catalog, облачные sandbox. #1 на Terminal-Bench 2.1 (83.4%).
-- **ChatKit** — фреймворк для построения UI-агентов с Actions, Skills, Shell, Computer Use.
+- **ChatKit** — фреймворк для построения UI-агентов с Actions, Skills, Shell, [Computer Use](anthropic.md).
 - **Realtime API** — голосовые агенты с WebRTC, WebSocket, SIP.
 - **Agent Builder** — low-code инструмент для создания агентов.
 

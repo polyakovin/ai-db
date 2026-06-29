@@ -28,7 +28,7 @@ updated: 2026-06-29
 - **Архитектура:** MoE, ~310B total / 15B active
 - **Контекстное окно:** 1M токенов
 - **Цена (API):** $0.14/M input (cache miss), $0.28/M output
-- **Особенности:** омнимодальная модель, сопоставима по производительности с Claude Sonnet 4.6, встроена в MiMo Code бесплатно (limited time)
+- **Особенности:** омнимодальная модель, сопоставима по производительности с [Claude Sonnet](../platforms/anthropic.md) 4.6, встроена в MiMo Code бесплатно (limited time)
 
 ### MiMo-V2-Flash (январь 2026, обновление февраль 2026)
 - **Архитектура:** MoE, 309B total / 15B active
@@ -46,7 +46,7 @@ updated: 2026-06-29
 - **Параметры:** 7B, обучена с нуля (from scratch)
 - **Претрейн:** 25 трлн токенов, с Multi-Token Prediction (MTP)
 - **Посттренинг:** Base → SFT → RL (Reinforcement Learning)
-- **MiMo-7B-RL-0530:** превосходит DeepSeek R1 (79.8) на AIME24 (80.1)
+- **MiMo-7B-RL-0530:** превосходит [DeepSeek](../platforms/deepseek.md) R1 (79.8) на AIME24 (80.1)
 - **MATH500:** 97.2 (MiMo-7B-RL-0530)
 - **LiveCodeBench v5:** 60.9 (MiMo-7B-RL-0530)
 - **Релиз:** GitHub [xiaomimimo/mimo](https://github.com/xiaomimimo/mimo), HuggingFace `XiaomiMiMo/MiMo-7B-*`
@@ -54,7 +54,7 @@ updated: 2026-06-29
 
 ## Бенчмарки MiMo Code (V0.1.0, июнь 2026)
 
-Сравнение MiMo Code vs Claude Code (одинаковая модель MiMo-V2.5-Pro):
+Сравнение MiMo Code vs [Claude Code](../platforms/anthropic.md) (одинаковая модель MiMo-V2.5-Pro):
 
 | Benchmark | MiMo Code | Claude Code |
 |-----------|-----------|-------------|
@@ -63,7 +63,7 @@ updated: 2026-06-29
 | **Terminal Bench 2** | **73%** | 68% |
 
 ### A/B тестирование (576 разработчиков, 474 репозитория, 1213 пар):
-- Задачи до 200 шагов: ~50/50 с Claude Code
+- Задачи до 200 шагов: ~50/50 с [Claude Code](../platforms/anthropic.md)
 - Задачи свыше 200 шагов: MiMo Code побеждает в >65% случаев
 
 ### Бенчмарки моделей:
@@ -128,10 +128,10 @@ updated: 2026-06-29
 
 ### Интеграции
 - **Kilo Code:** VS Code, JetBrains, Cursor, Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
-- **Claude Code:** совместимость через Anthropic-compatible API endpoint
+- **[Claude Code](../platforms/anthropic.md):** совместимость через [Anthropic](../platforms/anthropic.md)-compatible API endpoint
 - **OpenCode:** основа форка, все возможности OpenCode сохранены
 - **OpenRouter:** API-доступ ко всем моделям
-- **MCP:** поддержка Model Context Protocol (импорт из Claude Code)
+- **MCP:** поддержка Model Context Protocol (импорт из [Claude Code](../platforms/anthropic.md))
 
 ## Open Source статус
 
@@ -160,9 +160,9 @@ updated: 2026-06-29
 ## Отзывы и критика
 
 ### Положительные:
-- Превосходит Claude Code на длинных задачах (200+ шагов)
-- Значительно дешевле конкурентов: в 10-87× дешевле GPT-5.5 и Claude Opus 4.8
-- Тратит на 40-60% меньше токенов на траекторию (против Claude Opus 4.6, Gemini 3.1 Pro, GPT-5.4)
+- Превосходит [Claude Code](../platforms/anthropic.md) на длинных задачах (200+ шагов)
+- Значительно дешевле конкурентов: в 10-87× дешевле GPT-5.5 и [Claude Opus](../platforms/anthropic.md) 4.8
+- Тратит на 40-60% меньше токенов на траекторию (против [Claude Opus](../platforms/anthropic.md) 4.6, [Gemini](../gemini.md) 3.1 Pro, GPT-5.4)
 - Активное open-source сообщество, MIT лицензия
 
 ### Негативные:
@@ -170,14 +170,14 @@ updated: 2026-06-29
 - Проблемы с настройкой в OpenCode (требует доработки)
 - По некоторым тестам уступает GLM 5.1
 - Самостоятельные (self-reported) бенчмарки — требуется независимая верификация
-- Не сравнивались напрямую с Codex CLI и Gemini CLI
+- Не сравнивались напрямую с [Codex CLI](../platforms/openai.md) и [Gemini](../gemini.md) CLI
 
 ## Ключевые конкуренты
-- Claude Code (Anthropic) — прямой бенчмарк-конкурент
-- OpenAI Codex CLI + GPT-5.5
+- [Claude Code](../platforms/anthropic.md) ([Anthropic](../platforms/anthropic.md)) — прямой бенчмарк-конкурент
+- [OpenAI](../platforms/openai.md) [Codex CLI](../platforms/openai.md) + GPT-5.5
 - GLM-5.1 / Kimi K2.6 (китайские open-source альтернативы)
-- DeepSeek V3.2
-- Qwen (Alibaba)
+- [DeepSeek](../platforms/deepseek.md) V3.2
+- [Qwen](../platforms/qwen.md) (Alibaba)
 
 ## Ключевые даты
 - **Май 2025:** Релиз MiMo-7B (исследовательская серия)

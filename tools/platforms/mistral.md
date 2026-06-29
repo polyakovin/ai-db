@@ -115,7 +115,7 @@ Mistral AI — французская AI-компания (основана в 2
 - Уступает frontier-моделям ([GPT-5.5](openai.md), [Opus 4.8](anthropic.md)) на сложных reasoning задачах
 - Меньше adoption, чем [OpenAI](openai.md)/[Anthropic](anthropic.md)
 - Нет managed agent stack как у [OpenAI](openai.md)
-- Vibe (агенты) — новее и менее зрело, чем Claude Cowork
+- Vibe (агенты) — новее и менее зрело, чем [Claude Cowork](anthropic.md)
 - Меньше community content
 
 ## Связи
