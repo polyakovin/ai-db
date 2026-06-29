@@ -9,6 +9,7 @@
 - [Модели для эмбеддингов](embedding-models.md) — выбор embedding-модели для RAG, памяти и семантического поиска
 - [Observability и debugging](agent-observability-debugging.md) — traces, spans, logs, metrics, run replay и failure taxonomy
 - [Perplexity AI](perplexity.md) — AI-поисковая платформа с агентными возможностями (Computer, Spaces, Workflows)
+- [Google Gemini](gemini.md) — семейство мультимодальных LLM, платформа с Computer Use, Gemini CLI, API
 - [Сравнение платформ](comparisons.md) — сравнительный анализ фреймворков, моделей и платформ
 
 ## Как устроен раздел
