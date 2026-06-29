@@ -114,7 +114,7 @@ Subagents полезны, когда:
 - [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — approvals и UX агента
 - [Production operations](../production-operations/production-operations.md) — эксплуатация harness в продакшене
 - [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — что ломает harness
-- [Google Gemini](../../tools/gemini.md) — Gemini CLI как реализация coding harness
+- [Google Gemini](../../tools/platforms/gemini.md) — Gemini CLI как реализация coding harness
 - [OpenAI](../../tools/platforms/openai.md) — Codex CLI как coding harness
 - [Anthropic (Claude)](../../tools/platforms/anthropic.md) — Claude Code как coding harness
 - [LangGraph](../../tools/frameworks/langgraph.md) — orchestration в harness

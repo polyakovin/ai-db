@@ -92,8 +92,8 @@ def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, str]) 
         if line.startswith("#"):
             continue
 
-        # ── skip integration-list bullets (bold + colon, optional list prefix) ──
-        if re.match(r'^[-*]\s+\*{1,2}[^*]+\*{1,2}\s*:', line):
+        # ── skip integration-list bullets (bold + continuation, optional list prefix) ──
+        if re.match(r'^[-*]\s+\*{1,2}[^*]+\*{1,2}\s*[:—]', line):
             continue
 
         # ── skip hyphenated adjectives like 'OpenAI-совместимый', 'OpenAI-first' ──

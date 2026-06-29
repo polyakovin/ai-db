@@ -104,7 +104,7 @@ status: verified
 - **Возможности:** полноценное управление смартфоном — интерпретация экрана, симуляция тапов/свайпов/ввода текста
 - **Задачи:** заказ еды (Meituan), покупка билетов, навигация (Google Maps), работа с WeChat, Taobao и др.
 - **Бенчмарки (arXiv 2411.00820):** Web: VAB-WebArena-Lite 55.2% (59.1% со второй попыткой), OpenTable 96.2%; Android: AndroidLab 36.2%, китайские приложения 89.7%
-- **Open Source:** модель AutoGLM-Phone-9B доступна на [[../huggingface.md|Hugging Face]] и ModelScope; фреймворк Open-AutoGLM на GitHub
+- **Open Source:** модель AutoGLM-Phone-9B доступна на [[../hosting/huggingface.md|Hugging Face]] и ModelScope; фреймворк Open-AutoGLM на GitHub
 - **Контекст:** Z.ai заявляет, что работа над «phone use» велась с апреля 2023 (32 месяца разработки)
 
 ## Цены API (официальные, Z.ai — Июнь 2026)
@@ -196,7 +196,7 @@ status: verified
 - **Mobile Agent (AutoGLM):** заказ еды, покупка билетов, навигация — голосом
 - **Deep Research (AutoGLM Rumination):** поиск, анализ, написание отчётов
 - **Video Generation (CogVideoX-3/Ying):** создание видео из текста/изображений
-- **Перевод (CN↔EN):** near-parity с [Gemini](../gemini.md) 2.5 Pro; специализация на китайских интернет-мемах, эмодзи, аббревиатурах
+- **Перевод (CN↔EN):** near-parity с [Gemini](gemini.md) 2.5 Pro; специализация на китайских интернет-мемах, эмодзи, аббревиатурах
 - **Mixed-language codebases:** преимущество в командах с китайско-английским кодом
 
 ## Отзывы и критика

@@ -61,7 +61,7 @@ status: new
 ## Связи
 
 - [Hugging Face](huggingface.md) — хостинг через Spaces
-- [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) — UI для демонстрации
-- [Evaluations для агентов](../patterns/implementation/agent-evaluations.md) — интерфейс для human evaluation
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — UI для демонстрации
+- [Evaluations для агентов](../../patterns/implementation/agent-evaluations.md) — интерфейс для human evaluation
 
 *Добавлено: 2026-06-29*

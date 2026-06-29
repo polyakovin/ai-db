@@ -16,17 +16,17 @@ status: new
 
 - Одна команда: `ollama run llama3.2` — модель скачивается и запускается
 - Поддержка GPU-акселерации (CUDA, Metal, ROCm)
-- REST API (совместимый с [[platforms/openai.md|OpenAI]] chat completions)
+- REST API (совместимый с [[../platforms/openai.md|OpenAI]] chat completions)
 - Modelfile — кастомизация моделей (системный промпт, параметры, temperature)
 - Multimodal модели (изображения на вход)
 - Контекстная память между запросами
-- Модели в один клик: Llama, Mistral, Gemma, Qwen, [[platforms/deepseek.md|DeepSeek]], Phi, Command R+
+- Модели в один клик: Llama, Mistral, Gemma, Qwen, [[../platforms/deepseek.md|DeepSeek]], Phi, Command R+
 
 ## Модели / Продукты
 
 - 100+ готовых моделей в реестре
 - Кастомные модели через Modelfile
-- Интеграция с [[frameworks/langchain.md|LangChain]], [[frameworks/llamaindex.md|LlamaIndex]], библиотеками Python/JS
+- Интеграция с [[../frameworks/langchain.md|LangChain]], [[../frameworks/llamaindex.md|LlamaIndex]], библиотеками Python/JS
 
 ## Цены и доступ
 
@@ -35,8 +35,8 @@ status: new
 
 ## Агентные возможности
 
-- API для tool calling через [[platforms/openai.md|OpenAI]]-совместимый интерфейс
-- Можно использовать как бэкенд для coding-агентов (через [[platforms/openai.md|OpenAI]]-compatible endpoint)
+- API для tool calling через [[../platforms/openai.md|OpenAI]]-совместимый интерфейс
+- Можно использовать как бэкенд для coding-агентов (через [[../platforms/openai.md|OpenAI]]-compatible endpoint)
 - Локальный инференс — нет задержек сети и privacy-рисков
 - Ограниченная поддержка function calling (зависит от модели)
 
@@ -59,9 +59,9 @@ status: new
 
 ## Связи
 
-- [OpenAI](platforms/openai.md) — OpenAI-совместимый API
+- [OpenAI](../platforms/openai.md) — OpenAI-совместимый API
 - [vLLM](vllm.md) — production-инференс (альтернатива Ollama)
-- [Hugging Face](huggingface.md) — источник моделей
-- [Модельная карта](agent-model-map.md)
+- [Hugging Face](../hosting/huggingface.md) — источник моделей
+- [Модельная карта](../agent-model-map.md)
 
 *Добавлено: 2026-06-29*

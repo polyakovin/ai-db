@@ -21,7 +21,7 @@
 |---|---|
 [OpenAI](platforms/openai.md) GPT-5.5 / GPT-5 series | tool-heavy, reasoning, structured outputs, [Responses API](platforms/openai.md), hosted tools
 | [Anthropic](platforms/anthropic.md) [Claude Opus](platforms/anthropic.md)/Sonnet/Haiku | long-horizon agentic work, coding, large context, strong writing/analysis
-| [Gemini](gemini.md) | multimodal input, Google ecosystem, long context, tools/computer use
+| [Gemini](platforms/gemini.md) | multimodal input, Google ecosystem, long context, tools/computer use
 | Mistral | European provider, latency/cost-sensitive apps, open/enterprise options |
 | Open/self-hosted models | data control, cost predictability, offline/private deployments |
 
@@ -29,7 +29,7 @@
 
 1. Если нужен provider-hosted agent stack и tools: начать с [OpenAI](platforms/openai.md) GPT-5.5 через [Responses API](platforms/openai.md).
 2. Если главный сценарий — coding/repo work: сравнить [Claude Opus](platforms/anthropic.md)/Sonnet, [OpenAI](platforms/openai.md) GPT-5.5 и coding-specific eval.
-3. Если нужны multimodal документы/изображения/аудио: проверить [Gemini](gemini.md) и [OpenAI](platforms/openai.md) multimodal модели на собственных данных.
+3. Если нужны multimodal документы/изображения/аудио: проверить [Gemini](platforms/gemini.md) и [OpenAI](platforms/openai.md) multimodal модели на собственных данных.
 4. Если важны privacy/data residency/cost: добавить self-hosted baseline.
 5. Если latency важнее reasoning: брать smaller/fast model и проверять escalation к сильной модели.
 6. Для production не выбирать модель без task-specific eval.
@@ -74,12 +74,12 @@
 
 ## Связанные заметки
 
-- [Модели для эмбеддингов](embedding-models.md)
+- [Модели для эмбеддингов](embeddings/OVERVIEW.md)
 - [Evaluations для агентов](../patterns/implementation/agent-evaluations.md)
 - [Исследование фреймворков](agent-frameworks-research.md)
 - [OpenAI](platforms/openai.md) — GPT-5.5 в карте моделей
 - [Anthropic (Claude)](platforms/anthropic.md) — Claude модели в карте
-- [Google Gemini](gemini.md) — Gemini model family в карте
+- [Google Gemini](platforms/gemini.md) — Gemini model family в карте
 - [Mistral AI](platforms/mistral.md) — Mistral модели в карте
 - [DeepSeek](platforms/deepseek.md) — DeepSeek модели в карте
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen модели в карте

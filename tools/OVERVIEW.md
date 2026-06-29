@@ -6,7 +6,7 @@
 
 - [Anthropic (Claude)](platforms/anthropic.md) — Claude API, Claude Code, Claude Cowork, Computer Use, Opus/Sonnet/Haiku
 - [OpenAI](platforms/openai.md) — GPT-5.5, Responses API, Agents SDK, Codex CLI, Realtime API
-- [Google Gemini](gemini.md) — семейство мультимодальных LLM, платформа с Computer Use, Gemini CLI, API
+- [Google Gemini](platforms/gemini.md) — семейство мультимодальных LLM, платформа с Computer Use, Gemini CLI, API
 - [Mistral AI](platforms/mistral.md) — европейский провайдер: Large 3, Medium 3.5, Small 4, Codestral, Le Chat
 - [DeepSeek](platforms/deepseek.md) — open-weight модели V4 Pro/Flash, сверхнизкие цены API
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen3.7-Max/Plus, Qwen3.6-35B-A3B, open-weight → API-only переход
@@ -27,14 +27,14 @@
 
 ## Поиск и retrieval
 
-- [Perplexity AI](perplexity.md) — AI-поисковая платформа с агентными возможностями (Computer, Spaces, Workflows)
+- [Perplexity AI](platforms/perplexity.md) — AI-поисковая платформа с агентными возможностями (Computer, Spaces, Workflows)
 - [Pinecone](vector-dbs/pinecone.md) — serverless векторная база данных для RAG
-- [Ререйкеры](rerankers.md) — Cohere Rerank, BGE, Jina — второй этап ранжирования для RAG
+- [Ререйкеры](embeddings/rerankers.md) — Cohere Rerank, BGE, Jina — второй этап ранжирования для RAG
 
 ## Другие инструменты
 
-- [Модели для эмбеддингов](embedding-models.md) — выбор embedding-модели для RAG, памяти и семантического поиска
-- [Observability и debugging](agent-observability-debugging.md) — traces, spans, logs, metrics, run replay и failure taxonomy
+- [Модели для эмбеддингов](embeddings/OVERVIEW.md) — выбор embedding-модели для RAG, памяти и семантического поиска
+- [Observability и debugging](observability/OVERVIEW.md) — traces, spans, logs, metrics, run replay и failure taxonomy
 
 ## Исследования и сравнения
 

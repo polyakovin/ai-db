@@ -10,7 +10,7 @@ status: new
 
 # LangSmith
 
-Платформа для observability, tracing, evaluation и тестирования LLM-приложений от создателей [LangChain](frameworks/langchain.md). Работает с любым LLM-фреймворком.
+Платформа для observability, tracing, evaluation и тестирования LLM-приложений от создателей [LangChain](../frameworks/langchain.md). Работает с любым LLM-фреймворком.
 
 ## Ключевые возможности
 
@@ -45,7 +45,7 @@ status: new
 
 ## Open Source статус
 
-**Proprietary.** Ядро [[frameworks/langchain.md|LangChain]] — open source (MIT), но LangSmith — закрытая платформа.
+**Proprietary.** Ядро [[../frameworks/langchain.md|LangChain]] — open source (MIT), но LangSmith — закрытая платформа.
 
 ## Use Cases
 
@@ -57,14 +57,14 @@ status: new
 
 ## Отзывы и критика
 
-- Плюсы: глубокая интеграция с [[frameworks/langchain.md|LangChain]], rich tracing, зрелые evals
-- Минусы: платный на масштабе, vendor lock-in для [[frameworks/langchain.md|LangChain]]-экосистемы
+- Плюсы: глубокая интеграция с [[../frameworks/langchain.md|LangChain]], rich tracing, зрелые evals
+- Минусы: платный на масштабе, vendor lock-in для [[../frameworks/langchain.md|LangChain]]-экосистемы
 
 ## Связи
 
-- [LangChain](frameworks/langchain.md) — основной фреймворк
-- [LangGraph](frameworks/langgraph.md) — оркестрация
-- [Evaluations для агентов](../patterns/implementation/agent-evaluations.md)
-- [Observability и debugging](agent-observability-debugging.md)
+- [LangChain](../frameworks/langchain.md) — основной фреймворк
+- [LangGraph](../frameworks/langgraph.md) — оркестрация
+- [Evaluations для агентов](../../patterns/implementation/agent-evaluations.md)
+- [Observability и debugging](OVERVIEW.md)
 
 *Добавлено: 2026-06-29*

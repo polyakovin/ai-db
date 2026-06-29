@@ -21,7 +21,7 @@ LangGraph — низкоуровневый orchestration runtime для пост
 - **Memory** — встроенная поддержка кратковременной и долговременной памяти агента.
 - **Postgres checkpointing** — production-grade хранение чекпоинтов в PostgreSQL.
 - **Typed StateGraph** — строгая типизация схемы состояния для надёжности.
-- **[[../langsmith.md|LangSmith]] integration** — tracing, observability, evals через [[../langsmith.md|LangSmith]].
+- **[[../observability/langsmith.md|LangSmith]] integration** — tracing, observability, evals через [[../observability/langsmith.md|LangSmith]].
 - **LangGraph Cloud** — managed hosting для production deployment.
 
 ## Архитектура
@@ -64,7 +64,7 @@ StateGraph
 
 - **LangGraph** — open source (MIT license), GitHub: `langchain-ai/langgraph`
 - **LangGraph Cloud** — managed service (платный)
-- **[[../langsmith.md|LangSmith]]** — observability и evals платформа (freemium)
+- **[[../observability/langsmith.md|LangSmith]]** — observability и evals платформа (freemium)
 - **[[langchain.md|LangChain]]** — open source, на котором построен LangGraph
 
 ## Цены
@@ -110,7 +110,7 @@ StateGraph
 - Лучший выбор для stateful long-running агентов
 - Durable execution с checkpointing — надёжное восстановление
 - Строгая типизация состояния снижает ошибки
-- Интеграция с [[../langsmith.md|LangSmith]] для observability
+- Интеграция с [[../observability/langsmith.md|LangSmith]] для observability
 - Зрелая экосистема [[langchain.md|LangChain]]
 
 ### Слабые стороны:

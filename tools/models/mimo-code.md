@@ -127,7 +127,7 @@ updated: 2026-06-29
 - `xiaomi/mimo-v2-omni`: $0.40/M input, $2.00/M output
 
 ### Интеграции
-- **Kilo Code:** VS Code, JetBrains, [[../cursor.md|Cursor]], Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
+- **Kilo Code:** VS Code, JetBrains, [[../ides/cursor.md|Cursor]], Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
 - **[Claude Code](../platforms/anthropic.md):** совместимость через [Anthropic](../platforms/anthropic.md)-compatible API endpoint
 - **OpenCode:** основа форка, все возможности OpenCode сохранены
 - **OpenRouter:** API-доступ ко всем моделям
@@ -162,7 +162,7 @@ updated: 2026-06-29
 ### Положительные:
 - Превосходит [Claude Code](../platforms/anthropic.md) на длинных задачах (200+ шагов)
 - Значительно дешевле конкурентов: в 10-87× дешевле GPT-5.5 и [Claude Opus](../platforms/anthropic.md) 4.8
-- Тратит на 40-60% меньше токенов на траекторию (против [Claude Opus](../platforms/anthropic.md) 4.6, [Gemini](../gemini.md) 3.1 Pro, GPT-5.4)
+- Тратит на 40-60% меньше токенов на траекторию (против [Claude Opus](../platforms/anthropic.md) 4.6, [Gemini](../platforms/gemini.md) 3.1 Pro, GPT-5.4)
 - Активное open-source сообщество, MIT лицензия
 
 ### Негативные:
@@ -170,7 +170,7 @@ updated: 2026-06-29
 - Проблемы с настройкой в OpenCode (требует доработки)
 - По некоторым тестам уступает GLM 5.1
 - Самостоятельные (self-reported) бенчмарки — требуется независимая верификация
-- Не сравнивались напрямую с [Codex CLI](../platforms/openai.md) и [Gemini](../gemini.md) CLI
+- Не сравнивались напрямую с [Codex CLI](../platforms/openai.md) и [Gemini](../platforms/gemini.md) CLI
 
 ## Ключевые конкуренты
 - [Claude Code](../platforms/anthropic.md) ([Anthropic](../platforms/anthropic.md)) — прямой бенчмарк-конкурент

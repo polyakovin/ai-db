@@ -1,63 +1,11 @@
 {
   "OVERVIEW": {
-    "name": "Tools — overview",
-    "path": "tools/OVERVIEW.md"
+    "name": "Эмбеддинги и ререйкинг — Overview",
+    "path": "tools/embeddings/OVERVIEW.md"
   },
   "agent-model-map": {
     "name": "Модельная карта для AI-агентов",
     "path": "tools/agent-model-map.md"
-  },
-  "embedding-models": {
-    "name": "Модели для эмбеддингов",
-    "path": "tools/embedding-models.md"
-  },
-  "rerankers": {
-    "name": "Ререйкеры (Rerankers)",
-    "path": "tools/rerankers.md"
-  },
-  "huggingface": {
-    "name": "Hugging Face",
-    "path": "tools/huggingface.md"
-  },
-  "gemini": {
-    "name": "Google Gemini",
-    "path": "tools/gemini.md"
-  },
-  "cohere": {
-    "name": "Cohere",
-    "path": "tools/cohere.md"
-  },
-  "codex-cli": {
-    "name": "Codex CLI",
-    "path": "tools/codex-cli.md"
-  },
-  "perplexity": {
-    "name": "Perplexity AI",
-    "path": "tools/perplexity.md"
-  },
-  "cursor": {
-    "name": "Cursor",
-    "path": "tools/cursor.md"
-  },
-  "langsmith": {
-    "name": "LangSmith",
-    "path": "tools/langsmith.md"
-  },
-  "vllm": {
-    "name": "vLLM",
-    "path": "tools/vllm.md"
-  },
-  "gradio": {
-    "name": "Gradio",
-    "path": "tools/gradio.md"
-  },
-  "ollama": {
-    "name": "Ollama",
-    "path": "tools/ollama.md"
-  },
-  "agent-observability-debugging": {
-    "name": "Observability и debugging для AI-агентов",
-    "path": "tools/agent-observability-debugging.md"
   },
   "comparisons": {
     "name": "Сравнение платформ — Обзор",
@@ -66,6 +14,14 @@
   "agent-frameworks-research": {
     "name": "Исследование фреймворков для AI-агентов",
     "path": "tools/agent-frameworks-research.md"
+  },
+  "vllm": {
+    "name": "vLLM",
+    "path": "tools/inference/vllm.md"
+  },
+  "ollama": {
+    "name": "Ollama",
+    "path": "tools/inference/ollama.md"
   },
   "langgraph": {
     "name": "LangGraph",
@@ -107,9 +63,17 @@
     "name": "OpenAI",
     "path": "tools/platforms/openai.md"
   },
+  "gemini": {
+    "name": "Google Gemini",
+    "path": "tools/platforms/gemini.md"
+  },
   "qwen": {
     "name": "Qwen (Alibaba)",
     "path": "tools/platforms/qwen.md"
+  },
+  "perplexity": {
+    "name": "Perplexity AI",
+    "path": "tools/platforms/perplexity.md"
   },
   "anthropic": {
     "name": "Anthropic (Claude)",
@@ -123,9 +87,29 @@
     "name": "Mistral AI",
     "path": "tools/platforms/mistral.md"
   },
+  "langsmith": {
+    "name": "LangSmith",
+    "path": "tools/observability/langsmith.md"
+  },
+  "huggingface": {
+    "name": "Hugging Face",
+    "path": "tools/hosting/huggingface.md"
+  },
+  "gradio": {
+    "name": "Gradio",
+    "path": "tools/hosting/gradio.md"
+  },
   "mimo-code": {
     "name": "MiMo Code",
     "path": "tools/models/mimo-code.md"
+  },
+  "rerankers": {
+    "name": "Ререйкеры (Rerankers)",
+    "path": "tools/embeddings/rerankers.md"
+  },
+  "cohere": {
+    "name": "Cohere",
+    "path": "tools/embeddings/cohere.md"
   },
   "chroma": {
     "name": "Chroma",
@@ -138,5 +122,13 @@
   "pinecone": {
     "name": "Pinecone",
     "path": "tools/vector-dbs/pinecone.md"
+  },
+  "codex-cli": {
+    "name": "Codex CLI",
+    "path": "tools/ides/codex-cli.md"
+  },
+  "cursor": {
+    "name": "Cursor",
+    "path": "tools/ides/cursor.md"
   }
 }

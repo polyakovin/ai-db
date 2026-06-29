@@ -70,5 +70,5 @@
 - [Agent Harness](../architecture-design/agent-harness.md) — filesystem как внешняя рабочая память
 - [Context engineering](../fundamentals/context-engineering.md) — управление context window
 - [RAG для AI-агентов](../architecture-design/rag-for-agents.md) — embedding-based retrieval
-- [Модели для эмбеддингов](../../tools/embedding-models.md) — выбор модели для index
+- [Модели для эмбеддингов](../../tools/embeddings/OVERVIEW.md) — выбор модели для index
 - [Работа с код-агентами](../implementation/working-with-coding-agents.md) — project memory в coding workflow

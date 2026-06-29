@@ -58,16 +58,16 @@ Gemini активно развивается в сторону AI-агентов
 ## Релевантность для базы знаний
 
 Gemini — ключевой игрок в AI-агентной экосистеме:
-- Computer Use — прямой конкурент [Claude Computer Use](platforms/anthropic.md) и [OpenAI](platforms/openai.md) CUA
-- Gemini CLI — альтернатива [Claude Code](platforms/anthropic.md), [OpenAI](platforms/openai.md) [Codex CLI](platforms/openai.md) и OpenCode
+- Computer Use — прямой конкурент [Claude Computer Use](anthropic.md) и [OpenAI](openai.md) CUA
+- Gemini CLI — альтернатива [Claude Code](anthropic.md), [OpenAI](openai.md) [Codex CLI](openai.md) и OpenCode
 - Open-source агентная платформа с MCP-расширяемостью
 - Бесплатный доступ к frontier-моделям для инди-разработчиков
 
 ## Связи
 
 - [[perplexity.md|Perplexity AI]] — альтернативная AI-платформа с агентными возможностями
-- [[../patterns/architecture-design/agent-harness.md|Agent Harness]] — Computer Use как вариант построения UI-агента
-- [[../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Gemini CLI как coding agent
-- [[agent-frameworks-research.md|Исследование фреймворков]] — контекст: Gemini API vs OpenAI/Anthropic
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Computer Use как вариант построения UI-агента
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Gemini CLI как coding agent
+- [[../agent-frameworks-research.md|Исследование фреймворков]] — контекст: Gemini API vs OpenAI/Anthropic
 
 *Добавлено: 2026-06-29*

@@ -21,7 +21,7 @@ Pinecone — fully managed, serverless векторная база данных 
 - **Hybrid search** — комбинация dense (embedding) и sparse (keyword) поиска.
 - **Real-time updates** — добавление, обновление, удаление векторов без перестроения индекса.
 - **Pod-based indexes** — для предсказуемой производительности (альтернатива serverless).
-- **Integrations** — LangChain, [LlamaIndex](../frameworks/llamaindex.md), [OpenAI](../platforms/openai.md), [Cohere](../rerankers.md), HuggingFace.
+- **Integrations** — LangChain, [LlamaIndex](../frameworks/llamaindex.md), [OpenAI](../platforms/openai.md), [Cohere](../embeddings/rerankers.md), HuggingFace.
 
 ## Когда применять
 
@@ -106,11 +106,11 @@ Pinecone — fully managed, serverless векторная база данных 
 
 ## Связи
 
-- [[../../tools/embedding-models.md|Модели для эмбеддингов]] — эмбеддинги для Pinecone
+- [[../../tools/embeddings/OVERVIEW.md|Модели для эмбеддингов]] — эмбеддинги для Pinecone
 - [[../../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — Pinecone как векторное хранилище
 - [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — векторная БД как часть памяти агента
 - [[../../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — RAG agent с Pinecone
-- [[../rerankers.md|Ререйкеры]] — второй этап ранжирования после векторного поиска
+- [[../embeddings/rerankers.md|Ререйкеры]] — второй этап ранжирования после векторного поиска
 - [[../../tools/OVERVIEW.md|Инструменты — Обзор]] — другие инструменты
 
 *Добавлено: 2026-06-29*

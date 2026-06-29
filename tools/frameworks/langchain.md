@@ -21,21 +21,21 @@ status: new
 - **Memory** — persistence диалогов и состояния
 - **Callbacks** — tracing, логирование, стриминг
 - **[[langgraph.md|LangGraph]]** — stateful оркестрация для multi-agent систем (отдельный пакет)
-- **[[../langsmith.md|LangSmith]]** — observability и evaluation (отдельный продукт)
+- **[[../observability/langsmith.md|LangSmith]]** — observability и evaluation (отдельный продукт)
 - **Deep Agents** — long-running агенты с filesystem, sandbox, subagents
 
 ## Модели / Продукты
 
 - LangChain (open-source ядро, MIT)
 - [[langgraph.md|LangGraph]] (оркестрация, MIT)
-- [[../langsmith.md|LangSmith]] (observability, proprietary)
+- [[../observability/langsmith.md|LangSmith]] (observability, proprietary)
 - Deep Agents (long-running агенты)
 
 ## Цены и доступ
 
 - **Open Source:** да, [MIT-лицензия](https://github.com/langchain-ai/langchain)
 - Бесплатно (framework)
-- [[../langsmith.md|LangSmith]]: бесплатный Developer-план (5K traces/мес), Plus $39/мес/seat
+- [[../observability/langsmith.md|LangSmith]]: бесплатный Developer-план (5K traces/мес), Plus $39/мес/seat
 
 ## Агентные возможности
 
@@ -47,7 +47,7 @@ status: new
 
 ## Open Source статус
 
-**Полностью Open Source** (MIT). [[langgraph.md|LangGraph]] тоже MIT. [[../langsmith.md|LangSmith]] — proprietary SaaS.
+**Полностью Open Source** (MIT). [[langgraph.md|LangGraph]] тоже MIT. [[../observability/langsmith.md|LangSmith]] — proprietary SaaS.
 
 ## Use Cases
 
@@ -65,7 +65,7 @@ status: new
 ## Связи
 
 - [LangGraph](langgraph.md) — stateful оркестрация
-- [LangSmith](../langsmith.md) — observability
+- [LangSmith](../observability/langsmith.md) — observability
 - [Исследование фреймворков](../agent-frameworks-research.md)
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md)
 

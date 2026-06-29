@@ -97,7 +97,7 @@ LlamaIndex — фреймворк для построения контекстн
 - [[../agent-frameworks-research.md|Исследование фреймворков]] — LlamaIndex в карте выбора
 - [[../../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — LlamaIndex как RAG-реализация
 - [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — LlamaIndex Workflows как orchestration
-- [[../embedding-models.md|Модели для эмбеддингов]] — эмбеддинги для LlamaIndex retrieval
+- [[../embeddings/OVERVIEW.md|Модели для эмбеддингов]] — эмбеддинги для LlamaIndex retrieval
 - [[../agent-model-map.md|Модельная карта]] — выбор модели для LlamaIndex агентов
 
 *Добавлено: 2026-06-29*

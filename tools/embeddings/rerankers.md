@@ -128,10 +128,10 @@ results = co.rerank(query=query, documents=candidates, model='rerank-english-v3.
 
 ## Связи
 
-- [[embedding-models.md|Модели для эмбеддингов]] — первый этап retrieval
-- [[vector-dbs/pinecone.md|Pinecone]] — векторная БД для первого этапа
-- [[../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — reranker как компонент RAG
-- [[../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — RAG agent с reranker
-- [[agent-observability-debugging.md|Observability и debugging]] — tracing retrieval pipeline
+- [[OVERVIEW.md|Модели для эмбеддингов]] — первый этап retrieval
+- [[../vector-dbs/pinecone.md|Pinecone]] — векторная БД для первого этапа
+- [[../../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — reranker как компонент RAG
+- [[../../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — RAG agent с reranker
+- [[../observability/OVERVIEW.md|Observability и debugging]] — tracing retrieval pipeline
 
 *Добавлено: 2026-06-29*

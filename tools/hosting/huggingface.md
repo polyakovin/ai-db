@@ -42,7 +42,7 @@ status: new
 
 - Загрузка и запуск open-weight LLM для agent-бэкенда
 - Spaces для демонстрации агентов
-- Интеграция с [[frameworks/langchain.md|LangChain]], [[frameworks/llamaindex.md|LlamaIndex]] и другими framework'ами через модельную экосистему
+- Интеграция с [[../frameworks/langchain.md|LangChain]], [[../frameworks/llamaindex.md|LlamaIndex]] и другими framework'ами через модельную экосистему
 - TGI для production serving agent-моделей
 
 ## Open Source статус
@@ -64,8 +64,8 @@ status: new
 ## Связи
 
 - [Gradio](gradio.md) — демо через Spaces
-- [Ollama](ollama.md) — локальный инференс HF-моделей
-- [Модельная карта](agent-model-map.md)
-- [vLLM](vllm.md) — production serving
+- [Ollama](../inference/ollama.md) — локальный инференс HF-моделей
+- [Модельная карта](../agent-model-map.md)
+- [vLLM](../inference/vllm.md) — production serving
 
 *Добавлено: 2026-06-29*

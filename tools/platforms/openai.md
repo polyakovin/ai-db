@@ -10,13 +10,13 @@ status: new
 
 # OpenAI
 
-OpenAI — ведущая американская AI-компания, создатель GPT-семейства моделей и managed agent stack: Responses API, Agents SDK, [[../codex-cli.md|Codex CLI]]. Предоставляет самую полную на сегодня managed-платформу для создания production AI-агентов: от моделей до evals, tracing, guardrails и sandbox.
+OpenAI — ведущая американская AI-компания, создатель GPT-семейства моделей и managed agent stack: Responses API, Agents SDK, [[../ides/codex-cli.md|Codex CLI]]. Предоставляет самую полную на сегодня managed-платформу для создания production AI-агентов: от моделей до evals, tracing, guardrails и sandbox.
 
 ## Ключевые возможности
 
 - **Responses API** — основной API для агентов: заменяет Chat Completions и Assistants API. Поддерживает reasoning, tool calling, structured outputs, web search, file search, computer use, streaming, background mode.
 - **Agents SDK** — Python/Node.js SDK для построения агентов: orchestration, handoffs, guardrails, tracing, evals, sandbox agents, MCP-серверы.
-- **[[../codex-cli.md|Codex CLI]]** — open-source терминальный coding agent: работает с репозиториями, multi-agent workflows, skills catalog, облачные sandbox. #1 на Terminal-Bench 2.1 (83.4%).
+- **[[../ides/codex-cli.md|Codex CLI]]** — open-source терминальный coding agent: работает с репозиториями, multi-agent workflows, skills catalog, облачные sandbox. #1 на Terminal-Bench 2.1 (83.4%).
 - **ChatKit** — фреймворк для построения UI-агентов с Actions, Skills, Shell, [Computer Use](anthropic.md).
 - **Realtime API** — голосовые агенты с WebRTC, WebSocket, SIP.
 - **Agent Builder** — low-code инструмент для создания агентов.
@@ -63,7 +63,7 @@ OpenAI — ведущая американская AI-компания, созд
 ## Open Source статус
 
 - **GPT-модели** — закрытые, доступны только через API.
-- **[[../codex-cli.md|Codex CLI]]** — open source (GitHub: `openai/codex`, ~75.7K звёзд, MIT-like).
+- **[[../ides/codex-cli.md|Codex CLI]]** — open source (GitHub: `openai/codex`, ~75.7K звёзд, MIT-like).
 - **Agents SDK** — open source (GitHub: `openai/openai-agents-python`).
 - **MCP-серверы** — поддержка открытого стандарта MCP.
 - **Open-source модели**: OpenAI выкладывает некоторые модели (Whisper, CLIP, Point-E), но не GPT.
@@ -78,7 +78,7 @@ OpenAI — ведущая американская AI-компания, созд
 - Batch API: 50% скидка
 
 ### Подписки
-- **ChatGPT Plus** ($20/мес): GPT-5.5, [[../codex-cli.md|Codex CLI]] базовый, ограниченный лимит
+- **ChatGPT Plus** ($20/мес): GPT-5.5, [[../ides/codex-cli.md|Codex CLI]] базовый, ограниченный лимит
 - **ChatGPT Pro** ($200/мес): полный доступ
 - **Team/Enterprise**: расширенные лимиты, администрирование
 
@@ -98,9 +98,9 @@ OpenAI — ведущая американская AI-компания, созд
 
 ### Сильные стороны:
 - Самый полный managed agent stack: от модели до evals
-- GPT-5.5 — топ на Terminal-Bench 2.1 (83.4% через [[../codex-cli.md|Codex CLI]])
+- GPT-5.5 — топ на Terminal-Bench 2.1 (83.4% через [[../ides/codex-cli.md|Codex CLI]])
 - Agents SDK с guardrails, handoffs, tracing из коробки
-- [[../codex-cli.md|Codex CLI]] — open source, активное сообщество
+- [[../ides/codex-cli.md|Codex CLI]] — open source, активное сообщество
 - Быстрый инференс, надёжный API
 
 ### Слабые стороны:
@@ -113,7 +113,7 @@ OpenAI — ведущая американская AI-компания, созд
 ## Связи
 
 - [[../../tools/platforms/anthropic.md|Anthropic (Claude)]] — главный конкурент
-- [[../../tools/gemini.md|Google Gemini]] — альтернативный провайдер
+- [[gemini.md|Google Gemini]] — альтернативный провайдер
 - [[../agent-frameworks-research.md|Исследование фреймворков]] — OpenAI стек в карте выбора
 - [[../agent-model-map.md|Модельная карта]] — GPT-5.5 в карте моделей
 - [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Codex CLI как реализация coding harness

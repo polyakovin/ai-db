@@ -63,6 +63,6 @@ status: new
 - [Chroma](chroma.md) — более простая альтернатива
 - [Pinecone](pinecone.md) — serverless альтернатива
 - [RAG для AI-агентов](../../patterns/architecture-design/rag-for-agents.md)
-- [Модели для эмбеддингов](../embedding-models.md)
+- [Модели для эмбеддингов](../embeddings/OVERVIEW.md)
 
 *Добавлено: 2026-06-29*

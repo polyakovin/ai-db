@@ -36,7 +36,7 @@
      - `../implementation/agent-evaluations.md` — evals как часть harness
      - `../production-operations/production-operations.md` — production deployment
      - `../production-operations/human-in-the-loop-ux.md` — approvals, HITL
-     - `../../tools/agent-observability-debugging.md` — observability
+     - `../../tools/observability/OVERVIEW.md` — observability
      - `../../tools/agent-frameworks-research.md` — выбор фреймворка
      - `../../tools/agent-model-map.md` — выбор модели
      - `../../sources/libraries-tools/openmontage.md` — agent-first архитектура
@@ -158,7 +158,7 @@
 
 ### A4. P2 — Инструменты с неполными или отсутствующими секциями
 
-14. **`tools/embedding-models.md`** — Секция «Связанные темы» (строка 90) содержит текст без реальных ссылок:
+14. **`tools/embeddings/OVERVIEW.md`** — Секция «Связанные темы» (строка 90) содержит текст без реальных ссылок:
     - `Векторные базы данных` → заменить на реальную ссылку, когда заметка появится, или оформить как будущую тему
     - `RAG и агенты` → сделать ссылкой на `../patterns/architecture-design/rag-for-agents.md`
     - `Evaluations` → сделать ссылкой на `../patterns/implementation/agent-evaluations.md`
@@ -186,21 +186,21 @@
 
 | Файл A (ссылается на) | Файл B (нет обратной ссылки) | Что добавить в B |
 |---|---|---|
-| `tools/perplexity.md` → Agent Harness | `patterns/architecture-design/agent-harness.md` | Ссылку на `../../tools/perplexity.md` |
-| `tools/perplexity.md` → Работа с код-агентами | `patterns/implementation/working-with-coding-agents.md` | Ссылку на `../../tools/perplexity.md` |
-| `tools/perplexity.md` → Исследование фреймворков | `tools/agent-frameworks-research.md` | Уже есть в обратную? Проверить — нет. Добавить ссылку на `perplexity.md` |
-| `tools/gemini.md` → Agent Harness | `patterns/architecture-design/agent-harness.md` | Ссылку на `../../tools/gemini.md` |
-| `tools/gemini.md` → Работа с код-агентами | `patterns/implementation/working-with-coding-agents.md` | Ссылку на `../../tools/gemini.md` |
-| `tools/gemini.md` → Исследование фреймворков | `tools/agent-frameworks-research.md` | Добавить ссылку на `gemini.md` |
-| `tools/gemini.md` → Perplexity | `tools/perplexity.md` | Уже есть! ✓ |
+| `tools/platforms/perplexity.md` → Agent Harness | `patterns/architecture-design/agent-harness.md` | Ссылку на `../../tools/platforms/perplexity.md` |
+| `tools/platforms/perplexity.md` → Работа с код-агентами | `patterns/implementation/working-with-coding-agents.md` | Ссылку на `../../tools/platforms/perplexity.md` |
+| `tools/platforms/perplexity.md` → Исследование фреймворков | `tools/agent-frameworks-research.md` | Уже есть в обратную? Проверить — нет. Добавить ссылку на `perplexity.md` |
+| `tools/platforms/gemini.md` → Agent Harness | `patterns/architecture-design/agent-harness.md` | Ссылку на `../../tools/platforms/gemini.md` |
+| `tools/platforms/gemini.md` → Работа с код-агентами | `patterns/implementation/working-with-coding-agents.md` | Ссылку на `../../tools/platforms/gemini.md` |
+| `tools/platforms/gemini.md` → Исследование фреймворков | `tools/agent-frameworks-research.md` | Добавить ссылку на `gemini.md` |
+| `tools/platforms/gemini.md` → Perplexity | `tools/platforms/perplexity.md` | Уже есть! ✓ |
 | `tools/platforms/z-ai.md` → tools/OVERVIEW | `tools/OVERVIEW.md` | Уже есть! ✓ |
 | `tools/models/mimo-code.md` → tools/OVERVIEW | `tools/OVERVIEW.md` | Уже есть! ✓ |
 | `tools/agent-frameworks-research.md` → Multi-agent orchestration | `patterns/implementation/multi-agent-orchestration.md` | Уже есть! ✓ |
 | `tools/agent-frameworks-research.md` → Production operations | `patterns/production-operations/production-operations.md` | Уже есть! ✓ |
 | `tools/agent-model-map.md` → Evaluations | `patterns/implementation/agent-evaluations.md` | Ссылку на `../../tools/agent-model-map.md` |
 | `tools/agent-model-map.md` → Исследование фреймворков | `tools/agent-frameworks-research.md` | Уже есть! ✓ |
-| `tools/agent-observability-debugging.md` → Evaluations | `patterns/implementation/agent-evaluations.md` | Уже есть! ✓ |
-| `tools/agent-observability-debugging.md` → Execution loop | `patterns/fundamentals/agent-execution-loop.md` | Ссылку на `../../tools/agent-observability-debugging.md` |
+| `tools/observability/OVERVIEW.md` → Evaluations | `patterns/implementation/agent-evaluations.md` | Уже есть! ✓ |
+| `tools/observability/OVERVIEW.md` → Execution loop | `patterns/fundamentals/agent-execution-loop.md` | Ссылку на `../../tools/observability/OVERVIEW.md` |
 
 ### B2. Sources → Patterns (обратные ссылки отсутствуют)
 
@@ -259,7 +259,7 @@
 | `multi-agent-orchestration` → `agent-execution-loop` | `agent-execution-loop` → `multi-agent-orchestration` | ✗ Добавить в `agent-execution-loop.md` |
 | `multi-agent-orchestration` → `agent-frameworks-research` | `agent-frameworks-research` → `multi-agent-orchestration` | ✓ |
 | `production-operations` → `agent-harness` | `agent-harness` → `production-operations` | ✗ Добавить (см. A1.1) |
-| `production-operations` → `agent-observability-debugging` | `agent-observability-debugging` → `production-operations` | ✗ Добавить в `agent-observability-debugging.md` |
+| `production-operations` → `agent-observability-debugging` | `agent-observability-debugging` → `production-operations` | ✗ Добавить в `observability/OVERVIEW.md` |
 | `production-operations` → `agent-security` | `agent-security` → `production-operations` | ✓ |
 | `human-in-the-loop-ux` → `agent-security` | `agent-security` → `human-in-the-loop-ux` | ✗ Добавить в `agent-security.md` |
 | `human-in-the-loop-ux` → `production-operations` | `production-operations` → `human-in-the-loop-ux` | ✗ Добавить в `production-operations.md` |
@@ -285,8 +285,8 @@
    - Сейчас `agent-security.md` в Architecture & Design, но fundamentals касается security лишь косвенно.
    - Вариант: перенести базовые концепции безопасности в fundamentals, оставив в architecture-design продвинутые.
 
-2. **`tools/rerankers.md`** — заметка о реранкерах (Cohere Rerank, BGE-reranker, Jina Reranker).
-   - Упоминается в `embedding-models.md` как «Реранкеры» без ссылки.
+2. **`tools/embeddings/rerankers.md`** — заметка о реранкерах (Cohere Rerank, BGE-reranker, Jina Reranker).
+   - Упоминается в `embeddings/OVERVIEW.md` как «Реранкеры» без ссылки.
    - Связана с RAG, retrieval pipeline.
 
 3. **`patterns/architecture-design/mcp-deep-dive.md`** или расширить `tool-use-and-mcp.md`
@@ -305,7 +305,7 @@
 
 ## D. Битые ссылки и проблемы форматирования
 
-1. **`tools/embedding-models.md`** строка 92–96 — «Связанные темы» содержит текст без ссылок:
+1. **`tools/embeddings/OVERVIEW.md`** строка 92–96 — «Связанные темы» содержит текст без ссылок:
    - `Векторные базы данных` — не ссылка
    - `RAG и агенты` — не ссылка
    - `Evaluations` — не ссылка
@@ -378,7 +378,7 @@
 - Недостающие bidirectional ссылки между bitgn-файлами и между patterns
 
 ### P2 — желательные (форматирование):
-- embedding-models.md — реальные ссылки вместо текста
+- embeddings/OVERVIEW.md — реальные ссылки вместо текста
 - Несколько sources с текстовыми описаниями вместо ссылок
 - comparisons.md и tools/OVERVIEW.md — добавить cross-reference
 

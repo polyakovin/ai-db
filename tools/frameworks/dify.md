@@ -18,7 +18,7 @@ Dify — open-source low-code платформа для разработки LLM
 - **Knowledge (RAG)** — first-class поддержка retrieval: загрузка документов, индексация, поиск, citations.
 - **Plugins** — расширение возможностей агентов через плагины.
 - **Observability** — встроенные мониторинг, трассировка и логирование.
-- Multi-model — поддержка [OpenAI](../platforms/openai.md), [Anthropic](../platforms/anthropic.md), [Gemini](../gemini.md), [Mistral](../platforms/mistral.md), open-source моделей.
+- Multi-model — поддержка [OpenAI](../platforms/openai.md), [Anthropic](../platforms/anthropic.md), [Gemini](../platforms/gemini.md), [Mistral](../platforms/mistral.md), open-source моделей.
 - **Publish** — деплой агентов как API endpoints, веб-приложений, ботов.
 - **Enterprise features** — RBAC, audit logs, versioning, environments.
 

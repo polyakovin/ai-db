@@ -117,7 +117,7 @@ python3 meta/scripts/generate-canonical-map.py
 
 1. Каждый инструмент/платформа имеет **одну** canonical страницу в `tools/`
 2. Все остальные заметки **только ссылаются** на canonical страницу, не дублируя факты
-3. Ссылки оформляются относительным путём от файла к canonical странице (например, `../../tools/perplexity.md`)
+3. Ссылки оформляются относительным путём от файла к canonical странице (например, `../../tools/platforms/perplexity.md`)
 4. Bare mentions (текстовые упоминания без ссылок) недопустимы — их ловит `validate-canonical-refs.py`
 
 ## Рабочие правила
