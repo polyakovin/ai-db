@@ -47,7 +47,7 @@ Dify — open-source low-code платформа для разработки LLM
 - Сложные production агенты — limited low-code abstraction
 - Тонкий контроль над состоянием — [LangGraph](../frameworks/langgraph.md)
 - Coding-first workflow — [Claude Code](../platforms/anthropic.md)/[Codex CLI](../platforms/openai.md)
-- Нужна полная гибкость кода — пишите на Python + [[langchain.md|LangChain]]
+- Нужна полная гибкость кода — пишите на Python + [LangChain](langchain.md)
 
 ## Open Source статус
 
@@ -92,10 +92,10 @@ Dify — open-source low-code платформа для разработки LLM
 
 ## Связи
 
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — Dify в карте выбора (low-code слой)
-- [[../frameworks/langgraph.md|LangGraph]] — альтернатива для сложной оркестрации в коде
-- [[../frameworks/crewai.md|CrewAI]] — кодовая альтернатива для multi-agent
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Dify как визуальная реализация harness
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — отличие низкокодового подхода
+- [Исследование фреймворков](../agent-frameworks-research.md) — Dify в карте выбора (low-code слой)
+- [LangGraph](../frameworks/langgraph.md) — альтернатива для сложной оркестрации в коде
+- [CrewAI](../frameworks/crewai.md) — кодовая альтернатива для multi-agent
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Dify как визуальная реализация harness
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — отличие низкокодового подхода
 
 *Добавлено: 2026-06-29*

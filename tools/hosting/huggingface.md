@@ -42,7 +42,7 @@ status: new
 
 - Загрузка и запуск open-weight LLM для agent-бэкенда
 - Spaces для демонстрации агентов
-- Интеграция с [[../frameworks/langchain.md|LangChain]], [[../frameworks/llamaindex.md|LlamaIndex]] и другими framework'ами через модельную экосистему
+- Интеграция с [LangChain](../frameworks/langchain.md), [LlamaIndex](../frameworks/llamaindex.md) и другими framework'ами через модельную экосистему
 - TGI для production serving agent-моделей
 
 ## Open Source статус

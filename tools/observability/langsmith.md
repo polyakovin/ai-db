@@ -45,7 +45,7 @@ status: new
 
 ## Open Source статус
 
-**Proprietary.** Ядро [[../frameworks/langchain.md|LangChain]] — open source (MIT), но LangSmith — закрытая платформа.
+**Proprietary.** Ядро [LangChain](../frameworks/langchain.md) — open source (MIT), но LangSmith — закрытая платформа.
 
 ## Use Cases
 
@@ -57,8 +57,8 @@ status: new
 
 ## Отзывы и критика
 
-- Плюсы: глубокая интеграция с [[../frameworks/langchain.md|LangChain]], rich tracing, зрелые evals
-- Минусы: платный на масштабе, vendor lock-in для [[../frameworks/langchain.md|LangChain]]-экосистемы
+- Плюсы: глубокая интеграция с [LangChain](../frameworks/langchain.md), rich tracing, зрелые evals
+- Минусы: платный на масштабе, vendor lock-in для [LangChain](../frameworks/langchain.md)-экосистемы
 
 ## Связи
 

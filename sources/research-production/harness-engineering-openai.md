@@ -112,6 +112,6 @@ status: new
 
 ## Связи
 
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — определяющая статья концепции harness engineering
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow Codex
-- [[../../tools/agent-frameworks-research.md|Исследование фреймворков]] — OpenAI Responses API
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — определяющая статья концепции harness engineering
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — практический workflow Codex
+- [Исследование фреймворков](../../tools/agent-frameworks-research.md) — OpenAI Responses API

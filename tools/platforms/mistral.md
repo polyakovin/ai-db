@@ -120,10 +120,10 @@ Mistral AI — французская AI-компания (основана в 2
 
 ## Связи
 
-- [[../../tools/platforms/anthropic.md|Anthropic (Claude)]] — конкурент по frontier-моделям
-- [[../../tools/platforms/openai.md|OpenAI]] — конкурент по API и агентам
-- [[../platforms/deepseek.md|DeepSeek]] — конкурент по цене и open-weight
-- [[../agent-model-map.md|Модельная карта]] — Mistral в карте моделей
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — Mistral как API-провайдер
+- [Anthropic (Claude)](../../tools/platforms/anthropic.md) — конкурент по frontier-моделям
+- [OpenAI](../../tools/platforms/openai.md) — конкурент по API и агентам
+- [DeepSeek](../platforms/deepseek.md) — конкурент по цене и open-weight
+- [Модельная карта](../agent-model-map.md) — Mistral в карте моделей
+- [Исследование фреймворков](../agent-frameworks-research.md) — Mistral как API-провайдер
 
 *Добавлено: 2026-06-29*

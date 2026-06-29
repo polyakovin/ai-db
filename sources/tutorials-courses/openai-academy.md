@@ -68,5 +68,5 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow с Codex
-- [[../../tools/agent-frameworks-research.md|Исследование фреймворков]] — OpenAI Responses API и Agents SDK
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — практический workflow с Codex
+- [Исследование фреймворков](../../tools/agent-frameworks-research.md) — OpenAI Responses API и Agents SDK

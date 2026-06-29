@@ -54,5 +54,5 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Claude Code workflow и агентный цикл
-- [[../../patterns/advanced/agent-antipatterns.md|Антипаттерны агентных систем]] — 5 главных ошибок из туториала
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — Claude Code workflow и агентный цикл
+- [Антипаттерны агентных систем](../../patterns/advanced/agent-antipatterns.md) — 5 главных ошибок из туториала

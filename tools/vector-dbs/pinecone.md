@@ -34,10 +34,10 @@ Pinecone — fully managed, serverless векторная база данных 
 
 ## Когда НЕ применять
 
-- Self-hosting обязателен — [[qdrant.md|Qdrant]]/Weaviate self-hosted
+- Self-hosting обязателен — [Qdrant](qdrant.md)/Weaviate self-hosted
 - Минимальный бюджет — serverless pricing может быть дороже self-hosted на больших объёмах
 - Нужна полная кастомизация индекса — open-source альтернативы гибче
-- Прототип с малым числом векторов — [[chroma.md|Chroma]] проще для локальной разработки
+- Прототип с малым числом векторов — [Chroma](chroma.md) проще для локальной разработки
 
 ## Open Source статус
 
@@ -106,11 +106,11 @@ Pinecone — fully managed, serverless векторная база данных 
 
 ## Связи
 
-- [[../../tools/embeddings/OVERVIEW.md|Модели для эмбеддингов]] — эмбеддинги для Pinecone
-- [[../../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — Pinecone как векторное хранилище
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — векторная БД как часть памяти агента
-- [[../../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — RAG agent с Pinecone
-- [[../embeddings/rerankers.md|Ререйкеры]] — второй этап ранжирования после векторного поиска
-- [[../../tools/OVERVIEW.md|Инструменты — Обзор]] — другие инструменты
+- [Модели для эмбеддингов](../../tools/embeddings/OVERVIEW.md) — эмбеддинги для Pinecone
+- [RAG для агентов](../../patterns/architecture-design/rag-for-agents.md) — Pinecone как векторное хранилище
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — векторная БД как часть памяти агента
+- [Воспроизводимые рецепты](../../patterns/advanced/reproducible-agent-recipes.md) — RAG agent с Pinecone
+- [Ререйкеры](../embeddings/rerankers.md) — второй этап ранжирования после векторного поиска
+- [Инструменты — Обзор](../../tools/OVERVIEW.md) — другие инструменты
 
 *Добавлено: 2026-06-29*

@@ -20,5 +20,5 @@ Perplexity — показательный пример эволюции клас
 
 ## Связи
 
-- [[../../tools/platforms/perplexity.md|Perplexity AI (tools)]] — canonical-страница инструмента
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Computer как вариант обвязки
+- [Perplexity AI (tools)](../../tools/platforms/perplexity.md) — canonical-страница инструмента
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Computer как вариант обвязки

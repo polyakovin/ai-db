@@ -127,7 +127,7 @@ updated: 2026-06-29
 - `xiaomi/mimo-v2-omni`: $0.40/M input, $2.00/M output
 
 ### Интеграции
-- **Kilo Code:** VS Code, JetBrains, [[../ides/cursor.md|Cursor]], Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
+- **Kilo Code:** VS Code, JetBrains, [Cursor](../ides/cursor.md), Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
 - **[Claude Code](../platforms/anthropic.md):** совместимость через [Anthropic](../platforms/anthropic.md)-compatible API endpoint
 - **OpenCode:** основа форка, все возможности OpenCode сохранены
 - **OpenRouter:** API-доступ ко всем моделям
@@ -200,7 +200,7 @@ updated: 2026-06-29
 - [MiMo Coding Models on Kilo Code](https://kilo.ai/models/by/xiaomi)
 
 ## См. также
-- [[../../tools/OVERVIEW.md|tools/OVERVIEW.md]] — обзор инструментов и моделей
-- [[../../tools/agent-model-map.md|Модельная карта]] — MiMo модели в карте
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — MiMo Code как coding agent
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — MiMo Code как реализация harness
+- [tools/OVERVIEW.md](../../tools/OVERVIEW.md) — обзор инструментов и моделей
+- [Модельная карта](../../tools/agent-model-map.md) — MiMo модели в карте
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — MiMo Code как coding agent
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — MiMo Code как реализация harness

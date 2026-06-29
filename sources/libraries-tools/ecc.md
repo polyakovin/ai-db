@@ -38,5 +38,5 @@ CLI-утилита для интеграции AI-помощников в раб
 
 ## Связи
 
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — пример глубоко специализированного harness
-- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — 67 subagents как реализация skills
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — пример глубоко специализированного harness
+- [Skills и правила для агентов](../../patterns/implementation/agent-skills-and-rules.md) — 67 subagents как реализация skills

@@ -12,7 +12,7 @@
 - **[OpenAI](../platforms/openai.md) `text-embedding-3-large`
 - **Voyage `voyage-4` / `voyage-4-large`** — сильный выбор для retrieval-first систем, длинного контекста, мультиязычного поиска и доменных вариантов.
 - **Google `gemini-embedding-2`** — когда нужны мультимодальные эмбеддинги: текст, изображения, видео, аудио, PDF в одном пространстве.
-- **[[cohere.md|Cohere]] `embed-v4.0`** — хороший managed-вариант для смешанных text/image/PDF сценариев и enterprise-стека [[cohere.md|Cohere]].
+- **[Cohere](cohere.md) `embed-v4.0`** — хороший managed-вариант для смешанных text/image/PDF сценариев и enterprise-стека [Cohere](cohere.md).
 - **BAAI `bge-m3`** — open-source вариант для self-hosted RAG, гибридного dense/sparse/multi-vector retrieval и языков, включая русский.
 - **[Jina](rerankers.md) `jina-embeddings-v4`** — open/source-friendly вариант для длинного контекста, мультиязычности и мультимодального поиска.
 
@@ -72,10 +72,10 @@ Open-source:
 
 ## Связанные темы
 
-- [[../OVERVIEW.md|Инструменты — Обзор]]
-- [[../../patterns/architecture-design/rag-for-agents.md|RAG для AI-агентов]] — retrieval как часть состояния агента
-- [[../../patterns/fundamentals/context-engineering.md|Context engineering]] — memory tiers и retrieval injection
-- [[../../patterns/implementation/agent-evaluations.md|Evaluations для агентов]] — качество retrieval
-- [[../../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — векторные базы и реранкеры
+- [Инструменты — Обзор](../OVERVIEW.md)
+- [RAG для AI-агентов](../../patterns/architecture-design/rag-for-agents.md) — retrieval как часть состояния агента
+- [Context engineering](../../patterns/fundamentals/context-engineering.md) — memory tiers и retrieval injection
+- [Evaluations для агентов](../../patterns/implementation/agent-evaluations.md) — качество retrieval
+- [Воспроизводимые рецепты](../../patterns/advanced/reproducible-agent-recipes.md) — векторные базы и реранкеры
 - [Cohere](cohere.md) — enterprise-платформа для эмбеддингов и ререйкинга
 - [Ререйкеры](rerankers.md) — подробный обзор ререйкеров

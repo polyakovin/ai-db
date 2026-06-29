@@ -112,10 +112,10 @@ Semantic Kernel
 
 ## Связи
 
-- [[../frameworks/autogen.md|AutoGen / MAF]] — объединённая платформа
-- [[../frameworks/langgraph.md|LangGraph]] — альтернативный orchestration-фреймворк
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — Semantic Kernel в карте выбора
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — SK как middleware layer в harness
-- [[../../patterns/implementation/multi-agent-orchestration.md|Multi-agent orchestration]] — MAF для оркестрации
+- [AutoGen / MAF](../frameworks/autogen.md) — объединённая платформа
+- [LangGraph](../frameworks/langgraph.md) — альтернативный orchestration-фреймворк
+- [Исследование фреймворков](../agent-frameworks-research.md) — Semantic Kernel в карте выбора
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — SK как middleware layer в harness
+- [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) — MAF для оркестрации
 
 *Добавлено: 2026-06-29*

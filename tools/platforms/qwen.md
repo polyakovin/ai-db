@@ -110,10 +110,10 @@ Alibaba переходит к закрытой модели распростра
 
 ## Связи
 
-- [[../../tools/platforms/anthropic.md|Anthropic (Claude)]] — совместимость с Claude Code как external harness
-- [[../../tools/platforms/openai.md|OpenAI]] — конкурент по agentic coding
-- [[../platforms/deepseek.md|DeepSeek]] — китайский конкурент (open-weight vs closed)
-- [[../platforms/z-ai.md|Z.ai (GLM)]] — китайский конкурент (open-weight MIT)
-- [[../agent-model-map.md|Модельная карта]] — Qwen в карте моделей
+- [Anthropic (Claude)](../../tools/platforms/anthropic.md) — совместимость с Claude Code как external harness
+- [OpenAI](../../tools/platforms/openai.md) — конкурент по agentic coding
+- [DeepSeek](../platforms/deepseek.md) — китайский конкурент (open-weight vs closed)
+- [Z.ai (GLM)](../platforms/z-ai.md) — китайский конкурент (open-weight MIT)
+- [Модельная карта](../agent-model-map.md) — Qwen в карте моделей
 
 *Добавлено: 2026-06-29*

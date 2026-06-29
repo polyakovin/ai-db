@@ -17,8 +17,8 @@ status: new
 - Python-библиотека: `gradio.Interface(fn=model, inputs=..., outputs=...)`
 - Компоненты: чат (Chatbot), текст, изображения, аудио, видео, файлы, датафреймы
 - Blocks API — сложные layout'ы с состоянием и событиями
-- Интеграция с [[huggingface.md|Hugging Face]] Spaces (один клик для деплоя)
-- Аутентификация (OAuth, [[huggingface.md|Hugging Face]], BASIC)
+- Интеграция с [Hugging Face](huggingface.md) Spaces (один клик для деплоя)
+- Аутентификация (OAuth, [Hugging Face](huggingface.md), BASIC)
 - Стриминг ответов
 - Очереди для обработки concurrent запросов
 - Темы и кастомизация UI
@@ -26,7 +26,7 @@ status: new
 ## Модели / Продукты
 
 - Gradio (open-source библиотека)
-- [[huggingface.md|Hugging Face]] Spaces (хостинг Gradio-приложений)
+- [Hugging Face](huggingface.md) Spaces (хостинг Gradio-приложений)
 
 ## Цены и доступ
 
@@ -43,7 +43,7 @@ status: new
 
 ## Open Source статус
 
-**Полностью Open Source** (Apache 2.0). Приобретена [[huggingface.md|Hugging Face]] в 2021.
+**Полностью Open Source** (Apache 2.0). Приобретена [Hugging Face](huggingface.md) в 2021.
 
 ## Use Cases
 

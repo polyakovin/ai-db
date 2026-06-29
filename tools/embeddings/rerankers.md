@@ -118,7 +118,7 @@ results = co.rerank(query=query, documents=candidates, model='rerank-english-v3.
 - Значительное улучшение precision в RAG
 - BGE-Reranker-v2-m3 — зрелый open-source стандарт
 - Jina Reranker v2 — лучшая скорость в классе
-- [[cohere.md|Cohere]] Rerank 4 — SOTA качество без self-hosting
+- [Cohere](cohere.md) Rerank 4 — SOTA качество без self-hosting
 
 ### Слабые стороны:
 - Добавляет latency (особенно медленные cross-encoders)
@@ -128,10 +128,10 @@ results = co.rerank(query=query, documents=candidates, model='rerank-english-v3.
 
 ## Связи
 
-- [[OVERVIEW.md|Модели для эмбеддингов]] — первый этап retrieval
-- [[../vector-dbs/pinecone.md|Pinecone]] — векторная БД для первого этапа
-- [[../../patterns/architecture-design/rag-for-agents.md|RAG для агентов]] — reranker как компонент RAG
-- [[../../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — RAG agent с reranker
-- [[../observability/OVERVIEW.md|Observability и debugging]] — tracing retrieval pipeline
+- [Модели для эмбеддингов](OVERVIEW.md) — первый этап retrieval
+- [Pinecone](../vector-dbs/pinecone.md) — векторная БД для первого этапа
+- [RAG для агентов](../../patterns/architecture-design/rag-for-agents.md) — reranker как компонент RAG
+- [Воспроизводимые рецепты](../../patterns/advanced/reproducible-agent-recipes.md) — RAG agent с reranker
+- [Observability и debugging](../observability/OVERVIEW.md) — tracing retrieval pipeline
 
 *Добавлено: 2026-06-29*

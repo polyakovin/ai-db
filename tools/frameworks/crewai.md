@@ -109,10 +109,10 @@ Crew
 
 ## Связи
 
-- [[../frameworks/langgraph.md|LangGraph]] — альтернативный orchestration-фреймворк
-- [[../frameworks/autogen.md|AutoGen / MAF]] — альтернативный multi-agent фреймворк
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — CrewAI в карте выбора
-- [[../../patterns/implementation/multi-agent-orchestration.md|Multi-agent orchestration]] — CrewAI для оркестрации
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — CrewAI в сравнении с harness-подходом
+- [LangGraph](../frameworks/langgraph.md) — альтернативный orchestration-фреймворк
+- [AutoGen / MAF](../frameworks/autogen.md) — альтернативный multi-agent фреймворк
+- [Исследование фреймворков](../agent-frameworks-research.md) — CrewAI в карте выбора
+- [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) — CrewAI для оркестрации
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — CrewAI в сравнении с harness-подходом
 
 *Добавлено: 2026-06-29*

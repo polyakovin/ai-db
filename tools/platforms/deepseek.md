@@ -115,12 +115,12 @@ DeepSeek — китайская AI-компания, разработчик open
 
 ## Связи
 
-- [[../../tools/platforms/anthropic.md|Anthropic (Claude)]] — конкурент по frontier-моделям
-- [[../../tools/platforms/openai.md|OpenAI]] — конкурент по API и coding agents
-- [[../platforms/z-ai.md|Z.ai (GLM)]] — китайский open-weight конкурент
-- [[gemini.md|Google Gemini]] — альтернативный провайдер
-- [[../agent-model-map.md|Модельная карта]] — DeepSeek в карте моделей
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — DeepSeek как API-провайдер
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — self-hosted агенты с DeepSeek
+- [Anthropic (Claude)](../../tools/platforms/anthropic.md) — конкурент по frontier-моделям
+- [OpenAI](../../tools/platforms/openai.md) — конкурент по API и coding agents
+- [Z.ai (GLM)](../platforms/z-ai.md) — китайский open-weight конкурент
+- [Google Gemini](gemini.md) — альтернативный провайдер
+- [Модельная карта](../agent-model-map.md) — DeepSeek в карте моделей
+- [Исследование фреймворков](../agent-frameworks-research.md) — DeepSeek как API-провайдер
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — self-hosted агенты с DeepSeek
 
 *Добавлено: 2026-06-29*

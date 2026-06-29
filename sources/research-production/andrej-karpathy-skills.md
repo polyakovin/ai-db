@@ -32,6 +32,6 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — 4 принципа Карпати как основа для skills
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — предотвращение типичных ошибок LLM-кодинга
-- [[../../patterns/advanced/agent-antipatterns.md|Антипаттерны агентных систем]] — кодификация наблюдений Карпати
+- [Skills и правила для агентов](../../patterns/implementation/agent-skills-and-rules.md) — 4 принципа Карпати как основа для skills
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — предотвращение типичных ошибок LLM-кодинга
+- [Антипаттерны агентных систем](../../patterns/advanced/agent-antipatterns.md) — кодификация наблюдений Карпати

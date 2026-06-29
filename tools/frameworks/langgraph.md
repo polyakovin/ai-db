@@ -10,7 +10,7 @@ status: new
 
 # LangGraph
 
-LangGraph — низкоуровневый orchestration runtime для построения stateful, long-running AI-агентов от [[langchain.md|LangChain]]. Предоставляет графовую модель выполнения с контролем состояния, durable execution, human-in-the-loop, streaming и production deployment. Рекомендуется для сложных агентных workflow, где важны контроль состояния и длительное исполнение.
+LangGraph — низкоуровневый orchestration runtime для построения stateful, long-running AI-агентов от [LangChain](langchain.md). Предоставляет графовую модель выполнения с контролем состояния, durable execution, human-in-the-loop, streaming и production deployment. Рекомендуется для сложных агентных workflow, где важны контроль состояния и длительное исполнение.
 
 ## Ключевые возможности
 
@@ -21,7 +21,7 @@ LangGraph — низкоуровневый orchestration runtime для пост
 - **Memory** — встроенная поддержка кратковременной и долговременной памяти агента.
 - **Postgres checkpointing** — production-grade хранение чекпоинтов в PostgreSQL.
 - **Typed StateGraph** — строгая типизация схемы состояния для надёжности.
-- **[[../observability/langsmith.md|LangSmith]] integration** — tracing, observability, evals через [[../observability/langsmith.md|LangSmith]].
+- **[LangSmith](../observability/langsmith.md) integration** — tracing, observability, evals через [LangSmith](../observability/langsmith.md).
 - **LangGraph Cloud** — managed hosting для production deployment.
 
 ## Архитектура
@@ -55,7 +55,7 @@ StateGraph
 
 ## Когда НЕ применять
 
-- Простая цепочка вызовов LLM — достаточно [[langchain.md|LangChain]] Expression Language (LCEL)
+- Простая цепочка вызовов LLM — достаточно [LangChain](langchain.md) Expression Language (LCEL)
 - Short-lived запросы без состояния — избыточно
 - Быстрый прототип — [Dify](dify.md)/Flowise/LangFlow быстрее для MVP
 - [OpenAI](../platforms/openai.md)-first managed stack — [Agents SDK](../platforms/openai.md) проще
@@ -64,8 +64,8 @@ StateGraph
 
 - **LangGraph** — open source (MIT license), GitHub: `langchain-ai/langgraph`
 - **LangGraph Cloud** — managed service (платный)
-- **[[../observability/langsmith.md|LangSmith]]** — observability и evals платформа (freemium)
-- **[[langchain.md|LangChain]]** — open source, на котором построен LangGraph
+- **[LangSmith](../observability/langsmith.md)** — observability и evals платформа (freemium)
+- **[LangChain](langchain.md)** — open source, на котором построен LangGraph
 
 ## Цены
 
@@ -110,24 +110,24 @@ StateGraph
 - Лучший выбор для stateful long-running агентов
 - Durable execution с checkpointing — надёжное восстановление
 - Строгая типизация состояния снижает ошибки
-- Интеграция с [[../observability/langsmith.md|LangSmith]] для observability
-- Зрелая экосистема [[langchain.md|LangChain]]
+- Интеграция с [LangSmith](../observability/langsmith.md) для observability
+- Зрелая экосистема [LangChain](langchain.md)
 
 ### Слабые стороны:
 - Кривая обучения: нужно проектировать граф и состояние
 - Избыточен для простых сценариев
-- Зависимость от [[langchain.md|LangChain]]-экосистемы
+- Зависимость от [LangChain](langchain.md)-экосистемы
 - LangGraph Cloud — дополнительная стоимость
 - Меньше «магии из коробки» по сравнению с [CrewAI](crewai.md)
 
 ## Связи
 
-- [[../../tools/platforms/anthropic.md|Anthropic (Claude)]] — Claude Code как альтернативный подход к агентам
-- [[../../tools/platforms/openai.md|OpenAI]] — Agents SDK как альтернатива для OpenAI-стека
-- [[../frameworks/autogen.md|AutoGen / MAF]] — event-driven multi-agent альтернатива
-- [[../frameworks/crewai.md|CrewAI]] — роль-ориентированная multi-agent альтернатива
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — LangGraph в карте выбора
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — LangGraph как реализация orchestration в harness
-- [[../../patterns/implementation/multi-agent-orchestration.md|Multi-agent orchestration]] — LangGraph для оркестрации
+- [Anthropic (Claude)](../../tools/platforms/anthropic.md) — Claude Code как альтернативный подход к агентам
+- [OpenAI](../../tools/platforms/openai.md) — Agents SDK как альтернатива для OpenAI-стека
+- [AutoGen / MAF](../frameworks/autogen.md) — event-driven multi-agent альтернатива
+- [CrewAI](../frameworks/crewai.md) — роль-ориентированная multi-agent альтернатива
+- [Исследование фреймворков](../agent-frameworks-research.md) — LangGraph в карте выбора
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — LangGraph как реализация orchestration в harness
+- [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) — LangGraph для оркестрации
 
 *Добавлено: 2026-06-29*

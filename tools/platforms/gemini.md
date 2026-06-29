@@ -65,9 +65,9 @@ Gemini — ключевой игрок в AI-агентной экосистем
 
 ## Связи
 
-- [[perplexity.md|Perplexity AI]] — альтернативная AI-платформа с агентными возможностями
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Computer Use как вариант построения UI-агента
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Gemini CLI как coding agent
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — контекст: Gemini API vs OpenAI/Anthropic
+- [Perplexity AI](perplexity.md) — альтернативная AI-платформа с агентными возможностями
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Computer Use как вариант построения UI-агента
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — Gemini CLI как coding agent
+- [Исследование фреймворков](../agent-frameworks-research.md) — контекст: Gemini API vs OpenAI/Anthropic
 
 *Добавлено: 2026-06-29*

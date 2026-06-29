@@ -9,5 +9,5 @@
 
 ## Связанные темы
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — UI для демонстрации
-- [[../../patterns/implementation/agent-evaluations.md|Evaluations для агентов]] — интерфейс для human evaluation
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — UI для демонстрации
+- [Evaluations для агентов](../../patterns/implementation/agent-evaluations.md) — интерфейс для human evaluation

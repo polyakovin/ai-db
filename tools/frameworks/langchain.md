@@ -20,40 +20,40 @@ status: new
 - **Agents** — ReAct-агенты с tool calling (встроенная архитектура `create_agent`)
 - **Memory** — persistence диалогов и состояния
 - **Callbacks** — tracing, логирование, стриминг
-- **[[langgraph.md|LangGraph]]** — stateful оркестрация для multi-agent систем (отдельный пакет)
-- **[[../observability/langsmith.md|LangSmith]]** — observability и evaluation (отдельный продукт)
+- **[LangGraph](langgraph.md)** — stateful оркестрация для multi-agent систем (отдельный пакет)
+- **[LangSmith](../observability/langsmith.md)** — observability и evaluation (отдельный продукт)
 - **Deep Agents** — long-running агенты с filesystem, sandbox, subagents
 
 ## Модели / Продукты
 
 - LangChain (open-source ядро, MIT)
-- [[langgraph.md|LangGraph]] (оркестрация, MIT)
-- [[../observability/langsmith.md|LangSmith]] (observability, proprietary)
+- [LangGraph](langgraph.md) (оркестрация, MIT)
+- [LangSmith](../observability/langsmith.md) (observability, proprietary)
 - Deep Agents (long-running агенты)
 
 ## Цены и доступ
 
 - **Open Source:** да, [MIT-лицензия](https://github.com/langchain-ai/langchain)
 - Бесплатно (framework)
-- [[../observability/langsmith.md|LangSmith]]: бесплатный Developer-план (5K traces/мес), Plus $39/мес/seat
+- [LangSmith](../observability/langsmith.md): бесплатный Developer-план (5K traces/мес), Plus $39/мес/seat
 
 ## Агентные возможности
 
 - Tool calling через стандартизированный интерфейс
 - ReAct-архитектура из коробки
-- Multi-agent оркестрация через [[langgraph.md|LangGraph]]
+- Multi-agent оркестрация через [LangGraph](langgraph.md)
 - Persistence, checkpointing, rewind, human-in-the-loop
 - Deep Agents для long-running задач с filesystem
 
 ## Open Source статус
 
-**Полностью Open Source** (MIT). [[langgraph.md|LangGraph]] тоже MIT. [[../observability/langsmith.md|LangSmith]] — proprietary SaaS.
+**Полностью Open Source** (MIT). [LangGraph](langgraph.md) тоже MIT. [LangSmith](../observability/langsmith.md) — proprietary SaaS.
 
 ## Use Cases
 
 - Быстрое прототипирование RAG-приложений
 - Чат-боты с memory и tool calling
-- Enterprise multi-agent системы (через [[langgraph.md|LangGraph]])
+- Enterprise multi-agent системы (через [LangGraph](langgraph.md))
 - Data extraction pipelines
 - Агенты с доступом к базам данных и API
 

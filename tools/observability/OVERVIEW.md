@@ -12,7 +12,7 @@ Observability для агента отвечает на вопрос: почем
 | Metrics | pass rate, p95, cost, token usage | управлять production |
 | Artifacts | prompts, retrieved chunks, outputs | replay и evals |
 
-OpenTelemetry задаёт общий язык traces/spans/logs/metrics, а агентные платформы вроде [[langsmith.md|LangSmith]] и Phoenix добавляют LLM-specific представления run, prompt, retrieval и tool calls.
+OpenTelemetry задаёт общий язык traces/spans/logs/metrics, а агентные платформы вроде [LangSmith](langsmith.md) и Phoenix добавляют LLM-specific представления run, prompt, retrieval и tool calls.
 
 ## Минимальная trace-схема
 

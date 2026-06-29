@@ -18,15 +18,15 @@ High-throughput LLM inference engine для production: PagedAttention, tensor p
 - **Continuous batching** — динамическое досоставление batch'ей без ожидания
 - **Tensor parallelism** — распределение модели по нескольким GPU
 - **Quantization** — AWQ, GPTQ, FP8, INT8 для экономии VRAM
-- **[[../platforms/openai.md|OpenAI]]-совместимый API** — drop-in замена для любого кода, работающего с [[../platforms/openai.md|OpenAI]]
+- **[OpenAI](../platforms/openai.md)-совместимый API** — drop-in замена для любого кода, работающего с [OpenAI](../platforms/openai.md)
 - **Multi-LoRA** — serving нескольких fine-tuned адаптеров на одной модели
 - **Speculative decoding** — ускорение через draft-модель
 - **Prefix caching** — кэширование общих префиксов (system prompts)
 
 ## Модели / Продукты
 
-- Поддержка 50+ архитектур (Llama, Mistral, Qwen, [[../platforms/deepseek.md|DeepSeek]], Gemma, GPT-NeoX...)
-- Совместимость с [[../hosting/huggingface.md|Hugging Face]] моделями
+- Поддержка 50+ архитектур (Llama, Mistral, Qwen, [DeepSeek](../platforms/deepseek.md), Gemma, GPT-NeoX...)
+- Совместимость с [Hugging Face](../hosting/huggingface.md) моделями
 
 ## Цены и доступ
 
@@ -35,7 +35,7 @@ High-throughput LLM inference engine для production: PagedAttention, tensor p
 
 ## Агентные возможности
 
-- [[../platforms/openai.md|OpenAI]]-совместимый API — любой агентный фреймворк может использовать vLLM как бэкенд
+- [OpenAI](../platforms/openai.md)-совместимый API — любой агентный фреймворк может использовать vLLM как бэкенд
 - Поддержка tool calling (function calling) на уровне модели
 - Prefix caching эффективен для agentic prompt'ов с повторяющимся system prompt
 - Низкая latency critical для interactive agent loop
@@ -48,7 +48,7 @@ High-throughput LLM inference engine для production: PagedAttention, tensor p
 
 - Production serving LLM для high-traffic агентов
 - Multi-tenant SaaS: изоляция через Multi-LoRA
-- Cost-efficient API для internal agent-систем (вместо [[../platforms/openai.md|OpenAI]] API)
+- Cost-efficient API для internal agent-систем (вместо [OpenAI](../platforms/openai.md) API)
 - Batch inference для офлайн-evaluations
 
 ## Отзывы и критика

@@ -39,4 +39,4 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow с Claude Code
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — практический workflow с Claude Code

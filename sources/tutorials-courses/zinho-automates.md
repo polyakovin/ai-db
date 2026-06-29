@@ -58,5 +58,5 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — автоматизация как бизнес-кейс
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Scheduled Tasks и Skills как часть обвязки
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — автоматизация как бизнес-кейс
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Scheduled Tasks и Skills как часть обвязки

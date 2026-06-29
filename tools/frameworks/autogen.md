@@ -105,11 +105,11 @@ AutoGen — open-source фреймворк от Microsoft Research для соз
 
 ## Связи
 
-- [[../frameworks/langgraph.md|LangGraph]] — альтернативный orchestration-фреймворк
-- [[../frameworks/crewai.md|CrewAI]] — более простая multi-agent альтернатива
-- [[../frameworks/semantic-kernel.md|Semantic Kernel]] — часть MAF, enterprise middleware
-- [[../agent-frameworks-research.md|Исследование фреймворков]] — AutoGen в карте выбора
-- [[../../patterns/implementation/multi-agent-orchestration.md|Multi-agent orchestration]] — AutoGen для оркестрации
-- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — MAF как реализация harness
+- [LangGraph](../frameworks/langgraph.md) — альтернативный orchestration-фреймворк
+- [CrewAI](../frameworks/crewai.md) — более простая multi-agent альтернатива
+- [Semantic Kernel](../frameworks/semantic-kernel.md) — часть MAF, enterprise middleware
+- [Исследование фреймворков](../agent-frameworks-research.md) — AutoGen в карте выбора
+- [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) — AutoGen для оркестрации
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — MAF как реализация harness
 
 *Добавлено: 2026-06-29*

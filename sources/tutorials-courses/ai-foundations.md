@@ -56,6 +56,6 @@ status: processed
 
 ## Связи
 
-- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Claude Code workflow
-- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — практика сборки Skills
-- [[../../patterns/fundamentals/context-engineering.md|Context engineering]] — управление контекстом Projects
+- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — Claude Code workflow
+- [Skills и правила для агентов](../../patterns/implementation/agent-skills-and-rules.md) — практика сборки Skills
+- [Context engineering](../../patterns/fundamentals/context-engineering.md) — управление контекстом Projects
