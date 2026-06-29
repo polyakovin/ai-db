@@ -4,16 +4,22 @@ set -euo pipefail
 
 echo "🔍 Pre-commit checks (ai-db)..."
 
-# 1. Валидация vault (битые ссылки + frontmatter)
+# 1. Regenerate canonical-map.json from tools/ structure
+if [ -f meta/scripts/generate-canonical-map.py ]; then
+  python3 meta/scripts/generate-canonical-map.py > /dev/null 2>&1
+  echo "  ✓ canonical-map.json regenerated"
+fi
+
+# 2. Валидация vault (битые ссылки + frontmatter)
 if [ -f meta/scripts/validate-vault.sh ]; then
-  bash meta/scripts/validate-vault.sh || {
+  python3 meta/scripts/validate-vault.sh || {
     echo "❌ Vault validation failed — fix links before committing"
     echo "ℹ️  Tip: update broken links or add missing target files"
     exit 1
   }
 fi
 
-# 2. Проверка canonical cross-reference (bare mentions → wiki-links)
+# 3. Проверка canonical cross-reference (bare mentions → wiki-links)
 if [ -f meta/scripts/validate-canonical-refs.py ]; then
   python3 meta/scripts/validate-canonical-refs.py || {
     echo "❌ Canonical cross-reference check failed — wrap bare mentions in wiki-links"

@@ -1,0 +1,94 @@
+{
+  "OVERVIEW": {
+    "name": "Tools — overview",
+    "path": "tools/OVERVIEW.md"
+  },
+  "agent-model-map": {
+    "name": "Модельная карта для AI-агентов",
+    "path": "tools/agent-model-map.md"
+  },
+  "embedding-models": {
+    "name": "Модели для эмбеддингов",
+    "path": "tools/embedding-models.md"
+  },
+  "rerankers": {
+    "name": "Ререйкеры (Rerankers)",
+    "path": "tools/rerankers.md"
+  },
+  "gemini": {
+    "name": "Google Gemini",
+    "path": "tools/gemini.md"
+  },
+  "perplexity": {
+    "name": "Perplexity AI",
+    "path": "tools/perplexity.md"
+  },
+  "agent-observability-debugging": {
+    "name": "Observability и debugging для AI-агентов",
+    "path": "tools/agent-observability-debugging.md"
+  },
+  "comparisons": {
+    "name": "Сравнение платформ — Обзор",
+    "path": "tools/comparisons.md"
+  },
+  "agent-frameworks-research": {
+    "name": "Исследование фреймворков для AI-агентов",
+    "path": "tools/agent-frameworks-research.md"
+  },
+  "langgraph": {
+    "name": "LangGraph",
+    "path": "tools/frameworks/langgraph.md"
+  },
+  "crewai": {
+    "name": "CrewAI",
+    "path": "tools/frameworks/crewai.md"
+  },
+  "autogen": {
+    "name": "AutoGen / Microsoft Agent Framework",
+    "path": "tools/frameworks/autogen.md"
+  },
+  "dify": {
+    "name": "Dify",
+    "path": "tools/frameworks/dify.md"
+  },
+  "llamaindex": {
+    "name": "LlamaIndex",
+    "path": "tools/frameworks/llamaindex.md"
+  },
+  "semantic-kernel": {
+    "name": "Semantic Kernel",
+    "path": "tools/frameworks/semantic-kernel.md"
+  },
+  "deepseek": {
+    "name": "DeepSeek",
+    "path": "tools/platforms/deepseek.md"
+  },
+  "openai": {
+    "name": "OpenAI",
+    "path": "tools/platforms/openai.md"
+  },
+  "qwen": {
+    "name": "Qwen (Alibaba)",
+    "path": "tools/platforms/qwen.md"
+  },
+  "anthropic": {
+    "name": "Anthropic (Claude)",
+    "path": "tools/platforms/anthropic.md"
+  },
+  "z-ai": {
+    "name": "Z.ai",
+    "path": "tools/platforms/z-ai.md"
+  },
+  "mistral": {
+    "name": "Mistral AI",
+    "path": "tools/platforms/mistral.md"
+  },
+  "mimo-code": {
+    "name": "MiMo Code",
+    "path": "tools/models/mimo-code.md"
+  },
+  "pinecone": {
+    "name": "Pinecone",
+    "path": "tools/vector-dbs/pinecone.md"
+  }
+}

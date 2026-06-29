@@ -76,11 +76,11 @@ agent (Claude/Cursor/...) → pipeline manifest (YAML) → stage director skills
 
 ## Связи с другими разделами
 
-- [[patterns/architecture-design/agent-harness.md|Agent Harness]] — обвязка вокруг агента, частью которой является OpenMontage
-- [[patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — оркестрация агента для видеопроизводства
-- [[patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — слой stage director skills
-- [[tools/agent-frameworks-research.md|Исследование фреймворков]] — сравнение подходов к оркестрации
-- [[sources/libraries-tools/superpowers.md|Superpowers]] — похожая архитектура (skills + Python tools)
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — обвязка вокруг агента, частью которой является OpenMontage
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — оркестрация агента для видеопроизводства
+- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — слой stage director skills
+- [[../../tools/agent-frameworks-research.md|Исследование фреймворков]] — сравнение подходов к оркестрации
+- [[../../sources/libraries-tools/superpowers.md|Superpowers]] — похожая архитектура (skills + Python tools)
 
 ## Обзор ресурса
 

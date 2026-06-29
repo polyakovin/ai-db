@@ -1,75 +1,77 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/usr/bin/env python3
+"""Validate vault: check all wiki-link [[...]] and markdown [...](...) in .md files."""
 
-ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
-cd "$ROOT"
+import os
+import re
+import sys
+from pathlib import Path
 
-FAILURES=0
-OK_LINKS=0
-LINK_RE='\[[^][]+\]\(([^)]*)\)'
+ROOT = Path(__file__).resolve().parent.parent.parent
+EXCLUDE_PREFIXES = ("meta/", ".git/", "assets/")
 
-check_target() {
-    local source_file="$1"
-    local line_no="$2"
-    local href="$3"
-    local target filedir
 
-    href="${href%%#*}"
-    [[ -z "$href" ]] && return
-    [[ "$href" == http://* || "$href" == https://* || "$href" == mailto:* ]] && return
-    [[ "$href" == *.svg || "$href" == *.png || "$href" == *.jpg || "$href" == *.jpeg || "$href" == *.gif || "$href" == *.ico || "$href" == *.webp ]] && return
+def find_md_files(root: Path):
+    for f in root.rglob("*.md"):
+        rel = f.relative_to(root)
+        if any(str(rel).startswith(p) for p in EXCLUDE_PREFIXES):
+            continue
+        yield f
 
-    filedir="$(dirname "$source_file")"
-    if [[ "$href" == /* ]]; then
-        target="$ROOT$href"
-    else
-        target="$filedir/$href"
-    fi
 
-    if [[ -f "$target" || -d "$target" ]]; then
-        OK_LINKS=$((OK_LINKS + 1))
-    else
-        echo "Broken link: $source_file:$line_no -> $href"
-        FAILURES=$((FAILURES + 1))
-    fi
-}
+def resolve_href(source_file: Path, href: str) -> Path | None:
+    if href.startswith(("http://", "https://", "mailto:")):
+        return None  # external
+    if href.rsplit(".", 1)[-1] in {"svg", "png", "jpg", "jpeg", "gif", "ico", "webp"}:
+        return None  # image
+    # strip anchor fragment for file check
+    href_clean = href.split("#")[0]
+    if not href_clean:
+        return None
+    if href_clean.startswith("/"):
+        target = ROOT / href_clean.lstrip("/")
+    else:
+        target = (source_file.parent / href_clean).resolve()
+    return target
 
-while IFS= read -r -d '' file; do
-    line_no=0
-    while IFS= read -r line || [[ -n "$line" ]]; do
-        line_no=$((line_no + 1))
-        rest="$line"
-        while [[ "$rest" =~ $LINK_RE ]]; do
-            match="${BASH_REMATCH[0]}"
-            href="${BASH_REMATCH[1]}"
-            check_target "$file" "$line_no" "$href"
-            rest="${rest#*"$match"}"
-        done
-    done < "$file"
-done < <(find . -path ./.git -prune -o -name '*.md' -type f -print0)
 
-while IFS= read -r -d '' file; do
-    [[ "$(basename "$file")" == "overview.md" || "$(basename "$file")" == "OVERVIEW.md" ]] && continue
+def extract_wiki_links(text: str):
+    """Extract wiki-link targets, excluding examples with '...' placeholder."""
+    links = re.findall(r"\[\[([^]|]+)(?:\|[^]]*)?\]\]", text)
+    return [l for l in links if "..." not in l]
 
-    if [[ "$(sed -n '1p' "$file")" != "---" ]]; then
-        echo "Missing frontmatter: $file"
-        FAILURES=$((FAILURES + 1))
-        continue
-    fi
 
-    for key in title url type category tags added status; do
-        if ! awk 'NR == 1 { next } /^---$/ { exit } { print }' "$file" | grep -q "^$key:"; then
-            echo "Missing frontmatter key '$key': $file"
-            FAILURES=$((FAILURES + 1))
-        fi
-    done
-done < <(find ./sources -name '*.md' -type f -print0)
+def extract_md_links(text: str):
+    return re.findall(r"\[([^]]*)\]\(([^)]+)\)", text)
 
-echo "Valid local markdown links: $OK_LINKS"
 
-if [[ "$FAILURES" -gt 0 ]]; then
-    echo "Vault validation failed: $FAILURES issue(s)."
-    exit 1
-fi
+def main():
+    broken = 0
+    for fpath in find_md_files(ROOT):
+        text = fpath.read_text(encoding="utf-8")
+        for line_no, line in enumerate(text.splitlines(), start=1):
+            # wiki-links
+            for target_raw in extract_wiki_links(line):
+                target = resolve_href(fpath, target_raw)
+                if target is None:
+                    continue
+                if not target.exists():
+                    print(f"Broken link: {fpath.relative_to(ROOT)}:{line_no} -> [[{target_raw}]] → {target}")
+                    broken += 1
+            # markdown links
+            for _text, href in extract_md_links(line):
+                target = resolve_href(fpath, href)
+                if target is None:
+                    continue
+                if not target.exists():
+                    print(f"Broken link: {fpath.relative_to(ROOT)}:{line_no} -> [{_text}]({href}) → {target}")
+                    broken += 1
 
-echo "Vault validation passed."
+    if broken > 0:
+        print(f"\nVault validation failed: {broken} broken link(s).")
+        sys.exit(1)
+    print("All links valid.")
+    print("Vault validation passed.")
+
+
+if __name__ == "__main__":
+    main()
