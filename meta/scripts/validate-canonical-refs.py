@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
-"""Проверяет, что все текстовые упоминания canonical-инструментов в patterns/ и tools/
-обёрнуты в markdown-ссылку на их страницу."""
+"""Check that every technology mention in patterns/ and tools/ is a wiki-link.
+
+How it works:
+1. Collects all .md files under tools/ (excluding OVERVIEW.md, comparisons.md)
+2. For each file, reads frontmatter title + H1 heading + filename
+3. Extracts keywords to search for bare mentions
+4. Scans all patterns/*.md and tools/*.md for those keywords without links
+
+Adding a new canonical page under tools/ automatically includes it in checks.
+No manual mapping required.
+"""
 
 import os
 import re
@@ -10,165 +19,165 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 os.chdir(ROOT)
 
-# Список canonical страниц и их ключевых слов
-# (target_path_from_root, [keyword1, keyword2, ...])
-CANONICAL_MAP = [
-    ("tools/platforms/openai.md",     ["OpenAI", "Codex CLI", "Responses API", "Agents SDK", "Realtime API"]),
-    ("tools/platforms/anthropic.md",  ["Anthropic", "Claude Code", "Claude Opus", "Claude Sonnet", "Claude Haiku", "Claude Cowork", "Computer Use"]),
-    ("tools/platforms/mistral.md",    ["Mistral", "Codestral", "Le Chat"]),
-    ("tools/platforms/deepseek.md",   ["DeepSeek"]),
-    ("tools/platforms/qwen.md",       ["Qwen"]),
-    ("tools/platforms/z-ai.md",       ["Z.ai", "Zhipu AI", "AutoGLM"]),
-    ("tools/gemini.md",               ["Gemini"]),
-    ("tools/perplexity.md",           ["Perplexity"]),
-    ("tools/models/mimo-code.md",     ["MiMo Code"]),
-    ("tools/frameworks/langgraph.md", ["LangGraph"]),
-    ("tools/frameworks/autogen.md",   ["AutoGen"]),
-    ("tools/frameworks/crewai.md",    ["CrewAI"]),
-    ("tools/frameworks/semantic-kernel.md", ["Semantic Kernel"]),
-    ("tools/frameworks/llamaindex.md",["LlamaIndex"]),
-    ("tools/frameworks/dify.md",      ["Dify"]),
-    ("tools/vector-dbs/pinecone.md",  ["Pinecone"]),
-    ("tools/rerankers.md",            ["Cohere Rerank", "BGE", "Jina"]),
-    ("tools/embedding-models.md",     ["Voyage AI"]),
-]
+CONTENT_DIRS = ["patterns", "tools"]
+EXCLUDE_FILES = {"OVERVIEW.md", "overview.md", "comparisons.md"}
 
 
-def relative_path(from_abs: Path, to_abs: Path) -> str:
-    rel = os.path.relpath(str(to_abs), start=str(from_abs))
-    if rel.startswith("./"):
-        rel = rel[2:]
-    return rel
+def extract_keywords(fp: Path) -> list[str]:
+    """Extract search keywords from a canonical page: frontmatter title, H1, filename."""
+    keywords = []
+    raw = fp.read_text(encoding="utf-8")
+
+    # 1. Frontmatter title
+    fm = re.match(r"^---\s*\n(.*?)\n---\s*\n", raw, re.DOTALL)
+    if fm:
+        m = re.search(r"^title:\s*(.+)$", fm.group(1), re.MULTILINE)
+        if m:
+            keywords.append(m.group(1).strip())
+
+    # 2. H1 heading (first # line after frontmatter)
+    body = raw.split("---", 2)[-1] if "---" in raw else raw
+    m = re.search(r"^#\s+(.+)$", body, re.MULTILINE)
+    if m:
+        keywords.append(m.group(1).strip())
+
+    # 3. Filename stem (kebab-case -> Title Case)
+    stem = fp.stem
+    keywords.append(stem.replace("-", " ").title())
+    if stem.isupper() and len(stem) <= 8:
+        keywords.append(stem)
+
+    # Deduplicate, keep order, drop short entries
+    seen: set[str] = set()
+    out: list[str] = []
+    for kw in keywords:
+        k = kw.lower().strip()
+        if k and len(k) > 2 and k not in seen:
+            seen.add(k)
+            out.append(kw.strip())
+    return out
 
 
-def check_file(filepath: Path) -> list[str]:
-    """Проверяет один .md файл на bare mentions."""
-    violations = []
+def rel_path(from_dir: Path, to_abs: Path) -> str:
+    r = os.path.relpath(str(to_abs), start=str(from_dir))
+    return r[2:] if r.startswith("./") else r
 
-    with open(filepath, "r", encoding="utf-8") as f:
-        lines = f.readlines()
 
-    # Определяем directory для рассчёта relative paths
-    filedir = filepath.parent
+def collect_canonical() -> list[tuple[Path, str, list[str]]]:
+    """Return list of (abs_path, relative_path, [keywords]) for every canonical page."""
+    pages: list[tuple[Path, str, list[str]]] = []
+    for md in sorted((ROOT / "tools").rglob("*.md")):
+        if md.name in EXCLUDE_FILES:
+            continue
+        kws = extract_keywords(md)
+        pages.append((md.resolve(), str(md.relative_to(ROOT)), kws))
+    return pages
 
-    for target_rel, keywords in CANONICAL_MAP:
-        target_abs = (ROOT / target_rel).resolve()
-        if filepath.resolve() == target_abs:
-            continue  # пропускаем сам canonical-файл
 
-        rel_path = relative_path(filedir, target_abs)
+def check_file(path: Path, pages: list[tuple[Path, str, list[str]]]) -> list[str]:
+    """Return violation messages for bare mentions in a single .md file."""
+    violations: list[str] = []
+    lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+    filedir = path.parent
 
-        for term in keywords:
-            if term not in "".join(lines):
-                continue
+    for target_abs, canonical_rel, keywords in pages:
+        if path.resolve() == target_abs:
+            continue
 
-            term_escaped = re.escape(term)
+        joined = "".join(lines)
+        term_filter = [t for t in keywords if t in joined]
+        if not term_filter:
+            continue
+
+        for term in term_filter:
+            pattern = re.compile(re.escape(term))
+            rel = rel_path(filedir, target_abs)
 
             for i, line in enumerate(lines, 1):
-                line_stripped = line.strip()
-
-                # Пропускаем заголовки
-                if line_stripped.startswith("#"):
+                s = line.strip()
+                if not s or s.startswith("#") or s.startswith("```"):
                     continue
-
-                # Пропускаем блоки кода
-                if line_stripped.startswith("```"):
-                    continue
-
-                # Пропускаем таблицы (содержат |) — первая колонка = метка
                 if "|" in line and term in line:
                     continue
-
                 if term not in line:
                     continue
 
-                for m in re.finditer(term_escaped, line):
+                for m in pattern.finditer(line):
                     pos = m.start()
                     before = line[:pos]
-                    after = line[pos + len(term):]
+                    after = line[pos + len(term) :]
 
-                    # Пропускаем если термин — часть пояснения после markdown-ссылки (например "[OpenAI](url) — Codex CLI")
+                    # Part of description after an existing link: [X](url) — Y
                     if "]" in before and "](" in line:
-                        last_bracket = before.rfind("]")
-                        rest_after_bracket = before[last_bracket + 1:]
-                        if rest_after_bracket.startswith("("):
+                        lb = before.rfind("]")
+                        if before[lb + 1 :].startswith("("):
                             continue
 
-                    # Уже ссылка: [term](url)
+                    # Already wrapped: [term](url)
                     if after.lstrip().startswith("]("):
                         continue
 
-                    # Термин внутри [...](...) где после ] идёт (
-                    full_ref_pattern = re.compile(
-                        r"\[([^\]]*" + term_escaped + r"[^\]]*)\]\([^)]+\)"
+                    # Inside [text](url) somewhere
+                    link_pat = re.compile(
+                        r"\[([^\]]*" + re.escape(term) + r"[^\]]*)\]\([^)]+\)"
                     )
-                    if full_ref_pattern.search(line):
+                    if link_pat.search(line):
                         continue
 
-                    # Термин внутри кода (инлайн `код`)
-                    # Проверяем что это не внутри backtick
-                    before = line[:pos]
+                    # Inside inline code
                     if before.count("`") % 2 == 1:
                         continue
 
-                    # Пропускаем URL-пути (api.z.ai/api/anthropic — не упоминание Anthropic, а путь API)
-                    if term.lower() in line.lower() and (".com/" in line or "/api" in line):
+                    # URL path, not a technology mention
+                    if term.lower() in line.lower() and (
+                        ".com/" in line or "/api" in line
+                    ):
                         continue
 
-                    # Пропускаем ColQwen (это ColBERT модель, не Alibaba Qwen)
-                    if term == "Qwen" and "ColQwen" in line:
+                    # ColQwen != Qwen
+                    if "Qwen" in term and "ColQwen" in line:
                         continue
 
-                    # Пропускаем bullet-пункты списков интеграций/совместимости (метки, не prose)
-                    # Паттерн: "- **LlamaIndex**: ..." или "- LlamaIndex" — метка в списке
-                    stripped = line_stripped.lstrip("- ")
-                    if stripped.startswith("**"):
-                        stripped_inner = stripped.strip("*")
-                        if stripped_inner == term or stripped_inner.startswith(term):
-                            continue
-                    if line_stripped.startswith("- ") and term in line_stripped:
-                        # Проверяем: после "- " идёт сразу название, потом ":" или " —"
-                        after_bullet = line_stripped[2:]
-                        if after_bullet.startswith("**") and "**" in after_bullet:
-                            inner = after_bullet.split("**")[1]
-                            if inner == term:
+                    # Bullet list label: "- **Name**: ..."
+                    if s.startswith("- "):
+                        rest = s[2:]
+                        if rest.startswith("**") and "**" in rest:
+                            label = rest.split("**")[1]
+                            if label == term:
                                 continue
 
                     violations.append(
-                        f"{filepath.relative_to(ROOT)}:{i}: bare mention of "
-                        f'"{term}" — should be [{term}]({rel_path})'
+                        f"{path.relative_to(ROOT)}:{i}: bare mention of "
+                        f'"{term}" -> [{term}]({rel})'
                     )
-                    break  # одно нарушение на строку хватит
+                    break  # one per line
 
     return violations
 
 
-def main():
-    source_dirs = ["patterns", "tools"]
-    all_violations = []
+def main() -> None:
+    pages = collect_canonical()
+    all_v = []
 
-    for sdir in source_dirs:
-        srcdir_abs = ROOT / sdir
-        if not srcdir_abs.exists():
+    for content_dir in CONTENT_DIRS:
+        d = ROOT / content_dir
+        if not d.exists():
             continue
-        for md_file in sorted(srcdir_abs.rglob("*.md")):
-            base = md_file.name
-            if base.upper() == "OVERVIEW.MD":
+        for md in sorted(d.rglob("*.md")):
+            if md.name in EXCLUDE_FILES:
                 continue
-            violations = check_file(md_file)
-            all_violations.extend(violations)
+            all_v.extend(check_file(md, pages))
 
-    if all_violations:
-        print("🔍 Canonical cross-reference check: violations found")
+    if all_v:
+        print("Canonical cross-reference check: violations found")
         print("=" * 70)
-        for v in all_violations:
+        for v in all_v:
             print(v)
         print("=" * 70)
-        print(f"\n❌ {len(all_violations)} bare mention(s) found.")
-        print("Each technology mention should be a wiki-link to its canonical page.")
+        print(f"\n{len(all_v)} bare mention(s) found.")
         sys.exit(1)
 
-    print("✅ All technology mentions are properly linked to canonical pages.")
+    print("All technology mentions are properly linked to canonical pages.")
     sys.exit(0)
 
 
