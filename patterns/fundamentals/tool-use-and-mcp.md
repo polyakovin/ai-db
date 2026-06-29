@@ -74,3 +74,6 @@ Retry не должен быть автоматическим для всего.
 - [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — skills как специализированные инструкции tool use
 - [Работа с код-агентами](../implementation/working-with-coding-agents.md) — инструменты код-агента
 - [Multi-agent orchestration](../implementation/multi-agent-orchestration.md) — MCP для межагентной коммуникации
+- [OpenAI](../../tools/platforms/openai.md) — Responses API как tool use implementation
+- [Anthropic (Claude)](../../tools/platforms/anthropic.md) — MCP-серверы в Claude Code
+- [LangGraph](../../tools/frameworks/langgraph.md) — tool calling в LangGraph

@@ -112,5 +112,12 @@ Primary sources:
 - [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md)
 - [Production operations](../patterns/production-operations/production-operations.md)
 - [Agent Harness](../patterns/architecture-design/agent-harness.md) — обвязка как альтернатива фреймворкам
+- [Anthropic (Claude)](platforms/anthropic.md) — Claude как платформа
+- [OpenAI](platforms/openai.md) — OpenAI как платформа
 - [Google Gemini](gemini.md) — Gemini API как provider
+- [LangGraph](frameworks/langgraph.md) — stateful orchestration
+- [AutoGen / MAF](frameworks/autogen.md) — multi-agent фреймворк
+- [CrewAI](frameworks/crewai.md) — роль-ориентированные агенты
+- [LlamaIndex](frameworks/llamaindex.md) — knowledge-heavy агенты
+- [Dify](frameworks/dify.md) — low-code платформа
 - [Perplexity AI](perplexity.md) — альтернативная платформа
