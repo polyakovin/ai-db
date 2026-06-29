@@ -109,3 +109,9 @@ status: new
 ---
 
 *Добавлено: 2026-06-21*
+
+## Связи
+
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — определяющая статья концепции harness engineering
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow Codex
+- [[../../tools/agent-frameworks-research.md|Исследование фреймворков]] — OpenAI Responses API

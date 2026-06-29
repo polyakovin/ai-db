@@ -65,3 +65,8 @@ status: processed
 ---
 
 *Добавлено: 2026-06-21*
+
+## Связи
+
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow с Codex
+- [[../../tools/agent-frameworks-research.md|Исследование фреймворков]] — OpenAI Responses API и Agents SDK

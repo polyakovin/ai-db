@@ -65,3 +65,5 @@ goal -> state -> plan -> action -> observation -> update state -> stop or contin
 - [Agent Harness](../architecture-design/agent-harness.md)
 - [Context engineering](context-engineering.md)
 - [Production operations](../production-operations/production-operations.md)
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — цикл код-агента
+- [Таксономия AI-агентов](agent-taxonomy.md) — классификация по циклу

@@ -33,3 +33,9 @@ Open-source agent harness для долгосрочных задач и multi-ag
 ## Статус
 
 Обработано: 2026-06-24
+
+## Связи
+
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — ключевой источник для концепции harness
+- [[../../patterns/implementation/multi-agent-orchestration.md|Multi-agent orchestration]] — subagents и оркестрация
+- [[../../patterns/implementation/agent-evaluations.md|Evaluations для агентов]] — проверка качества harness

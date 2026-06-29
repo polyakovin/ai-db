@@ -55,3 +55,8 @@ status: processed
 ---
 
 *Добавлено: 2026-06-21 · Рейтинг обновлён*
+
+## Связи
+
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — автоматизация как бизнес-кейс
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — Scheduled Tasks и Skills как часть обвязки

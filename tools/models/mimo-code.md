@@ -200,4 +200,7 @@ updated: 2026-06-29
 - [MiMo Coding Models on Kilo Code](https://kilo.ai/models/by/xiaomi)
 
 ## См. также
-- [[OVERVIEW|tools/OVERVIEW.md]] — обзор инструментов и моделей
+- [[../../tools/OVERVIEW.md|tools/OVERVIEW.md]] — обзор инструментов и моделей
+- [[../../tools/agent-model-map.md|Модельная карта]] — MiMo модели в карте
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — MiMo Code как coding agent
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — MiMo Code как реализация harness

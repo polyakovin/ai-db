@@ -35,3 +35,8 @@ CLI-утилита для интеграции AI-помощников в раб
 ## Статус
 
 Обработано: 2026-06-24
+
+## Связи
+
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — пример глубоко специализированного harness
+- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — 67 subagents как реализация skills

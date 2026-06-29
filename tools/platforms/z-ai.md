@@ -216,4 +216,7 @@ status: verified
 
 ## См. также
 
-- [[OVERVIEW|tools/OVERVIEW.md]] — обзор инструментов и платформ
+- [[../../tools/OVERVIEW.md|tools/OVERVIEW.md]] — обзор инструментов и платформ
+- [[../../tools/agent-model-map.md|Модельная карта]] — open-weight модели в карте
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Claude Code с Z.ai backend
+- [[../../patterns/architecture-design/agent-harness.md|Agent Harness]] — coding harness с открытыми моделями

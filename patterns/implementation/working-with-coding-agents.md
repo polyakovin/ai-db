@@ -85,3 +85,15 @@
 - [Superpowers](../../sources/libraries-tools/superpowers.md)
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [Andrej Karpathy Skills](../../sources/research-production/andrej-karpathy-skills.md)
+
+## Связанные заметки
+
+- [Agent Harness](../architecture-design/agent-harness.md) — обвязка, в которой работает код-агент
+- [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — модульные инструкции, используемые в workflow
+- [Таксономия AI-агентов](../fundamentals/agent-taxonomy.md) — классификация coding agents
+- [Tool use, function calling и MCP](../fundamentals/tool-use-and-mcp.md) — инструменты код-агента
+- [Execution loop агента](../fundamentals/agent-execution-loop.md) — цикл, по которому работает код-агент
+- [Context engineering](../fundamentals/context-engineering.md) — управление контекстом в длинных coding сессиях
+- [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — approvals в coding workflow
+- [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — типичные ошибки код-агентов
+- [Персистентная память агента](../advanced/agent-memory-patterns.md) — как код-агент сохраняет контекст между сессиями

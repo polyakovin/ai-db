@@ -36,3 +36,7 @@ status: processed
 ## Статус
 
 Обработано: 2026-06-24
+
+## Связи
+
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — практический workflow с Claude Code

@@ -97,3 +97,21 @@ Subagents полезны, когда:
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [BitGN Arena — архитектурные инсайты](../../sources/engineering-patterns/bitgn-arena-insights.md)
 - [Harness Engineering — OpenAI](../../sources/research-production/harness-engineering-openai.md)
+
+## Связанные заметки
+
+- [Execution loop агента](../fundamentals/agent-execution-loop.md) — базовый цикл state → plan → action → observation
+- [Таксономия AI-агентов](../fundamentals/agent-taxonomy.md) — типы агентов и место harness в системе
+- [Tool use, function calling и MCP](../fundamentals/tool-use-and-mcp.md) — инструменты, permissions, approvals
+- [Context engineering](../fundamentals/context-engineering.md) — управление context window, память, retrieval
+- [Паттерны работы с AI-агентами](../architecture-design/agent-system-components.md) — карта компонентов agent-системы
+- [Безопасность агентных систем](../architecture-design/agent-security.md) — sandbox, secrets, audit
+- [RAG для AI-агентов](../architecture-design/rag-for-agents.md) — retrieval как часть состояния агента
+- [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — подгружаемые инструкции для harness
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — практический workflow
+- [Multi-agent orchestration](../implementation/multi-agent-orchestration.md) — оркестрация через subagents
+- [Evaluations для агентов](../implementation/agent-evaluations.md) — проверка качества harness
+- [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — approvals и UX агента
+- [Production operations](../production-operations/production-operations.md) — эксплуатация harness в продакшене
+- [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — что ломает harness
+- [Google Gemini](../../tools/gemini.md) — Gemini CLI как реализация coding harness

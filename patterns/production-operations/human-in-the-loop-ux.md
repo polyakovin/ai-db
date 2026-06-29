@@ -61,3 +61,5 @@ Approval screen должен включать:
 - [Безопасность агентных систем](../architecture-design/agent-security.md)
 - [Production operations](production-operations.md)
 - [Работа с код-агентами](../implementation/working-with-coding-agents.md)
+- [Agent Harness](../architecture-design/agent-harness.md) — approvals и UX агента
+- [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — последствия для UX

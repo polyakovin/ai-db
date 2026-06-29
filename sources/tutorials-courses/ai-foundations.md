@@ -53,3 +53,9 @@ status: processed
 ---
 
 *Добавлено: 2026-06-21 · Рейтинг обновлён*
+
+## Связи
+
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Claude Code workflow
+- [[../../patterns/implementation/agent-skills-and-rules.md|Skills и правила для агентов]] — практика сборки Skills
+- [[../../patterns/fundamentals/context-engineering.md|Context engineering]] — управление контекстом Projects

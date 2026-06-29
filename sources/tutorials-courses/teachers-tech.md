@@ -51,3 +51,8 @@ status: processed
 ---
 
 *Добавлено: 2026-06-21 · Рейтинг обновлён*
+
+## Связи
+
+- [[../../patterns/implementation/working-with-coding-agents.md|Работа с код-агентами]] — Claude Code workflow и агентный цикл
+- [[../../patterns/advanced/agent-antipatterns.md|Антипаттерны агентных систем]] — 5 главных ошибок из туториала

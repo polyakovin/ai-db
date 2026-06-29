@@ -71,3 +71,6 @@ Retry не должен быть автоматическим для всего.
 - [Безопасность агентных систем](../architecture-design/agent-security.md)
 - [Agent Harness](../architecture-design/agent-harness.md)
 - [Production operations](../production-operations/production-operations.md)
+- [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — skills как специализированные инструкции tool use
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — инструменты код-агента
+- [Multi-agent orchestration](../implementation/multi-agent-orchestration.md) — MCP для межагентной коммуникации

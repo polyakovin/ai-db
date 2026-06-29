@@ -111,3 +111,6 @@ Primary sources:
 - [Модельная карта для агентов](agent-model-map.md)
 - [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md)
 - [Production operations](../patterns/production-operations/production-operations.md)
+- [Agent Harness](../patterns/architecture-design/agent-harness.md) — обвязка как альтернатива фреймворкам
+- [Google Gemini](gemini.md) — Gemini API как provider
+- [Perplexity AI](perplexity.md) — альтернативная платформа

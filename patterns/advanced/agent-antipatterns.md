@@ -95,3 +95,7 @@
 - [Таксономия AI-агентов](../fundamentals/agent-taxonomy.md)
 - [Multi-agent orchestration](../implementation/multi-agent-orchestration.md)
 - [Безопасность агентных систем](../architecture-design/agent-security.md)
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — типичные ошибки код-агентов
+- [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — когда skill вреден
+- [Agent Harness](../architecture-design/agent-harness.md) — что ломает harness
+- [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — последствия антипаттернов для UX

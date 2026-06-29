@@ -89,8 +89,8 @@ MTEB полезен как sanity check, но production RAG нужно пров
 
 ## Связанные темы
 
-- [Инструменты — Обзор](OVERVIEW.md)
-- Векторные базы данных
-- RAG и агенты
-- Evaluations
-- Реранкеры
+- [[../tools/OVERVIEW.md|Инструменты — Обзор]]
+- [[../patterns/architecture-design/rag-for-agents.md|RAG для AI-агентов]] — retrieval как часть состояния агента
+- [[../patterns/fundamentals/context-engineering.md|Context engineering]] — memory tiers и retrieval injection
+- [[../patterns/implementation/agent-evaluations.md|Evaluations для агентов]] — качество retrieval
+- [[../patterns/advanced/reproducible-agent-recipes.md|Воспроизводимые рецепты]] — векторные базы и реранкеры

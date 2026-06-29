@@ -89,3 +89,13 @@ Skill стоит переписать или удалить, если он:
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [Andrej Karpathy Skills](../../sources/research-production/andrej-karpathy-skills.md)
 - [Паттерны работы с AI-агентами](../architecture-design/agent-system-components.md)
+
+## Связанные заметки
+
+- [Agent Harness](../architecture-design/agent-harness.md) — как skills встраиваются в обвязку агента
+- [Tool use, function calling и MCP](../fundamentals/tool-use-and-mcp.md) — skills как специализированные tool-use инструкции
+- [Таксономия AI-агентов](../fundamentals/agent-taxonomy.md) — классификация, определяющая какие skills нужны
+- [Работа с код-агентами](../implementation/working-with-coding-agents.md) — skills в практическом coding workflow
+- [Evaluations для агентов](../implementation/agent-evaluations.md) — проверка полезности skills
+- [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — когда skill вреден
+- [Context engineering](../fundamentals/context-engineering.md) — как skills экономят context window

@@ -77,3 +77,6 @@ OpenAI docs для GPT-5.5 рекомендуют Responses API для reasoning
 - [Модели для эмбеддингов](embedding-models.md)
 - [Evaluations для агентов](../patterns/implementation/agent-evaluations.md)
 - [Исследование фреймворков](agent-frameworks-research.md)
+- [Google Gemini](gemini.md) — Gemini model family в карте
+- [MiMo Code](models/mimo-code.md) — MiMo модели в карте
+- [Z.ai](platforms/z-ai.md) — open-weight модели GLM
