@@ -43,10 +43,11 @@ def load_canonical_map() -> dict:
 
 
 def build_name_lookup(can_map: dict) -> dict[str, str]:
-    """name → relative path for canonical pages."""
+    """name → relative path for canonical pages. Only entries with actual paths."""
     out = {}
     for slug, info in can_map.items():
-        out[info["name"].lower()] = info["path"]
+        if info.get("path"):
+            out[info["name"].lower()] = info["path"]
     return out
 
 
@@ -65,9 +66,18 @@ def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, str]) 
     violations = []
     lines = text.splitlines()
 
+    in_code_block = False
     for lineno, raw_line in enumerate(lines, start=1):
         line = raw_line.strip()
         if not line:
+            continue
+
+        # ── track fenced code block state ──
+        if line.startswith("```"):
+            in_code_block = not in_code_block
+            continue
+
+        if in_code_block:
             continue
 
         # ── skip lines that already have a markdown link ──
@@ -88,6 +98,10 @@ def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, str]) 
 
         # ── skip hyphenated adjectives like 'OpenAI-совместимый', 'OpenAI-first' ──
         # These are descriptor compounds, not bare mentions
+
+        # ── skip frontmatter fields with URLs ──
+        if line.lower().startswith(("url:", "tags:", "title:", "added:", "status:", "category:")):
+            continue
 
         # ── skip lines with inline-code ──
         if "`" in line:

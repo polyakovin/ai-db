@@ -127,7 +127,7 @@ updated: 2026-06-29
 - `xiaomi/mimo-v2-omni`: $0.40/M input, $2.00/M output
 
 ### Интеграции
-- **Kilo Code:** VS Code, JetBrains, Cursor, Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
+- **Kilo Code:** VS Code, JetBrains, [[../cursor.md|Cursor]], Windsurf, Trae — MiMo-V2-Flash, MiMo-V2.5, MiMo-V2.5-Pro
 - **[Claude Code](../platforms/anthropic.md):** совместимость через [Anthropic](../platforms/anthropic.md)-compatible API endpoint
 - **OpenCode:** основа форка, все возможности OpenCode сохранены
 - **OpenRouter:** API-доступ ко всем моделям

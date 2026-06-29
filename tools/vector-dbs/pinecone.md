@@ -34,10 +34,10 @@ Pinecone — fully managed, serverless векторная база данных 
 
 ## Когда НЕ применять
 
-- Self-hosting обязателен — Qdrant/Weaviate self-hosted
+- Self-hosting обязателен — [[qdrant.md|Qdrant]]/Weaviate self-hosted
 - Минимальный бюджет — serverless pricing может быть дороже self-hosted на больших объёмах
 - Нужна полная кастомизация индекса — open-source альтернативы гибче
-- Прототип с малым числом векторов — Chroma проще для локальной разработки
+- Прототип с малым числом векторов — [[chroma.md|Chroma]] проще для локальной разработки
 
 ## Open Source статус
 

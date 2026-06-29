@@ -118,7 +118,7 @@ results = co.rerank(query=query, documents=candidates, model='rerank-english-v3.
 - Значительное улучшение precision в RAG
 - BGE-Reranker-v2-m3 — зрелый open-source стандарт
 - Jina Reranker v2 — лучшая скорость в классе
-- Cohere Rerank 4 — SOTA качество без self-hosting
+- [[cohere.md|Cohere]] Rerank 4 — SOTA качество без self-hosting
 
 ### Слабые стороны:
 - Добавляет latency (особенно медленные cross-encoders)

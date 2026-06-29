@@ -48,7 +48,22 @@ def main():
     broken = 0
     for fpath in find_md_files(ROOT):
         text = fpath.read_text(encoding="utf-8")
-        for line_no, line in enumerate(text.splitlines(), start=1):
+
+        # ── strip fenced code blocks before link extraction ──
+        code_block = False
+        clean_lines = []
+        for line in text.splitlines():
+            if line.strip().startswith("```"):
+                code_block = not code_block
+                clean_lines.append("")  # blank placeholder to keep line count
+                continue
+            if code_block:
+                clean_lines.append("")
+            else:
+                clean_lines.append(line)
+        text = "\n".join(clean_lines)
+
+        for line_no, line in enumerate(clean_lines, start=1):
             # wiki-links
             for target_raw in extract_wiki_links(line):
                 target = resolve_href(fpath, target_raw)

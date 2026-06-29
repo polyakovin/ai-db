@@ -8,7 +8,7 @@
 - **[OpenAI](platforms/openai.md) `text-embedding-3-large`
 - **Voyage `voyage-4` / `voyage-4-large`** — сильный выбор для retrieval-first систем, длинного контекста, мультиязычного поиска и доменных вариантов.
 - **Google `gemini-embedding-2`** — когда нужны мультимодальные эмбеддинги: текст, изображения, видео, аудио, PDF в одном пространстве.
-- **Cohere `embed-v4.0`** — хороший managed-вариант для смешанных text/image/PDF сценариев и enterprise-стека Cohere.
+- **[[cohere.md|Cohere]] `embed-v4.0`** — хороший managed-вариант для смешанных text/image/PDF сценариев и enterprise-стека [[cohere.md|Cohere]].
 - **BAAI `bge-m3`** — open-source вариант для self-hosted RAG, гибридного dense/sparse/multi-vector retrieval и языков, включая русский.
 - **[Jina](rerankers.md) `jina-embeddings-v4`** — open/source-friendly вариант для длинного контекста, мультиязычности и мультимодального поиска.
 

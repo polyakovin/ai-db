@@ -10,7 +10,7 @@ status: new
 
 # LangGraph
 
-LangGraph — низкоуровневый orchestration runtime для построения stateful, long-running AI-агентов от LangChain. Предоставляет графовую модель выполнения с контролем состояния, durable execution, human-in-the-loop, streaming и production deployment. Рекомендуется для сложных агентных workflow, где важны контроль состояния и длительное исполнение.
+LangGraph — низкоуровневый orchestration runtime для построения stateful, long-running AI-агентов от [[langchain.md|LangChain]]. Предоставляет графовую модель выполнения с контролем состояния, durable execution, human-in-the-loop, streaming и production deployment. Рекомендуется для сложных агентных workflow, где важны контроль состояния и длительное исполнение.
 
 ## Ключевые возможности
 
@@ -21,7 +21,7 @@ LangGraph — низкоуровневый orchestration runtime для пост
 - **Memory** — встроенная поддержка кратковременной и долговременной памяти агента.
 - **Postgres checkpointing** — production-grade хранение чекпоинтов в PostgreSQL.
 - **Typed StateGraph** — строгая типизация схемы состояния для надёжности.
-- **LangSmith integration** — tracing, observability, evals через LangSmith.
+- **[[../langsmith.md|LangSmith]] integration** — tracing, observability, evals через [[../langsmith.md|LangSmith]].
 - **LangGraph Cloud** — managed hosting для production deployment.
 
 ## Архитектура
@@ -55,7 +55,7 @@ StateGraph
 
 ## Когда НЕ применять
 
-- Простая цепочка вызовов LLM — достаточно LangChain Expression Language (LCEL)
+- Простая цепочка вызовов LLM — достаточно [[langchain.md|LangChain]] Expression Language (LCEL)
 - Short-lived запросы без состояния — избыточно
 - Быстрый прототип — [Dify](dify.md)/Flowise/LangFlow быстрее для MVP
 - [OpenAI](../platforms/openai.md)-first managed stack — [Agents SDK](../platforms/openai.md) проще
@@ -64,8 +64,8 @@ StateGraph
 
 - **LangGraph** — open source (MIT license), GitHub: `langchain-ai/langgraph`
 - **LangGraph Cloud** — managed service (платный)
-- **LangSmith** — observability и evals платформа (freemium)
-- **LangChain** — open source, на котором построен LangGraph
+- **[[../langsmith.md|LangSmith]]** — observability и evals платформа (freemium)
+- **[[langchain.md|LangChain]]** — open source, на котором построен LangGraph
 
 ## Цены
 
@@ -110,13 +110,13 @@ StateGraph
 - Лучший выбор для stateful long-running агентов
 - Durable execution с checkpointing — надёжное восстановление
 - Строгая типизация состояния снижает ошибки
-- Интеграция с LangSmith для observability
-- Зрелая экосистема LangChain
+- Интеграция с [[../langsmith.md|LangSmith]] для observability
+- Зрелая экосистема [[langchain.md|LangChain]]
 
 ### Слабые стороны:
 - Кривая обучения: нужно проектировать граф и состояние
 - Избыточен для простых сценариев
-- Зависимость от LangChain-экосистемы
+- Зависимость от [[langchain.md|LangChain]]-экосистемы
 - LangGraph Cloud — дополнительная стоимость
 - Меньше «магии из коробки» по сравнению с [CrewAI](crewai.md)
 

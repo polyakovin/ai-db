@@ -15,13 +15,45 @@
     "name": "Ререйкеры (Rerankers)",
     "path": "tools/rerankers.md"
   },
+  "huggingface": {
+    "name": "Hugging Face",
+    "path": "tools/huggingface.md"
+  },
   "gemini": {
     "name": "Google Gemini",
     "path": "tools/gemini.md"
   },
+  "cohere": {
+    "name": "Cohere",
+    "path": "tools/cohere.md"
+  },
+  "codex-cli": {
+    "name": "Codex CLI",
+    "path": "tools/codex-cli.md"
+  },
   "perplexity": {
     "name": "Perplexity AI",
     "path": "tools/perplexity.md"
+  },
+  "cursor": {
+    "name": "Cursor",
+    "path": "tools/cursor.md"
+  },
+  "langsmith": {
+    "name": "LangSmith",
+    "path": "tools/langsmith.md"
+  },
+  "vllm": {
+    "name": "vLLM",
+    "path": "tools/vllm.md"
+  },
+  "gradio": {
+    "name": "Gradio",
+    "path": "tools/gradio.md"
+  },
+  "ollama": {
+    "name": "Ollama",
+    "path": "tools/ollama.md"
   },
   "agent-observability-debugging": {
     "name": "Observability и debugging для AI-агентов",
@@ -51,6 +83,10 @@
     "name": "Dify",
     "path": "tools/frameworks/dify.md"
   },
+  "flowise": {
+    "name": "Flowise",
+    "path": "tools/frameworks/flowise.md"
+  },
   "llamaindex": {
     "name": "LlamaIndex",
     "path": "tools/frameworks/llamaindex.md"
@@ -58,6 +94,10 @@
   "semantic-kernel": {
     "name": "Semantic Kernel",
     "path": "tools/frameworks/semantic-kernel.md"
+  },
+  "langchain": {
+    "name": "LangChain",
+    "path": "tools/frameworks/langchain.md"
   },
   "deepseek": {
     "name": "DeepSeek",
@@ -87,8 +127,84 @@
     "name": "MiMo Code",
     "path": "tools/models/mimo-code.md"
   },
+  "chroma": {
+    "name": "Chroma",
+    "path": "tools/vector-dbs/chroma.md"
+  },
+  "qdrant": {
+    "name": "Qdrant",
+    "path": "tools/vector-dbs/qdrant.md"
+  },
   "pinecone": {
     "name": "Pinecone",
     "path": "tools/vector-dbs/pinecone.md"
+  },
+  "phoenix": {
+    "name": "Phoenix (Arize)",
+    "path": null
+  },
+  "weaviate": {
+    "name": "Weaviate",
+    "path": null
+  },
+  "milvus": {
+    "name": "Milvus",
+    "path": null
+  },
+  "replicate": {
+    "name": "Replicate",
+    "path": null
+  },
+  "modal": {
+    "name": "Modal",
+    "path": null
+  },
+  "chainlit": {
+    "name": "Chainlit",
+    "path": null
+  },
+  "nvidia": {
+    "name": "NVIDIA",
+    "path": null
+  },
+  "meta-llama": {
+    "name": "Meta (Llama)",
+    "path": null
+  },
+  "microsoft": {
+    "name": "Microsoft",
+    "path": null
+  },
+  "alibaba": {
+    "name": "Alibaba",
+    "path": null
+  },
+  "voyage-ai": {
+    "name": "Voyage AI",
+    "path": null
+  },
+  "kilo-code": {
+    "name": "Kilo Code",
+    "path": null
+  },
+  "roo-code": {
+    "name": "Roo Code",
+    "path": null
+  },
+  "copilot": {
+    "name": "GitHub Copilot",
+    "path": null
+  },
+  "le-chat": {
+    "name": "Le Chat (Mistral)",
+    "path": null
+  },
+  "a2a": {
+    "name": "A2A (Agent-to-Agent)",
+    "path": null
+  },
+  "mcp": {
+    "name": "MCP (Model Context Protocol)",
+    "path": null
   }
 }
