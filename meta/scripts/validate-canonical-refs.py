@@ -42,12 +42,16 @@ def load_canonical_map() -> dict:
     return data
 
 
-def build_name_lookup(can_map: dict) -> dict[str, str]:
-    """name → relative path for canonical pages. Only entries with actual paths."""
+def build_name_lookup(can_map: dict) -> dict[str, dict]:
+    """name → {path, aliases} for canonical pages. Only entries with actual paths."""
     out = {}
     for slug, info in can_map.items():
         if info.get("path"):
-            out[info["name"].lower()] = info["path"]
+            # Primary name
+            out[info["name"].lower()] = {"path": info["path"], "name": info["name"]}
+            # Aliases
+            for alias in info.get("aliases", []):
+                out[alias.lower()] = {"path": info["path"], "name": info["name"]}
     return out
 
 
@@ -61,7 +65,7 @@ def find_files(directory: Path) -> list[Path]:
     )
 
 
-def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, str]) -> list[dict]:
+def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, dict]) -> list[dict]:
     """Return violations: list of {line, lineno, name, target_path}."""
     violations = []
     lines = text.splitlines()
@@ -118,16 +122,22 @@ def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, str]) 
             line_to_check = line
 
         # ── try each technology name ──
-        for name_lower, target_path in name_to_path.items():
+        # ── short-aliases that are too common to check ──
+        SHORT_ALIASES = frozenset({
+            "rag", "mcp", "evals", "hitl", "gpt",
+            "skills", "security", "memory", "context", "recipes",
+            "production", "governance", "compliance", "tool use",
+        })
+
+        for name_lower, path_info in name_to_path.items():
+            if name_lower in SHORT_ALIASES:
+                continue
+            target_path = path_info["path"]
+            name_title = path_info["name"]
+
             # Skip if the target is the same file (can't link to self in a wiki way)
             if filepath.samefile(ROOT / target_path):
                 continue
-
-            name_title = next(
-                info["name"]
-                for info in load_canonical_map().values()
-                if info["name"].lower() == name_lower
-            )
 
             # Skip ambiguous short words unless they appear as whole words
             if name_lower in AMBIGUOUS:

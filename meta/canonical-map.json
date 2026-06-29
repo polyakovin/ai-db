@@ -1,7 +1,7 @@
 {
   "OVERVIEW": {
-    "name": "Эмбеддинги и ререйкинг — Overview",
-    "path": "tools/embeddings/OVERVIEW.md"
+    "name": "Practices — overview",
+    "path": "patterns/advanced/OVERVIEW.md"
   },
   "agent-model-map": {
     "name": "Модельная карта для AI-агентов",
@@ -130,5 +130,81 @@
   "cursor": {
     "name": "Cursor",
     "path": "tools/ides/cursor.md"
+  },
+  "agent-memory-patterns": {
+    "name": "Персистентная память агента",
+    "path": "patterns/advanced/agent-memory-patterns.md"
+  },
+  "agent-use-cases": {
+    "name": "Карта кейсов AI-агентов",
+    "path": "patterns/advanced/agent-use-cases.md"
+  },
+  "reproducible-agent-recipes": {
+    "name": "Воспроизводимые рецепты AI-агентов",
+    "path": "patterns/advanced/reproducible-agent-recipes.md"
+  },
+  "agent-antipatterns": {
+    "name": "Антипаттерны агентных систем",
+    "path": "patterns/advanced/agent-antipatterns.md"
+  },
+  "rag-for-agents": {
+    "name": "RAG для AI-агентов",
+    "path": "patterns/architecture-design/rag-for-agents.md"
+  },
+  "data-governance-compliance": {
+    "name": "Data governance и compliance для AI-агентов",
+    "path": "patterns/architecture-design/data-governance-compliance.md"
+  },
+  "agent-harness": {
+    "name": "Agent Harness",
+    "path": "patterns/architecture-design/agent-harness.md"
+  },
+  "agent-system-components": {
+    "name": "Паттерны работы с AI-агентами",
+    "path": "patterns/architecture-design/agent-system-components.md"
+  },
+  "agent-security": {
+    "name": "Безопасность агентных систем",
+    "path": "patterns/architecture-design/agent-security.md"
+  },
+  "agent-evaluations": {
+    "name": "Evaluations для AI-агентов",
+    "path": "patterns/implementation/agent-evaluations.md"
+  },
+  "working-with-coding-agents": {
+    "name": "Работа с код-агентами",
+    "path": "patterns/implementation/working-with-coding-agents.md"
+  },
+  "agent-skills-and-rules": {
+    "name": "Skills и правила для агентов",
+    "path": "patterns/implementation/agent-skills-and-rules.md"
+  },
+  "multi-agent-orchestration": {
+    "name": "Multi-agent orchestration",
+    "path": "patterns/implementation/multi-agent-orchestration.md"
+  },
+  "human-in-the-loop-ux": {
+    "name": "Human-in-the-loop UX",
+    "path": "patterns/production-operations/human-in-the-loop-ux.md"
+  },
+  "production-operations": {
+    "name": "Production operations для агентных систем",
+    "path": "patterns/production-operations/production-operations.md"
+  },
+  "agent-execution-loop": {
+    "name": "Execution loop агента",
+    "path": "patterns/fundamentals/agent-execution-loop.md"
+  },
+  "agent-taxonomy": {
+    "name": "Таксономия AI-агентов",
+    "path": "patterns/fundamentals/agent-taxonomy.md"
+  },
+  "context-engineering": {
+    "name": "Context engineering",
+    "path": "patterns/fundamentals/context-engineering.md"
+  },
+  "tool-use-and-mcp": {
+    "name": "Tool use, function calling и MCP",
+    "path": "patterns/fundamentals/tool-use-and-mcp.md"
   }
 }

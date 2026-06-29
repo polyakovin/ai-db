@@ -73,7 +73,7 @@
 - `.nessy/memory/` — локальная память проекта;
 - `README.md` — публичные правила для участников;
 - `Skills/` — операционные процедуры;
-- `AGENTS.md` или аналог — если проект использует конкретный agent harness.
+- `AGENTS.md` или аналог — если проект использует конкретный [Agent Harness](../architecture-design/agent-harness.md).
 
 ## Источники
 

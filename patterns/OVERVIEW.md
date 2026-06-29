@@ -25,7 +25,7 @@
 
 ## 🟡 Implementation — как реализовать
 
-*Конкретные техники: skills, evaluations, оркестрация, работа с код-агентами.*
+*Конкретные техники: skills, evaluations, оркестрация, [работа с код-агентами](implementation/working-with-coding-agents.md).*
 
 - [Skills и правила для агентов](implementation/agent-skills-and-rules.md) — модульные инструкции, проектные правила, проверяемые workflow
 - [Evaluations для агентов](implementation/agent-evaluations.md) — evals и production gates

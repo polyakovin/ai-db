@@ -15,9 +15,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent  # ai-db/
 TOOLS = ROOT / "tools"
+PATTERNS = ROOT / "patterns"
 MAP_PATH = ROOT / "meta" / "canonical-map.json"
 
-EXCLUDE_DIRS = {"__pycache__", ".git", "meta", "sources", "patterns", "assets"}
+EXCLUDE_DIRS = {"__pycache__", ".git", "meta", "sources", "assets"}
 EXCLUDE_FILES = {"index.md", "summary.md", "_sidebar.md"}
 
 
@@ -55,13 +56,21 @@ def find_md_files(directory: Path) -> list[Path]:
 
 
 def build_map() -> dict:
-    md_files = list(TOOLS.rglob("*.md"))
-    md_files = [f for f in md_files
-                if f.name not in EXCLUDE_FILES
-                and not any(part.startswith(".") for part in f.relative_to(TOOLS).parts)]
+    """Build canonical map from tools/ and patterns/."""
+    sources = []
+
+    # tools/ — all .md files
+    for f in TOOLS.rglob("*.md"):
+        if f.name not in EXCLUDE_FILES and not any(part.startswith(".") for part in f.relative_to(TOOLS).parts):
+            sources.append(f)
+
+    # patterns/ — all .md files except OVERVIEW.md (those are navigation, not canonical)
+    for f in PATTERNS.rglob("*.md"):
+        if f.name not in EXCLUDE_FILES and not any(part.startswith(".") for part in f.relative_to(PATTERNS).parts):
+            sources.append(f)
 
     can_map = {}
-    for fpath in md_files:
+    for fpath in sources:
         rel = fpath.relative_to(ROOT)
         slug = fpath.stem  # filename without .md
 
