@@ -18,7 +18,7 @@
 | [patterns](patterns/OVERVIEW.md) | Архитектурные блоки, проектные решения, workflow, recipes, learning path, case-карта, how-to |
 | [tools](tools/OVERVIEW.md) | Модели, SDK, платформы, runtime |
 | [sources](sources/OVERVIEW.md) | Статьи, переводы, курсы, обработанные источники и provenance |
-| [meta](meta/skills/add-source.md) | Шаблоны и проектные skills |
+| [meta](meta/project-rules.md) | Шаблоны и проектные skills |
 
 ## Правило именования
 
@@ -70,15 +70,26 @@
 5. Запустить проверку:
 
 ```bash
-bash meta/scripts/validate-vault.sh
+python3 meta/scripts/validate-vault.sh
 ```
 
 ## Проверки
 
-В проекте есть единый валидатор:
+В проекте есть три уровня валидации:
 
+1. **Валидация vault** (битые ссылки, frontmatter):
 ```bash
-bash meta/scripts/validate-vault.sh
+python3 meta/scripts/validate-vault.sh
+```
+
+2. **Canonical cross-reference** (bare mentions → wiki-links):
+```bash
+python3 meta/scripts/validate-canonical-refs.py
+```
+
+3. **Регенерация canonical-map.json** (из tools/ структуры):
+```bash
+python3 meta/scripts/generate-canonical-map.py
 ```
 
 Он проверяет:
@@ -87,7 +98,27 @@ bash meta/scripts/validate-vault.sh
 - наличие frontmatter у заметок в `sources/`;
 - обязательные поля `title`, `url`, `type`, `category`, `tags`, `added`, `status`.
 
-Та же проверка подключена в локальный pre-commit hook [.githooks/pre-commit](.githooks/pre-commit).
+Все три проверки подключены в локальный pre-commit hook [.githooks/pre-commit](.githooks/pre-commit).
+
+## Canonical Map
+
+Проект использует единый реестр технологий — [meta/canonical-map.json](meta/canonical-map.json). Он генерируется автоматически:
+
+```bash
+python3 meta/scripts/generate-canonical-map.py
+```
+
+Скрипт сканирует все `.md` файлы в `tools/`, извлекает название из frontmatter `title:` или h1, и создаёт JSON-маппинг `{slug: {name, path}}`. Map используется:
+
+- **validate-canonical-refs.py** — проверяет, что все упоминания технологий в `patterns/` и `tools/` оформлены как wiki-ссылки на canonical страницу
+- **pre-commit hook** — автоматически регенерирует map и запускает проверку перед каждым коммитом
+
+### Правила ссылок на canonical страницы
+
+1. Каждый инструмент/платформа имеет **одну** canonical страницу в `tools/`
+2. Все остальные заметки **только ссылаются** на canonical страницу, не дублируя факты
+3. Ссылки оформляются относительным путём от файла к canonical странице (например, `../../tools/perplexity.md`)
+4. Bare mentions (текстовые упоминания без ссылок) недопустимы — их ловит `validate-canonical-refs.py`
 
 ## Рабочие правила
 

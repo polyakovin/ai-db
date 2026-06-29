@@ -1,6 +1,17 @@
 # TODO.md — Аудит cross-reference связей в ai-db
 
-Дата аудита: 2026-06-29. Файлов: 62 .md. Все существующие ссылки (227) валидны — `validate-vault.sh` проходит.
+Дата аудита: 2026-06-29. Файлов: 90 .md. Все существующие ссылки валидны — `validate-vault.sh` проходит.
+
+**Обновление 29.06.2026 (рефакторинг):**
+- ✅ README.md: `bash` → `python3`, добавлен раздел «Canonical Map», исправлена ссылка на meta/
+- ✅ AGENTS.md: обновлены команды проверок, добавлены все 3 шага pre-commit
+- ✅ meta/scripts/*.sh: `bash validate-vault.sh` → `python3 validate-vault.sh`
+- ✅ meta/decisions.md: создан лог решений
+- ✅ .gitignore: добавлены `__pycache__/`, `*.pyc`, `*.pyo`
+- ✅ meta/project-rules.md: исправлен путь audit-log, `overview.md` → `OVERVIEW.md`
+- ✅ validate-canonical-refs.sh: заменён на тонкую обёртку над .py
+- ✅ 12 stub-страниц (codex-cli, cursor, langchain, langsmith, cohere, ollama, vllm, gradio, huggingface, chroma, qdrant, flowise): добавлен контент
+- ✅ canonical-map.json: перегенерирован (35 записей, все с валидными путями)
 
 ---
 
@@ -376,4 +387,4 @@
 
 ---
 
-*Аудит завершён 2026-06-29. После внесения правок запустить `bash meta/scripts/validate-vault.sh`.*
+*Аудит завершён 2026-06-29. После внесения правок запустить `python3 meta/scripts/validate-vault.sh`.*

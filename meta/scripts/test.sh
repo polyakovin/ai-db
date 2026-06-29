@@ -4,5 +4,5 @@ set -euo pipefail
 
 echo "🧪 Test suite (ai-db)..."
 script_dir="$(cd "$(dirname "$0")" && pwd)"
-bash "$script_dir/validate-vault.sh"
+python3 "$script_dir/validate-vault.sh"
 echo "✅ All tests passed"

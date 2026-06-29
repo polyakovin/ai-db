@@ -28,7 +28,7 @@
 1. **Начинай с README.md** — главная навигация по проекту.
 2. **Выполняй** — минимальными порциями, каждая с проверкой.
 3. **Фиксируй решения** — важные выборы, причины, альтернативы в `meta/decisions.md` (создать при необходимости).
-4. **Проверяй** — `bash meta/scripts/validate-vault.sh` после каждого meaningful изменения.
+4. **Проверяй** — `python3 meta/scripts/validate-vault.sh` после каждого meaningful изменения.
 5. **Commit** — atomic, message с ссылкой на задачу.
 6. **Push** — сразу после коммита `git push`, чтобы репозиторий на GitHub был актуален.
 
@@ -43,8 +43,11 @@
 ## Проверки
 | Тип | Команда |
 |-----|---------|
-| Валидация vault | `bash meta/scripts/validate-vault.sh` |
-| Markdown-ссылки | `bash meta/scripts/validate-vault.sh` |
+| Валидация vault (битые ссылки) | `python3 meta/scripts/validate-vault.sh` |
+| Canonical cross-reference | `python3 meta/scripts/validate-canonical-refs.py` |
+| Генерация canonical-map | `python3 meta/scripts/generate-canonical-map.py` |
+
+Pre-commit hook (`.githooks/pre-commit`) выполняет все три проверки автоматически.
 
 ## Память проекта
 - **Project rules:** `meta/project-rules.md`
