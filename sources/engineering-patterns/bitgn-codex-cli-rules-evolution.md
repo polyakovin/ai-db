@@ -98,6 +98,16 @@ status: new
 - Evaluations — failure analysis как evaluative петля
 - Plan-and-Execute — execution plans как first-class артефакты
 
+## Обзор ресурса
+
+- **Платформа:** BitGN (bitgn.com) — платформа публичных бенчмарков AI-агентов
+- **Челлендж:** PAC1 (Personal Agent Challenge) — 104 production-задачи: vault retrieval, обработка сообщений, финансы, CRM, документы, безопасность
+- **Дата:** 2025-2026; слепой зачёт
+- **Автор решения:** Maksim Popkov (Sber)
+- **Результат:** 84.0/104 — 3-е место в Accuracy-зачёте PAC1
+- **Ключевая инновация:** Отдельный evolution loop для правки правил (атомарно) — в отличие от статических Pangolin и Codex-on-Rails
+- **Значимость:** Доказал эффективность разделения runtime solver и evolution loop; подход созвучен Harness Engineering (OpenAI)
+
 ## Выводы
 
 1. **Не усложняй рантайм** — один сильный coding agent с минимумом инструментов.

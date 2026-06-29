@@ -82,4 +82,15 @@ agent (Claude/Cursor/...) → pipeline manifest (YAML) → stage director skills
 - [[tools/agent-frameworks-research.md|Исследование фреймворков]] — сравнение подходов к оркестрации
 - [[sources/libraries-tools/superpowers.md|Superpowers]] — похожая архитектура (skills + Python tools)
 
+## Обзор ресурса
+
+- **Автор:** Calesthio (calesthioailabs) — разработчик open-source AI-инструментов, также автор Crucix
+- **Лицензия:** GNU AGPLv3
+- **Статус:** #1 GitHub Trending, Repository of the Day (июнь 2026); активное развитие
+- **Масштаб:** 12 production pipelines, 52+ tools, 500+ agent skills
+- **Поддерживаемые AI-ассистенты:** Claude Code, Cursor, Copilot, Windsurf, Codex
+- **YouTube:** @OpenMontage — каждое видео включает полный промпт, пайплайн, тулы и стоимость
+- **Уникальность:** Первая open-source система, делающая полноценное видео (не только слайд-шоу) из реальных motion-клипов через AI-агента
+- **Relevance:** Эталонная реализация agent-first архитектуры и агентного видеопроизводства
+
 *Добавлено: 2026-06-29*

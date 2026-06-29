@@ -48,6 +48,16 @@ status: processed
 - **Builders Club** — технические воркшопы для разработчиков
 - **Блог** — практические статьи (закупки, госсектор, малый бизнес)
 
+## Обзор ресурса
+
+- **Платформа:** OpenAI (официальная академия)
+- **Запуск:** 2025-2026; активное развитие с весны 2026 с новыми треками
+- **Формат:** Бесплатные self-paced онлайн-курсы + регулярные livestream-ивенты + on-demand записи + блог
+- **Треки:** AI Foundations → Applied AI Foundations → Agents and Workflows (три уровня сложности)
+- **Сертификаты:** Доступны completion certificates; отдельно существует программа OpenAI Certified (invite-only для Enterprise/Edu)
+- **Дополнительные программы:** Builder Bootcamps (Agents, Codex, Evals, RAG), Higher Education Club, Work Users Club, Builders Club
+- **Актуальность:** Высокая — официальный источник от создателей ChatGPT/Codex; контент обновляется по мере развития продуктов (Codex, GPT-5, etc.)
+
 ## Синтез
 
 Основная выжимка перенесена в [обзор источников](../OVERVIEW.md) и связанные проектные заметки.

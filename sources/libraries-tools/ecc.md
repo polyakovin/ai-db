@@ -18,6 +18,16 @@ Engineer's Copilot CLI — инструмент для работы с AI-аге
 
 CLI-утилита для интеграции AI-помощников в рабочий процесс разработчика.
 
+## Обзор ресурса
+
+- **Автор:** affaan-m
+- **Лицензия:** (см. репозиторий)
+- **Статус:** Активный (2026)
+- **Архитектура:** Agent harness performance optimization system — 67 специализированных subagents (planner, architect, tdd-guide, code-reviewer, security-reviewer, e2e-runner, language-specific reviewers/build-resolvers, etc.) + skills/ + .claude-plugin/
+- **Поддерживаемые платформы:** Claude Code (основная), через plugin/marketplace
+- **Языки:** Multi-language support (Python, TypeScript, Go, Java, Kotlin, Rust, C++, C#, F#, HarmonyOS)
+- **Relevance:** Пример глубоко специализированного agent harness с фокусом на multi-language разработку и оптимизацию производительности
+
 ## Синтез
 
 Основная выжимка перенесена в [обзор источников](../OVERVIEW.md) и связанные проектные заметки.
