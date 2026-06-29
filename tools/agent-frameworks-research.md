@@ -30,7 +30,7 @@
 
 ## OpenAI
 
-OpenAI стоит брать, если нужен managed stack с Responses API, tools, structured outputs, tracing, evals и Agents SDK. Хорош для production-команд, которым важны provider-hosted capabilities и единая экосистема.
+[OpenAI](platforms/openai.md) стоит брать, если нужен managed stack с Responses API, tools, structured outputs, tracing, evals и Agents SDK. Хорош для production-команд, которым важны provider-hosted capabilities и единая экосистема.
 
 Primary sources:
 
@@ -40,7 +40,7 @@ Primary sources:
 
 ## Anthropic Claude Code
 
-Claude Code — не общий framework для embedding в backend, а готовый coding-agent surface: terminal/IDE workflow, работа с repo, commands, approvals и developer loop. Его стоит изучать как reference implementation для coding agents и human-in-the-loop инженерного UX.
+[Claude Code](platforms/anthropic.md) — не общий framework для embedding в backend, а готовый coding-agent surface: terminal/IDE workflow, работа с repo, commands, approvals и developer loop. Его стоит изучать как reference implementation для coding agents и human-in-the-loop инженерного UX.
 
 Primary source:
 
@@ -48,7 +48,7 @@ Primary source:
 
 ## LangGraph
 
-LangGraph — низкоуровневый orchestration runtime для long-running stateful agents. Официальные docs подчёркивают durable execution, streaming, human-in-the-loop, memory и production deployment. Хороший выбор, когда граф состояния важнее “быстрого агента за 10 строк”.
+[LangGraph](frameworks/langgraph.md) — низкоуровневый orchestration runtime для long-running stateful agents. Официальные docs подчёркивают durable execution, streaming, human-in-the-loop, memory и production deployment. Хороший выбор, когда граф состояния важнее "быстрого агента за 10 строк".
 
 Primary source:
 
@@ -56,7 +56,7 @@ Primary source:
 
 ## AutoGen
 
-AutoGen разделяет AgentChat, Core, Extensions и Studio. Полезен для conversational single/multi-agent applications, event-driven multi-agent systems, прототипирования и исследований multi-agent collaboration.
+[AutoGen](frameworks/autogen.md) разделяет AgentChat, Core, Extensions и Studio. Полезен для conversational single/multi-agent applications, event-driven multi-agent systems, прототипирования и исследований multi-agent collaboration.
 
 Primary source:
 
@@ -64,7 +64,7 @@ Primary source:
 
 ## Semantic Kernel
 
-Semantic Kernel — lightweight open-source development kit для AI agents и интеграции моделей в C#, Python, Java. Особенно уместен в enterprise/Microsoft среде, где нужны plugins, telemetry, filters и интеграция с существующими API.
+[Semantic Kernel](frameworks/semantic-kernel.md) — lightweight open-source development kit для AI agents и интеграции моделей в C#, Python, Java. Особенно уместен в enterprise/Microsoft среде, где нужны plugins, telemetry, filters и интеграция с существующими API.
 
 Primary source:
 
@@ -72,7 +72,7 @@ Primary source:
 
 ## CrewAI
 
-CrewAI фокусируется на collaborative agents, crews и flows. В docs заявлены guardrails, memory, knowledge, observability, human-in-the-loop triggers и deployment automations. Хорош для role-based automations, если роли действительно независимы.
+[CrewAI](frameworks/crewai.md) фокусируется на collaborative agents, crews и flows. В docs заявлены guardrails, memory, knowledge, observability, human-in-the-loop triggers и deployment automations. Хорош для role-based automations, если роли действительно независимы.
 
 Primary source:
 
@@ -80,7 +80,7 @@ Primary source:
 
 ## LlamaIndex
 
-LlamaIndex особенно силён для knowledge-heavy агентов: RAG, indexing, agents over data, human-in-the-loop, multi-agent patterns, tracing/evaluation. Его стоит брать, когда главная сложность — данные, документы, retrieval и structured extraction.
+[LlamaIndex](frameworks/llamaindex.md) особенно силён для knowledge-heavy агентов: RAG, indexing, agents over data, human-in-the-loop, multi-agent patterns, tracing/evaluation. Его стоит брать, когда главная сложность — данные, документы, retrieval и structured extraction.
 
 Primary source:
 

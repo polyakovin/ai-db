@@ -36,7 +36,7 @@
 
 ## Reasoning effort
 
-OpenAI docs для GPT-5.5 рекомендуют Responses API для reasoning/tool-calling/multi-turn use cases и настройку `reasoning.effort`. Balanced стартовая точка — medium, но для latency-sensitive задач стоит проверять low, а high/xhigh оставлять для сложных асинхронных агентных задач.
+[OpenAI](platforms/openai.md) docs для GPT-5.5 рекомендуют Responses API для reasoning/tool-calling/multi-turn use cases и настройку `reasoning.effort`. Balanced стартовая точка — medium, но для latency-sensitive задач стоит проверять low, а high/xhigh оставлять для сложных асинхронных агентных задач.
 
 Практическое правило: reasoning effort — это не ручка “сделай лучше”, а budget. Его меняют только после evals.
 

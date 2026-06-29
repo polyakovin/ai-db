@@ -57,8 +57,8 @@ StateGraph
 
 - Простая цепочка вызовов LLM — достаточно LangChain Expression Language (LCEL)
 - Short-lived запросы без состояния — избыточно
-- Быстрый прототип — Dify/Flowise/LangFlow быстрее для MVP
-- OpenAI-first managed stack — Agents SDK проще
+- Быстрый прототип — [Dify](dify.md)/Flowise/LangFlow быстрее для MVP
+- [OpenAI](../platforms/openai.md)-first managed stack — Agents SDK проще
 
 ## Open Source статус
 
@@ -72,7 +72,7 @@ StateGraph
 - **LangGraph OSS**: бесплатно
 - **LangSmith**: бесплатный tier → Developer ($39/мес) → Enterprise
 - **LangGraph Cloud (LangSmith Deployment)**: $0.0036/мин за production deployment
-- Стоимость inference — отдельно, через выбранную модель (OpenAI, Anthropic, etc.)
+- Стоимость inference — отдельно, через выбранную модель ([OpenAI](../platforms/openai.md), [Anthropic](../platforms/anthropic.md), etc.)
 
 ## Агентные возможности
 

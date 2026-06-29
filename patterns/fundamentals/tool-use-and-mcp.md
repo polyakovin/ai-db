@@ -15,7 +15,7 @@ Function calling полезен, когда модель должна выбра
 - требования approval;
 - формат observation.
 
-OpenAI рекомендует помещать большую часть tool-specific guidance в описания tools, а не раздувать общий prompt. См. официальные страницы [Function calling](https://developers.openai.com/api/docs/guides/function-calling) и [Using tools](https://developers.openai.com/api/docs/guides/tools).
+[OpenAI](../../tools/platforms/openai.md) рекомендует помещать большую часть tool-specific guidance в описания tools, а не раздувать общий prompt. См. официальные страницы [Function calling](https://developers.openai.com/api/docs/guides/function-calling) и [Using tools](https://developers.openai.com/api/docs/guides/tools).
 
 ## MCP
 

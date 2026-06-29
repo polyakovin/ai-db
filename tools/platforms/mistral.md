@@ -112,9 +112,9 @@ Mistral AI — французская AI-компания (основана в 2
 - Le Chat Pro — доступный потребительский тариф ($14.99/мес)
 
 ### Слабые стороны:
-- Уступает frontier-моделям (GPT-5.5, Opus 4.8) на сложных reasoning задачах
-- Меньше adoption, чем OpenAI/Anthropic
-- Нет managed agent stack как у OpenAI
+- Уступает frontier-моделям ([GPT-5.5](openai.md), [Opus 4.8](anthropic.md)) на сложных reasoning задачах
+- Меньше adoption, чем [OpenAI](openai.md)/[Anthropic](anthropic.md)
+- Нет managed agent stack как у [OpenAI](openai.md)
 - Vibe (агенты) — новее и менее зрело, чем Claude Cowork
 - Меньше community content
 

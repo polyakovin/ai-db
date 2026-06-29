@@ -53,10 +53,10 @@ Semantic Kernel
 
 ## Когда НЕ применять
 
-- Быстрый Python-прототип — CrewAI или LangGraph проще
-- RAG-first агенты — LlamaIndex специализированнее
+- Быстрый Python-прототип — [CrewAI](crewai.md) или [LangGraph](langgraph.md) проще
+- RAG-first агенты — [LlamaIndex](llamaindex.md) специализированнее
 - Чисто Python-стека — семантика SK избыточна
-- Low-code requirements — Dify/Flowise
+- Low-code requirements — [Dify](dify.md)/Flowise
 
 ## Open Source статус
 
@@ -105,7 +105,7 @@ Semantic Kernel
 
 ### Слабые стороны:
 - Меньше adoption в Python-only сообществе
-- Сложнее для быстрого прототипа, чем CrewAI
+- Сложнее для быстрого прототипа, чем [CrewAI](../frameworks/crewai.md)
 - Заточен под Microsoft-стек
 - Меньше community tutorials и примеров
 - Слияние с AutoGen — период нестабильности API

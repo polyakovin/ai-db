@@ -44,8 +44,8 @@ DeepSeek — китайская AI-компания, разработчик open
 | **Function calling** | OpenAI-совместимый формат, поддержка structured outputs |
 | **Tool use** | Модели оптимизированы для agentic workloads и multi-step tool calling |
 | **Reasoning** | Thinking mode (Chain-of-Thought) для сложных многошаговых задач |
-| **Coding agents** | Совместимость с Claude Code, OpenCode, Cline и другими coding agents через OpenAI-совместимый endpoint |
-| **MCP-интеграции** | Через совместимость с Claude Code и другими платформами |
+| **Coding agents** | Совместимость с [Claude Code](anthropic.md), OpenCode, Cline и другими coding agents через OpenAI-совместимый endpoint |
+| **MCP-интеграции** | Через совместимость с [Claude Code](anthropic.md) и другими платформами |
 
 ## Open Source статус
 
@@ -84,7 +84,7 @@ DeepSeek — китайская AI-компания, разработчик open
 
 - **Бюджетные production-агенты**: V4 Flash для high-throughput сценариев при минимальной стоимости
 - **Self-hosted агенты**: V3.2 или V4 Flash на собственных GPU — контроль данных и cost predictability
-- **Coding assistants**: Через совместимость с Claude Code, OpenCode, Cline
+- **Coding assistants**: Через совместимость с [Claude Code](anthropic.md), OpenCode, Cline
 - **Research/prototyping**: Быстрые и дешёвые итерации с frontier-качеством
 - **Многоязычные сценарии**: Сильная поддержка китайского и английского
 

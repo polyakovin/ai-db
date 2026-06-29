@@ -24,9 +24,9 @@ Qwen — семейство AI-моделей от Alibaba Cloud (Qwen Team), о
 
 | Модель | Статус | Контекст | Цена API (input/output за 1M токенов) | Особенности |
 |--------|--------|----------|--------------------------------------|-------------|
-| **Qwen3.7-Max** | API-only (май 2026) | ~128K | $2.50 / $7.50 (Alibaba Cloud) | Флагман: agent frontier, автономная работа до 35ч, поддержка Claude Code |
+| **Qwen3.7-Max** | API-only (май 2026) | ~128K | $2.50 / $7.50 (Alibaba Cloud) | Флагман: agent frontier, автономная работа до 35ч, поддержка [Claude Code](anthropic.md) |
 | **Qwen3.7-Plus** | API-only (июнь 2026) | ~128K | $0.40 / $1.60 | Мультимодальная: текст + видео + изображения, 60% дешевле Max |
-| **Qwen3.6-Max Preview** | API | 262K | $1.04 / $6.24 (OpenRouter) | Сильный reasoning, конкурент GPT-5.4 |
+| **Qwen3.6-Max Preview** | API | 262K | $1.04 / $6.24 (OpenRouter) | Сильный reasoning, конкурент [GPT-5.4](openai.md) |
 | **Qwen3.6-35B-A3B** | Open-weight | ~128K | $0.325 / $1.95 (API) | Эффективность: 3B активных, одна 24GB GPU |
 | **Qwen3-Max Preview** | API | 262K | $1.20 / $6.00 | Предыдущее поколение Max |
 
@@ -39,7 +39,7 @@ Alibaba переходит к закрытой модели распростра
 |-------------|----------|
 | **Long-horizon agents** | Qwen3.7-Max: автономное исполнение до 35 часов |
 | **Coding** | Сильные результаты на SWE-bench Verified (73.4% у Qwen3.6-35B) |
-| **External harness** | Поддержка Claude Code через совместимый API |
+| **External harness** | Поддержка [Claude Code](anthropic.md) через совместимый API |
 | **Office & productivity** | Автоматизация офисных задач, работа с документами |
 | **Multimodal agents** | Qwen3.7-Plus: видео + изображения + текст |
 | **Reasoning** | Extended thinking для сложных задач |
@@ -85,7 +85,7 @@ Alibaba переходит к закрытой модели распростра
 
 ## Use Cases
 
-- **Coding agents**: Qwen3.7-Max через Claude Code или как API для coding agents
+- **Coding agents**: Qwen3.7-Max через [Claude Code](anthropic.md) или как API для coding agents
 - **Бюджетные production агенты**: Qwen3.7-Plus ($0.40/$1.60) для high-throughput
 - **Self-hosted coding**: Qwen3.6-35B-A3B на одной GPU — рекордная эффективность
 - **Office automation**: Документы, таблицы, презентации
@@ -104,7 +104,7 @@ Alibaba переходит к закрытой модели распростра
 ### Слабые стороны:
 - Закрытие новых моделей (Qwen3.7) — отход от open-source
 - Китайская компания — регуляторные риски, цензура
-- Меньше adoption на западе, чем OpenAI/Anthropic/DeepSeek
+- Меньше adoption на западе, чем [OpenAI](openai.md)/[Anthropic](anthropic.md)/[DeepSeek](deepseek.md)
 - Меньше community tooling и документации на английском
 - Разочарование open-source сообщества (Airbnb и другие)
 

@@ -21,7 +21,7 @@ Pinecone — fully managed, serverless векторная база данных 
 - **Hybrid search** — комбинация dense (embedding) и sparse (keyword) поиска.
 - **Real-time updates** — добавление, обновление, удаление векторов без перестроения индекса.
 - **Pod-based indexes** — для предсказуемой производительности (альтернатива serverless).
-- **Integrations** — LangChain, LlamaIndex, OpenAI, Cohere, HuggingFace.
+- **Integrations** — LangChain, [LlamaIndex](../frameworks/llamaindex.md), [OpenAI](../platforms/openai.md), [Cohere](../rerankers.md), HuggingFace.
 
 ## Когда применять
 

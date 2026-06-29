@@ -34,10 +34,10 @@ LlamaIndex — фреймворк для построения контекстн
 
 ## Когда НЕ применять
 
-- Stateful durable execution — LangGraph сильнее
-- Role-based multi-agent без данных — CrewAI проще
-- Enterprise .NET — Semantic Kernel/MAF
-- Tool-heavy workflows без RAG — OpenAI Agents SDK
+- Stateful durable execution — [LangGraph](../frameworks/langgraph.md) сильнее
+- Role-based multi-agent без данных — [CrewAI](../frameworks/crewai.md) проще
+- Enterprise .NET — [Semantic Kernel](../frameworks/semantic-kernel.md)/MAF
+- Tool-heavy workflows без RAG — [OpenAI Agents SDK](../platforms/openai.md)
 
 ## Open Source статус
 

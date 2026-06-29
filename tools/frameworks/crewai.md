@@ -49,9 +49,9 @@ Crew
 
 ## Когда НЕ применять
 
-- Сложный stateful orchestration — LangGraph сильнее
-- Enterprise .NET-стек — MAF (AutoGen + Semantic Kernel)
-- RAG-first агенты — LlamaIndex специализированнее
+- Сложный stateful orchestration — [LangGraph](langgraph.md) сильнее
+- Enterprise .NET-стек — [MAF (AutoGen + Semantic Kernel)](autogen.md)
+- RAG-first агенты — [LlamaIndex](llamaindex.md) специализированнее
 - Production без evals — CrewAI требует собственных проверок качества
 
 ## Open Source статус
@@ -102,7 +102,7 @@ Crew
 
 ### Слабые стороны:
 - Роли могут плодиться без реальной нужды («over-engineering ролей»)
-- Меньше контроля над состоянием, чем в LangGraph
+- Меньше контроля над состоянием, чем в [LangGraph](langgraph.md)
 - Evals нужно делать самостоятельно
 - Не для enterprise .NET (MAF сильнее)
 - Для простого single-agent — избыточен

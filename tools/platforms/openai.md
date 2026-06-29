@@ -89,7 +89,7 @@ OpenAI — ведущая американская AI-компания, созд
 ## Use Cases
 
 - **Production AI-агенты**: Responses API + Agents SDK для tool-heavy workflows
-- **Coding Agent**: Codex CLI как альтернатива Claude Code
+- **Coding Agent**: Codex CLI как альтернатива [Claude Code](anthropic.md)
 - **Голосовые агенты**: Realtime API для голосовых интерфейсов
 - **Enterprise RAG**: File Search, Web Search как hosted tools
 - **Multi-agent системы**: Agents SDK orchestration с handoffs
@@ -105,10 +105,10 @@ OpenAI — ведущая американская AI-компания, созд
 
 ### Слабые стороны:
 - Закрытые модели — полная зависимость от провайдера
-- Цены выше open-weight альтернатив (DeepSeek V4 Flash: $0.14/MTok)
-- Prompt caching слабее, чем у Anthropic (50% vs 90%)
+- Цены выше open-weight альтернатив ([DeepSeek](deepseek.md) V4 Flash: $0.14/MTok)
+- Prompt caching слабее, чем у [Anthropic](anthropic.md) (50% vs 90%)
 - Agents SDK требует изучения концепций (orchestration, handoffs)
-- Codex CLI уступает Claude Code в reasoning depth (SWE-bench Pro: 58.6% vs 69.2%)
+- Codex CLI уступает [Claude Code](anthropic.md) в reasoning depth (SWE-bench Pro: 58.6% vs 69.2%)
 
 ## Связи
 

@@ -57,10 +57,10 @@ Multi-agent система полезна, когда разные роли де
 
 ## Инструментальные опоры
 
-- LangGraph: stateful graphs, persistence, human-in-the-loop.
-- AutoGen: conversational single/multi-agent apps и event-driven Core.
-- CrewAI: crews, tasks/processes, guardrails, memory, flows.
-- OpenAI Agents SDK: handoffs, guardrails, tracing/evals.
+- [LangGraph](../../tools/frameworks/langgraph.md): stateful graphs, persistence, human-in-the-loop.
+- [AutoGen](../../tools/frameworks/autogen.md): conversational single/multi-agent apps и event-driven Core.
+- [CrewAI](../../tools/frameworks/crewai.md): crews, tasks/processes, guardrails, memory, flows.
+- [OpenAI](../../tools/platforms/openai.md) Agents SDK: handoffs, guardrails, tracing/evals.
 
 ## Связанные заметки
 

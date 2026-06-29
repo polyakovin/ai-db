@@ -47,8 +47,8 @@ AutoGen — open-source фреймворк от Microsoft Research для соз
 ## Когда НЕ применять
 
 - Простой single-agent — избыточно
-- Stateful durable execution — LangGraph сильнее
-- Нужен быстрый MVP — CrewAI/Dify быстрее
+- Stateful durable execution — [LangGraph](langgraph.md) сильнее
+- Нужен быстрый MVP — [CrewAI](crewai.md)/[Dify](dify.md) быстрее
 - Не-Microsoft стек — весомое преимущество MAF теряется
 
 ## Open Source статус
