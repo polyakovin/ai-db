@@ -31,6 +31,18 @@
 - [Pinecone](vector-dbs/pinecone.md) — serverless векторная база данных для RAG
 - [Ререйкеры](embeddings/rerankers.md) — Cohere Rerank, BGE, Jina — второй этап ранжирования для RAG
 
+## Agent Tools
+
+Инструменты для выполнения задач агентами:
+
+- [Agent Tools Overview](agent-tools/OVERVIEW.md) — обзор категорий инструментов
+- [Web Search](agent-tools/web-search.md) — поисковые API (Tavily, Exa, Serper, Firecrawl)
+- [Browser Automation](agent-tools/browser-automation.md) — управление браузером (Playwright, Browser-use)
+- [File System](agent-tools/file-system.md) — чтение/запись файлов, навигация
+- [Code Execution](agent-tools/code-execution.md) — запуск кода в sandbox (E2B, Jupyter, Docker)
+- [API Clients](agent-tools/api-clients.md) — HTTP-клиенты для внешних сервисов
+- [Function Calling](agent-tools/function-calling.md) — механизм вызова функций через LLM
+
 ## Другие инструменты
 
 - [Модели для эмбеддингов](embeddings/OVERVIEW.md) — выбор embedding-модели для RAG, памяти и семантического поиска
