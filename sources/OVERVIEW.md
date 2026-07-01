@@ -18,6 +18,7 @@
 
 *Инструментарий для сборки агентов: библиотеки, фреймворки, SDK.*
 
+- [LightRAG](libraries-tools/lightrag.md) — simple and fast RAG с графами знаний, multimodal support
 - [LangChain Deep Agents](libraries-tools/langchain-deep-agents.md) — harness, filesystem, subagents, context management, sandbox boundary
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
 - [ECC](libraries-tools/ecc.md) — harness OS, memory persistence, hooks, verification loops, security
