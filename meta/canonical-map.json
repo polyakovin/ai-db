@@ -211,6 +211,10 @@
     "name": "Паттерны работы с AI-агентами",
     "path": "patterns/architecture-design/agent-system-components.md"
   },
+  "external-context-collection": {
+    "name": "Автоматизация сбора внешнего контекста",
+    "path": "patterns/architecture-design/external-context-collection.md"
+  },
   "agent-harness": {
     "name": "Agent Harness",
     "path": "patterns/architecture-design/agent-harness.md"

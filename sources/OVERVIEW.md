@@ -23,6 +23,13 @@
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
 - [ECC](libraries-tools/ecc.md) — harness OS, memory persistence, hooks, verification loops, security
 - [Perplexity AI](libraries-tools/perplexity.md) — AI-поиск с агентными возможностями
+- [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) — стандарт подключения AI-приложений к внешним системам
+- [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) — hosted tools: web search, file search, MCP/connectors
+- [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) — connectors, ingestion transformations, cache, vector-store insertion
+- [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) — единый loader-интерфейс для внешних источников
+- [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) — recursive crawl, sitemap discovery, clean markdown, webhooks
+- [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) — source/destination connectors для data replication
+- [Unstructured Docs](libraries-tools/unstructured-docs.md) — parsing, chunking и ingestion неструктурированных документов
 
 ## 🟡 Engineering Patterns
 
@@ -59,6 +66,13 @@
 | [OpenMontage](libraries-tools/openmontage.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Perplexity AI](libraries-tools/perplexity.md) | 🔵 Libraries | [Perplexity (tools)](../tools/platforms/perplexity.md) — canonical |
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
+| [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [OpenAI](../tools/platforms/openai.md) |
+| [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LlamaIndex](../tools/frameworks/llamaindex.md) |
+| [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LangChain](../tools/frameworks/langchain.md) |
+| [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Web Search](../tools/agent-tools/web-search.md) |
+| [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
+| [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 
 ---
 
@@ -161,4 +175,4 @@ status: new
 - Связанные инструменты (ссылки на `tools/`)
 - Связанные паттерны (ссылки на `patterns/`)
 
-*Последнее обновление: 29.06.2026*
+*Последнее обновление: 02.07.2026*
