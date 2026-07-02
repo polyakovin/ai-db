@@ -8,6 +8,7 @@
 - [Таксономия AI-агентов](patterns/fundamentals/agent-taxonomy.md) — assistant, workflow, agent, autonomous agent, multi-agent system.
 - [Agent Harness](patterns/architecture-design/agent-harness.md) — из чего состоит рабочая обвязка вокруг агента.
 - [Skills и правила для агентов](patterns/implementation/agent-skills-and-rules.md) — как оформлять переиспользуемые инструкции.
+- [Оценка ответов LLM](patterns/implementation/llm-response-evaluation.md) — способы оценки final answer, rubrics, LLM-as-judge и human review.
 - [Работа с код-агентами](patterns/implementation/working-with-coding-agents.md) — цикл постановки задачи, проверки и фиксации результата.
 - [Исследование фреймворков](tools/agent-frameworks-research.md) — выбор OpenAI/Anthropic/LangGraph/AutoGen/CrewAI/LlamaIndex/low-code стека.
 

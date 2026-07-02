@@ -1,6 +1,6 @@
 # Evaluations для AI-агентов
 
-Eval для агента проверяет не один ответ модели, а весь workflow: выбор tools, обработку ошибок, качество retrieved evidence, соблюдение policy, стоимость и способность остановиться.
+Eval для агента проверяет не один ответ модели, а весь workflow: выбор tools, обработку ошибок, качество retrieved evidence, соблюдение policy, стоимость и способность остановиться. Если нужно оценить только final answer, смотри отдельную заметку [Оценка ответов LLM](llm-response-evaluation.md).
 
 ## Что измерять
 
@@ -84,5 +84,6 @@ metrics:
 ## Связанные заметки
 
 - [Observability и debugging](../../tools/observability/OVERVIEW.md)
+- [Оценка ответов LLM](llm-response-evaluation.md)
 - [Production operations](../production-operations/production-operations.md)
 - [RAG для агентов](../architecture-design/rag-for-agents.md)

@@ -29,6 +29,7 @@
 
 - [Skills и правила для агентов](implementation/agent-skills-and-rules.md) — модульные инструкции, проектные правила, проверяемые workflow
 - [Evaluations для агентов](implementation/agent-evaluations.md) — evals и production gates
+- [Оценка ответов LLM](implementation/llm-response-evaluation.md) — способы оценки final answer, rubrics и LLM-as-judge
 - [Multi-agent orchestration](implementation/multi-agent-orchestration.md) — роли, shared state, supervisor/worker, anti-patterns
 - [Работа с код-агентами](implementation/working-with-coding-agents.md) — цикл постановки задачи, проверки, фиксации
 
@@ -63,7 +64,7 @@
 |---------|--------|------|
 | 🟢 Fundamentals | 4 | Базовые примитивы |
 | 🔵 Architecture & Design | 5 | Проектные блоки |
-| 🟡 Implementation | 4 | Техники сборки |
+| 🟡 Implementation | 5 | Техники сборки |
 | 🟠 Production & Operations | 2 | Эксплуатация |
 | 🔴 Advanced / Pro-Tips | 4 | Pro-tips |
 
@@ -109,8 +110,9 @@
 
 1. Прочитать [безопасность агентных систем](architecture-design/agent-security.md).
 2. Прочитать [evaluations для агентов](implementation/agent-evaluations.md).
+3. Прочитать [оценку ответов LLM](implementation/llm-response-evaluation.md).
 
-Ожидаемый результат: у каждого tool call есть граница доверия, у каждого workflow есть eval, у каждого инцидента есть trace.
+Ожидаемый результат: у каждого tool call есть граница доверия, у каждого workflow есть eval, у каждого ответа есть критерии качества, у каждого инцидента есть trace.
 
 ### 🟠 Уровень 4: production
 
@@ -148,4 +150,4 @@
 
 ---
 
-*Последнее обновление: 25.06.2026*
+*Последнее обновление: 02.07.2026*

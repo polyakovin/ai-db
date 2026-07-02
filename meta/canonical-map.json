@@ -230,5 +230,9 @@
   "agent-skills-and-rules": {
     "name": "Skills и правила для агентов",
     "path": "patterns/implementation/agent-skills-and-rules.md"
+  },
+  "llm-response-evaluation": {
+    "name": "Оценка ответов LLM",
+    "path": "patterns/implementation/llm-response-evaluation.md"
   }
 }
