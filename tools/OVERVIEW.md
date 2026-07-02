@@ -4,7 +4,7 @@
 
 ## Платформы и провайдеры
 
-- [Anthropic (Claude)](platforms/anthropic.md) — Claude API, Claude Code, Claude Cowork, Computer Use, Opus/Sonnet/Haiku
+- [Anthropic (Claude)](platforms/anthropic.md) — Claude API, Claude Code, Claude Cowork, Claude Science, Computer Use, Opus/Sonnet/Haiku
 - [OpenAI](platforms/openai.md) — GPT-5.5, Responses API, Agents SDK, Codex CLI, Realtime API
 - [Google Gemini](platforms/gemini.md) — семейство мультимодальных LLM, платформа с Computer Use, Gemini CLI, API
 - [Mistral AI](platforms/mistral.md) — европейский провайдер: Large 3, Medium 3.5, Small 4, Codestral, Le Chat
@@ -64,4 +64,4 @@
 
 ---
 
-*Последнее обновление: 29.06.2026*
+*Последнее обновление: 02.07.2026*
