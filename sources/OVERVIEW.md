@@ -32,6 +32,7 @@
 - [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) — recursive crawl, sitemap discovery, clean markdown, webhooks
 - [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) — source/destination connectors для data replication
 - [Unstructured Docs](libraries-tools/unstructured-docs.md) — parsing, chunking и ingestion неструктурированных документов
+- [Multica](libraries-tools/multica.md) — project management layer для human + agent teams, task lifecycle, runtimes, skills
 
 ## 🟡 Engineering Patterns
 
@@ -77,6 +78,7 @@
 | [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
+| [Multica](libraries-tools/multica.md) | 🔵 Libraries | Не перенесено; candidate для [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 
 ---
 
