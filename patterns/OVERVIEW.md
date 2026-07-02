@@ -22,6 +22,7 @@
 - [Безопасность агентных систем](architecture-design/agent-security.md) — prompt injection, sandbox, secrets, audit, approvals
 - [RAG для AI-агентов](architecture-design/rag-for-agents.md) — retrieval как часть state, grounding, evals
 - [Автоматизация сбора внешнего контекста](architecture-design/external-context-collection.md) — connectors, crawl, ingestion, provenance, freshness
+- [Поддержка качества контекста](architecture-design/context-quality-maintenance.md) — качество базы знаний, БД, индексов и context packets для агентов
 - [Data governance и compliance](architecture-design/data-governance-compliance.md)
 
 ## 🟡 Implementation — как реализовать
@@ -64,7 +65,7 @@
 | Уровень | Файлов | Вход |
 |---------|--------|------|
 | 🟢 Fundamentals | 4 | Базовые примитивы |
-| 🔵 Architecture & Design | 6 | Проектные блоки |
+| 🔵 Architecture & Design | 7 | Проектные блоки |
 | 🟡 Implementation | 5 | Техники сборки |
 | 🟠 Production & Operations | 2 | Эксплуатация |
 | 🔴 Advanced / Pro-Tips | 4 | Pro-tips |
@@ -123,7 +124,8 @@
 2. Прочитать [human-in-the-loop UX](production-operations/human-in-the-loop-ux.md).
 3. Прочитать [RAG для агентов](architecture-design/rag-for-agents.md).
 4. Прочитать [автоматизацию сбора внешнего контекста](architecture-design/external-context-collection.md).
-5. Прочитать [multi-agent orchestration](implementation/multi-agent-orchestration.md).
+5. Прочитать [поддержку качества контекста](architecture-design/context-quality-maintenance.md).
+6. Прочитать [multi-agent orchestration](implementation/multi-agent-orchestration.md).
 
 Ожидаемый результат: понятно, как агент деплоится, наблюдается, ограничивается, эскалирует решения человеку и восстанавливается после ошибок.
 
