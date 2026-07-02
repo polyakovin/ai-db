@@ -27,6 +27,7 @@
 - [Perplexity AI](libraries-tools/perplexity.md) — AI-поиск с агентными возможностями
 - [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) — стандарт подключения AI-приложений к внешним системам
 - [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) — протокол коммуникации и interoperability между агентами
+- [AionUi](libraries-tools/aionui.md) — desktop UI для multi-agent coworking и remote operator control
 - [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) — hosted tools: web search, file search, MCP/connectors
 - [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) — connectors, ingestion transformations, cache, vector-store insertion
 - [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) — единый loader-интерфейс для внешних источников
@@ -72,7 +73,8 @@
 | [Perplexity AI](libraries-tools/perplexity.md) | 🔵 Libraries | [Perplexity (tools)](../tools/platforms/perplexity.md) — canonical |
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
-| [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) | 🔵 Libraries | Не перенесено; candidate для [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md), [Безопасность агентных систем](../patterns/architecture-design/agent-security.md) |
+| [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
+| [AionUi](libraries-tools/aionui.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [OpenAI](../tools/platforms/openai.md) |
 | [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LlamaIndex](../tools/frameworks/llamaindex.md) |
 | [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LangChain](../tools/frameworks/langchain.md) |
@@ -80,7 +82,7 @@
 | [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
-| [Multica](libraries-tools/multica.md) | 🔵 Libraries | Не перенесено; candidate для [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
+| [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 
 ---
 

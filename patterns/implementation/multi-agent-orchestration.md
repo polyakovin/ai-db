@@ -65,5 +65,6 @@ Multi-agent система полезна, когда разные роли де
 ## Связанные заметки
 
 - [Agent Harness](../architecture-design/agent-harness.md)
+- [Робастная multi-agent среда](../architecture-design/robust-multi-agent-environment.md)
 - [Execution loop агента](../fundamentals/agent-execution-loop.md)
 - [Исследование фреймворков](../../tools/agent-frameworks-research.md)

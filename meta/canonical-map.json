@@ -255,6 +255,10 @@
     "name": "Безопасность агентных систем",
     "path": "patterns/architecture-design/agent-security.md"
   },
+  "robust-multi-agent-environment": {
+    "name": "Робастная multi-agent среда",
+    "path": "patterns/architecture-design/robust-multi-agent-environment.md"
+  },
   "data-governance-compliance": {
     "name": "Data governance и compliance для AI-агентов",
     "path": "patterns/architecture-design/data-governance-compliance.md"

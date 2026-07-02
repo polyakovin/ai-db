@@ -19,6 +19,7 @@
 
 - [Паттерны работы с AI-агентами](architecture-design/agent-system-components.md) — карта компонентов agent-системы
 - [Agent Harness](architecture-design/agent-harness.md) — рабочая обвязка: tools, skills, memory, filesystem, sandbox, subagents
+- [Робастная multi-agent среда](architecture-design/robust-multi-agent-environment.md) — Intent, System of Record, State, MCP и A2A в едином operating loop
 - [Безопасность агентных систем](architecture-design/agent-security.md) — prompt injection, sandbox, secrets, audit, approvals
 - [RAG для AI-агентов](architecture-design/rag-for-agents.md) — retrieval как часть state, grounding, evals
 - [Автоматизация сбора внешнего контекста](architecture-design/external-context-collection.md) — connectors, crawl, ingestion, provenance, freshness
@@ -65,7 +66,7 @@
 | Уровень | Файлов | Вход |
 |---------|--------|------|
 | 🟢 Fundamentals | 4 | Базовые примитивы |
-| 🔵 Architecture & Design | 7 | Проектные блоки |
+| 🔵 Architecture & Design | 8 | Проектные блоки |
 | 🟡 Implementation | 5 | Техники сборки |
 | 🟠 Production & Operations | 2 | Эксплуатация |
 | 🔴 Advanced / Pro-Tips | 4 | Pro-tips |
@@ -126,6 +127,7 @@
 4. Прочитать [автоматизацию сбора внешнего контекста](architecture-design/external-context-collection.md).
 5. Прочитать [поддержку качества контекста](architecture-design/context-quality-maintenance.md).
 6. Прочитать [multi-agent orchestration](implementation/multi-agent-orchestration.md).
+7. Прочитать [робастную multi-agent среду](architecture-design/robust-multi-agent-environment.md).
 
 Ожидаемый результат: понятно, как агент деплоится, наблюдается, ограничивается, эскалирует решения человеку и восстанавливается после ошибок.
 
