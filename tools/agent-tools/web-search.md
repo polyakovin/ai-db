@@ -31,6 +31,7 @@ status: new
 | Собственный агент, которому нужен простой web search tool | Tavily или Brave LLM Context | Возвращают LLM-friendly snippets/content, есть фильтры и контроль объёма контекста |
 | Исследовательский поиск по смыслу, похожие документы, discovery | Exa | Neural/semantic search и извлечение contents/highlights/summary из результатов |
 | Нужны Google SERP, verticals и локализация | Serper или SerpAPI | Дают структурированные SERP-данные, но обычно требуют отдельного extraction/summarization слоя |
+| Нужен self-hosted/private metasearch gateway | SearXNG | Open-source метапоиск, HTTP API, контроль engines и privacy policy на своей инстансе |
 | Нужно crawl/scrape/map сайта после поиска | Firecrawl | Search + scrape/crawl/map/interact/agent, hosted и self-host варианты |
 | Нужно дешево превратить URL в Markdown | Jina Reader | `r.jina.ai` для URL -> LLM-friendly text, `s.jina.ai` для простого web SERP |
 | Страница зависит от UI, cookies, форм, client-side rendering | [Browser Automation](browser-automation.md) | Search API не видит интерактивное состояние страницы |
@@ -110,6 +111,16 @@ status: new
 - По состоянию на официальную документацию: closed to new customers; существующим пользователям нужно перейти на альтернативу до 2027-01-01.
 - Для новых agent projects не рассматривать как основной web search layer.
 
+**SearXNG**
+
+- Free/open-source internet metasearch engine: агрегирует результаты из множества поисковых сервисов, не трекает и не профилирует пользователей.
+- Можно self-host, включать только нужные engines/categories и выдавать агенту результаты через HTTP API.
+- Search API поддерживает `GET`/`POST` на `/` и `/search`, параметры вроде `q`, `categories`, `engines`, `language`, `pageno`, `time_range`, `format`; JSON/CSV/RSS должны быть включены в настройках инстанса.
+- Хороший выбор как private search gateway для внутреннего [Agent Harness](../../patterns/architecture-design/agent-harness.md), особенно если нужно централизованно контролировать источники, логи, лимиты и privacy.
+- Не LLM-native grounding tool: агенту всё равно нужны extraction, reranking, deduplication, citations и quality checks поверх результатов.
+- Public instances могут отключать API formats или ловить upstream rate limits/CAPTCHA; для production лучше своя инстанса с понятной конфигурацией engines.
+- Startpage можно использовать как один из upstream engines в SearXNG, но это CAPTCHA-sensitive flow: документация SearXNG описывает form/cookie/sc-code особенности.
+
 ### Crawlers and readers
 
 **Firecrawl**
@@ -188,6 +199,9 @@ results:
 - [Serper Google Search API](https://serper.dev/)
 - [SerpAPI Google Search API](https://serpapi.com/search-api)
 - [Google Custom Search JSON API](https://developers.google.com/custom-search/v1/overview)
+- [SearXNG Documentation](https://docs.searxng.org/)
+- [SearXNG Search API](https://docs.searxng.org/dev/search_api.html)
+- [SearXNG Startpage Engines](https://docs.searxng.org/dev/engines/online/startpage.html)
 - [Firecrawl Search API](https://docs.firecrawl.dev/api-reference/endpoint/search)
 - [Firecrawl GitHub repository](https://github.com/firecrawl/firecrawl)
 - [Jina Reader API](https://jina.ai/reader/)
