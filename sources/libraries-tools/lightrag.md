@@ -46,7 +46,7 @@ LightRAG — это RAG-система, которая объединяет тр
 ## Связи
 
 - [LightRAG](../../tools/retrieval/lightrag.md) — canonical-страница инструмента
-- [Аналоги LightRAG](../../tools/retrieval/lightrag-alternatives.md) — сравнительный обзор соседних решений
+- [Retrieval tools overview](../../tools/retrieval/OVERVIEW.md) — соседние retrieval-решения
 - [RAG для AI-агентов](../../patterns/architecture-design/rag-for-agents.md) — архитектурный контекст
 - [RAG-Anything](../../tools/retrieval/rag-anything.md) — multimodal RAG от той же команды
 - [MiniRAG](../../tools/retrieval/minirag.md) — облегчённая версия от той же команды

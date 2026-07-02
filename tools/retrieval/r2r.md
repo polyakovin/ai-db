@@ -43,4 +43,4 @@ R2R - production-oriented AI retrieval system с REST API. Это не чист�
 
 - [RAGFlow](ragflow.md) - соседняя RAG platform с UI/workflow акцентом.
 - [LightRAG](lightrag.md) - graph-first lightweight library.
-- [Аналоги LightRAG](lightrag-alternatives.md) - карта выбора.
+- [Retrieval tools overview](OVERVIEW.md) - карта выбора.

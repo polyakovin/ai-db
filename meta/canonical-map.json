@@ -123,10 +123,6 @@
     "name": "RAG-Anything",
     "path": "tools/retrieval/rag-anything.md"
   },
-  "lightrag-alternatives": {
-    "name": "Аналоги LightRAG",
-    "path": "tools/retrieval/lightrag-alternatives.md"
-  },
   "ragflow": {
     "name": "RAGFlow",
     "path": "tools/retrieval/ragflow.md"

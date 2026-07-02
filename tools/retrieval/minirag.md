@@ -43,4 +43,4 @@ MiniRAG - lightweight RAG-фреймворк от HKUDS для small/open-source
 
 - [LightRAG](lightrag.md) - базовая родственная система.
 - [RAG-Anything](rag-anything.md) - multimodal ветка HKUDS RAG-экосистемы.
-- [Аналоги LightRAG](lightrag-alternatives.md) - карта выбора.
+- [Retrieval tools overview](OVERVIEW.md) - карта выбора.

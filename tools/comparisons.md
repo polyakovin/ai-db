@@ -5,7 +5,7 @@
 ## Материалы
 
 - [Исследование фреймворков для AI-агентов](agent-frameworks-research.md) — сравнительная карта [OpenAI](platforms/openai.md), [Anthropic](platforms/anthropic.md), [LangGraph](frameworks/langgraph.md), [AutoGen](frameworks/autogen.md), [Semantic Kernel](frameworks/semantic-kernel.md), [CrewAI](frameworks/crewai.md), [LlamaIndex](frameworks/llamaindex.md) и low-code платформ
-- [Аналоги LightRAG](retrieval/lightrag-alternatives.md) — GraphRAG, knowledge-graph retrieval, production RAG engines и agent memory системы
+- [Retrieval tools overview](retrieval/OVERVIEW.md) — GraphRAG, knowledge-graph retrieval, production RAG engines и agent memory системы
 - [Модельная карта для AI-агентов](agent-model-map.md) — критерии выбора моделей для reasoning, tools, code, multimodal и latency/cost
 - [Карта кейсов AI-агентов](../patterns/advanced/agent-use-cases.md) — выбор архитектуры и evals под use case
 

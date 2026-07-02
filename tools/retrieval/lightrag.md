@@ -47,7 +47,7 @@ LightRAG - open-source RAG-фреймворк, который объединяе
 
 ## Связи
 
-- [Аналоги LightRAG](lightrag-alternatives.md) - сравнительная карта GraphRAG/RAG-инструментов.
+- [Retrieval tools overview](OVERVIEW.md) - соседние GraphRAG/RAG-инструменты.
 - [RAG для AI-агентов](../../patterns/architecture-design/rag-for-agents.md) - архитектурный слой retrieval в агентной системе.
 - [LlamaIndex](../frameworks/llamaindex.md) - framework-native альтернатива для knowledge-heavy агентов.
 - [Ререйкеры](../embeddings/rerankers.md) - второй этап ранжирования для hybrid retrieval.

@@ -76,7 +76,7 @@
 | [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Web Search](../tools/agent-tools/web-search.md) |
 | [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
-| [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Аналоги LightRAG](../tools/retrieval/lightrag-alternatives.md) |
+| [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
 
 ---
 

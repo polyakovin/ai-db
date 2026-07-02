@@ -43,4 +43,4 @@ Fast GraphRAG - lightweight GraphRAG-библиотека для promptable, int
 
 - [LightRAG](lightrag.md) - близкая lightweight GraphRAG-альтернатива.
 - [nano-graphrag](nano-graphrag.md) - минимальная GraphRAG-реализация.
-- [Аналоги LightRAG](lightrag-alternatives.md) - карта выбора.
+- [Retrieval tools overview](OVERVIEW.md) - карта выбора.

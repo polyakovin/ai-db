@@ -41,5 +41,5 @@ Microsoft GraphRAG - open-source pipeline для graph-based RAG: извлека
 ## Связи
 
 - [LightRAG](lightrag.md) - более lightweight альтернатива с фокусом на graph + vector retrieval.
-- [Аналоги LightRAG](lightrag-alternatives.md) - карта выбора.
+- [Retrieval tools overview](OVERVIEW.md) - карта выбора.
 - [RAG для AI-агентов](../../patterns/architecture-design/rag-for-agents.md) - общий retrieval pipeline.
