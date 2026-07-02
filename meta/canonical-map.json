@@ -103,6 +103,30 @@
     "name": "MiMo Code",
     "path": "tools/models/mimo-code.md"
   },
+  "file-system": {
+    "name": "File System Tools for Agents",
+    "path": "tools/agent-tools/file-system.md"
+  },
+  "browser-automation": {
+    "name": "Browser Automation for Agents",
+    "path": "tools/agent-tools/browser-automation.md"
+  },
+  "api-clients": {
+    "name": "API Clients for Agents",
+    "path": "tools/agent-tools/api-clients.md"
+  },
+  "function-calling": {
+    "name": "Function Calling for Agents",
+    "path": "tools/agent-tools/function-calling.md"
+  },
+  "web-search": {
+    "name": "Web Search Tools for Agents",
+    "path": "tools/agent-tools/web-search.md"
+  },
+  "code-execution": {
+    "name": "Code Execution for Agents",
+    "path": "tools/agent-tools/code-execution.md"
+  },
   "rerankers": {
     "name": "Ререйкеры (Rerankers)",
     "path": "tools/embeddings/rerankers.md"

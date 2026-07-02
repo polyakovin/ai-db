@@ -38,7 +38,7 @@ status: new
 - Автоматическая фильтрация нерелевантного контента
 - Извлечение основного текста страниц (content extraction)
 - Поддержка query parameters: depth, topics, domains
-- Интеграция с LangChain, LlamaIndex, AutoGen
+- Интеграция с [LangChain](../frameworks/langchain.md), [LlamaIndex](../frameworks/llamaindex.md), [AutoGen](../frameworks/autogen.md)
 
 **Пример использования (Python):**
 ```python

@@ -42,7 +42,7 @@ status: new
 - Natural language commands: "найди cheapest flights to Tokyo"
 - Self-correcting — агент видит ошибки и исправляется
 - Screenshot + DOM state для контекста LLM
-- Интеграция с LangChain, LlamaIndex
+- Интеграция с [LangChain](../frameworks/langchain.md), [LlamaIndex](../frameworks/llamaindex.md)
 
 **Пример использования:**
 ```python
