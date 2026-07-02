@@ -53,6 +53,7 @@
 
 - [Harness Engineering — OpenAI](research-production/harness-engineering-openai.md) — Open AI/Anthropic подходы к обвязке агентов
 - [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) — think before coding, simplicity, surgical changes, goal-driven execution
+- [SberTech Whitepaper](research-production/sbertech-whitepaper.md) — unverified whitepaper source; требуется ручная проверка из-за Qrator/401
 
 ---
 
@@ -83,6 +84,7 @@
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
 | [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| [SberTech Whitepaper](research-production/sbertech-whitepaper.md) | 🟠 Research | Не обработано: требуется ручная проверка содержимого из-за Qrator/401 |
 
 ---
 
