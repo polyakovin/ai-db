@@ -16,6 +16,7 @@ Provenance-карточка для обзора аналогов LightRAG: Graph
 
 - **Основная выжимка перенесена в:** [Аналоги LightRAG](../../tools/retrieval/lightrag-alternatives.md)
 - **Baseline-инструмент:** [LightRAG](../../tools/retrieval/lightrag.md)
+- **Canonical tools:** [Microsoft GraphRAG](../../tools/retrieval/microsoft-graphrag.md), [Fast GraphRAG](../../tools/retrieval/fast-graphrag.md), [nano-graphrag](../../tools/retrieval/nano-graphrag.md), [MiniRAG](../../tools/retrieval/minirag.md), [Neo4j GraphRAG for Python](../../tools/retrieval/neo4j-graphrag-python.md), [R2R](../../tools/retrieval/r2r.md), [RAGFlow](../../tools/retrieval/ragflow.md), [Cognee](../../tools/retrieval/cognee.md), [HippoRAG](../../tools/retrieval/hipporag.md), [RAG-Anything](../../tools/retrieval/rag-anything.md)
 - **Тип источников:** официальные репозитории, официальная документация и research papers.
 - **Практическая ценность:** помогает выбрать стек для graph-based RAG без смешивания research prototypes, production platforms и agent memory tools в одну корзину.
 

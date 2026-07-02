@@ -27,6 +27,7 @@
 
 ## Поиск и retrieval
 
+- [Retrieval tools overview](retrieval/OVERVIEW.md) — RAG, GraphRAG, production RAG engines и agent memory systems
 - [LightRAG](retrieval/lightrag.md) — graph + vector RAG для multi-hop retrieval и knowledge graph контекста
 - [Аналоги LightRAG](retrieval/lightrag-alternatives.md) — сравнительная карта GraphRAG, production RAG и agent memory инструментов
 - [Perplexity AI](platforms/perplexity.md) — AI-поисковая платформа с агентными возможностями (Computer, Spaces, Workflows)

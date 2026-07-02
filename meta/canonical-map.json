@@ -107,13 +107,61 @@
     "name": "Codex CLI",
     "path": "tools/ides/codex-cli.md"
   },
+  "minirag": {
+    "name": "MiniRAG",
+    "path": "tools/retrieval/minirag.md"
+  },
+  "hipporag": {
+    "name": "HippoRAG",
+    "path": "tools/retrieval/hipporag.md"
+  },
+  "neo4j-graphrag-python": {
+    "name": "Neo4j GraphRAG for Python",
+    "path": "tools/retrieval/neo4j-graphrag-python.md"
+  },
+  "rag-anything": {
+    "name": "RAG-Anything",
+    "path": "tools/retrieval/rag-anything.md"
+  },
   "lightrag-alternatives": {
     "name": "Аналоги LightRAG",
     "path": "tools/retrieval/lightrag-alternatives.md"
   },
+  "ragflow": {
+    "name": "RAGFlow",
+    "path": "tools/retrieval/ragflow.md"
+  },
+  "microsoft-graphrag": {
+    "name": "Microsoft GraphRAG",
+    "path": "tools/retrieval/microsoft-graphrag.md"
+  },
+  "r2r": {
+    "name": "R2R",
+    "path": "tools/retrieval/r2r.md"
+  },
+  "fast-graphrag": {
+    "name": "Fast GraphRAG",
+    "path": "tools/retrieval/fast-graphrag.md"
+  },
+  "llamaindex-property-graph-index": {
+    "name": "LlamaIndex PropertyGraphIndex",
+    "path": "tools/retrieval/llamaindex-property-graph-index.md"
+  },
+  "cognee": {
+    "name": "Cognee",
+    "path": "tools/retrieval/cognee.md"
+  },
+  "aws-graphrag-toolkit": {
+    "name": "AWS GraphRAG Toolkit",
+    "path": "tools/retrieval/aws-graphrag-toolkit.md"
+  },
   "lightrag": {
     "name": "LightRAG",
     "path": "tools/retrieval/lightrag.md"
+  },
+  "nano-graphrag": {
+    "name": "nano-graphrag",
+    "path": "tools/retrieval/nano-graphrag.md"
   },
   "huggingface": {
     "name": "Hugging Face",

@@ -20,7 +20,7 @@ LightRAG - open-source RAG-фреймворк, который объединяе
 - WebUI и API server для локальной эксплуатации.
 - Поддержка storage backends: local, Neo4j, PostgreSQL, MongoDB, OpenSearch и другие варианты из экосистемы проекта.
 - Reranker support, citations, RAGAS evaluation и Langfuse tracing.
-- Multimodal extension через [RAG-Anything](https://github.com/HKUDS/RAG-Anything).
+- Multimodal extension через [RAG-Anything](rag-anything.md).
 
 ## Когда применять
 
