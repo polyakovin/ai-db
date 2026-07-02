@@ -107,6 +107,14 @@
     "name": "Codex CLI",
     "path": "tools/ides/codex-cli.md"
   },
+  "lightrag-alternatives": {
+    "name": "Аналоги LightRAG",
+    "path": "tools/retrieval/lightrag-alternatives.md"
+  },
+  "lightrag": {
+    "name": "LightRAG",
+    "path": "tools/retrieval/lightrag.md"
+  },
   "huggingface": {
     "name": "Hugging Face",
     "path": "tools/hosting/huggingface.md"
@@ -214,6 +222,10 @@
   "external-context-collection": {
     "name": "Автоматизация сбора внешнего контекста",
     "path": "patterns/architecture-design/external-context-collection.md"
+  },
+  "context-quality-maintenance": {
+    "name": "Поддержка качества контекста для AI-агентов",
+    "path": "patterns/architecture-design/context-quality-maintenance.md"
   },
   "agent-harness": {
     "name": "Agent Harness",

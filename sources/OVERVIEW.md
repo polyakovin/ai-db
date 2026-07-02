@@ -19,6 +19,7 @@
 *Инструментарий для сборки агентов: библиотеки, фреймворки, SDK.*
 
 - [LightRAG](libraries-tools/lightrag.md) — simple and fast RAG с графами знаний, multimodal support
+- [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) — provenance для обзора GraphRAG/RAG-аналогов
 - [LangChain Deep Agents](libraries-tools/langchain-deep-agents.md) — harness, filesystem, subagents, context management, sandbox boundary
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
 - [ECC](libraries-tools/ecc.md) — harness OS, memory persistence, hooks, verification loops, security
@@ -75,6 +76,7 @@
 | [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Web Search](../tools/agent-tools/web-search.md) |
 | [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
+| [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Аналоги LightRAG](../tools/retrieval/lightrag-alternatives.md) |
 
 ---
 
