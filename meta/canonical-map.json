@@ -3,81 +3,33 @@
     "name": "Practices — overview",
     "path": "patterns/advanced/OVERVIEW.md"
   },
-  "agent-model-map": {
-    "name": "Модельная карта для AI-агентов",
-    "path": "tools/agent-model-map.md"
+  "agent-frameworks-research": {
+    "name": "Исследование фреймворков для AI-агентов",
+    "path": "tools/agent-frameworks-research.md"
   },
   "comparisons": {
     "name": "Сравнение платформ — Обзор",
     "path": "tools/comparisons.md"
   },
-  "agent-frameworks-research": {
-    "name": "Исследование фреймворков для AI-агентов",
-    "path": "tools/agent-frameworks-research.md"
-  },
-  "vllm": {
-    "name": "vLLM",
-    "path": "tools/inference/vllm.md"
-  },
-  "ollama": {
-    "name": "Ollama",
-    "path": "tools/inference/ollama.md"
-  },
-  "langgraph": {
-    "name": "LangGraph",
-    "path": "tools/frameworks/langgraph.md"
-  },
-  "crewai": {
-    "name": "CrewAI",
-    "path": "tools/frameworks/crewai.md"
-  },
-  "autogen": {
-    "name": "AutoGen / Microsoft Agent Framework",
-    "path": "tools/frameworks/autogen.md"
-  },
-  "dify": {
-    "name": "Dify",
-    "path": "tools/frameworks/dify.md"
-  },
-  "flowise": {
-    "name": "Flowise",
-    "path": "tools/frameworks/flowise.md"
-  },
-  "llamaindex": {
-    "name": "LlamaIndex",
-    "path": "tools/frameworks/llamaindex.md"
-  },
-  "semantic-kernel": {
-    "name": "Semantic Kernel",
-    "path": "tools/frameworks/semantic-kernel.md"
-  },
-  "langchain": {
-    "name": "LangChain",
-    "path": "tools/frameworks/langchain.md"
+  "agent-model-map": {
+    "name": "Модельная карта для AI-агентов",
+    "path": "tools/agent-model-map.md"
   },
   "deepseek": {
     "name": "DeepSeek",
     "path": "tools/platforms/deepseek.md"
   },
-  "openai": {
-    "name": "OpenAI",
-    "path": "tools/platforms/openai.md"
-  },
-  "gemini": {
-    "name": "Google Gemini",
-    "path": "tools/platforms/gemini.md"
-  },
   "qwen": {
     "name": "Qwen (Alibaba)",
     "path": "tools/platforms/qwen.md"
   },
-  "perplexity": {
-    "name": "Perplexity AI",
-    "path": "tools/platforms/perplexity.md"
-  },
   "anthropic": {
     "name": "Anthropic (Claude)",
     "path": "tools/platforms/anthropic.md"
+  },
+  "openai": {
+    "name": "OpenAI",
+    "path": "tools/platforms/openai.md"
   },
   "z-ai": {
     "name": "Z.ai",
@@ -87,29 +39,21 @@
     "name": "Mistral AI",
     "path": "tools/platforms/mistral.md"
   },
-  "langsmith": {
-    "name": "LangSmith",
-    "path": "tools/observability/langsmith.md"
+  "gemini": {
+    "name": "Google Gemini",
+    "path": "tools/platforms/gemini.md"
   },
-  "huggingface": {
-    "name": "Hugging Face",
-    "path": "tools/hosting/huggingface.md"
+  "perplexity": {
+    "name": "Perplexity AI",
+    "path": "tools/platforms/perplexity.md"
   },
-  "gradio": {
-    "name": "Gradio",
-    "path": "tools/hosting/gradio.md"
+  "cohere": {
+    "name": "Cohere",
+    "path": "tools/embeddings/cohere.md"
   },
-  "mimo-code": {
-    "name": "MiMo Code",
-    "path": "tools/models/mimo-code.md"
-  },
-  "file-system": {
-    "name": "File System Tools for Agents",
-    "path": "tools/agent-tools/file-system.md"
-  },
-  "browser-automation": {
-    "name": "Browser Automation for Agents",
-    "path": "tools/agent-tools/browser-automation.md"
+  "rerankers": {
+    "name": "Ререйкеры (Rerankers)",
+    "path": "tools/embeddings/rerankers.md"
   },
   "api-clients": {
     "name": "API Clients for Agents",
@@ -119,21 +63,29 @@
     "name": "Function Calling for Agents",
     "path": "tools/agent-tools/function-calling.md"
   },
-  "web-search": {
-    "name": "Web Search Tools for Agents",
-    "path": "tools/agent-tools/web-search.md"
-  },
   "code-execution": {
     "name": "Code Execution for Agents",
     "path": "tools/agent-tools/code-execution.md"
   },
-  "rerankers": {
-    "name": "Ререйкеры (Rerankers)",
-    "path": "tools/embeddings/rerankers.md"
+  "browser-automation": {
+    "name": "Browser Automation for Agents",
+    "path": "tools/agent-tools/browser-automation.md"
   },
-  "cohere": {
-    "name": "Cohere",
-    "path": "tools/embeddings/cohere.md"
+  "file-system": {
+    "name": "File System Tools for Agents",
+    "path": "tools/agent-tools/file-system.md"
+  },
+  "web-search": {
+    "name": "Web Search Tools for Agents",
+    "path": "tools/agent-tools/web-search.md"
+  },
+  "mimo-code": {
+    "name": "MiMo Code",
+    "path": "tools/models/mimo-code.md"
+  },
+  "langsmith": {
+    "name": "LangSmith",
+    "path": "tools/observability/langsmith.md"
   },
   "chroma": {
     "name": "Chroma",
@@ -147,73 +99,81 @@
     "name": "Pinecone",
     "path": "tools/vector-dbs/pinecone.md"
   },
-  "codex-cli": {
-    "name": "Codex CLI",
-    "path": "tools/ides/codex-cli.md"
-  },
   "cursor": {
     "name": "Cursor",
     "path": "tools/ides/cursor.md"
   },
-  "agent-memory-patterns": {
-    "name": "Персистентная память агента",
-    "path": "patterns/advanced/agent-memory-patterns.md"
+  "codex-cli": {
+    "name": "Codex CLI",
+    "path": "tools/ides/codex-cli.md"
   },
-  "agent-use-cases": {
-    "name": "Карта кейсов AI-агентов",
-    "path": "patterns/advanced/agent-use-cases.md"
+  "huggingface": {
+    "name": "Hugging Face",
+    "path": "tools/hosting/huggingface.md"
   },
-  "reproducible-agent-recipes": {
-    "name": "Воспроизводимые рецепты AI-агентов",
-    "path": "patterns/advanced/reproducible-agent-recipes.md"
+  "gradio": {
+    "name": "Gradio",
+    "path": "tools/hosting/gradio.md"
+  },
+  "ollama": {
+    "name": "Ollama",
+    "path": "tools/inference/ollama.md"
+  },
+  "vllm": {
+    "name": "vLLM",
+    "path": "tools/inference/vllm.md"
+  },
+  "flowise": {
+    "name": "Flowise",
+    "path": "tools/frameworks/flowise.md"
+  },
+  "langchain": {
+    "name": "LangChain",
+    "path": "tools/frameworks/langchain.md"
+  },
+  "langgraph": {
+    "name": "LangGraph",
+    "path": "tools/frameworks/langgraph.md"
+  },
+  "autogen": {
+    "name": "AutoGen / Microsoft Agent Framework",
+    "path": "tools/frameworks/autogen.md"
+  },
+  "llamaindex": {
+    "name": "LlamaIndex",
+    "path": "tools/frameworks/llamaindex.md"
+  },
+  "semantic-kernel": {
+    "name": "Semantic Kernel",
+    "path": "tools/frameworks/semantic-kernel.md"
+  },
+  "dify": {
+    "name": "Dify",
+    "path": "tools/frameworks/dify.md"
+  },
+  "crewai": {
+    "name": "CrewAI",
+    "path": "tools/frameworks/crewai.md"
   },
   "agent-antipatterns": {
     "name": "Антипаттерны агентных систем",
     "path": "patterns/advanced/agent-antipatterns.md"
   },
-  "rag-for-agents": {
-    "name": "RAG для AI-агентов",
-    "path": "patterns/architecture-design/rag-for-agents.md"
+  "reproducible-agent-recipes": {
+    "name": "Воспроизводимые рецепты AI-агентов",
+    "path": "patterns/advanced/reproducible-agent-recipes.md"
   },
-  "data-governance-compliance": {
-    "name": "Data governance и compliance для AI-агентов",
-    "path": "patterns/architecture-design/data-governance-compliance.md"
+  "agent-use-cases": {
+    "name": "Карта кейсов AI-агентов",
+    "path": "patterns/advanced/agent-use-cases.md"
   },
-  "agent-harness": {
-    "name": "Agent Harness",
-    "path": "patterns/architecture-design/agent-harness.md"
+  "agent-memory-patterns": {
+    "name": "Персистентная память агента",
+    "path": "patterns/advanced/agent-memory-patterns.md"
   },
-  "agent-system-components": {
-    "name": "Паттерны работы с AI-агентами",
-    "path": "patterns/architecture-design/agent-system-components.md"
-  },
-  "agent-security": {
-    "name": "Безопасность агентных систем",
-    "path": "patterns/architecture-design/agent-security.md"
-  },
-  "agent-evaluations": {
-    "name": "Evaluations для AI-агентов",
-    "path": "patterns/implementation/agent-evaluations.md"
-  },
-  "working-with-coding-agents": {
-    "name": "Работа с код-агентами",
-    "path": "patterns/implementation/working-with-coding-agents.md"
-  },
-  "agent-skills-and-rules": {
-    "name": "Skills и правила для агентов",
-    "path": "patterns/implementation/agent-skills-and-rules.md"
-  },
-  "multi-agent-orchestration": {
-    "name": "Multi-agent orchestration",
-    "path": "patterns/implementation/multi-agent-orchestration.md"
-  },
-  "human-in-the-loop-ux": {
-    "name": "Human-in-the-loop UX",
-    "path": "patterns/production-operations/human-in-the-loop-ux.md"
-  },
-  "production-operations": {
-    "name": "Production operations для агентных систем",
-    "path": "patterns/production-operations/production-operations.md"
+  "tool-use-and-mcp": {
+    "name": "Tool use, function calling и MCP",
+    "path": "patterns/fundamentals/tool-use-and-mcp.md"
   },
   "agent-execution-loop": {
     "name": "Execution loop агента",
@@ -227,8 +187,48 @@
     "name": "Context engineering",
     "path": "patterns/fundamentals/context-engineering.md"
   },
-  "tool-use-and-mcp": {
-    "name": "Tool use, function calling и MCP",
-    "path": "patterns/fundamentals/tool-use-and-mcp.md"
+  "human-in-the-loop-ux": {
+    "name": "Human-in-the-loop UX",
+    "path": "patterns/production-operations/human-in-the-loop-ux.md"
+  },
+  "production-operations": {
+    "name": "Production operations для агентных систем",
+    "path": "patterns/production-operations/production-operations.md"
+  },
+  "rag-for-agents": {
+    "name": "RAG для AI-агентов",
+    "path": "patterns/architecture-design/rag-for-agents.md"
+  },
+  "agent-security": {
+    "name": "Безопасность агентных систем",
+    "path": "patterns/architecture-design/agent-security.md"
+  },
+  "data-governance-compliance": {
+    "name": "Data governance и compliance для AI-агентов",
+    "path": "patterns/architecture-design/data-governance-compliance.md"
+  },
+  "agent-system-components": {
+    "name": "Паттерны работы с AI-агентами",
+    "path": "patterns/architecture-design/agent-system-components.md"
+  },
+  "agent-harness": {
+    "name": "Agent Harness",
+    "path": "patterns/architecture-design/agent-harness.md"
+  },
+  "working-with-coding-agents": {
+    "name": "Работа с код-агентами",
+    "path": "patterns/implementation/working-with-coding-agents.md"
+  },
+  "multi-agent-orchestration": {
+    "name": "Multi-agent orchestration",
+    "path": "patterns/implementation/multi-agent-orchestration.md"
+  },
+  "agent-evaluations": {
+    "name": "Evaluations для AI-агентов",
+    "path": "patterns/implementation/agent-evaluations.md"
+  },
+  "agent-skills-and-rules": {
+    "name": "Skills и правила для агентов",
+    "path": "patterns/implementation/agent-skills-and-rules.md"
   }
 }

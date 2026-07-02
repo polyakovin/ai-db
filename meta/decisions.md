@@ -8,3 +8,5 @@
 | 2026-06-29 | validate-canonical-refs.py как Python-скрипт | Сложная логика: исключение frontmatter, кодовых блоков, таблиц | Bash-эвристики |
 | 2026-06-29 | Три уровня проверок в pre-commit (generate map → validate vault → check bare mentions) | Полная автоматизация; нельзя закоммитить битые ссылки или bare mentions | Ручной запуск каждого шага |
 | 2026-06-29 | canonical-map.json генерируется из tools/ структуры | Единый источник истины, не требует ручной синхронизации | Ручное ведение JSON |
+| 2026-07-02 | Оценка ответов LLM вынесена в отдельную implementation-заметку | `agent-evaluations.md` описывает workflow-level evals, а final answer требует собственных criteria, rubrics и judge workflow | Расширить `agent-evaluations.md` одним длинным разделом |
+| 2026-07-02 | Поисковые сервисы для агентов описаны в `tools/agent-tools/web-search.md` как категорийный обзор | Задача была на обзор выбора; отдельные canonical-страницы по Tavily/Exa/Serper/Brave/Firecrawl стоит создавать только при внедрении или отдельном benchmark | Создать отдельную страницу на каждый search provider сразу |

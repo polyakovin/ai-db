@@ -1,166 +1,204 @@
 ---
 title: Web Search Tools for Agents
-url: https://github.com/mendableai
+url: https://docs.tavily.com/documentation/api-reference/endpoint/search
 type: url
 category: tools
-tags: [search, web, agents, tools, api]
+tags: [search, web, agents, tools, api, retrieval]
 added: 2026-07-01
+updated: 2026-07-02
 status: new
 ---
 
 # Web Search Tools for Agents
 
-Инструменты веб-поиска для AI-агентов — специализированные API и сервисы для поиска информации в интернете, извлечения контента и исследования тем.
+Инструменты веб-поиска для AI-агентов дают агенту доступ к актуальной внешней информации: web results, snippets, извлечённый текст страниц, citations, фильтры по доменам и датам, а иногда - полноценный research loop. Это не один класс продуктов, а несколько слоёв, которые лучше подключать под разные задачи.
 
-## Обзор
+## Карта слоёв
 
-Веб-поиск — критически важный инструмент для агентов, работающих с актуальной информацией. В отличие от обычных поисковых API, агентные инструменты оптимизированы для:
+| Слой | Что возвращает | Когда нужен |
+|------|----------------|-------------|
+| Hosted model tools | Ответ модели + citations + скрытый или явный search trace | Когда агент уже работает внутри managed API провайдера и важны минимальная интеграция, citations и planning |
+| Agent-oriented search APIs | Ranked results, snippets, extracted content, token budgets | Когда нужен model-agnostic tool для собственного harness |
+| SERP APIs | Сырые результаты поисковиков и vertical search | Когда важна близость к Google/другому SERP, локализация, shopping/news/images/maps |
+| Crawlers and readers | URL/site -> Markdown/HTML/JSON/screenshot | Когда поиск уже нашёл URL, но агенту нужен чистый контент страницы или сайта |
+| Browser automation | UI state, DOM, screenshots, действия в браузере | Когда страница динамическая, требует auth, JavaScript или интерактивных шагов |
 
-- **Query reformulation** — автоматическое уточнение запросов
-- **Result summarization** — сжатие найденного в контекст для LLM
-- **Source attribution** — цитирование источников
-- **Multi-step research** — последовательные поисковые запросы
+## Быстрый выбор
 
-## Ключевые сервисы
+| Сценарий | Первый выбор | Почему |
+|----------|--------------|--------|
+| Быстрый ответ на актуальный вопрос внутри managed agent stack | [OpenAI](../platforms/openai.md) `web_search` или [Anthropic (Claude)](../platforms/anthropic.md) `web_search` | Модель сама решает, когда искать, и возвращает ответ с источниками |
+| Собственный агент, которому нужен простой web search tool | Tavily или Brave LLM Context | Возвращают LLM-friendly snippets/content, есть фильтры и контроль объёма контекста |
+| Исследовательский поиск по смыслу, похожие документы, discovery | Exa | Neural/semantic search и извлечение contents/highlights/summary из результатов |
+| Нужны Google SERP, verticals и локализация | Serper или SerpAPI | Дают структурированные SERP-данные, но обычно требуют отдельного extraction/summarization слоя |
+| Нужно crawl/scrape/map сайта после поиска | Firecrawl | Search + scrape/crawl/map/interact/agent, hosted и self-host варианты |
+| Нужно дешево превратить URL в Markdown | Jina Reader | `r.jina.ai` для URL -> LLM-friendly text, `s.jina.ai` для простого web SERP |
+| Страница зависит от UI, cookies, форм, client-side rendering | [Browser Automation](browser-automation.md) | Search API не видит интерактивное состояние страницы |
 
-### Tavily AI
+## Ключевые инструменты
 
-| Параметр | Значение |
-|----------|----------|
-| **URL** | https://tavily.com/ |
-| **API** | REST API, Python/JS SDK |
-| **Модели** | Собственный search-движок |
-| **Цены** | Free tier (1K запросов/мес) → Paid от $29/мес |
-| **Open Source** | SDK — да, движок — нет |
+### Hosted model search tools
 
-**Возможности:**
-- Search API, оптимизированный для LLM-агентов
-- Автоматическая фильтрация нерелевантного контента
-- Извлечение основного текста страниц (content extraction)
-- Поддержка query parameters: depth, topics, domains
-- Интеграция с [LangChain](../frameworks/langchain.md), [LlamaIndex](../frameworks/llamaindex.md), [AutoGen](../frameworks/autogen.md)
+**[OpenAI](../platforms/openai.md) Web Search**
 
-**Пример использования (Python):**
-```python
-from tavily import TavilyClient
+- Интеграция: Responses API tool `{"type": "web_search"}`.
+- Режимы: быстрый non-reasoning lookup, agentic search с reasoning-моделью, deep research для длинных расследований.
+- Сильная сторона: минимальный orchestration code, встроенные citations, provider-managed tool calls.
+- Ограничение: lock-in к моделям и API провайдера; меньше контроля над raw SERP и extraction pipeline.
 
-tavily = TavilyClient(api_key="...")
-response = tavily.search(query="best Python frameworks for agents")
-# response['results'] → [{title, content, url, score}, ...]
+**[Anthropic (Claude)](../platforms/anthropic.md) Web Search**
+
+- Интеграция: server tool `web_search_*` в Messages API.
+- Модель сама решает, когда искать, может выполнять несколько поисков за один turn и завершает ответом с cited sources.
+- Есть управляемость через system prompt и лимиты вроде `max_uses`.
+- Новые версии web search добавляют dynamic filtering, чтобы нерелевантные результаты не забивали context window.
+
+**[Perplexity AI](../platforms/perplexity.md) API**
+
+- Search API: raw ranked web results с filters, region/language/domain controls и extracted snippets.
+- Sonar API: готовый prose answer with citations.
+- Agent API: multi-provider interface с integrated web search, tool configuration, reasoning control и token budgets.
+- Хороший выбор, если продукт строится вокруг answer engine/research UX, а не только вокруг списка URL.
+
+### Agent-oriented search APIs
+
+**Tavily**
+
+- Search API оптимизирован под LLM/agent workflows: `search_depth`, `max_results`, `topic`, `time_range`, `include_answer`, `include_raw_content`, domain filters, country boost.
+- Extract API вытаскивает content из конкретных URL; Crawl и Map помогают обходить сайт графом.
+- Подходит как дефолтный web search tool в кастомном [Agent Harness](../../patterns/architecture-design/agent-harness.md).
+- Не self-hosted как search engine; SDK открытые, сам backend proprietary.
+
+**Brave Search API**
+
+- Имеет независимый search index и отдельный LLM Context endpoint для agents/RAG.
+- LLM Context возвращает pre-extracted chunks, `sources` metadata, token budget controls, relevance threshold modes, freshness filters и Goggles для custom source ranking.
+- Хороший выбор, когда важны privacy positioning, независимый индекс и контроль над grounding context.
+- Есть отдельный Answers API для готовых grounded answers, но для собственного агента чаще полезнее LLM Context.
+
+**Exa**
+
+- Search endpoint совмещает web search и extraction contents из результатов.
+- Полезен для semantic discovery: поиск похожих документов, research по смыслу, highlights, summaries, text, freshness controls.
+- Хорошо ложится на исследовательские workflow, где lexical SERP даёт слишком много мусора.
+- Требует отдельной политики source quality: semantic relevance не равна авторитетности источника.
+
+**Linkup / You.com / другие answer/search APIs**
+
+- Имеют похожий паттерн: hosted search + answer API + citations.
+- Добавлять в production shortlist стоит только после проверки coverage, latency, pricing, data policy и citation behavior на своих eval-наборах.
+- В базе пока не делаем отдельные canonical страницы без конкретного внедрения или benchmark.
+
+### SERP APIs
+
+**Serper**
+
+- Google Search API с простым JSON output.
+- Поддерживает search, images, news, maps, places, videos, shopping, scholar, patents, autocomplete.
+- Сильная сторона - быстрый и дешёвый доступ к Google-like SERP.
+- Слабая сторона - агенту всё равно нужен fetch/extract/rerank слой, потому что SERP snippet редко достаточен для точного ответа.
+
+**SerpAPI**
+
+- Более зрелый и широкий SERP provider: Google Search API и множество vertical APIs, включая images, news, maps, shopping, jobs, patents, scholar и другие движки.
+- Сильная сторона - coverage и granular localization/search parameters.
+- Слабая сторона - это mostly SERP scraping as a service, а не LLM-ready grounding context из коробки.
+
+**Google Custom Search JSON API**
+
+- Позволяет получать web/image results из Programmable Search Engine в JSON.
+- По состоянию на официальную документацию: closed to new customers; существующим пользователям нужно перейти на альтернативу до 2027-01-01.
+- Для новых agent projects не рассматривать как основной web search layer.
+
+### Crawlers and readers
+
+**Firecrawl**
+
+- Search endpoint умеет искать и опционально scrape результаты; ответ может включать markdown/html/rawHtml/screenshots.
+- Есть Scrape, Crawl, Map, Interact и Agent endpoints, а также MCP server/CLI для подключения к агентам.
+- Хороший выбор, когда агенту нужно не только найти URL, но и стабильно добыть clean content из сайтов.
+- Open source repo сейчас под AGPL-3.0; hosted service удобнее, self-host даёт больше контроля, но требует эксплуатации.
+
+**Jina Reader**
+
+- `r.jina.ai` превращает URL в LLM-friendly input.
+- `s.jina.ai` даёт web search/SERP; `mcp.jina.ai` можно подключать как MCP server.
+- Полезен как lightweight reader/extractor или fallback, особенно когда нужен быстрый Markdown без отдельного crawler stack.
+- Для production нужно проверять rate limits, caching behavior, privacy и качество extraction на своих доменах.
+
+## Интеграционный паттерн
+
+1. Агент классифицирует запрос: stable knowledge, current fact, broad research, site-specific lookup, private/authenticated page.
+2. Tool policy выбирает слой: hosted web tool, agent search API, SERP API, crawler/reader или browser automation.
+3. Поиск выполняется с ограничением `max_results`, freshness/date filters, domain allowlist/denylist и cost budget.
+4. Top URLs проходят extraction: raw content, markdown, snippets, tables, PDFs, screenshots по необходимости.
+5. Контент дедуплицируется, rerank-ится и сжимается под context window.
+6. Ответ строится только из сохранённого evidence set: URL, title, date/last_updated, retrieved_at, quote/snippet, confidence.
+7. Logs сохраняют query, tool, parameters, sources и cost, чтобы воспроизводить agent decisions.
+
+Минимальный контракт tool output:
+
+```yaml
+query: string
+retrieved_at: ISO-8601
+results:
+  - title: string
+    url: string
+    source_type: web | news | docs | forum | pdf | code | image | video
+    published_at: string | null
+    last_updated_at: string | null
+    snippet: string
+    content: string | null
+    score: number | null
+    tool: string
 ```
 
-### Exa AI
+## Практические критерии выбора
 
-| Параметр | Значение |
-|----------|----------|
-| **URL** | https://exa.ai/ |
-| **API** | REST API, Python SDK |
-| **Модели** | Neural search engine |
-| **Цены** | Free tier (1K запросов) → Paid от $99/мес |
-| **Open Source** | SDK — да, движок — нет |
+| Критерий | На что смотреть |
+|----------|-----------------|
+| Freshness | Есть ли date filters, news mode, explicit retrieved timestamp |
+| Context quality | Возвращает ли tool только URL/snippet или готовый extracted content |
+| Citation fidelity | Можно ли связать каждое утверждение с URL и конкретным фрагментом |
+| Source control | Domain allowlist/denylist, country/language filters, custom ranking |
+| Cost control | Credits per search, extraction cost, token budget, max tool calls |
+| Latency | Есть ли fast mode для user-facing UX и deep mode для async research |
+| Compliance | Terms of service, robots/crawling policy, data retention, ZDR/enterprise options |
+| Portability | Можно ли заменить provider без переписывания agent loop |
 
-**Возможности:**
-- Semantic search по веб-контенту
-- Find similar pages (похожие документы)
-- Content extraction с разметкой
-- Авторефераты найденных страниц
-- Specialized для research workflows
+## Guardrails
 
-### Serper / SerpAPI
+- Не давать поисковому tool доступ к пользовательским секретам и приватным документам без явного allowlist.
+- Для financial, medical, legal и safety-critical ответов требовать несколько независимых authoritative sources.
+- Не смешивать SERP snippet и verified content: snippet полезен для triage, но не всегда достаточен как evidence.
+- Вводить hard caps: `max_tool_calls`, credits per task, timeout, max tokens per URL.
+- Логировать `retrieved_at`, потому что web evidence стареет быстрее, чем заметки в базе.
+- Для повторяемых задач хранить eval-наборы запросов и сравнивать tools по answer correctness, source quality, latency и cost.
 
-| Параметр | Значение |
-|----------|----------|
-| **URL** | https://serper.dev/ | https://serpapi.com/ |
-| **API** | REST API, SDK для всех языков |
-| **Модели** | Google Search API wrapper |
-| **Цены** | Free tier (100-1K запросов) → Paid от $50/мес |
-| **Open Source** | Нет |
+## Официальные источники
 
-**Возможности:**
-- Прямой доступ к Google Search results
-- Поддержка image, video, news, shopping search
-- Location targeting, language settings
-- Structured JSON responses
-- High rate limits для production
-
-### Firecrawl
-
-| Параметр | Значение |
-|----------|----------|
-| **URL** | https://www.firecrawl.dev/ |
-| **API** | REST API, Python/JS SDK |
-| **Модели** | Web crawler + LLM extraction |
-| **Цены** | Free tier (500 кредитов) → Paid от $16/мес |
-| **Open Source** | Да (MIT) |
-
-**Возможности:**
-- Crawling целых сайтов с настройкой глубины
-- LLM-based content extraction
-- Map mode (обнаружение всех URL на домене)
-- Markdown output для LLM-friendly формата
-- Self-hosted опция
-
-### Jina Reader
-
-| Параметр | Значение |
-|----------|----------|
-| **URL** | https://jina.ai/reader/ |
-| **API** | REST API (`r.jina.ai/http://...`) |
-| **Модели** | LLM-powered reader |
-| **Цены** | Free tier (1M токенов/мес) → Paid |
-| **Open Source** | Частично |
-
-**Возможности:**
-- URL → clean markdown (text + images + links)
-- Bypass paywalls и anti-bot защиту
-- Screenshot capture
-- Multi-language support
-- Простой API: `GET https://r.jina.ai/<URL>`
-
-## Когда использовать
-
-| Сценарий | Рекомендуемый инструмент |
-|----------|-------------------------|
-| **Agent research workflow** | Tavily (оптимизирован для агентов) |
-| **Semantic search по контенту** | Exa (neural search) |
-| **Google Search results** | Serper/SerpAPI (прямой доступ) |
-| **Full site crawling** | Firecrawl (crawler + extraction) |
-| **Simple URL → text** | Jina Reader (бесплатно, быстро) |
-| **Self-hosted requirement** | Firecrawl (open source) |
-
-## Интеграция с фреймворками
-
-### LangChain
-```python
-from langchain_community.tools import TavilySearchResults
-search = TavilySearchResults(k=5)
-```
-
-### LlamaIndex
-```python
-from llama_index.tools.tavily_research import TavilyToolSpec
-```
-
-### AutoGen
-```python
-from autogen.agentchat.contrib.capabilities import WebSearchTool
-```
-
-## Безопасность и ограничения
-
-- **Rate limiting** — все сервисы лимитируют запросы
-- **Content filtering** — могут пропускать нежелательный контент
-- **API key exposure** — не хранить ключи в коде агента
-- **Citation accuracy** — проверять источники для критичных данных
-- **Cost control** — мониторить usage для paid tiers
+- [OpenAI Web Search tool](https://platform.openai.com/docs/guides/tools-web-search)
+- [Anthropic Web Search tool](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool)
+- [Perplexity Search API](https://docs.perplexity.ai/docs/search/quickstart)
+- [Perplexity Agent API](https://docs.perplexity.ai/docs/agent-api/quickstart)
+- [Tavily Search API](https://docs.tavily.com/documentation/api-reference/endpoint/search)
+- [Tavily Extract API](https://docs.tavily.com/documentation/api-reference/endpoint/extract)
+- [Brave LLM Context API](https://api-dashboard.search.brave.com/documentation/services/llm-context)
+- [Exa Search API](https://exa.ai/docs/reference/search)
+- [Serper Google Search API](https://serper.dev/)
+- [SerpAPI Google Search API](https://serpapi.com/search-api)
+- [Google Custom Search JSON API](https://developers.google.com/custom-search/v1/overview)
+- [Firecrawl Search API](https://docs.firecrawl.dev/api-reference/endpoint/search)
+- [Firecrawl GitHub repository](https://github.com/firecrawl/firecrawl)
+- [Jina Reader API](https://jina.ai/reader/)
 
 ## Связи
 
-- [Agent Harness](../../patterns/architecture-design/agent-harness.md) — интеграция search tools в harness
-- [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — research workflow для код-задач
-- [Browser Automation](browser-automation.md) — альтернатива для dynamic content
-- [Perplexity AI](../platforms/perplexity.md) — consumer-grade search agent
+- [Agent Harness](../../patterns/architecture-design/agent-harness.md) - куда подключается search tool в agent runtime.
+- [RAG for Agents](../../patterns/architecture-design/rag-for-agents.md) - как web search сочетается с private retrieval.
+- [Tool Use and MCP](../../patterns/fundamentals/tool-use-and-mcp.md) - общий механизм подключения tools.
+- [Browser Automation](browser-automation.md) - fallback для динамических и интерактивных страниц.
+- [API Clients](api-clients.md) - транспортный слой для внешних search APIs.
+- [Perplexity AI](../platforms/perplexity.md) - platform-level canonical page для Perplexity.
 
----
-
-*Добавлено: 2026-07-01*
+*Последнее обновление: 2026-07-02*
