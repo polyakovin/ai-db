@@ -53,7 +53,7 @@
 
 - [Harness Engineering — OpenAI](research-production/harness-engineering-openai.md) — Open AI/Anthropic подходы к обвязке агентов
 - [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) — think before coding, simplicity, surgical changes, goal-driven execution
-- [SberTech Whitepaper](research-production/sbertech-whitepaper.md) — unverified whitepaper source; требуется ручная проверка из-за Qrator/401
+- [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) — enterprise-агенты: двухпетлевая модель, Intent Loop, IDP, Skills, MCP/A2A, 98/2 обвязка
 
 ---
 
@@ -72,7 +72,6 @@
 | [OpenMontage](libraries-tools/openmontage.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Claude Science](libraries-tools/claude-science.md) | 🔵 Libraries | [Anthropic (Claude)](../tools/platforms/anthropic.md) — canonical, [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [Perplexity AI](libraries-tools/perplexity.md) | 🔵 Libraries | [Perplexity (tools)](../tools/platforms/perplexity.md) — canonical |
-| [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
 | [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
 | [AionUi](libraries-tools/aionui.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md) |
@@ -84,7 +83,8 @@
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
 | [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
-| [SberTech Whitepaper](research-production/sbertech-whitepaper.md) | 🟠 Research | Не обработано: требуется ручная проверка содержимого из-за Qrator/401 |
+| [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) | 🟠 Research | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 
 ---
 
@@ -172,7 +172,6 @@ category: sources
 tags: []
 added: <YYYY-MM-DD>
 status: new
----
 ```
 
 Тело: описание, обзор ресурса, Связи (ссылки на patterns, куда перенесена выжимка).
@@ -187,4 +186,4 @@ status: new
 - Связанные инструменты (ссылки на `tools/`)
 - Связанные паттерны (ссылки на `patterns/`)
 
-*Последнее обновление: 02.07.2026*
+*Последнее обновление: 04.07.2026*
