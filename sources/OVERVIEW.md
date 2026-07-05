@@ -47,6 +47,7 @@
 - [BitGN Filesystem Agent](engineering-patterns/bitgn-filesystem-agent.md)
 - [BitGN Operation Pangolin](engineering-patterns/bitgn-operation-pangolin.md)
 - [BitGN Plan-REPL Agent](engineering-patterns/bitgn-plan-repl-agent.md)
+- [Know Your Unknowns — Thariq](engineering-patterns/thariq-html-unknowns.md) — 11 HTML-артефактов для обнаружения неопределённостей до/во время/после имплементации
 
 ## 🟠 Research & Production
 
