@@ -57,6 +57,7 @@
 - [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) — think before coding, simplicity, surgical changes, goal-driven execution
 - [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) — enterprise-агенты: двухпетлевая модель, Intent Loop, IDP, Skills, MCP/A2A, 98/2 обвязка
 - [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) — модельно-ориентированное сжатие контекста между LLM/агентами
+- [Semantic Compression With Large Language Models](research-production/semantic-compression-with-llms.md) — исследование о компрессии и восстановлении смысла как раннем фундаменте для model-native форматов
 
 ---
 
@@ -90,6 +91,7 @@
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) | 🟠 Research | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 | [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) | 🟠 Research | [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| [Semantic Compression With Large Language Models](research-production/semantic-compression-with-llms.md) | 🟠 Research | [Агентная компрессия контекста](../patterns/advanced/agent-context-distillation.md), [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md) |
 
 ---
 

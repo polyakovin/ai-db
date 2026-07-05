@@ -10,6 +10,7 @@
 - [Human-in-the-loop UX](../production-operations/human-in-the-loop-ux.md) — clarification, confirmation, approvals, handoff и trust design
 - [Data governance и compliance](../architecture-design/data-governance-compliance.md) — PII, retention, memory governance, auditability
 - [Воспроизводимые рецепты AI-агентов](reproducible-agent-recipes.md) — RAG, SQL, browser, coding, support и research agents
+- [Агентная компрессия контекста](../advanced/agent-context-distillation.md) — context packets для handoff между этапами
 
 ## Как устроен раздел
 

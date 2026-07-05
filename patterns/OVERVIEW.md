@@ -50,6 +50,7 @@
 - [Антипаттерны агентных систем](advanced/agent-antipatterns.md) — over-agentification, blind tool execution, weak evals, hidden costs
 - [Воспроизводимые рецепты](advanced/reproducible-agent-recipes.md)
 - [Карта кейсов](advanced/agent-use-cases.md) — выбор архитектуры и evals под use case
+- [Агентная компрессия контекста](advanced/agent-context-distillation.md) — distillation пакеты для handoff между этапами
 
 ---
 
@@ -69,7 +70,7 @@
 | 🔵 Architecture & Design | 8 | Проектные блоки |
 | 🟡 Implementation | 5 | Техники сборки |
 | 🟠 Production & Operations | 2 | Эксплуатация |
-| 🔴 Advanced / Pro-Tips | 4 | Pro-tips |
+| 🔴 Advanced / Pro-Tips | 5 | Pro-tips |
 
 ---
 
