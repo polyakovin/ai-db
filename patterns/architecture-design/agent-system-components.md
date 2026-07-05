@@ -42,7 +42,7 @@
 Внешние интеграции (опционально).
 
 ### ACP
-Протокол взаимодействия агентов.
+Agent Communication Protocol (ACP) - IBM/BeeAI REST-first протокол взаимодействия агентов, приложений и людей. Он не тождественен A2A как спецификация, но ACP merged into [Agent2Agent (A2A) Protocol](../../sources/libraries-tools/a2a-protocol.md); для новых архитектурных заметок A2A лучше считать текущим именем стандарта, а ACP - provenance и migration context.
 
 ### Channels
 Каналы коммуникации между агентами и компонентами.

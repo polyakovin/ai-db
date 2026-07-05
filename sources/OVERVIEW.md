@@ -27,6 +27,7 @@
 - [Perplexity AI](libraries-tools/perplexity.md) — AI-поиск с агентными возможностями
 - [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) — стандарт подключения AI-приложений к внешним системам
 - [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) — протокол коммуникации и interoperability между агентами
+- [Agent Communication Protocol (ACP)](libraries-tools/agent-communication-protocol.md) — IBM/BeeAI REST-first протокол, merged into A2A
 - [AionUi](libraries-tools/aionui.md) — desktop UI для multi-agent coworking и remote operator control
 - [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) — hosted tools: web search, file search, MCP/connectors
 - [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) — connectors, ingestion transformations, cache, vector-store insertion
@@ -74,6 +75,7 @@
 | [Perplexity AI](libraries-tools/perplexity.md) | 🔵 Libraries | [Perplexity (tools)](../tools/platforms/perplexity.md) — canonical |
 | [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
 | [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
+| [Agent Communication Protocol (ACP)](libraries-tools/agent-communication-protocol.md) | 🔵 Libraries | [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md), [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md) |
 | [AionUi](libraries-tools/aionui.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [OpenAI Tools Docs](libraries-tools/openai-tools-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [OpenAI](../tools/platforms/openai.md) |
 | [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LlamaIndex](../tools/frameworks/llamaindex.md) |

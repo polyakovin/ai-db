@@ -3,7 +3,7 @@ title: Agent2Agent (A2A) Protocol
 url: https://github.com/a2aproject/A2A
 type: url
 category: sources
-tags: [a2a, agent-protocol, interoperability, multi-agent, mcp, open-source]
+tags: [a2a, acp, agent-protocol, interoperability, multi-agent, mcp, open-source]
 added: 2026-07-02
 status: new
 ---
@@ -17,6 +17,7 @@ Official GitHub repository for Agent2Agent (A2A), an open protocol for communica
 - **GitHub:** https://github.com/a2aproject/A2A
 - **Documentation:** https://a2a-protocol.org/
 - **Specification:** https://a2a-protocol.org/latest/specification/
+- **ACP merge context:** https://github.com/orgs/i-am-bee/discussions/5
 
 ## Overview
 
@@ -32,6 +33,7 @@ Official GitHub repository for Agent2Agent (A2A), an open protocol for communica
 - A2A targets agent-to-agent collaboration, while MCP targets agent-to-tool/context connectivity; the two protocols are complementary rather than substitutes.
 - Agent Cards are the central discovery primitive: they describe capabilities and connection information before collaboration starts.
 - The protocol is useful for multi-agent systems where agents remain opaque services rather than shared in-process components.
+- [Agent Communication Protocol (ACP)](agent-communication-protocol.md) is not the same specification as A2A, but ACP has merged into A2A under the Linux Foundation and should be treated as legacy/provenance context for new notes.
 - The repository is a strong provenance source for interoperability patterns, enterprise agent communication, and standardizing long-running collaboration between agents.
 
 ## Relevance for ai-db
@@ -52,3 +54,4 @@ Added: 2026-07-02
 - [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) - agent-to-agent coordination and role separation.
 - [Tool use, function calling и MCP](../../patterns/fundamentals/tool-use-and-mcp.md) - A2A as a complement to MCP, not a replacement for tool access.
 - [Безопасность агентных систем](../../patterns/architecture-design/agent-security.md) - opacity, trust boundaries, and permission design for agent collaboration.
+- [Agent Communication Protocol (ACP)](agent-communication-protocol.md) - IBM/BeeAI protocol that merged into A2A.
