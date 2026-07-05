@@ -56,6 +56,7 @@
 - [Harness Engineering — OpenAI](research-production/harness-engineering-openai.md) — Open AI/Anthropic подходы к обвязке агентов
 - [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) — think before coding, simplicity, surgical changes, goal-driven execution
 - [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) — enterprise-агенты: двухпетлевая модель, Intent Loop, IDP, Skills, MCP/A2A, 98/2 обвязка
+- [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) — модельно-ориентированное сжатие контекста между LLM/агентами
 
 ---
 
@@ -88,6 +89,7 @@
 | [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) | 🟠 Research | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
+| [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) | 🟠 Research | [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 
 ---
 
