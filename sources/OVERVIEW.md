@@ -24,6 +24,7 @@
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
 - [ECC](libraries-tools/ecc.md) — harness OS, memory persistence, hooks, verification loops, security
 - [Claude Science](libraries-tools/claude-science.md) — AI workbench для научных агентов, provenance, reviewer loop, compute orchestration
+- [OpenScience](libraries-tools/openscience.md) — open-source AI workbench для scientific agents, local workspace, skills, MCP и scientific connectors
 - [Perplexity AI](libraries-tools/perplexity.md) — AI-поиск с агентными возможностями
 - [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) — стандарт подключения AI-приложений к внешним системам
 - [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) — протокол коммуникации и interoperability между агентами
@@ -75,6 +76,7 @@
 | [ECC](libraries-tools/ecc.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [OpenMontage](libraries-tools/openmontage.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Claude Science](libraries-tools/claude-science.md) | 🔵 Libraries | [Anthropic (Claude)](../tools/platforms/anthropic.md) — canonical, [Agent Harness](../patterns/architecture-design/agent-harness.md) |
+| [OpenScience](libraries-tools/openscience.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md), [Воспроизводимые рецепты AI-агентов](../patterns/advanced/reproducible-agent-recipes.md) |
 | [Perplexity AI](libraries-tools/perplexity.md) | 🔵 Libraries | [Perplexity (tools)](../tools/platforms/perplexity.md) — canonical |
 | [Model Context Protocol Docs](libraries-tools/model-context-protocol-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
 | [Agent2Agent (A2A) Protocol](libraries-tools/a2a-protocol.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Multi-agent orchestration](../patterns/implementation/multi-agent-orchestration.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
