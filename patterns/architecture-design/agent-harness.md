@@ -76,6 +76,10 @@ Subagents полезны, когда:
 - секреты вне контекста модели;
 - аудит tool calls.
 
+## Паттерн: ruleset как управляемый слой
+
+Rules не обязательно живут только в статичном prompt. [Ponytail](../../sources/libraries-tools/ponytail.md) показывает полезную форму harness-слоя: переносимый ruleset поставляется как plugin, rules file или skill pack, имеет режимы интенсивности, команды review/audit и lifecycle hooks. Это позволяет включать стиль работы агента как управляемую capability, а не как одноразовую просьбу в чате.
+
 ## Когда брать готовый harness
 
 Готовый harness полезен, если нужны:
@@ -94,6 +98,7 @@ Subagents полезны, когда:
 
 - [LangChain Deep Agents](../../sources/libraries-tools/langchain-deep-agents.md)
 - [Superpowers](../../sources/libraries-tools/superpowers.md)
+- [Ponytail](../../sources/libraries-tools/ponytail.md)
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [BitGN Arena — архитектурные инсайты](../../sources/engineering-patterns/bitgn-arena-insights.md)
 - [Harness Engineering — OpenAI](../../sources/research-production/harness-engineering-openai.md)

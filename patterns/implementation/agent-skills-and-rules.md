@@ -64,13 +64,25 @@ Skills решают это через модульность: каждая пр�
 
 ## Правило: skills должны быть тестируемыми
 
-Superpowers и ECC сходятся в одной идее: полезность skill нужно проверять поведением агента. Признаки, что skill работает:
+Superpowers, Ponytail и ECC сходятся в одной идее: полезность skill нужно проверять поведением агента. Признаки, что skill работает:
 
 - меньше лишних изменений в diff;
 - меньше повторных переделок из-за переусложнения;
 - агент спрашивает до ошибки, а не после;
 - результат проходит проверки без ручного “доталкивания”;
 - workflow можно повторить в другом проекте.
+
+## Правило: minimalism skill требует safety rails
+
+Навык "пиши меньше" опасен, если он не говорит, что нельзя сокращать. Хороший simplicity-skill фиксирует границы явно:
+
+- не убирать validation на trust boundary;
+- не ухудшать security и privacy ради короткого diff;
+- не ломать accessibility;
+- не рисковать потерей данных;
+- сначала читать затронутый поток, а уже потом выбирать минимальную реализацию.
+
+Поэтому источник вроде [Ponytail](../../sources/libraries-tools/ponytail.md) полезен не только лозунгом YAGNI, но и тем, что превращает минимализм в проверяемую процедуру с командами review/audit/debt/gain.
 
 ## Когда skill вреден
 
@@ -86,6 +98,7 @@ Skill стоит переписать или удалить, если он:
 ## Источники
 
 - [Superpowers](../../sources/libraries-tools/superpowers.md)
+- [Ponytail](../../sources/libraries-tools/ponytail.md)
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [Andrej Karpathy Skills](../../sources/research-production/andrej-karpathy-skills.md)
 - [Паттерны работы с AI-агентами](../architecture-design/agent-system-components.md)

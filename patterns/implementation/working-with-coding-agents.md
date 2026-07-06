@@ -43,6 +43,8 @@
 
 Это напрямую снижает стоимость ревью.
 
+Практическое правило из [Ponytail](../../sources/libraries-tools/ponytail.md): перед новой реализацией агент должен пройти лестницу "не делать → переиспользовать локальное → взять stdlib/native capability → использовать уже установленную зависимость → написать минимум". Это не code golf: security, validation, accessibility и защита данных остаются обязательными.
+
 ## Практика verification loop
 
 Для каждой задачи заранее выбрать проверку:
@@ -83,6 +85,7 @@
 - [Teacher's Tech](../../sources/tutorials-courses/teachers-tech.md)
 - [Zinho Automates](../../sources/tutorials-courses/zinho-automates.md)
 - [Superpowers](../../sources/libraries-tools/superpowers.md)
+- [Ponytail](../../sources/libraries-tools/ponytail.md)
 - [ECC](../../sources/libraries-tools/ecc.md)
 - [Andrej Karpathy Skills](../../sources/research-production/andrej-karpathy-skills.md)
 

@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-06 | add-source | args: DietrichGebert/ponytail GitHub | status: ok | details: source card added, overview/canonical notes updated, vault/canonical checks passed
 2026-07-06 | add-source | args: synthetic-sciences/openscience GitHub | status: ok | details: source card added, overview updated, vault/canonical checks passed
 2026-07-02 | add-source | args: claude-science product+announcement | status: ok | details: source card added, Anthropic canonical updated, vault/canonical checks passed
 2026-07-03 | nightly-audit | args: full-vault-check+trends-research | status: ok | details: vault pass, 0 broken links, 0 bare mentions, canonical-map ok. Trends: MCP-2026-07-28-RC-stateless-core, 6-protocol-ecosystem-MCP-A2A-ACP-AP2, MS-Agent-Framework-1.0-GA, CLI-agents-takeover-90p-accuracy, AWS-Bedrock-AgentCore, Dell-Deskside-Agentic-AI. Gaps: 3xP0-crossref-unsolved, tool-use-and-mcp-outdated, OpenAI-Agents-SDK-missing-canonical, Google-ADK-missing, smolagents-missing, Haystack-missing, Mastra-missing, Phidata-missing

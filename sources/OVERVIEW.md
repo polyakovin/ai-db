@@ -22,6 +22,7 @@
 - [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) — provenance для обзора GraphRAG/RAG-аналогов
 - [LangChain Deep Agents](libraries-tools/langchain-deep-agents.md) — harness, filesystem, subagents, context management, sandbox boundary
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
+- [Ponytail](libraries-tools/ponytail.md) — YAGNI/reuse-first ruleset и skills для coding agents
 - [ECC](libraries-tools/ecc.md) — harness OS, memory persistence, hooks, verification loops, security
 - [Claude Science](libraries-tools/claude-science.md) — AI workbench для научных агентов, provenance, reviewer loop, compute orchestration
 - [OpenScience](libraries-tools/openscience.md) — open-source AI workbench для scientific agents, local workspace, skills, MCP и scientific connectors
@@ -73,6 +74,7 @@
 | [LangChain Deep Agents](libraries-tools/langchain-deep-agents.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [Claude Code 101](tutorials-courses/claude-code-101.md) | 🟢 Tutorials | [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Superpowers](libraries-tools/superpowers.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
+| [Ponytail](libraries-tools/ponytail.md) | 🔵 Libraries | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md), [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [ECC](libraries-tools/ecc.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [OpenMontage](libraries-tools/openmontage.md) | 🔵 Libraries | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Claude Science](libraries-tools/claude-science.md) | 🔵 Libraries | [Anthropic (Claude)](../tools/platforms/anthropic.md) — canonical, [Agent Harness](../patterns/architecture-design/agent-harness.md) |
