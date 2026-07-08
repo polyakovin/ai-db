@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [code-execution, sandbox, agents, tools, runtime]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # Code Execution for Agents

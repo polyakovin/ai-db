@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rerankers, rag, retrieval, cross-encoder, ranking]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Ререйкеры (Rerankers)

@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [agent-management, coding-agents, project-management, skills, runtimes, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Multica
@@ -57,3 +57,9 @@ Added: 2026-07-02
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) - Multica as a management layer around agent execution.
 - [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) - task assignment, progress reporting, and review loops.
 - [Skills и правила для агентов](../../patterns/implementation/agent-skills-and-rules.md) - reusable skills as shared agent capabilities.
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://multica.ai/
+- **Результат:** Официальный сайт Multica подтверждает: open-source платформа для управления human+agent командами, поддержка 12 coding-агентов, task lifecycle, skills model. Содержание заметки соответствует.

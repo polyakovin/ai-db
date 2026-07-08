@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [search, ai-agent, platform, computer-use]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Perplexity AI

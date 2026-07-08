@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [framework, multi-agent, microsoft, orchestration, open-source, python]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # AutoGen / Microsoft Agent Framework (MAF)

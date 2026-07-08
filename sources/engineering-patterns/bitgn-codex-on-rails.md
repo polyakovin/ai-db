@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [bitgn, pac1, codex, rails]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# Codex-on-Rails — frontier coding agent с жёсткими рельсами
@@ -197,3 +197,9 @@ Rails — это **внешние по отношению к модели** ме
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_search (BitGN PAC1) + web_extract — https://bitgn.com/insights/2026-04-21-pac1-winner-codex-on-rails
+- **Результат:** Источник подтверждён. Codex-on-Rails — 87.0/104, Accuracy #1 (совместно с Pangolin), автор Igor Inozemtsev (Nevis). Официальный разбор на BitGN Insights. Содержание заметки соответствует.

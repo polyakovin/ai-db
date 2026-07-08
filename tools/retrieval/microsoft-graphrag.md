@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, graphrag, knowledge-graph, retrieval, microsoft, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Microsoft GraphRAG

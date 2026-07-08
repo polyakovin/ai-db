@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [acp, a2a, agent-protocol, interoperability, multi-agent, beeai, open-source]
 added: 2026-07-05
-status: new
+status: verified
 ---
 
 # Agent Communication Protocol (ACP)
@@ -55,3 +55,9 @@ Added: 2026-07-05
 - [Agent2Agent (A2A) Protocol](a2a-protocol.md) - current protocol home for agent-to-agent interoperability after the ACP merge.
 - [Multi-agent orchestration](../../patterns/implementation/multi-agent-orchestration.md) - agent role coordination and handoffs.
 - [Робастная multi-agent среда](../../patterns/architecture-design/robust-multi-agent-environment.md) - A2A as a scoped external-agent transaction.
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://agentcommunicationprotocol.dev/
+- **Результат:** Официальная документация ACP доступна. Подтверждён статус: ACP вливается в A2A под Linux Foundation. Содержание заметки соответствует оригиналу.

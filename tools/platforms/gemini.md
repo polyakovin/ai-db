@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, multimodal, platform, agent, computer-use, open-source]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Google Gemini

@@ -1,11 +1,11 @@
 ---
 title: Plan-REPL Agent — plan-and-execute с REPL-циклом
-url: 
+url: https://bitgn.com/insights/2026-05-08-pac1-7eGjx9-plan-repl-agent
 type: url
 category: sources
 tags: [bitgn, pac1, repl]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# Plan-REPL Agent — plan-and-execute с REPL-циклом и лимиты промпт-инжиниринга
@@ -144,3 +144,9 @@ Preflight — это лёгкий детерминированный (или п�
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_search (BitGN PAC1) + web_extract — https://bitgn.com/insights/2026-05-08-pac1-7eGjx9-plan-repl-agent
+- **Результат:** Источник подтверждён. Plan-REPL Agent — 60.6/104, автор Grigory-T. Разделение планирования (GPT-5.4) и исполнения (GLM-5.1). Содержание заметки соответствует.

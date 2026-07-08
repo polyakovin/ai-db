@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [llamaindex, rag, ingestion, connectors, document-loaders]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # LlamaIndex Data Connectors and Ingestion Pipeline
@@ -27,3 +27,9 @@ status: new
 ## Статус
 
 Добавлено: 2026-07-02
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://developers.llamaindex.ai/python/framework/module_guides/loading/connector/
+- **Результат:** Документация LlamaIndex по Data Connectors (LlamaHub) подтверждена. Читабельна, содержит описание reader-интерфейса, примеры использования. Содержание заметки соответствует.

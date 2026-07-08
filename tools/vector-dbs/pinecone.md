@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [vector-db, rag, managed, serverless, embeddings, retrieval]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Pinecone

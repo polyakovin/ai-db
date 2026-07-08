@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, graphrag, small-language-models, retrieval, python, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # MiniRAG

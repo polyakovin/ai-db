@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [framework, multi-agent, python, orchestration, open-source]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # CrewAI

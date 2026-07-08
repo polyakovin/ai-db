@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [search, ai-agent, platform, computer-use]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Perplexity AI
@@ -22,3 +22,9 @@ Perplexity — показательный пример эволюции клас
 
 - [Perplexity AI (tools)](../../tools/platforms/perplexity.md) — canonical-страница инструмента
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Computer как вариант обвязки
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://www.perplexity.ai/
+- **Результат:** Официальный сайт Perplexity AI подтверждён. Позиционируется как AI-поисковая платформа с агентными возможностями (Computer agent). Содержание заметки соответствует.

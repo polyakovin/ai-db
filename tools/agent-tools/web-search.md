@@ -6,7 +6,7 @@ category: tools
 tags: [search, web, agents, tools, api, retrieval]
 added: 2026-07-01
 updated: 2026-07-02
-status: new
+status: verified
 ---
 
 # Web Search Tools for Agents

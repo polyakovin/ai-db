@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, retrieval, knowledge-graph, api, multimodal, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # R2R

@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, platform, chinese, open-source, coding, agent, multimodal]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Qwen (Alibaba)

@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [memory, rag, knowledge-graph, retrieval, research, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # HippoRAG

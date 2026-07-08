@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [mcp, connectors, tools, context, protocol]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Model Context Protocol Docs
@@ -26,3 +26,9 @@ status: new
 ## Статус
 
 Добавлено: 2026-07-02
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://modelcontextprotocol.io/docs/getting-started/intro
+- **Результат:** Официальная документация MCP подтверждена. Описан как открытый стандарт для подключения AI-приложений к внешним системам (USB-C для AI). Содержание заметки соответствует.

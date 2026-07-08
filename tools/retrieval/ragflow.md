@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, retrieval, document-ai, agents, platform, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # RAGFlow

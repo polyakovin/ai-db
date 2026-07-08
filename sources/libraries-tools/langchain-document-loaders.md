@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [langchain, document-loaders, ingestion, integrations]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # LangChain Document Loaders
@@ -26,3 +26,9 @@ status: new
 ## Статус
 
 Добавлено: 2026-07-02
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://docs.langchain.com/oss/python/integrations/document_loaders
+- **Результат:** Документация LangChain Document Loaders подтверждена. Поддерживает load()/lazy_load() интерфейс, множество интеграций. Содержание заметки соответствует.

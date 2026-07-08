@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [bitgn, pac1, arena]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# BitGN Arena — архитектурные инсайты с PAC1
@@ -59,3 +59,9 @@ BitGN Arena — бенчмарк, где агенты соревнуются н�
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://bitgn.com/insights/
+- **Результат:** Страница BitGN Insights подтверждена. Лидерборд PAC1 и разборы архитектур доступны: Operation Pangolin (92.0), Codex-on-Rails (87.0), Codex CLI + Rules Evolution (84.0), Filesystem Agent (83.0). Содержание заметки соответствует.

@@ -1,11 +1,11 @@
 ---
 title: Harness Engineering: Leveraging Codex in an Agent-First World
-url: 
+url: https://openai.com/index/harness-engineering/
 type: url
 category: sources
 tags: [openai, codex, harness]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# Harness Engineering: Leveraging Codex in an Agent-First World
@@ -115,3 +115,9 @@ status: new
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — определяющая статья концепции harness engineering
 - [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — практический workflow Codex
 - [Исследование фреймворков](../../tools/agent-frameworks-research.md) — OpenAI Responses API
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://openai.com/index/harness-engineering/ (сайт отвечает, содержание подтверждено)
+- **Результат:** Источник верифицирован. Оригинальная статья OpenAI Blog, 11 февраля 2026, автор Ryan Lopopolo. Содержание заметки полностью соответствует оригиналу.

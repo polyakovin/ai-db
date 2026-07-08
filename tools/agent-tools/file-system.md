@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [filesystem, files, agents, tools, io]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # File System Tools for Agents

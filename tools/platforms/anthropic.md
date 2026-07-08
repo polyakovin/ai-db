@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, platform, agent, coding, computer-use, claude-code, cowork, claude-science]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Anthropic (Claude)

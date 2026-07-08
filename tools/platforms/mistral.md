@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, platform, european, coding, agent, api, open-source]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Mistral AI

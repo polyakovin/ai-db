@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [function-calling, tool-calling, agents, llm, api]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # Function Calling for Agents

@@ -1,11 +1,11 @@
 ---
 title: Operation Pangolin — BitGN PAC1 Ultimate #1
-url: 
+url: https://bitgn.com/insights/2026-04-18-pac1-winner-operation-pangolin
 type: url
 category: sources
 tags: [bitgn, pac1, pangolin]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# Operation Pangolin — BitGN PAC1, 92.0/104 (Ultimate #1)
@@ -99,3 +99,9 @@ Operation Pangolin — доказательство того, что **мини�
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_search (BitGN PAC1) + web_extract — https://bitgn.com/insights/2026-04-18-pac1-winner-operation-pangolin
+- **Результат:** Источник подтверждён. Operation Pangolin — 92.0/104 (Ultimate #1), автор Illia Dzivinskyi (Grammarly). Один инструмент execute_code + REPL-цикл + durable memory. Содержание заметки соответствует.

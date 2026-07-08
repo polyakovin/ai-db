@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [low-code, platform, agents, rag, open-source, workflow]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Dify

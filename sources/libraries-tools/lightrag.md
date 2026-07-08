@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [rag, knowledge-graph, retrieval, open-source, python]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # LightRAG
@@ -51,3 +51,9 @@ LightRAG — это RAG-система, которая объединяет тр
 - [RAG-Anything](../../tools/retrieval/rag-anything.md) — multimodal RAG от той же команды
 - [MiniRAG](../../tools/retrieval/minirag.md) — облегчённая версия от той же команды
 - [VideoRAG](https://github.com/HKUDS/VideoRAG) — RAG для длинных видео-контекстов
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://github.com/hkuds/lightrag
+- **Результат:** GitHub-репозиторий LightRAG (HKUDS) подтверждён: 37.4K stars, 5.3K forks, активная разработка (v1.5.4, июнь 2026). Опубликован на EMNLP 2025. Содержание заметки соответствует.

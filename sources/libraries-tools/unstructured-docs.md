@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [document-parsing, ingestion, ocr, rag, files]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Unstructured Docs
@@ -26,3 +26,9 @@ status: new
 ## Статус
 
 Добавлено: 2026-07-02
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://docs.unstructured.io/open-source/introduction/overview
+- **Результат:** Документация Unstructured подтверждена: partitioning, cleaning, extracting, chunking. Поддержка PDF, HTML, Word, изображений. Содержание заметки соответствует.

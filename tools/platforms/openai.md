@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, platform, agent, coding, codex, responses-api, agents-sdk]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # OpenAI

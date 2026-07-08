@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [web-crawling, scraping, ingestion, webhooks, markdown]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Firecrawl Crawl Docs
@@ -26,3 +26,9 @@ status: new
 ## Статус
 
 Добавлено: 2026-07-02
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_extract — https://docs.firecrawl.dev/features/crawl
+- **Результат:** Документация Firecrawl Crawl подтверждена: recursive crawl, sitemap discovery, JavaScript rendering, clean markdown output. Содержание заметки соответствует.

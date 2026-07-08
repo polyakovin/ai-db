@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [browser, automation, playwright, agents, tools]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # Browser Automation for Agents

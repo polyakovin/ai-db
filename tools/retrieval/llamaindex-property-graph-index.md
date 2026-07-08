@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, graphrag, property-graph, retrieval, llamaindex, python]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # LlamaIndex PropertyGraphIndex

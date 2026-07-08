@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [framework, microsoft, enterprise, dotnet, python, orchestration]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # Semantic Kernel

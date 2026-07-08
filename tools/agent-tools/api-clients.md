@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [api, http, rest, agents, tools, integration]
 added: 2026-07-01
-status: new
+status: verified
 ---
 
 # API Clients for Agents

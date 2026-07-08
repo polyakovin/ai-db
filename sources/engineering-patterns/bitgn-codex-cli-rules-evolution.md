@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [bitgn, pac1, codex, rules]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# BitGN: Codex CLI + Rules Evolution
@@ -119,3 +119,9 @@ status: new
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_search (BitGN PAC1) + web_extract — https://bitgn.com/insights/2026-05-08-pac1-ioYpXn-codex-cli-rules-evolution
+- **Результат:** Источник подтверждён. Решение 84.0/104, автор Maksim Popkov (Sber). Разделение runtime solver и evolution loop. Содержание заметки соответствует официальному разбору.

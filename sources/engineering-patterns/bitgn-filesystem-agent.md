@@ -1,11 +1,11 @@
 ---
 title: BitGN Filesystem Agent — BitGN PAC1
-url: 
+url: https://bitgn.com/insights/2026-05-13-pac1-xetM5Z-filesystem-agent
 type: url
 category: sources
 tags: [bitgn, pac1, filesystem]
 added: 2026-06-25
-status: new
+status: verified
 ---
 
 1|# BitGN Filesystem Agent — BitGN PAC1, 83.0/104
@@ -115,3 +115,9 @@ Filesystem Agent — элегантный компромисс между мин
 ---
 
 *Добавлено: 2026-06-21*
+
+## Верификация
+
+- **Дата:** 2026-07-08
+- **Метод:** web_search (BitGN PAC1) + web_extract — https://bitgn.com/insights/2026-05-13-pac1-xetM5Z-filesystem-agent
+- **Результат:** Источник подтверждён. BitGN Arena — публичная платформа бенчмарков. PAC1 — детерминированный бенчмарк (104 задачи). Решение Filesystem Agent — 83.0/104, автор Azamat Yelmagambetov. Содержание заметки соответствует официальному разбору.

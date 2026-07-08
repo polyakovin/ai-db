@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [llm, platform, open-source, coding, agent, api]
 added: 2026-06-29
-status: new
+status: verified
 ---
 
 # DeepSeek

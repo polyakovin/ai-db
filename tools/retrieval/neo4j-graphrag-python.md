@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, graphrag, knowledge-graph, graph-database, retrieval, python]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # Neo4j GraphRAG for Python

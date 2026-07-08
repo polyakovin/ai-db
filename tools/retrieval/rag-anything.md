@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, multimodal, knowledge-graph, retrieval, documents, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # RAG-Anything

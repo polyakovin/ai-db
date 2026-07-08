@@ -5,7 +5,7 @@ type: url
 category: tools
 tags: [rag, graphrag, knowledge-graph, aws, retrieval, open-source]
 added: 2026-07-02
-status: new
+status: verified
 ---
 
 # AWS GraphRAG Toolkit
