@@ -35,6 +35,25 @@
 
 Практичный baseline: сначала deterministic checks для того, что можно проверить кодом, затем LLM-as-judge по явной rubric, затем human review на небольшой calibration set.
 
+## Обзор бенчмарков для LLM
+
+Не существует одного бенчмарка, покрывающего всё. Реальные evals комбинируют несколько тестов под свой use case.
+
+| Категория | Что оценивает | Ключевые бенчмарки |
+|---|---|---|
+| Общие знания | Широкий кругозор, ответы из разных областей | MMLU, MMLU-Pro |
+| Рассуждение | Логика, здравый смысл, выводы | HellaSwag, ARC, BIG-bench |
+| Математика | Решение задач уровня school — olympiad | GSM8K, MATH, AIME |
+| Генерация кода | Рабочий код по описанию, решение issues | HumanEval, MBPP, SWE-bench (Verified / Pro) |
+| Tool calling | Вызов функций по документации, serial/parallel, multi-step | **BFCL** (Berkeley Function Calling Leaderboard) — AST-валидация вызовов |
+| Agentic coding | Сквозное решение задач на реальных репозиториях | SWE-bench Verified (500 задач), SWE-bench Pro (contamination-resistant) |
+| Правдивость | Склонность к галлюцинациям | TruthfulQA, SimpleQA |
+| Мультимодальность | Понимание изображений, таблиц, схем | MMMU, MMMU-Pro, MathVista |
+| Безопасность | Джейлбрейк, вредный контент, bias | HarmBench, ToxiGen, HEx-PHI, **AgentHarm** (multi-step agent safety) |
+| Практический рейтинг | Качество в живом общении | Chatbot Arena (pairwise дуэли), LiveBench (contamination-free, ежемесячное обновление) |
+
+**Ограничения.** Data contamination — данные бенчмарка попадают в обучающую выборку, цифры становятся бессмысленными. Saturation — модели проходят старый тест слишком хорошо, он перестаёт разделять. LiveBench решает первое частым обновлением задач; SWE-bench Pro — второе усложнением сценариев. Для **агентных** бенчмарков (tool calling, agentic coding, safety) есть отдельная заметка [Evaluations для агентов](agent-evaluations.md).
+
 ## Минимальный eval set
 
 Для одного use case заведите 30-100 примеров:
@@ -157,6 +176,7 @@ LLM-as-judge нужно калибровать на human labels. Следите
 - [OpenAI Graders](https://developers.openai.com/api/docs/guides/graders)
 - [Anthropic: Define success criteria and build evaluations](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
 - [Google Cloud: Gen AI evaluation service overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-overview)
+- [Berkeley Function Calling Leaderboard (BFCL)](https://gorilla.cs.berkeley.edu/leaderboard.html) — бенчмарк для оценки ability LLM вызывать функции (tools): serial/parallel calls, AST-валидация, multi-turn, multiple programming languages. V3 добавляет multi-step и stateful сценарии. Использует AST evaluation method — не просто exact match, а проверка AST-дерева вызова.
 - [G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment](https://arxiv.org/abs/2303.16634)
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
 - [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)
