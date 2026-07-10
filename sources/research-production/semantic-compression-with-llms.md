@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [llm, compression, context, benchmarks, agents]
 added: 2026-07-06
-status: new
+status: verified
 ---
 
 # Semantic Compression With Large Language Models
@@ -28,5 +28,11 @@ status: new
 
 - [Per-context memory patterns](../../patterns/advanced/agent-memory-patterns.md) — как компрессия меняет глубину хранения.
 - [Агентная компрессия контекста (BabelTele)](../../patterns/advanced/agent-context-distillation.md) — практическая модель уплотнения между шагами.
-- [Оценка ответов LLM](../../patterns/implementation/llm-response-evaluation.md) — оценка качества декомпрессии.
+|- [Оценка ответов LLM](../../patterns/implementation/llm-response-evaluation.md) — оценка качества декомпрессии.
+
+## Верификация
+
+- **Дата:** 2026-07-10
+- **Метод:** открыт arXiv abstract по URL https://arxiv.org/abs/2304.12512
+- **Результат:** страница доступна, статья опубликована в cs.AI, имеет DOI 10.48550/arXiv.2304.12512. Описание и relevance, указанные в заметке, соответствуют содержанию abstract.
 

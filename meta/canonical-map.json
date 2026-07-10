@@ -215,6 +215,10 @@
     "name": "Карта кейсов AI-агентов",
     "path": "patterns/advanced/agent-use-cases.md"
   },
+  "agent-context-distillation": {
+    "name": "Агентная компрессия контекста (Context Distillation)",
+    "path": "patterns/advanced/agent-context-distillation.md"
+  },
   "reproducible-agent-recipes": {
     "name": "Воспроизводимые рецепты AI-агентов",
     "path": "patterns/advanced/reproducible-agent-recipes.md"

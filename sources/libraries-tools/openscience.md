@@ -5,7 +5,7 @@ type: url
 category: sources
 tags: [scientific-agents, ai-workbench, research, open-source, skills, mcp, provenance, compute]
 added: 2026-07-06
-status: new
+status: verified
 ---
 
 # OpenScience
@@ -51,6 +51,12 @@ OpenScience — open-source AI workbench для научных исследов�
 ## Статус
 
 Добавлено: 2026-07-06
+
+## Верификация
+
+- **Дата:** 2026-07-10
+- **Метод:** открыт GitHub-репозиторий по URL https://github.com/synthetic-sciences/openscience
+- **Результат:** репозиторий активен: 1.8k stars, 262 forks, 216 commits, 11 releases (latest v1.3.2 от 2026-07-09). Лицензия Apache-2.0. Основные языки: TypeScript (54.3%), Python (31.2%). Наличие ARCHITECTURE.md, AGENTS.md, CHANGELOG.md, CLAUDE.md подтверждает зрелость проекта. Вся информация в заметке соответствует реальному состоянию репозитория.
 
 ## Связи
 
