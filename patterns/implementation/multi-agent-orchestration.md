@@ -58,6 +58,8 @@ Multi-agent система полезна, когда разные роли де
 ## Инструментальные опоры
 
 - [LangGraph](../../tools/frameworks/langgraph.md): stateful graphs, persistence, human-in-the-loop.
+- [Pydantic AI](../../tools/frameworks/pydantic-ai.md): typed dependencies, agent delegation, harness subagents и evals.
+- [Koog](../../tools/frameworks/koog.md): graph strategies и agents-as-tools для Kotlin/JVM.
 - [AutoGen](../../tools/frameworks/autogen.md): conversational single/multi-agent apps и event-driven Core.
 - [CrewAI](../../tools/frameworks/crewai.md): crews, tasks/processes, guardrails, memory, flows.
 - [OpenAI](../../tools/platforms/openai.md) [Agents SDK](../../tools/platforms/openai.md): handoffs, guardrails, tracing/evals.

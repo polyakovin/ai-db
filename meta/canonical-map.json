@@ -302,5 +302,17 @@
   "tool-use-and-mcp": {
     "name": "Tool use, function calling и MCP",
     "path": "patterns/fundamentals/tool-use-and-mcp.md"
+  },
+  "koog": {
+    "name": "Koog",
+    "path": "tools/frameworks/koog.md"
+  },
+  "pydantic-ai": {
+    "name": "Pydantic AI",
+    "path": "tools/frameworks/pydantic-ai.md"
+  },
+  "langflow": {
+    "name": "Langflow",
+    "path": "tools/frameworks/langflow.md"
   }
 }

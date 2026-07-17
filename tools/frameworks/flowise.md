@@ -63,6 +63,7 @@ Low-code LLM app builder: drag-and-drop цепочки, RAG, агенты, ча�
 - [LangChain](langchain.md) — базовый фреймворк
 - [LangGraph](langgraph.md) — мульти-агентная оркестрация
 - [Dify](dify.md) — low-code альтернатива
+- [Langflow](langflow.md) — visual Python альтернатива с API и MCP
 - [Исследование фреймворков](../agent-frameworks-research.md)
 
 *Добавлено: 2026-06-29*

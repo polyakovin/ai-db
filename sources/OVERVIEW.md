@@ -19,6 +19,10 @@
 *Инструментарий для сборки агентов: библиотеки, фреймворки, SDK.*
 
 - [LightRAG](libraries-tools/lightrag.md) — simple and fast RAG с графами знаний, multimodal support
+- [Koog Documentation](libraries-tools/koog-docs.md) — Kotlin/Java agent framework, graph strategies, persistence и integrations
+- [Pydantic AI Documentation](libraries-tools/pydantic-ai-docs.md) — typed Python agents, structured output, tools, evals и harness
+- [LangGraph Documentation](libraries-tools/langgraph-docs.md) — stateful orchestration, durable execution, persistence и HITL
+- [Langflow Documentation](libraries-tools/langflow-docs.md) — visual flows, agents, custom components, API и MCP
 - [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) — provenance для обзора GraphRAG/RAG-аналогов
 - [LangChain Deep Agents](libraries-tools/langchain-deep-agents.md) — harness, filesystem, subagents, context management, sandbox boundary
 - [Superpowers](libraries-tools/superpowers.md) — skills workflow, TDD, systematic debugging, review loops
@@ -67,6 +71,10 @@
 
 | Источник | Категория | Куда перенесено |
 |----------|-----------|-----------------|
+| [Koog Documentation](libraries-tools/koog-docs.md) | 🔵 Libraries | [Koog](../tools/frameworks/koog.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
+| [Pydantic AI Documentation](libraries-tools/pydantic-ai-docs.md) | 🔵 Libraries | [Pydantic AI](../tools/frameworks/pydantic-ai.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
+| [LangGraph Documentation](libraries-tools/langgraph-docs.md) | 🔵 Libraries | [LangGraph](../tools/frameworks/langgraph.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
+| [Langflow Documentation](libraries-tools/langflow-docs.md) | 🔵 Libraries | [Langflow](../tools/frameworks/langflow.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
 | [OpenAI Academy](tutorials-courses/openai-academy.md) | 🟢 Tutorials | [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [AI Foundations](tutorials-courses/ai-foundations.md) | 🟢 Tutorials | [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 | [Zinho Automates](tutorials-courses/zinho-automates.md) | 🟢 Tutorials | [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
@@ -197,4 +205,4 @@ status: new
 - Связанные инструменты (ссылки на `tools/`)
 - Связанные паттерны (ссылки на `patterns/`)
 
-*Последнее обновление: 04.07.2026*
+*Последнее обновление: 17.07.2026*

@@ -1,6 +1,6 @@
 # Исследование фреймворков для AI-агентов
 
-Актуально на 2026-06-24. Эта заметка помогает выбрать стек для агентной системы. Она опирается на официальные страницы проектов, но рекомендации являются синтезом для этого vault.
+Актуально на 2026-07-17. Эта заметка помогает выбрать стек для агентной системы. Она опирается на официальные страницы проектов, но рекомендации являются синтезом для этого vault.
 
 ## Карта выбора
 
@@ -8,24 +8,26 @@
 |---|---|---|---|
 | OpenAI Responses API + Agents SDK | hosted tools, tracing, guardrails, handoffs, evals | OpenAI-first production, tool-heavy workflows | завязка на provider surface |
 | Anthropic Claude Code | coding-agent workflow в терминале/IDE | разработка, refactor, code review, repo tasks | не универсальный app framework |
-| LangGraph | long-running stateful agents, persistence, HITL | сложные workflow и control over state | требует проектировать graph/state |
+| [LangGraph](frameworks/langgraph.md) | long-running stateful agents, persistence, HITL | сложные workflow и control over state | требует проектировать graph/state |
+| [Pydantic AI](frameworks/pydantic-ai.md) | type-safe Python, structured output, dependency injection | typed agent services и extraction workflows | durability требует внешнего runtime |
+| [Koog](frameworks/koog.md) | Kotlin/Java, graph strategies, Multiplatform | JVM-приложения и Kotlin-first команды | часть интеграций остаётся beta |
 | AutoGen | conversational и event-driven multi-agent systems | research/prototyping multi-agent | сложность orchestration/debugging |
 | Semantic Kernel | enterprise middleware, plugins, C#/Python/Java | Microsoft/.NET enterprise stack | меньше “готовой магии”, больше integration layer |
 | CrewAI | crews, tasks, flows, guardrails, memory | быстрые role-based multi-agent automations | проверять evals, не плодить роли без нужды |
 | LlamaIndex | RAG, knowledge agents, data connectors | knowledge-heavy agents | orchestration может потребовать внешнего runtime |
 | Dify | low-code LLM apps/agents | быстрый prototype, internal tools | limits low-code abstraction |
 | Flowise | visual builder for LLM flows | no/low-code experimentation | production governance нужно достраивать |
-| LangFlow | visual graph builder | обучение, быстрые flow prototypes | сложные production agents требуют инженерного слоя |
+| [Langflow](frameworks/langflow.md) | visual Python builder, API и MCP | обучение, быстрые flow prototypes, internal tools | production governance требует инженерного слоя |
 
 ## Разделение по слою
 
 | Слой | Инструменты |
 |---|---|
 | Model/API runtime | OpenAI Responses API, Anthropic API, Gemini API, Mistral |
-| Agent SDK | OpenAI Agents SDK, Semantic Kernel, LlamaIndex agents |
-| Orchestration | LangGraph, AutoGen Core, CrewAI Flows |
+| Agent SDK | OpenAI Agents SDK, Pydantic AI, Koog, Semantic Kernel, LlamaIndex agents |
+| Orchestration | LangGraph, Pydantic Graph, Koog graph strategies, AutoGen Core, CrewAI Flows |
 | Knowledge/RAG | LlamaIndex, LangChain retrievers, vector DBs |
-| Low-code builders | Dify, Flowise, LangFlow |
+| Low-code builders | Dify, Flowise, Langflow |
 | Observability/evals | LangSmith, Phoenix, OpenAI Evals/Traces |
 
 ## OpenAI
@@ -53,6 +55,22 @@ Primary source:
 Primary source:
 
 - [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview)
+
+## Pydantic AI
+
+[Pydantic AI](frameworks/pydantic-ai.md) подходит typed Python-командам, которым нужны validated structured outputs, dependency injection, model portability, tools/MCP и testable agent code. Для distributed durable execution он интегрируется с отдельными workflow runtimes, поэтому операционную модель нужно выбирать явно.
+
+Primary source:
+
+- [Pydantic AI overview](https://pydantic.dev/docs/ai/overview/)
+
+## Koog
+
+[Koog](frameworks/koog.md) — Kotlin/Java agent framework от JetBrains с basic, functional, graph-based и planner agents. Это естественный выбор для JVM и Kotlin Multiplatform, но production-команда должна проверять stable/beta статус каждого подключаемого модуля.
+
+Primary source:
+
+- [Koog documentation](https://docs.koog.ai/)
 
 ## AutoGen
 
@@ -86,7 +104,7 @@ Primary source:
 
 - [LlamaIndex agents](https://developers.llamaindex.ai/python/framework/use_cases/agents/)
 
-## Low-code: Dify, Flowise, LangFlow
+## Low-code: Dify, Flowise, Langflow
 
 Low-code платформы полезны для discovery, внутренних tools и быстрых demos. Их нельзя считать заменой production engineering: отдельно проверяйте permissions, versioning, evals, secrets, observability, rollback и exportability.
 
@@ -94,16 +112,18 @@ Primary sources:
 
 - [Dify docs](https://docs.dify.ai/)
 - [Flowise docs](https://docs.flowiseai.com/)
-- [LangFlow docs](https://docs.langflow.org/)
+- [Langflow docs](https://docs.langflow.org/)
 
 ## Рекомендации по выбору
 
 - Нужен production OpenAI-first агент: [OpenAI](platforms/openai.md) [Responses API](platforms/openai.md) + [Agents SDK](platforms/openai.md).
 - Нужен stateful graph с human interrupts: [LangGraph](frameworks/langgraph.md).
+- Нужны type-safe Python agents и validated outputs: [Pydantic AI](frameworks/pydantic-ai.md).
+- Нужен agent framework внутри Kotlin/JVM приложения: [Koog](frameworks/koog.md).
 - Нужен knowledge/RAG agent: [LlamaIndex](frameworks/llamaindex.md) или [LangGraph](frameworks/langgraph.md) + RAG слой.
 - Нужна .NET/enterprise интеграция: [Semantic Kernel](frameworks/semantic-kernel.md).
 - Нужны role-based multi-agent prototypes: [CrewAI](frameworks/crewai.md) или [AutoGen](frameworks/autogen.md).
-- Нужно быстро показать идею non-engineering команде: [Dify](frameworks/dify.md)/Flowise/LangFlow.
+- Нужно быстро показать идею non-engineering команде: [Dify](frameworks/dify.md), [Flowise](frameworks/flowise.md) или [Langflow](frameworks/langflow.md).
 - Нужен coding workflow по repo: [Claude Code](platforms/anthropic.md) или Codex-like agent.
 
 ## Связанные заметки
@@ -116,8 +136,11 @@ Primary sources:
 - [OpenAI](platforms/openai.md) — OpenAI как платформа
 - [Google Gemini](platforms/gemini.md) — Gemini API как provider
 - [LangGraph](frameworks/langgraph.md) — stateful orchestration
+- [Pydantic AI](frameworks/pydantic-ai.md) — type-safe Python agents
+- [Koog](frameworks/koog.md) — Kotlin/JVM agents
 - [AutoGen / MAF](frameworks/autogen.md) — multi-agent фреймворк
 - [CrewAI](frameworks/crewai.md) — роль-ориентированные агенты
 - [LlamaIndex](frameworks/llamaindex.md) — knowledge-heavy агенты
 - [Dify](frameworks/dify.md) — low-code платформа
+- [Langflow](frameworks/langflow.md) — visual Python builder
 - [Perplexity AI](platforms/perplexity.md) — альтернативная платформа

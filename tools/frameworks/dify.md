@@ -24,7 +24,7 @@ Dify — open-source low-code платформа для разработки LLM
 
 ## Сравнение с другими low-code платформами
 
-| Критерий | Dify | Flowise | LangFlow |
+| Критерий | Dify | [Flowise](flowise.md) | [Langflow](langflow.md) |
 |----------|------|---------|----------|
 | **Модель** | Agentic workflows + Knowledge | Визуальный builder | Визуальный graph builder |
 | **RAG** | First-class | Средний | Средний |

@@ -19,11 +19,15 @@
 ## Фреймворки
 
 - [LangGraph](frameworks/langgraph.md) — stateful orchestration runtime для long-running агентов
+- [Pydantic AI](frameworks/pydantic-ai.md) — type-safe Python-фреймворк для agents, tools и structured outputs
+- [Koog](frameworks/koog.md) — Kotlin/Java agent framework от JetBrains для JVM и Multiplatform
 - [AutoGen / MAF](frameworks/autogen.md) — event-driven multi-agent фреймворк (Microsoft Agent Framework)
 - [CrewAI](frameworks/crewai.md) — роль-ориентированная multi-agent автоматизация
 - [Semantic Kernel](frameworks/semantic-kernel.md) — enterprise middleware для AI-агентов (.NET/Python/Java)
 - [LlamaIndex](frameworks/llamaindex.md) — фреймворк для knowledge-heavy агентов и RAG
 - [Dify](frameworks/dify.md) — low-code платформа для построения agentic workflows
+- [Langflow](frameworks/langflow.md) — visual Python builder для agents, workflows, API и MCP
+- [Flowise](frameworks/flowise.md) — visual low-code builder для LLM flows и RAG
 
 ## Поиск и retrieval
 
@@ -66,4 +70,4 @@
 
 ---
 
-*Последнее обновление: 02.07.2026*
+*Последнее обновление: 17.07.2026*

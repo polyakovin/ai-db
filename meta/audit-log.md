@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-17 | research-and-update | args: Koog, Pydantic AI, LangGraph, Langflow official docs and repositories | status: ok | details: canonical pages and provenance cards added/updated; framework map and cross-links refreshed
 2026-07-06 | add-source | args: DietrichGebert/ponytail GitHub | status: ok | details: source card added, overview/canonical notes updated, vault/canonical checks passed
 2026-07-06 | add-source | args: synthetic-sciences/openscience GitHub | status: ok | details: source card added, overview updated, vault/canonical checks passed
 2026-07-02 | add-source | args: claude-science product+announcement | status: ok | details: source card added, Anthropic canonical updated, vault/canonical checks passed
