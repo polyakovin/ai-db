@@ -314,5 +314,9 @@
   "langflow": {
     "name": "Langflow",
     "path": "tools/frameworks/langflow.md"
+  },
+  "runable": {
+    "name": "Runable",
+    "path": "tools/platforms/runable.md"
   }
 }

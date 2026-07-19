@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-20 | add-source | args: runable.com website, docs, pricing, GitHub, independent reviews | status: ok | details: canonical platform page and provenance card added; official claims separated from independent observations; vault and canonical checks passed
 2026-07-17 | research-and-update | args: Koog, Pydantic AI, LangGraph, Langflow official docs and repositories | status: ok | details: canonical pages and provenance cards added/updated; framework map and cross-links refreshed
 2026-07-06 | add-source | args: DietrichGebert/ponytail GitHub | status: ok | details: source card added, overview/canonical notes updated, vault/canonical checks passed
 2026-07-06 | add-source | args: synthetic-sciences/openscience GitHub | status: ok | details: source card added, overview updated, vault/canonical checks passed

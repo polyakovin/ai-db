@@ -7,6 +7,7 @@
 - [Anthropic (Claude)](platforms/anthropic.md) — Claude API, Claude Code, Claude Cowork, Claude Science, Computer Use, Opus/Sonnet/Haiku
 - [OpenAI](platforms/openai.md) — GPT-5.5, Responses API, Agents SDK, Codex CLI, Realtime API
 - [Google Gemini](platforms/gemini.md) — семейство мультимодальных LLM, платформа с Computer Use, Gemini CLI, API
+- [Runable](platforms/runable.md) — artifact-first AI-агент для сайтов, презентаций, отчётов и медиа с sandbox, skills, memory и plan approval
 - [Mistral AI](platforms/mistral.md) — европейский провайдер: Large 3, Medium 3.5, Small 4, Codestral, Le Chat
 - [DeepSeek](platforms/deepseek.md) — open-weight модели V4 Pro/Flash, сверхнизкие цены API
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen3.7-Max/Plus, Qwen3.6-35B-A3B, open-weight → API-only переход
