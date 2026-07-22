@@ -60,6 +60,7 @@
 
 *Исследования, production-практики, хардкорные доклады.*
 
+- [Demystifying evals for AI agents — Anthropic](research-production/demystifying-evals-for-ai-agents.md) — outcome-first grading, capability/regression suites, повторные trials и lifecycle eval-набора
 - [Harness Engineering — OpenAI](research-production/harness-engineering-openai.md) — Open AI/Anthropic подходы к обвязке агентов
 - [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) — think before coding, simplicity, surgical changes, goal-driven execution
 - [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) — enterprise-агенты: двухпетлевая модель, Intent Loop, IDP, Skills, MCP/A2A, 98/2 обвязка
@@ -102,6 +103,7 @@
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
 | [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Runable](libraries-tools/runable.md) | 🔵 Libraries | [Runable (tools)](../tools/platforms/runable.md) — canonical, [Agent Harness](../patterns/architecture-design/agent-harness.md), [Human-in-the-loop UX](../patterns/production-operations/human-in-the-loop-ux.md) |
+| [Demystifying evals for AI agents — Anthropic](research-production/demystifying-evals-for-ai-agents.md) | 🟠 Research | [Evaluations для AI-агентов](../patterns/implementation/agent-evaluations.md) |
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) | 🟠 Research | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 | [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) | 🟠 Research | [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
