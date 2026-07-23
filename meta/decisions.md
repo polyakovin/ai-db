@@ -2,6 +2,7 @@
 
 | Дата | Решение | Причина | Альтернативы |
 |------|---------|---------|--------------|
+| 2026-07-23 | DeerFlow размещён в `tools/frameworks/`, несмотря на наличие готового App | Canonical identity проекта — переиспользуемый Python Harness/SDK; App является reference-реализацией поверх него, а не отдельным hosted provider | `tools/platforms/deerflow.md`; две страницы для Harness и App |
 | 2026-07-23 | Progressive disclosure оформлен как отдельный implementation-паттерн, а спецификация Agent Skills — как provenance-source | Практика применяется не только к skills, но и к tool catalogs, repository knowledge и retrieval; размещение только внутри `agent-skills-and-rules.md` сузило бы canonical scope | Расширить `context-engineering.md`; описать только формат Agent Skills |
 | 2026-07-17 | Запрос «Pydantic» трактуется как canonical-страница Pydantic AI; базовая Pydantic описана только как validation foundation | Остальные запрошенные сущности — agent frameworks/builders; отдельная страница core validation library вышла бы за scope | Создать `tools/libraries/pydantic.md`; объединить Pydantic и Pydantic AI в одной странице |
 | 2026-06-24 | Ветка master вместо main | HEAD ремоута — master | main |

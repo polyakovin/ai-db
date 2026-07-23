@@ -27,6 +27,10 @@
     "name": "LangGraph",
     "path": "tools/frameworks/langgraph.md"
   },
+  "deerflow": {
+    "name": "DeerFlow",
+    "path": "tools/frameworks/deerflow.md"
+  },
   "crewai": {
     "name": "CrewAI",
     "path": "tools/frameworks/crewai.md"

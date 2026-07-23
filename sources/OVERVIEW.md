@@ -18,6 +18,7 @@
 
 *Инструментарий для сборки агентов: библиотеки, фреймворки, SDK.*
 
+- [DeerFlow Documentation and Repository](libraries-tools/deerflow-docs.md) — open-source long-horizon agent harness, SDK/App, skills, sandbox, memory и subagents
 - [LightRAG](libraries-tools/lightrag.md) — simple and fast RAG с графами знаний, multimodal support
 - [Koog Documentation](libraries-tools/koog-docs.md) — Kotlin/Java agent framework, graph strategies, persistence и integrations
 - [Pydantic AI Documentation](libraries-tools/pydantic-ai-docs.md) — typed Python agents, structured output, tools, evals и harness
@@ -74,6 +75,7 @@
 
 | Источник | Категория | Куда перенесено |
 |----------|-----------|-----------------|
+| [DeerFlow Documentation and Repository](libraries-tools/deerflow-docs.md) | 🔵 Libraries | [DeerFlow](../tools/frameworks/deerflow.md), [Исследование фреймворков](../tools/agent-frameworks-research.md), [Agent Harness](../patterns/architecture-design/agent-harness.md) |
 | [Koog Documentation](libraries-tools/koog-docs.md) | 🔵 Libraries | [Koog](../tools/frameworks/koog.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
 | [Pydantic AI Documentation](libraries-tools/pydantic-ai-docs.md) | 🔵 Libraries | [Pydantic AI](../tools/frameworks/pydantic-ai.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
 | [LangGraph Documentation](libraries-tools/langgraph-docs.md) | 🔵 Libraries | [LangGraph](../tools/frameworks/langgraph.md), [Исследование фреймворков](../tools/agent-frameworks-research.md) |
@@ -211,4 +213,4 @@ status: new
 - Связанные инструменты (ссылки на `tools/`)
 - Связанные паттерны (ссылки на `patterns/`)
 
-*Последнее обновление: 17.07.2026*
+*Последнее обновление: 23.07.2026*

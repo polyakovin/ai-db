@@ -19,6 +19,7 @@
 
 ## Фреймворки
 
+- [DeerFlow](frameworks/deerflow.md) — open-source harness и self-hosted App для long-horizon агентов со skills, sandbox, memory и subagents
 - [LangGraph](frameworks/langgraph.md) — stateful orchestration runtime для long-running агентов
 - [Pydantic AI](frameworks/pydantic-ai.md) — type-safe Python-фреймворк для agents, tools и structured outputs
 - [Koog](frameworks/koog.md) — Kotlin/Java agent framework от JetBrains для JVM и Multiplatform
@@ -71,4 +72,4 @@
 
 ---
 
-*Последнее обновление: 17.07.2026*
+*Последнее обновление: 23.07.2026*

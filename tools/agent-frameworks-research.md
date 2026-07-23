@@ -1,6 +1,6 @@
 # Исследование фреймворков для AI-агентов
 
-Актуально на 2026-07-17. Эта заметка помогает выбрать стек для агентной системы. Она опирается на официальные страницы проектов, но рекомендации являются синтезом для этого vault.
+Актуально на 2026-07-23. Эта заметка помогает выбрать стек для агентной системы. Она опирается на официальные страницы проектов, но рекомендации являются синтезом для этого vault.
 
 ## Карта выбора
 
@@ -8,6 +8,7 @@
 |---|---|---|---|
 | OpenAI Responses API + Agents SDK | hosted tools, tracing, guardrails, handoffs, evals | OpenAI-first production, tool-heavy workflows | завязка на provider surface |
 | Anthropic Claude Code | coding-agent workflow в терминале/IDE | разработка, refactor, code review, repo tasks | не универсальный app framework |
+| [DeerFlow](frameworks/deerflow.md) | batteries-included long-horizon harness: SDK + self-hosted App | general-purpose agent workspace или собственный agent product | большая operational surface, isolation зависит от sandbox |
 | [LangGraph](frameworks/langgraph.md) | long-running stateful agents, persistence, HITL | сложные workflow и control over state | требует проектировать graph/state |
 | [Pydantic AI](frameworks/pydantic-ai.md) | type-safe Python, structured output, dependency injection | typed agent services и extraction workflows | durability требует внешнего runtime |
 | [Koog](frameworks/koog.md) | Kotlin/Java, graph strategies, Multiplatform | JVM-приложения и Kotlin-first команды | часть интеграций остаётся beta |
@@ -26,6 +27,7 @@
 | Model/API runtime | OpenAI Responses API, Anthropic API, Gemini API, Mistral |
 | Agent SDK | OpenAI Agents SDK, Pydantic AI, Koog, Semantic Kernel, LlamaIndex agents |
 | Orchestration | LangGraph, Pydantic Graph, Koog graph strategies, AutoGen Core, CrewAI Flows |
+| Agent harness / application | DeerFlow, coding agents, artifact-first workspaces |
 | Knowledge/RAG | LlamaIndex, LangChain retrievers, vector DBs |
 | Low-code builders | Dify, Flowise, Langflow |
 | Observability/evals | LangSmith, Phoenix, OpenAI Evals/Traces |
@@ -47,6 +49,16 @@ Primary sources:
 Primary source:
 
 - [Claude Code overview](https://code.claude.com/docs/en/overview)
+
+## DeerFlow
+
+[DeerFlow](frameworks/deerflow.md) — open-source long-horizon harness, в котором runtime и production-oriented application поставляются вместе. Он уместен, когда нужны не только agent abstractions, но и skills, memory, subagents, sandbox, files, artifacts, threads, UI/API и deployment path. Если команда хочет сама спроектировать точный graph/state и минимизировать готовую обвязку, прямое использование [LangGraph](frameworks/langgraph.md) будет прозрачнее.
+
+Primary sources:
+
+- [DeerFlow documentation](https://deerflow.tech/en/docs)
+- [DeerFlow repository](https://github.com/bytedance/deer-flow)
+- [DeerFlow v2.0.0 release](https://github.com/bytedance/deer-flow/releases/tag/v2.0.0)
 
 ## LangGraph
 
@@ -117,6 +129,7 @@ Primary sources:
 ## Рекомендации по выбору
 
 - Нужен production OpenAI-first агент: [OpenAI](platforms/openai.md) [Responses API](platforms/openai.md) + [Agents SDK](platforms/openai.md).
+- Нужен self-hosted general-purpose agent с готовыми skills, sandbox, memory, subagents и workspace: [DeerFlow](frameworks/deerflow.md).
 - Нужен stateful graph с human interrupts: [LangGraph](frameworks/langgraph.md).
 - Нужны type-safe Python agents и validated outputs: [Pydantic AI](frameworks/pydantic-ai.md).
 - Нужен agent framework внутри Kotlin/JVM приложения: [Koog](frameworks/koog.md).
@@ -135,6 +148,7 @@ Primary sources:
 - [Anthropic (Claude)](platforms/anthropic.md) — Claude как платформа
 - [OpenAI](platforms/openai.md) — OpenAI как платформа
 - [Google Gemini](platforms/gemini.md) — Gemini API как provider
+- [DeerFlow](frameworks/deerflow.md) — long-horizon agent harness и reference App
 - [LangGraph](frameworks/langgraph.md) — stateful orchestration
 - [Pydantic AI](frameworks/pydantic-ai.md) — type-safe Python agents
 - [Koog](frameworks/koog.md) — Kotlin/JVM agents
