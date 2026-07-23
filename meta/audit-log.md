@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-23 | research-and-update | args: Agent Skills specification, authoring guidance, deferred tool discovery, OpenAI harness engineering | status: ok | details: progressive-disclosure canonical pattern and provenance card added; navigation and related notes updated; vault and canonical checks passed
 2026-07-22 | add-source | args: Anthropic Demystifying evals for AI agents + related official materials | status: ok | details: source card added; agent-evaluations canonical note expanded with outcome-first grading, suite types, repeated trials and lifecycle guidance; vault/canonical checks passed
 2026-07-20 | add-source | args: runable.com website, docs, pricing, GitHub, independent reviews | status: ok | details: canonical platform page and provenance card added; official claims separated from independent observations; vault and canonical checks passed
 2026-07-17 | research-and-update | args: Koog, Pydantic AI, LangGraph, Langflow official docs and repositories | status: ok | details: canonical pages and provenance cards added/updated; framework map and cross-links refreshed

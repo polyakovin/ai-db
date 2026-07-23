@@ -2,6 +2,7 @@
 
 | Дата | Решение | Причина | Альтернативы |
 |------|---------|---------|--------------|
+| 2026-07-23 | Progressive disclosure оформлен как отдельный implementation-паттерн, а спецификация Agent Skills — как provenance-source | Практика применяется не только к skills, но и к tool catalogs, repository knowledge и retrieval; размещение только внутри `agent-skills-and-rules.md` сузило бы canonical scope | Расширить `context-engineering.md`; описать только формат Agent Skills |
 | 2026-07-17 | Запрос «Pydantic» трактуется как canonical-страница Pydantic AI; базовая Pydantic описана только как validation foundation | Остальные запрошенные сущности — agent frameworks/builders; отдельная страница core validation library вышла бы за scope | Создать `tools/libraries/pydantic.md`; объединить Pydantic и Pydantic AI в одной странице |
 | 2026-06-24 | Ветка master вместо main | HEAD ремоута — master | main |
 | 2026-06-24 | Файловая структура harness (meta/, AGENTS.md) в корне | Единая точка входа для агента | Разнести по проекту |

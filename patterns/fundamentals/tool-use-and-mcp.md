@@ -42,6 +42,8 @@ MCP — открытый стандарт подключения AI-прилож
 7. Что попадёт в logs.
 8. Как ограничить доступ по scope.
 
+Если каталог schemas становится большим, применяйте [progressive disclosure](../implementation/progressive-disclosure-for-agents.md): держите частые и критичные tools в стартовом контексте, остальные находите и раскрывайте по запросу. Deferred loading уменьшает контекстный шум, но не заменяет permission и approval.
+
 ## Permissions
 
 Минимальные уровни:
@@ -77,3 +79,4 @@ Retry не должен быть автоматическим для всего.
 - [OpenAI](../../tools/platforms/openai.md) — Responses API как tool use implementation
 - [Anthropic (Claude)](../../tools/platforms/anthropic.md) — MCP-серверы в Claude Code
 - [LangGraph](../../tools/frameworks/langgraph.md) — tool calling в LangGraph
+- [Progressive disclosure для AI-агентов](../implementation/progressive-disclosure-for-agents.md) — deferred discovery больших каталогов tools

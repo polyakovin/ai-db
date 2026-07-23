@@ -113,6 +113,7 @@ status: verified
 ## Связи
 
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — определяющая статья концепции harness engineering
+- [Progressive disclosure для AI-агентов](../../patterns/implementation/progressive-disclosure-for-agents.md) — небольшой стабильный entrypoint и навигация к подробным знаниям
 - [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — практический workflow Codex
 - [Исследование фреймворков](../../tools/agent-frameworks-research.md) — OpenAI Responses API
 

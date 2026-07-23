@@ -91,11 +91,9 @@
 - WebMCP — W3C Browser AI Tool API (регулирует JS-функции как AI-callable tools).
 - Website: https://www.webfuse.com/mcp-cheat-sheet
 
-### 13. Agent Skills — SKILL.md Spec Maturity
-- Официальная спецификация SKILL.md от Agent Skills community.
-- Progressive disclosure, directory conventions, authoring patterns, output-quality evals.
-- Связано с Hermes Agent skills system.
-- Источник: https://www.webfuse.com/mcp-cheat-sheet (agent skills section)
+### ✅ 13. Agent Skills — SKILL.md Spec Maturity
+- Интегрировано 23.07.2026: [Progressive disclosure для AI-агентов](../patterns/implementation/progressive-disclosure-for-agents.md).
+- Provenance: [Agent Skills specification and authoring guidance](../sources/libraries-tools/agent-skills-specification.md).
 
 ---
 

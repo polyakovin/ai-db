@@ -63,6 +63,7 @@ Retrieved content должно попадать в модель как данн�
 - summary checkpoints после крупных observations;
 - external state file для плана и evidence;
 - compact summaries с указанием, что отброшено;
+- [progressive disclosure](../implementation/progressive-disclosure-for-agents.md) для skills, tools и справочников;
 - explicit open questions;
 - eval на long-horizon сценариях.
 
@@ -83,3 +84,4 @@ Retrieved content должно попадать в модель как данн�
 - [Модели для эмбеддингов](../../tools/embeddings/OVERVIEW.md) — embedding модели для memory tiers
 - [Skills и правила для агентов](../implementation/agent-skills-and-rules.md) — skills экономят context window
 - [Agent Harness](../architecture-design/agent-harness.md) — context management в обвязке агента
+- [Progressive disclosure для AI-агентов](../implementation/progressive-disclosure-for-agents.md) — поэтапная загрузка контекста

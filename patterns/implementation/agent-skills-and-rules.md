@@ -2,6 +2,8 @@
 
 Skills — это компактные, переиспользуемые инструкции или процедуры, которые агент подгружает под конкретную задачу. В отличие от большого монолитного system prompt, skills позволяют держать базовое поведение коротким, а специализированные практики включать только когда они нужны.
 
+Поэтапную загрузку metadata, основных инструкций и дополнительных ресурсов описывает отдельный паттерн [Progressive disclosure для AI-агентов](progressive-disclosure-for-agents.md).
+
 ## Проблема
 
 Большой набор правил в одном prompt быстро становится шумом:
@@ -112,3 +114,4 @@ Skill стоит переписать или удалить, если он:
 - [Evaluations для агентов](../implementation/agent-evaluations.md) — проверка полезности skills
 - [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — когда skill вреден
 - [Context engineering](../fundamentals/context-engineering.md) — как skills экономят context window
+- [Progressive disclosure для AI-агентов](progressive-disclosure-for-agents.md) — как раскрывать metadata, инструкции и ресурсы по мере необходимости
