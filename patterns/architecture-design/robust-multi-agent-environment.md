@@ -26,7 +26,7 @@ Multi-agent система быстро становится хрупкой, е�
 5. Если нужна сторонняя экспертиза, агент открывает A2A транзакцию с внешним агентом и ждёт асинхронный ответ.
 6. Результат возвращается оркестратору, который фиксирует event log, обновляет State projection и отдаёт статус в UI.
 
-В терминах текущей карты источников это можно читать как связку: [AionUi](../../sources/libraries-tools/aionui.md) или внутренний scheduler создаёт operator-facing intent, [Multica](../../sources/libraries-tools/multica.md) выполняет project/task orchestration, Hermes Agent исполняет задачу, MCP изолирует tool access, а [Agent2Agent (A2A) Protocol](../../sources/libraries-tools/a2a-protocol.md) используется только для agent-to-agent collaboration.
+В терминах текущей карты источников это можно читать как связку: [AionUi](../../sources/libraries-tools/aionui.md) или внутренний scheduler создаёт operator-facing intent, [Multica](../../sources/libraries-tools/multica.md) выполняет project/task orchestration, [Hermes Agent](../../tools/platforms/hermes-agent.md) исполняет задачу, MCP изолирует tool access, а [Agent2Agent (A2A) Protocol](../../sources/libraries-tools/a2a-protocol.md) используется только для agent-to-agent collaboration.
 
 ## Архитектура
 
@@ -115,7 +115,7 @@ Multica:
 
 ### MCP как единственный integration boundary
 
-Hermes Agent не ходит напрямую в базу, shell, SaaS API или внутренний сервис. Он вызывает capability через MCP tool contract, где явно описаны:
+[Hermes Agent](../../tools/platforms/hermes-agent.md) не ходит напрямую в базу, shell, SaaS API или внутренний сервис. Он вызывает capability через MCP tool contract, где явно описаны:
 
 - schema входа и выхода;
 - permissions;
@@ -129,7 +129,7 @@ Hermes Agent не ходит напрямую в базу, shell, SaaS API ил�
 
 ### A2A как транзакция, не как shared memory
 
-Внешний агент не получает внутреннюю persistent memory Hermes Agent. Через A2A передаётся только scoped request:
+Внешний агент не получает внутреннюю persistent memory [Hermes Agent](../../tools/platforms/hermes-agent.md). Через A2A передаётся только scoped request:
 
 - цель запроса;
 - минимальный контекст;
@@ -138,7 +138,7 @@ Hermes Agent не ходит напрямую в базу, shell, SaaS API ил�
 - correlation_id;
 - policy на использование результата.
 
-Ответ внешнего агента считается evidence, а не истиной. Hermes Agent должен проверить его через собственные criteria или MCP-backed источники перед фиксацией результата.
+Ответ внешнего агента считается evidence, а не истиной. [Hermes Agent](../../tools/platforms/hermes-agent.md) должен проверить его через собственные criteria или MCP-backed источники перед фиксацией результата.
 
 ### Failure modes
 

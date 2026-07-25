@@ -47,7 +47,7 @@ source registry
 | Document loaders | Приведение разных источников к формату `Document` | RAG-pipeline с разнородными источниками | Разный уровень качества community loaders |
 | ETL/ELT connectors | Инкрементальная репликация из API, DB, warehouse | Аналитический или операционный контекст | Утечка raw data, неверный sync mode |
 | Webhooks/events | Push-сбор новых тикетов, PR, инцидентов, сообщений | Низкая задержка и freshness | Дубли, ordering, replay attacks |
-| Document parsing/OCR | PDF, DOCX, slides, images, tables, scanned docs | Контекст из файлов и legacy-документов | Ошибки layout/table extraction |
+| Document parsing/OCR | PDF, DOCX, slides, images, tables, scanned docs | Контекст из файлов и legacy-документов; [MarkItDown](../../tools/agent-tools/markitdown.md) как lightweight normalizer | Ошибки layout/table extraction |
 | Browser/computer agents | UI-only источники без API | Last resort для закрытых веб-интерфейсов | Хрупкость, side effects, prompt injection на странице |
 | Human-curated source inbox | Отбор и подтверждение источников человеком | Высокая цена ошибки или спорные источники | Медленнее, требует ownership |
 
@@ -152,6 +152,7 @@ for source in source_registry.due(now):
 - [Firecrawl Crawl docs](../../sources/libraries-tools/firecrawl-crawl-docs.md)
 - [Airbyte Connectors docs](../../sources/libraries-tools/airbyte-connectors-docs.md)
 - [Unstructured docs](../../sources/libraries-tools/unstructured-docs.md)
+- [MarkItDown — репозиторий Microsoft](../../sources/libraries-tools/markitdown.md)
 
 ## Связанные заметки
 
@@ -165,3 +166,5 @@ for source in source_registry.due(now):
 - [LlamaIndex](../../tools/frameworks/llamaindex.md) — data connectors и ingestion как реализация pipeline
 - [LangChain](../../tools/frameworks/langchain.md) — document loaders и интеграции
 - [OpenAI](../../tools/platforms/openai.md) — hosted web/file search и MCP tools
+- [MarkItDown](../../tools/agent-tools/markitdown.md) — локальная нормализация разнородных файлов в Markdown
+- [NotebookLM](../../tools/platforms/notebooklm.md) — интерактивный source-grounded notebook как готовая альтернатива собственному pipeline

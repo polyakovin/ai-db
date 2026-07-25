@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-26 | add-source | args: Arena AI, Qwen Studio, OpenClaw Habr guide, NotebookLM, Google Gemini App, Microsoft MarkItDown, Hermes Agent RU | status: ok | details: seven provenance cards added; five canonical tool pages created; Gemini and Qwen pages linked; OpenClaw lessons integrated into HITL and security patterns; vault and canonical checks passed
 2026-07-23 | research-and-update | args: DeerFlow docs, repository, v2.0.0 release, deployment and NVD CVE-2026-34430 | status: ok | details: DeerFlow canonical framework page and provenance card added; framework map and navigation updated; sandbox boundary and fixed LocalSandbox CVE documented; vault and canonical checks passed
 2026-07-23 | research-and-update | args: Agent Skills specification, authoring guidance, deferred tool discovery, OpenAI harness engineering | status: ok | details: progressive-disclosure canonical pattern and provenance card added; navigation and related notes updated; vault and canonical checks passed
 2026-07-22 | add-source | args: Anthropic Demystifying evals for AI agents + related official materials | status: ok | details: source card added; agent-evaluations canonical note expanded with outcome-first grading, suite types, repeated trials and lifecycle guidance; vault/canonical checks passed

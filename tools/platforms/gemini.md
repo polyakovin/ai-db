@@ -41,11 +41,15 @@ Gemini активно развивается в сторону AI-агентов
 
 ## Интеграция в экосистему Google
 
-- **Gemini App** — потребительское приложение (Gemini 3 Flash, 32K контекст, до 30 запросов/день, 5 Deep Research отчётов/месяц)
+- **Gemini App** — consumer web/mobile приложение с Deep Research, Canvas, file analysis, media generation и Connected Apps
 - **Workspace** — Docs, Sheets, Slides, Gmail, Drive («Help me create», генерация по данным из Gmail/Chat/Drive)
 - **Google Search** — AI Mode в поиске
 - **Android** — системная интеграция
 - **API** — Google AI Studio, Vertex AI, Gemini API
+
+### Gemini App
+
+[Gemini App](https://gemini.google.com/) — consumer web/mobile интерфейс для chat, file analysis, Deep Research, Canvas, media generation, Connected Apps и notebooks. Для research workflow приложение позволяет уточнять план, выбирать источники и экспортировать результат. Доступность функций и data handling зависят от региона, тарифа и типа аккаунта; чувствительные данные нужно сверять с актуальным Privacy Hub.
 
 ## Платформа для разработки
 
@@ -69,5 +73,6 @@ Gemini — ключевой игрок в AI-агентной экосистем
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — Computer Use как вариант построения UI-агента
 - [Работа с код-агентами](../../patterns/implementation/working-with-coding-agents.md) — Gemini CLI как coding agent
 - [Исследование фреймворков](../agent-frameworks-research.md) — контекст: Gemini API vs OpenAI/Anthropic
+- [Google Gemini App](../../sources/libraries-tools/google-gemini-app.md) — provenance consumer-приложения
 
 *Добавлено: 2026-06-29*

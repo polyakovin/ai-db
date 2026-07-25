@@ -13,6 +13,7 @@
 - [AI Foundations](tutorials-courses/ai-foundations.md) — Claude ecosystem, Projects как memory, Skills
 - [Zinho Automates](tutorials-courses/zinho-automates.md) — end-to-end automation, Scheduled Tasks, Skills
 - [Teacher's Tech](tutorials-courses/teachers-tech.md) — chat → build → agentic, типичные ошибки новичков
+- [OpenClaw ≠ магия — hands-on гайд на Habr](tutorials-courses/openclaw-habr-guide.md) — self-hosting, реальные use cases, эксплуатационные ограничения и безопасность
 
 ## 🔵 Libraries & Tools
 
@@ -45,6 +46,12 @@
 - [Multica](libraries-tools/multica.md) — project management layer для human + agent teams, task lifecycle, runtimes, skills
 - [Runable](libraries-tools/runable.md) — artifact-first AI-платформа с sandbox, skills, memory, plan approval и мультимодальными результатами
 - [Agent Skills specification and authoring guidance](libraries-tools/agent-skills-specification.md) — progressive disclosure, структура skills и deferred tool discovery
+- [Arena AI](libraries-tools/arena-ai.md) — human-preference leaderboard, Battle Mode, rank spread и privacy boundary
+- [Qwen Studio](libraries-tools/qwen-studio.md) — официальный consumer-интерфейс моделей Qwen
+- [NotebookLM](libraries-tools/notebooklm.md) — source-grounded research, citations и Studio-артефакты
+- [Google Gemini App](libraries-tools/google-gemini-app.md) — официальный web/mobile интерфейс Gemini
+- [MarkItDown](libraries-tools/markitdown.md) — конвертация документов в Markdown для LLM pipelines
+- [Hermes Agent — русскоязычный обзор](libraries-tools/hermes-agent-ru.md) — установка, memory, skills, tools и delegation
 
 ## 🟡 Engineering Patterns
 
@@ -112,6 +119,13 @@
 | [Sber AI-Disrupt PDLC](research-production/sber-ai-disrupt-pdlc.md) | 🟠 Research | [Agent Harness](../patterns/architecture-design/agent-harness.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 | [Large Language Models Do Not Always Need Readable Language (BabelTele)](research-production/large-language-models-do-not-always.md) | 🟠 Research | [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Semantic Compression With Large Language Models](research-production/semantic-compression-with-llms.md) | 🟠 Research | [Агентная компрессия контекста](../patterns/advanced/agent-context-distillation.md), [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md) |
+| [Arena AI](libraries-tools/arena-ai.md) | 🔵 Libraries | [Arena AI (tools)](../tools/platforms/arena-ai.md), [Оценка ответов LLM](../patterns/implementation/llm-response-evaluation.md) |
+| [Qwen Studio](libraries-tools/qwen-studio.md) | 🔵 Libraries | [Qwen (Alibaba)](../tools/platforms/qwen.md) — canonical |
+| [OpenClaw ≠ магия — hands-on гайд на Habr](tutorials-courses/openclaw-habr-guide.md) | 🟢 Tutorials | [OpenClaw](../tools/platforms/openclaw.md), [Human-in-the-loop UX](../patterns/production-operations/human-in-the-loop-ux.md), [Безопасность агентных систем](../patterns/architecture-design/agent-security.md) |
+| [NotebookLM](libraries-tools/notebooklm.md) | 🔵 Libraries | [NotebookLM (tools)](../tools/platforms/notebooklm.md), [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md) |
+| [Google Gemini App](libraries-tools/google-gemini-app.md) | 🔵 Libraries | [Google Gemini](../tools/platforms/gemini.md) — canonical |
+| [MarkItDown](libraries-tools/markitdown.md) | 🔵 Libraries | [MarkItDown (tools)](../tools/agent-tools/markitdown.md), [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md) |
+| [Hermes Agent — русскоязычный обзор](libraries-tools/hermes-agent-ru.md) | 🔵 Libraries | [Hermes Agent (tools)](../tools/platforms/hermes-agent.md), [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md) |
 
 ---
 

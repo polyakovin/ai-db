@@ -18,7 +18,11 @@ Qwen — семейство AI-моделей от Alibaba Cloud (Qwen Team), о
 - **Qwen3.7-Plus** (июнь 2026) — мультимодальная (текст + видео + изображения), на 60% дешевле Max, $0.40/$1.60 за 1M токенов.
 - **Qwen3.6-35B-A3B** — open-weight чудо эффективности: 3B активных параметров из 35B, запуск на одной 24GB GPU, 73.4% SWE-bench Verified.
 - **Qwen3.6-Max Preview** — 262K контекст, сильный reasoning.
-- **Qwen Chat** — потребительский интерфейс.
+- **Qwen Studio** — официальный потребительский web/mobile интерфейс на `chat.qwen.ai`.
+
+## Qwen Studio
+
+[Qwen Studio](https://chat.qwen.ai/) даёт интерактивный доступ к актуальным Qwen-моделям без самостоятельной API-интеграции. Его удобно использовать для ручного discovery и smoke-test поведения модели, но воспроизводимый eval должен отдельно фиксировать model id, prompt, дату и grader: доступная в consumer app модель и режим могут меняться.
 
 ## Модели (июнь 2026)
 
@@ -115,5 +119,6 @@ Alibaba переходит к закрытой модели распростра
 - [DeepSeek](../platforms/deepseek.md) — китайский конкурент (open-weight vs closed)
 - [Z.ai (GLM)](../platforms/z-ai.md) — китайский конкурент (open-weight MIT)
 - [Модельная карта](../agent-model-map.md) — Qwen в карте моделей
+- [Qwen Studio](../../sources/libraries-tools/qwen-studio.md) — provenance consumer-приложения
 
 *Добавлено: 2026-06-29*

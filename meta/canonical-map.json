@@ -322,5 +322,25 @@
   "runable": {
     "name": "Runable",
     "path": "tools/platforms/runable.md"
+  },
+  "arena-ai": {
+    "name": "Arena AI",
+    "path": "tools/platforms/arena-ai.md"
+  },
+  "hermes-agent": {
+    "name": "Hermes Agent",
+    "path": "tools/platforms/hermes-agent.md"
+  },
+  "markitdown": {
+    "name": "MarkItDown",
+    "path": "tools/agent-tools/markitdown.md"
+  },
+  "notebooklm": {
+    "name": "NotebookLM",
+    "path": "tools/platforms/notebooklm.md"
+  },
+  "openclaw": {
+    "name": "OpenClaw",
+    "path": "tools/platforms/openclaw.md"
   }
 }

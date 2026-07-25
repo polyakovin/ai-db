@@ -19,7 +19,7 @@ status: verified
 - **Audio** — GLM-ASR-2512 (распознавание речи, $0.03/MTok ≈ $0.0024/мин)
 - **Назначение:** AI-агент для управления смартфоном через голосовые команды и интерпретацию экрана (тапы, свайпы, ввод текста) — аналог [Computer Use](anthropic.md) от [Anthropic](anthropic.md)
 - **AutoGLM Rumination (沉思)** — агент для deep research: поиск, планирование путешествий, написание отчётов
-- **Coding Plan** — подписка с эндпоинтом, оптимизированным для кодинга; совместимость с [Claude Code](anthropic.md), OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev и др. (20+ инструментов)
+- **Coding Plan** — подписка с эндпоинтом, оптимизированным для кодинга; совместимость с [Claude Code](anthropic.md), [OpenClaw](openclaw.md), Cline, Kilo Code, Roo Code, Cursor, Continue.dev и др. (20+ инструментов)
 - **Z Code** — GUI-IDE с multi-agent коллаборацией, SSH, мобильным запуском задач
 - **[Anthropic](anthropic.md)-совместимый endpoint** — `api.z.ai/api/anthropic` — drop-in замена Claude в [Claude Code](anthropic.md)
 - **Open Source** — модели открыты под лицензией MIT с июля 2025 (без региональных ограничений)
@@ -175,7 +175,7 @@ status: verified
 - **API Base (PAAS):** `https://api.z.ai/api/paas/v4/`
 - **Coding Plan API Base:** `https://api.z.ai/api/coding/paas/v4/`
 - **Anthropic-совместимый endpoint:** `https://api.z.ai/api/anthropic` (drop-in замена [Claude](anthropic.md))
-- Совместимость с 20+ AI-coding инструментами: [Claude Code](anthropic.md), OpenClaw, Cline, Kilo Code, Roo Code, Cursor, Continue.dev, Crush, Factory, Droid, OpenCode, Trae и др.
+- Совместимость с 20+ AI-coding инструментами: [Claude Code](anthropic.md), [OpenClaw](openclaw.md), Cline, Kilo Code, Roo Code, Cursor, Continue.dev, Crush, Factory, Droid, OpenCode, Trae и др.
 - Модели API: `glm-5.2`, `glm-5.1`, `glm-5`, `glm-5-turbo`, `glm-4.7`, `glm-4.6`, `glm-4.5`, `glm-4.5-air`, `glm-5v-turbo`, `glm-4.6v`, `glm-4.5v`
 - MCP-серверы (включены в Coding Plan): Vision Analysis, Web Search, Web Reader, Zread
 - Поддерживаемое железо для self-host: NVIDIA (H20/H100), Huawei Ascend, Moore Threads, Cambricon, Kunlun Chip, MetaX, Enflame, Hygon

@@ -57,6 +57,20 @@ Approval нужен не “для всего”, а для действий, г
 
 Approval screen должен показывать не только “да/нет”, но и: действие, аргументы, источник решения, expected side effect, rollback path.
 
+## Always-on персональные агенты
+
+Ассистент, постоянно подключённый к мессенджерам, web, памяти и shell, имеет больший attack surface, чем интерактивный coding agent. Для такого deployment:
+
+1. Использовать отдельный непривилегированный host/container и не монтировать лишние пользовательские каталоги.
+2. Разделять credentials по интеграциям, ограничивать scopes и иметь быстрый revoke path.
+3. Не открывать control plane в публичную сеть без authentication, TLS и явной необходимости.
+4. Считать email, chat, web pages, documents и community skills недоверенным вводом.
+5. Проверять source и diff каждого skill/plugin; автоматический malware scan не ловит все prompt-injection и intent-manipulation атаки.
+6. Регулярно обновлять runtime и запускать доступный security audit.
+7. Ограничивать число шагов, wall-clock time, token/cost budget и повторные ошибки tools.
+
+Практические симптомы неверных границ — самостоятельное изменение конфигурации после вопроса, runaway loops, silent background work и потеря контроля над token budget — зафиксированы в [hands-on гайде по OpenClaw](../../sources/tutorials-courses/openclaw-habr-guide.md).
+
 ## Audit log
 
 Минимальный audit record:
@@ -76,3 +90,4 @@ Approval screen должен показывать не только “да/не
 - [Tool use, function calling и MCP](../fundamentals/tool-use-and-mcp.md)
 - [Production operations](../production-operations/production-operations.md)
 - [Data governance и compliance](../architecture-design/data-governance-compliance.md)
+- [OpenClaw](../../tools/platforms/openclaw.md) — self-hosted always-on агент как reference threat model

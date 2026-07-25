@@ -37,6 +37,19 @@ Approval screen должен включать:
 
 Но агент не должен спрашивать о том, что можно безопасно обнаружить через read-only tool.
 
+## Conversation is not authorization
+
+Вопрос о возможности, настройке или устройстве агента не является разрешением выполнить действие. Фразы вроде «как работает память?» или «как подключить TTS?» должны сначала получать объяснение; установка пакета, изменение конфигурации или запись в memory требуют отдельного action intent.
+
+Практичный gate перед mutation:
+
+1. Классифицировать запрос как `explain`, `inspect`, `propose` или `act`.
+2. Для `explain` и `inspect` разрешать только read-only операции.
+3. Перед `act` показать краткий preview side effects и запросить approval, если действие внешнее, рискованное или меняет устойчивое состояние.
+4. Не пытаться компенсировать неоднозначность «максимальной автономностью».
+
+Такой failure mode описан в [hands-on гайде по OpenClaw](../../sources/tutorials-courses/openclaw-habr-guide.md): вопросы о функции интерпретировались как команда установить или перенастроить её.
+
 ## Trust design
 
 Пользователь доверяет агенту, если видит:
@@ -63,3 +76,4 @@ Approval screen должен включать:
 - [Работа с код-агентами](../implementation/working-with-coding-agents.md)
 - [Agent Harness](../architecture-design/agent-harness.md) — approvals и UX агента
 - [Антипаттерны агентных систем](../advanced/agent-antipatterns.md) — последствия для UX
+- [OpenClaw](../../tools/platforms/openclaw.md) — пример always-on ассистента, где intent/action boundary особенно важна

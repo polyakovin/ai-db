@@ -12,6 +12,10 @@
 - [DeepSeek](platforms/deepseek.md) — open-weight модели V4 Pro/Flash, сверхнизкие цены API
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen3.7-Max/Plus, Qwen3.6-35B-A3B, open-weight → API-only переход
 - [Z.ai (GLM)](platforms/z-ai.md) — GLM-5.2, open-weight MIT, Anthropic-совместимый API, AutoGLM
+- [OpenClaw](platforms/openclaw.md) — self-hosted personal-agent gateway с memory, tools, skills и messaging
+- [Hermes Agent](platforms/hermes-agent.md) — open-source agent harness с bounded memory, skills, delegation и toolsets
+- [NotebookLM](platforms/notebooklm.md) — source-grounded research assistant с citations и Studio-артефактами
+- [Arena AI](platforms/arena-ai.md) — human-preference рейтинги моделей и слепые попарные сравнения
 
 ## Модели
 
@@ -50,6 +54,7 @@
 - [Code Execution](agent-tools/code-execution.md) — запуск кода в sandbox (E2B, Jupyter, Docker)
 - [API Clients](agent-tools/api-clients.md) — HTTP-клиенты для внешних сервисов
 - [Function Calling](agent-tools/function-calling.md) — механизм вызова функций через LLM
+- [MarkItDown](agent-tools/markitdown.md) — нормализация документов и файлов в Markdown для LLM pipelines
 
 ## Другие инструменты
 
@@ -72,4 +77,4 @@
 
 ---
 
-*Последнее обновление: 23.07.2026*
+*Последнее обновление: 26.07.2026*
