@@ -1,6 +1,6 @@
 # Модельная карта для AI-агентов
 
-Актуально на 2026-06-24. Для агентов модель выбирается не только по “умности”, а по способности работать с tools, долгим контекстом, reasoning budget, multimodal input, кодом, latency и ценой.
+Актуально на 2026-07-26. Для агентов модель выбирается не только по “умности”, а по способности работать с tools, долгим контекстом, reasoning budget, multimodal input, кодом, latency и ценой.
 
 ## Критерии выбора
 
@@ -23,7 +23,7 @@
 | [Anthropic](platforms/anthropic.md) [Claude Opus](platforms/anthropic.md)/Sonnet/Haiku | long-horizon agentic work, coding, large context, strong writing/analysis
 | [Gemini](platforms/gemini.md) | multimodal input, Google ecosystem, long context, tools/computer use
 | Mistral | European provider, latency/cost-sensitive apps, open/enterprise options |
-| Open/self-hosted models | data control, cost predictability, offline/private deployments |
+| Open/self-hosted models, включая [LFM2.5-8B-A1B](models/lfm2-5-8b-a1b.md) | data control, cost predictability, offline/private deployments |
 
 ## Default decision tree
 
@@ -84,4 +84,5 @@
 - [DeepSeek](platforms/deepseek.md) — DeepSeek модели в карте
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen модели в карте
 - [MiMo Code](models/mimo-code.md) — MiMo модели в карте
+- [LFM2.5-8B-A1B](models/lfm2-5-8b-a1b.md) — локальный tool-calling baseline
 - [Z.ai](platforms/z-ai.md) — open-weight модели GLM

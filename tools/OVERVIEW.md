@@ -14,12 +14,14 @@
 - [Z.ai (GLM)](platforms/z-ai.md) — GLM-5.2, open-weight MIT, Anthropic-совместимый API, AutoGLM
 - [OpenClaw](platforms/openclaw.md) — self-hosted personal-agent gateway с memory, tools, skills и messaging
 - [Hermes Agent](platforms/hermes-agent.md) — open-source agent harness с bounded memory, skills, delegation и toolsets
+- [LocalCowork](platforms/localcowork.md) — open-source desktop-агент с локальным inference, MCP-инструментами и audit trail
 - [NotebookLM](platforms/notebooklm.md) — source-grounded research assistant с citations и Studio-артефактами
 - [Arena AI](platforms/arena-ai.md) — human-preference рейтинги моделей и слепые попарные сравнения
 
 ## Модели
 
 - [MiMo Code](models/mimo-code.md) — кодовый AI-ассистент и семейство моделей от Xiaomi
+- [LFM2.5-8B-A1B](models/lfm2-5-8b-a1b.md) — компактная MoE-модель Liquid AI для локального tool calling
 
 ## Фреймворки
 

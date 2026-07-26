@@ -44,6 +44,20 @@ MCP — открытый стандарт подключения AI-прилож
 
 Если каталог schemas становится большим, применяйте [progressive disclosure](../implementation/progressive-disclosure-for-agents.md): держите частые и критичные tools в стартовом контексте, остальные находите и раскрывайте по запросу. Deferred loading уменьшает контекстный шум, но не заменяет permission и approval.
 
+## Масштабирование большой tool surface
+
+Количество подключённых MCP-серверов не равно количеству схем, которые нужно одновременно отправлять модели. Чем больше похожих tools видит модель, тем выше риск sibling confusion, лишний расход контекста и сложнее cross-server переходы.
+
+Практический pipeline:
+
+1. Соберите eval-набор для single-step выбора, аргументов и multi-step цепочек.
+2. Оставьте небольшой curated default set из наиболее надёжных инструментов.
+3. Для длинного хвоста находите релевантные schemas через metadata или retrieval и передавайте модели только top-K.
+4. При сложном запросе разделите planning, выбор одного инструмента и synthesis результата.
+5. Для write и destructive действий ставьте approval после выбора инструмента, но до исполнения.
+
+[LocalCowork](../../tools/platforms/localcowork.md) — полезный reference: репозиторий содержит 75 tools, но стартует с проверенным подмножеством, а для расширенного каталога предлагает planner/router pipeline. Это архитектурная гипотеза, которую нужно подтвердить собственными evals, а не готовая гарантия качества.
+
 ## Permissions
 
 Минимальные уровни:
@@ -80,3 +94,4 @@ Retry не должен быть автоматическим для всего.
 - [Anthropic (Claude)](../../tools/platforms/anthropic.md) — MCP-серверы в Claude Code
 - [LangGraph](../../tools/frameworks/langgraph.md) — tool calling в LangGraph
 - [Progressive disclosure для AI-агентов](../implementation/progressive-disclosure-for-agents.md) — deferred discovery больших каталогов tools
+- [LocalCowork](../../tools/platforms/localcowork.md) — локальный MCP-agent с curated tool set и planner/router pipeline

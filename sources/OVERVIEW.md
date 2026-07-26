@@ -52,6 +52,7 @@
 - [Google Gemini App](libraries-tools/google-gemini-app.md) — официальный web/mobile интерфейс Gemini
 - [MarkItDown](libraries-tools/markitdown.md) — конвертация документов в Markdown для LLM pipelines
 - [Hermes Agent — русскоязычный обзор](libraries-tools/hermes-agent-ru.md) — установка, memory, skills, tools и delegation
+- [LFM2.5-8B-A1B and LocalCowork](libraries-tools/localcowork-lfm2-5.md) — локальный desktop-агент, компактная MoE-модель и масштабирование MCP tool surface
 
 ## 🟡 Engineering Patterns
 
@@ -126,6 +127,7 @@
 | [Google Gemini App](libraries-tools/google-gemini-app.md) | 🔵 Libraries | [Google Gemini](../tools/platforms/gemini.md) — canonical |
 | [MarkItDown](libraries-tools/markitdown.md) | 🔵 Libraries | [MarkItDown (tools)](../tools/agent-tools/markitdown.md), [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md) |
 | [Hermes Agent — русскоязычный обзор](libraries-tools/hermes-agent-ru.md) | 🔵 Libraries | [Hermes Agent (tools)](../tools/platforms/hermes-agent.md), [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md) |
+| [LFM2.5-8B-A1B and LocalCowork](libraries-tools/localcowork-lfm2-5.md) | 🔵 Libraries | [LocalCowork](../tools/platforms/localcowork.md), [LFM2.5-8B-A1B](../tools/models/lfm2-5-8b-a1b.md), [Tool use и MCP](../patterns/fundamentals/tool-use-and-mcp.md) |
 
 ---
 
@@ -227,4 +229,4 @@ status: new
 - Связанные инструменты (ссылки на `tools/`)
 - Связанные паттерны (ссылки на `patterns/`)
 
-*Последнее обновление: 23.07.2026*
+*Последнее обновление: 26.07.2026*
