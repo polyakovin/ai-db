@@ -131,6 +131,10 @@
     "name": "Function Calling for Agents",
     "path": "tools/agent-tools/function-calling.md"
   },
+  "scrapegraphai": {
+    "name": "ScrapeGraphAI",
+    "path": "tools/agent-tools/scrapegraphai.md"
+  },
   "web-search": {
     "name": "Web Search Tools for Agents",
     "path": "tools/agent-tools/web-search.md"

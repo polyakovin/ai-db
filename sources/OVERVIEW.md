@@ -41,6 +41,8 @@
 - [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) — connectors, ingestion transformations, cache, vector-store insertion
 - [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) — единый loader-интерфейс для внешних источников
 - [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) — recursive crawl, sitemap discovery, clean markdown, webhooks
+- [Web scraping stack — harsh.times Instagram Reel](libraries-tools/web-scraping-stack-instagram.md) — проверка RSS, CDP, stealth browser, curl_cffi, asyncio, Redis и XLSX-экспорта
+- [ScrapeGraphAI — easy.ai.life Instagram Reel](libraries-tools/scrapegraphai-instagram.md) — проверка утверждений о бесплатном универсальном AI-парсинге
 - [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) — source/destination connectors для data replication
 - [Unstructured Docs](libraries-tools/unstructured-docs.md) — parsing, chunking и ingestion неструктурированных документов
 - [Multica](libraries-tools/multica.md) — project management layer для human + agent teams, task lifecycle, runtimes, skills
@@ -110,6 +112,8 @@
 | [LlamaIndex Data Connectors and Ingestion Pipeline](libraries-tools/llamaindex-data-connectors.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LlamaIndex](../tools/frameworks/llamaindex.md) |
 | [LangChain Document Loaders](libraries-tools/langchain-document-loaders.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [LangChain](../tools/frameworks/langchain.md) |
 | [Firecrawl Crawl Docs](libraries-tools/firecrawl-crawl-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Web Search](../tools/agent-tools/web-search.md) |
+| [Web scraping stack — harsh.times Instagram Reel](libraries-tools/web-scraping-stack-instagram.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Browser Automation](../tools/agent-tools/browser-automation.md), [API Clients](../tools/agent-tools/api-clients.md) |
+| [ScrapeGraphAI — easy.ai.life Instagram Reel](libraries-tools/scrapegraphai-instagram.md) | 🔵 Libraries | [ScrapeGraphAI](../tools/agent-tools/scrapegraphai.md), [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md) |
 | [Airbyte Connectors Docs](libraries-tools/airbyte-connectors-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Unstructured Docs](libraries-tools/unstructured-docs.md) | 🔵 Libraries | [Автоматизация сбора внешнего контекста](../patterns/architecture-design/external-context-collection.md), [RAG для агентов](../patterns/architecture-design/rag-for-agents.md) |
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |

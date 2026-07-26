@@ -63,6 +63,24 @@ source registry
 
 Практичный baseline: discovery делать on-demand через search, стабильные источники переводить в scheduled pull, а operational events принимать через webhooks.
 
+## Практическая декомпозиция web extraction stack
+
+Списки инструментов для scraping часто смешивают независимые слои и создают впечатление, что их нужно последовательно соединить. Production pipeline следует проектировать от контракта данных и разрешённого способа доступа:
+
+| Слой | Предпочтительный baseline | Специализированный fallback | Типичная ошибка |
+|------|---------------------------|-----------------------------|-----------------|
+| Discovery и freshness | Official API, webhook, RSS/Atom, sitemap | Search API | Считать RSS универсальным поиском |
+| Acquisition | Обычный HTTP client или crawler | Browser automation для JavaScript/UI | Сразу запускать тяжёлый browser |
+| Transport compatibility | `httpx`/`aiohttp` | [API Clients](../../tools/agent-tools/api-clients.md) с browser-like TLS/HTTP fingerprints при явном разрешении | Путать network fingerprint с IP или browser fingerprint |
+| Browser fallback | [Browser Automation](../../tools/agent-tools/browser-automation.md) через Playwright | Stealth browser только для авторизованной автоматизации | Считать CDP скрытым протоколом или CAPTCHA helper гарантией обхода |
+| Extraction | Deterministic parser и schema | [ScrapeGraphAI](../../tools/agent-tools/scrapegraphai.md) или другая LLM extraction для разнородных страниц | Не сохранять raw evidence и принимать LLM output без проверки |
+| Concurrency | Bounded async tasks, per-domain limits, backpressure | Queue/workers для больших jobs | Называть `asyncio` «тысячами потоков» и не ограничивать fan-out |
+| Session state | In-memory/local session для одного worker | Redis с TTL, ACL/TLS и минимальным scope | Хранить cookies как обычные данные, а не секреты |
+| Validation и storage | Typed schema, database/JSONL/Parquet, versioning | JSONPath/JMESPath/Polars для преобразований | Считать JSON средством фильтрации |
+| Delivery | API, dataset или report | XLSX через openpyxl для human handoff | Использовать Excel как основное хранилище большого dataset |
+
+Минимальные недостающие элементы любого «быстрого scraping stack»: authorization/ToS policy, retries с backoff, timeout, per-domain rate limit, deduplication, raw snapshot, provenance, schema validation, observability и eval-набор целевых страниц.
+
 ## Metadata contract
 
 Каждая единица контекста должна иметь минимальный контракт:
@@ -153,6 +171,8 @@ for source in source_registry.due(now):
 - [Airbyte Connectors docs](../../sources/libraries-tools/airbyte-connectors-docs.md)
 - [Unstructured docs](../../sources/libraries-tools/unstructured-docs.md)
 - [MarkItDown — репозиторий Microsoft](../../sources/libraries-tools/markitdown.md)
+- [Web scraping stack — harsh.times Instagram Reel](../../sources/libraries-tools/web-scraping-stack-instagram.md)
+- [ScrapeGraphAI — easy.ai.life Instagram Reel](../../sources/libraries-tools/scrapegraphai-instagram.md)
 
 ## Связанные заметки
 
@@ -168,3 +188,4 @@ for source in source_registry.due(now):
 - [OpenAI](../../tools/platforms/openai.md) — hosted web/file search и MCP tools
 - [MarkItDown](../../tools/agent-tools/markitdown.md) — локальная нормализация разнородных файлов в Markdown
 - [NotebookLM](../../tools/platforms/notebooklm.md) — интерактивный source-grounded notebook как готовая альтернатива собственному pipeline
+- [ScrapeGraphAI](../../tools/agent-tools/scrapegraphai.md) — LLM-based structured extraction после acquisition.

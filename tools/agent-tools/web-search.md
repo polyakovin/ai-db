@@ -137,6 +137,13 @@ status: verified
 - Полезен как lightweight reader/extractor или fallback, особенно когда нужен быстрый Markdown без отдельного crawler stack.
 - Для production нужно проверять rate limits, caching behavior, privacy и качество extraction на своих доменах.
 
+**[ScrapeGraphAI](scrapegraphai.md)**
+
+- Open-source framework отделяет acquisition через Playwright от LLM-based extraction по natural-language prompt.
+- Managed API v2 объединяет scrape, extract, search, crawl и monitor, но использует credit-based billing.
+- Полезен для structured extraction из разнородных страниц; для стабильных массовых схем deterministic parser обычно дешевле и воспроизводимее.
+- LLM output требует schema validation, raw evidence, prompt-injection boundary и eval-набора целевых страниц.
+
 ## Интеграционный паттерн
 
 1. Агент классифицирует запрос: stable knowledge, current fact, broad research, site-specific lookup, private/authenticated page.
@@ -205,6 +212,7 @@ results:
 - [Firecrawl Search API](https://docs.firecrawl.dev/api-reference/endpoint/search)
 - [Firecrawl GitHub repository](https://github.com/firecrawl/firecrawl)
 - [Jina Reader API](https://jina.ai/reader/)
+- [ScrapeGraphAI API v2](https://docs.scrapegraphai.com/api-reference/introduction)
 
 ## Связи
 
@@ -214,5 +222,6 @@ results:
 - [Browser Automation](browser-automation.md) - fallback для динамических и интерактивных страниц.
 - [API Clients](api-clients.md) - транспортный слой для внешних search APIs.
 - [Perplexity AI](../platforms/perplexity.md) - platform-level canonical page для Perplexity.
+- [ScrapeGraphAI](scrapegraphai.md) - semantic extraction и managed web-data API.
 
-*Последнее обновление: 2026-07-02*
+*Последнее обновление: 2026-07-26*

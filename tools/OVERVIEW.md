@@ -58,6 +58,7 @@
 - [API Clients](agent-tools/api-clients.md) — HTTP-клиенты для внешних сервисов
 - [Function Calling](agent-tools/function-calling.md) — механизм вызова функций через LLM
 - [MarkItDown](agent-tools/markitdown.md) — нормализация документов и файлов в Markdown для LLM pipelines
+- [ScrapeGraphAI](agent-tools/scrapegraphai.md) — self-hosted и managed LLM-based web extraction
 
 ## Другие инструменты
 

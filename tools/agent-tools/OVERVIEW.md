@@ -8,6 +8,7 @@
 
 - [Web Search](web-search.md) — поисковые инструменты для агентов (Tavily, Exa, Serper)
 - [Browser Automation](browser-automation.md) — управление браузером (Playwright, Puppeteer, Browser-use)
+- [ScrapeGraphAI](scrapegraphai.md) — LLM-based extraction из страниц и managed scrape/extract/crawl API
 
 ### 📁 Файлы и данные
 

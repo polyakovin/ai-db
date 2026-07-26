@@ -148,6 +148,29 @@ with sync_playwright() as p:
 - Custom hooks для preprocessing
 - Optimized для RAG и agent workflows
 
+## CDP, stealth и anti-detection
+
+Stealth-инструменты не образуют отдельный обязательный слой browser automation. Их следует рассматривать как специализированные реализации для собственных систем, тестовых стендов или сайтов, где автоматизация явно разрешена.
+
+### Chrome DevTools Protocol
+
+[Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) позволяет инструментам инспектировать, отлаживать, профилировать и управлять Chromium. Сам CDP не является «скрытым управлением»: stealth-свойства возникают из поведения конкретного клиента, изменений browser fingerprint и способа генерации событий.
+
+### SeleniumBase
+
+[SeleniumBase UC Mode](https://seleniumbase.github.io/help_docs/uc_mode/) расширяет Selenium anti-detection методами, а [CDP Mode](https://seleniumbase.github.io/examples/cdp_mode/ReadMe/) может управлять браузером без WebDriver и предоставляет CAPTCHA helpers. Это не гарантия прохождения защиты: результат зависит от сайта, режима запуска, browser build, сети и изменений anti-bot provider.
+
+### CloakBrowser
+
+[CloakBrowser](https://github.com/CloakHQ/CloakBrowser) — patched Chromium с Playwright/Puppeteer-compatible wrapper и изменениями fingerprint на уровне browser source. На 2026-07-26:
+
+- wrapper code опубликован под MIT, а готовый Chromium binary имеет отдельную лицензию без права redistribution;
+- проект публикует signatures/attestations для проверки binary artifacts;
+- заявления о прохождении detection tests являются self-reported benchmark проекта;
+- документация прямо признаёт, что detection остаётся arms race и будущая обнаруживаемость возможна.
+
+Для базового automation stack предпочтительнее обычный Playwright с rate limits, стабильными selectors, traces и разрешённым доступом. Stealth browser повышает supply-chain и maintenance surface и не заменяет authorization, robots/TOS policy или обработку блокировок.
+
 ## Когда использовать
 
 | Сценарий | Рекомендуемый инструмент |
@@ -200,6 +223,8 @@ async def scrape_website(url: str) -> str:
 - **CAPTCHA** — многие сайты используют bot detection
 - **Legal compliance** — проверка robots.txt, ToS
 - **Resource usage** — браузеры потребляют много памяти/CPU
+- **Anti-detection arms race** — stealth-патчи могут перестать работать после обновления browser или защиты
+- **Binary supply chain** — сторонние Chromium builds нужно pin-ить и проверять signatures/attestations
 
 ## Связи
 
@@ -207,7 +232,8 @@ async def scrape_website(url: str) -> str:
 - [Code Execution](code-execution.md) — запуск browser scripts в sandbox
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — интеграция browser tools
 - [Function Calling](function-calling.md) — механизм вызова browser actions
+- [Web scraping stack — harsh.times Instagram Reel](../../sources/libraries-tools/web-scraping-stack-instagram.md) — provenance разбора CDP, SeleniumBase и CloakBrowser
 
 ---
 
-*Добавлено: 2026-07-01*
+*Добавлено: 2026-07-01. Обновлено: 2026-07-26.*

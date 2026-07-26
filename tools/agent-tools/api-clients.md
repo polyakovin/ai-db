@@ -52,6 +52,19 @@ async with httpx.AsyncClient() as client:
     data = response.json()
 ```
 
+### curl_cffi
+
+[`curl_cffi`](https://curl-cffi.readthedocs.io/en/stable/) — Python binding к fork `curl-impersonate` с requests-like sync/async API, WebSockets и поддержкой HTTP/2 и HTTP/3. Его отличительная функция — имитация TLS и HTTP fingerprints браузеров.
+
+Граница возможностей:
+
+- `impersonate="chrome"` или другой target меняет transport fingerprint и связанные default headers;
+- HTTP/SOCKS proxy настраивается отдельно и отвечает за сетевой маршрут/IP;
+- библиотека не воспроизводит JavaScript, canvas, WebGL и другие browser-runtime fingerprints;
+- `AsyncSession` интегрируется с `asyncio`, но fan-out всё равно требует semaphore, connection limits, timeout и per-domain rate limiting.
+
+Для обычного API первым выбором остаётся `httpx` или официальный SDK. `curl_cffi` нужен при обоснованной transport-совместимости и разрешённом доступе; fingerprint impersonation не является разрешением обходить ограничения сайта.
+
 ### LangChain API Tools
 
 | Параметр | Значение |
@@ -164,6 +177,7 @@ response = requests.post(
 | Сценарий | Рекомендуемый инструмент |
 |----------|-------------------------|
 | **Custom API integration** | Native httpx/requests + wrapper |
+| **TLS/HTTP fingerprint compatibility** | curl_cffi при разрешённом доступе |
 | **LangChain agent** | LangChain API Tools |
 | **OpenAI GPTs** | OpenAI Actions |
 | **No-code integrations** | Zapier AI Actions |
@@ -179,6 +193,7 @@ response = requests.post(
 - **Timeout** — защита от hanging requests
 - **Retry logic** — exponential backoff для transient failures
 - **Circuit breaker** — отключение при persistent failures
+- **Fingerprint boundary** — transport impersonation не подменяет IP, browser runtime или authorization
 
 ### Пример безопасного wrapper
 ```python
@@ -252,7 +267,8 @@ tools = [{
 - [Web Search](web-search.md) — search APIs для research
 - [Function Calling](function-calling.md) — механизм вызова API через LLM
 - [Agent Harness](../../patterns/architecture-design/agent-harness.md) — интеграция API tools в harness
+- [Web scraping stack — harsh.times Instagram Reel](../../sources/libraries-tools/web-scraping-stack-instagram.md) — provenance рекомендации curl_cffi
 
 ---
 
-*Добавлено: 2026-07-01*
+*Добавлено: 2026-07-01. Обновлено: 2026-07-26.*
