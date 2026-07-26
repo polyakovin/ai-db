@@ -45,6 +45,7 @@
 - [Unstructured Docs](libraries-tools/unstructured-docs.md) — parsing, chunking и ingestion неструктурированных документов
 - [Multica](libraries-tools/multica.md) — project management layer для human + agent teams, task lifecycle, runtimes, skills
 - [Runable](libraries-tools/runable.md) — artifact-first AI-платформа с sandbox, skills, memory, plan approval и мультимодальными результатами
+- [Omi](libraries-tools/omi.md) — open-source personal AI, wearable capture, conversation memory и developer-интерфейсы
 - [Agent Skills specification and authoring guidance](libraries-tools/agent-skills-specification.md) — progressive disclosure, структура skills и deferred tool discovery
 - [Arena AI](libraries-tools/arena-ai.md) — human-preference leaderboard, Battle Mode, rank spread и privacy boundary
 - [Qwen Studio](libraries-tools/qwen-studio.md) — официальный consumer-интерфейс моделей Qwen
@@ -114,6 +115,7 @@
 | [LightRAG Alternatives Research](libraries-tools/lightrag-alternatives.md) | 🔵 Libraries | [LightRAG](../tools/retrieval/lightrag.md), [Retrieval tools overview](../tools/retrieval/OVERVIEW.md) |
 | [Multica](libraries-tools/multica.md) | 🔵 Libraries | [Робастная multi-agent среда](../patterns/architecture-design/robust-multi-agent-environment.md), [Agent Harness](../patterns/architecture-design/agent-harness.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |
 | [Runable](libraries-tools/runable.md) | 🔵 Libraries | [Runable (tools)](../tools/platforms/runable.md) — canonical, [Agent Harness](../patterns/architecture-design/agent-harness.md), [Human-in-the-loop UX](../patterns/production-operations/human-in-the-loop-ux.md) |
+| [Omi](libraries-tools/omi.md) | 🔵 Libraries | [Omi (tools)](../tools/platforms/omi.md), [Персистентная память агента](../patterns/advanced/agent-memory-patterns.md), [Data governance и compliance](../patterns/architecture-design/data-governance-compliance.md) |
 | [Agent Skills specification and authoring guidance](libraries-tools/agent-skills-specification.md) | 🔵 Libraries | [Progressive disclosure для AI-агентов](../patterns/implementation/progressive-disclosure-for-agents.md), [Skills и правила](../patterns/implementation/agent-skills-and-rules.md) |
 | [Demystifying evals for AI agents — Anthropic](research-production/demystifying-evals-for-ai-agents.md) | 🟠 Research | [Evaluations для AI-агентов](../patterns/implementation/agent-evaluations.md) |
 | [Andrej Karpathy Skills](research-production/andrej-karpathy-skills.md) | 🟠 Research | [Skills и правила](../patterns/implementation/agent-skills-and-rules.md), [Работа с код-агентами](../patterns/implementation/working-with-coding-agents.md) |

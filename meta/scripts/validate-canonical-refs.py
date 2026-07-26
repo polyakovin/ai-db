@@ -28,7 +28,7 @@ SCAN_DIRS = [ROOT / "patterns", ROOT / "tools"]
 EXCLUDE_PREFIXES = (ROOT / "meta", ROOT / "sources", ROOT / "assets", ROOT / ".git")
 
 # ── known ambiguous short words that need extra context ──
-AMBIGUOUS = frozenset({"BGE"})  # homonym / too short
+AMBIGUOUS = frozenset({"bge", "omi"})  # homonyms / short names: match whole words only
 
 # ── load canonical map ──
 
@@ -141,8 +141,11 @@ def find_bare_mentions(text: str, filepath: Path, name_to_path: dict[str, dict])
 
             # Skip ambiguous short words unless they appear as whole words
             if name_lower in AMBIGUOUS:
-                # BGE must be "BGE " or "BGE)" etc — whole word
-                if not re.search(rf'\b{re.escape(name_title)}\b', line_to_check):
+                if not re.search(
+                    rf'\b{re.escape(name_title)}\b',
+                    line_to_check,
+                    flags=re.IGNORECASE,
+                ):
                     continue
             # ── URL-path false-positive ──
             if re.search(

@@ -350,5 +350,9 @@
   "openclaw": {
     "name": "OpenClaw",
     "path": "tools/platforms/openclaw.md"
+  },
+  "omi": {
+    "name": "Omi",
+    "path": "tools/platforms/omi.md"
   }
 }

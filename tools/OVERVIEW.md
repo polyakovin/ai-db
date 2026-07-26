@@ -13,6 +13,7 @@
 - [Qwen (Alibaba)](platforms/qwen.md) — Qwen3.7-Max/Plus, Qwen3.6-35B-A3B, open-weight → API-only переход
 - [Z.ai (GLM)](platforms/z-ai.md) — GLM-5.2, open-weight MIT, Anthropic-совместимый API, AutoGLM
 - [OpenClaw](platforms/openclaw.md) — self-hosted personal-agent gateway с memory, tools, skills и messaging
+- [Omi](platforms/omi.md) — open-source personal AI для conversation capture, memory и agent integrations
 - [Hermes Agent](platforms/hermes-agent.md) — open-source agent harness с bounded memory, skills, delegation и toolsets
 - [LocalCowork](platforms/localcowork.md) — open-source desktop-агент с локальным inference, MCP-инструментами и audit trail
 - [NotebookLM](platforms/notebooklm.md) — source-grounded research assistant с citations и Studio-артефактами

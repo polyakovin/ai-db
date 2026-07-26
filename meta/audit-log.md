@@ -5,6 +5,7 @@
 
 ## История
 
+2026-07-26 | add-source | args: Omi website, documentation, GitHub repository, Developer API, MCP, CLI, privacy policy and terms | status: ok | details: canonical platform page and provenance card added; navigation updated; open-source boundary, developer surfaces, self-hosting caveats, consent and data-governance risks documented; short-name canonical matching fixed; vault and canonical checks passed
 2026-07-26 | add-source | args: Liquid AI LFM2.5-8B-A1B announcement, model card, license, LocalCowork repository and prior benchmark | status: ok | details: canonical model and desktop-agent pages added; provenance card and navigation updated; large-tool-surface lesson integrated into MCP pattern; vendor claims, repository drift and commercial license threshold documented; vault and canonical checks passed with Python 3.13
 2026-07-26 | add-source | args: Arena AI, Qwen Studio, OpenClaw Habr guide, NotebookLM, Google Gemini App, Microsoft MarkItDown, Hermes Agent RU | status: ok | details: seven provenance cards added; five canonical tool pages created; Gemini and Qwen pages linked; OpenClaw lessons integrated into HITL and security patterns; vault and canonical checks passed
 2026-07-23 | research-and-update | args: DeerFlow docs, repository, v2.0.0 release, deployment and NVD CVE-2026-34430 | status: ok | details: DeerFlow canonical framework page and provenance card added; framework map and navigation updated; sandbox boundary and fixed LocalSandbox CVE documented; vault and canonical checks passed
